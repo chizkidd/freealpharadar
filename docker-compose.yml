@@ -1,0 +1,32 @@
+# FreeAlphaRadar — local containerised deployment.
+# Usage: docker compose up --build
+services:
+  app:
+    build: .
+    image: freealpharadar:latest
+    container_name: freealpharadar
+    ports:
+      - "8501:8501"
+    environment:
+      # All optional — every value has a safe default. No secrets required.
+      FAR_LOG_LEVEL: "INFO"
+      # Set FAR_OFFLINE=1 to force the app to serve cached/sample data only.
+      # FAR_OFFLINE: "1"
+    volumes:
+      # Persist the SQLite cache and watchlist changelogs across restarts.
+      - far_data:/app/data
+      - ./watchlist_changes:/app/watchlist_changes
+    restart: unless-stopped
+
+  # Optional: a one-shot scorer you can run on demand to warm the cache:
+  #   docker compose run --rm scorer
+  scorer:
+    build: .
+    image: freealpharadar:latest
+    profiles: ["tools"]
+    entrypoint: ["python", "run_scorer.py"]
+    volumes:
+      - far_data:/app/data
+
+volumes:
+  far_data:

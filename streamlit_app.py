@@ -17,7 +17,7 @@ from __future__ import annotations
 import streamlit as st
 
 from freealpharadar.ml.finbert import FinBERTSentiment
-from freealpharadar.sample_data import cache_is_empty, seed_cache
+from freealpharadar.sample_data import cache_is_empty, seed_cache, seed_from_snapshot
 from freealpharadar.service import PipelineOutput, run_pipeline
 from freealpharadar.ui import (
     render_deep_dive,
@@ -39,9 +39,15 @@ st.set_page_config(
 
 @st.cache_resource(show_spinner=False)
 def _ensure_seeded() -> bool:
-    """Seed the sample cache once per process if the cache is empty."""
+    """Warm the cache once per process when it is empty.
+
+    Prefers the committed prewarm snapshot of real, scheduler-refreshed data so
+    a freshly-booted hosted instance shows live figures immediately; falls back
+    to the deterministic synthetic sample when no snapshot is present.
+    """
     if cache_is_empty():
-        seed_cache()
+        if seed_from_snapshot() == 0:
+            seed_cache()
     return True
 
 

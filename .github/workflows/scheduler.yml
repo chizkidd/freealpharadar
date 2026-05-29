@@ -32,17 +32,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run scorer (skip heavy ML for speed)
-        run: python run_scorer.py --no-ml
+      - name: Refresh data & export prewarm snapshot
+        # Fetches live data for the default universe and writes the warmed
+        # cache to data/prewarm_cache.json. Skips heavy ML (FinBERT/XGBoost):
+        # the app recomputes enrichment from these raw payloads on load.
+        run: python run_scorer.py --no-ml --export-snapshot
 
-      - name: Commit refreshed cache
+      - name: Commit prewarm snapshot
+        # Pushing to the deploy branch triggers a Streamlit Cloud redeploy,
+        # which seeds the cache from this snapshot so visitors see live data
+        # with no refresh wait. [skip ci] avoids re-triggering workflows.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A data/ watchlist_changes/ || true
+          git add data/prewarm_cache.json
           if git diff --cached --quiet; then
-            echo "No data changes to commit."
+            echo "No snapshot changes to commit."
           else
-            git commit -m "chore: scheduled data refresh [skip ci]"
+            git commit -m "chore: scheduled prewarm cache refresh [skip ci]"
             git push
           fi

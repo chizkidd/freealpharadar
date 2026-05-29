@@ -14,13 +14,25 @@ from __future__ import annotations
 
 import json
 import random
-from typing import Any, Dict, List
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Sequence
 
-from freealpharadar.config import SAMPLE_DATA_DIR, settings
+from freealpharadar.config import DATA_DIR, SAMPLE_DATA_DIR, settings
 from freealpharadar.database import Database, get_db
 from freealpharadar.utils import get_logger
 
 logger = get_logger(__name__)
+
+# Committed JSON snapshot of *real*, freshly-fetched source payloads. Written by
+# ``run_scorer.py --export-snapshot`` (typically from the scheduled GitHub
+# Action) and loaded into the cache on app startup so a hosted, ephemeral
+# Streamlit instance shows live data immediately -- without making any visitor
+# wait on a refresh. Distinct from the synthetic ``sample_companies.json``.
+PREWARM_PATH: Path = DATA_DIR / "prewarm_cache.json"
+
+# The raw fetcher sources captured in a prewarm snapshot (ML enrichment is
+# recomputed by the app from these, so it is not stored).
+_PREWARM_SOURCES: Sequence[str] = ("yfinance", "sec", "patentsview", "gdelt")
 
 # Curated metadata so the sample universe looks realistic (sector, scale, theme).
 _PROFILES: Dict[str, Dict[str, Any]] = {
@@ -369,3 +381,76 @@ def cache_is_empty(db: Database | None = None) -> bool:
     db = db or get_db()
     first = settings.default_universe[0] if settings.default_universe else "PLTR"
     return db.get_cache("yfinance", first) is None
+
+
+def export_cache_snapshot(
+    tickers: Sequence[str],
+    db: Database | None = None,
+    path: Optional[Path] = None,
+) -> int:
+    """Export currently-cached source payloads for ``tickers`` to JSON.
+
+    Reads the warmed cache (populated by a live ``run_pipeline`` run) and writes
+    a ``{ticker: {source: payload}}`` snapshot to ``path``. This file is meant
+    to be committed so a hosted Streamlit app can pre-warm itself on startup.
+
+    Args:
+        tickers: Universe to snapshot.
+        db: Database to read from; defaults to the shared singleton.
+        path: Output path; defaults to :data:`PREWARM_PATH`.
+
+    Returns:
+        Number of tickers with at least one cached source written.
+    """
+    db = db or get_db()
+    out_path = Path(path) if path else PREWARM_PATH
+    snapshot: Dict[str, Dict[str, Any]] = {}
+    for ticker in tickers:
+        key = ticker.upper()
+        bundle: Dict[str, Any] = {}
+        for source in _PREWARM_SOURCES:
+            payload = db.cached_payload(source, key)
+            if payload is not None:
+                bundle[source] = payload
+        if bundle:
+            snapshot[key] = bundle
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(snapshot, indent=2, default=str), encoding="utf-8")
+    logger.info(
+        "Exported prewarm snapshot for %d tickers to %s", len(snapshot), out_path
+    )
+    return len(snapshot)
+
+
+def seed_from_snapshot(db: Database | None = None, path: Optional[Path] = None) -> int:
+    """Seed the cache from a committed prewarm snapshot, if one exists.
+
+    Args:
+        db: Database to seed; defaults to the shared singleton.
+        path: Snapshot path; defaults to :data:`PREWARM_PATH`.
+
+    Returns:
+        Number of tickers seeded (``0`` when no usable snapshot is present, so
+        callers can fall back to the synthetic :func:`seed_cache`).
+    """
+    db = db or get_db()
+    in_path = Path(path) if path else PREWARM_PATH
+    if not in_path.exists():
+        return 0
+    try:
+        snapshot = json.loads(in_path.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("Could not read prewarm snapshot %s: %s", in_path, exc)
+        return 0
+
+    seeded = 0
+    for ticker, sources in snapshot.items():
+        if not isinstance(sources, dict):
+            continue
+        for source, payload in sources.items():
+            db.set_cache(source, ticker, payload)
+        seeded += 1
+    if seeded:
+        logger.info("Seeded cache from prewarm snapshot for %d tickers.", seeded)
+    return seeded

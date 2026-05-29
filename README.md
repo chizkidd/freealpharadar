@@ -4,10 +4,10 @@
 > SanDisk, or Bloom Energy** using **only free, public data** — no API keys, no
 > sign-ups, no payment, ever.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=chizkidd/freealpharadar&branch=main&mainModule=streamlit_app.py)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chizkidd/freealpharadar/blob/main/colab_setup.ipynb)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=chizkidd.freealpharadar)
 
 FreeAlphaRadar ingests financial, alternative and qualitative data from
 entirely zero-cost public feeds and produces a **ranked, transparently scored**

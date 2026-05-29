@@ -1,0 +1,11 @@
+# FreeAlphaRadar — development, testing and code-quality tooling.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# The test-suite runs fully offline (FAR_OFFLINE=1) and needs only the slim
+# runtime deps plus pytest; black/isort/pre-commit enforce formatting.
+
+pytest==8.3.4
+black==24.10.0
+isort==5.13.2
+pre-commit==4.0.1

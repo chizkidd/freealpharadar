@@ -1,12 +1,18 @@
 # FreeAlphaRadar — developer convenience targets.
-.PHONY: help install run scorer seed test lint format precommit docker-build docker-up clean
+.PHONY: help install install-ml install-dev run scorer seed test lint format precommit docker-build docker-up clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-16s\033[0m %s\n", $$1, $$2}'
 
-install: ## Install all pinned dependencies
+install: ## Install slim runtime dependencies (lexicon sentiment)
 	pip install -r requirements.txt
+
+install-ml: ## Also install the heavyweight FinBERT + XGBoost stack
+	pip install -r requirements.txt -r requirements-ml.txt
+
+install-dev: ## Install runtime + test/format tooling
+	pip install -r requirements.txt -r requirements-dev.txt
 
 run: ## Launch the Streamlit dashboard
 	streamlit run streamlit_app.py
@@ -17,7 +23,8 @@ scorer: ## Run the batch scorer (refreshes cache + scores)
 seed: ## (Re)seed the offline sample dataset into SQLite
 	python run_scorer.py --seed-sample --no-refresh
 
-test: ## Run the offline test-suite (no network)
+test: ## Run the offline test-suite (no network); installs dev deps first
+	pip install -r requirements-dev.txt
 	FAR_OFFLINE=1 pytest
 
 lint: ## Check formatting with black & isort (no changes)

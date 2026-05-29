@@ -1,10 +1,17 @@
-# FreeAlphaRadar — pinned dependencies for reproducibility.
+# FreeAlphaRadar — runtime dependencies (slim, Streamlit Cloud friendly).
 # Zero API keys, zero secrets. Every data source is free and key-less.
 #
-# This is a known-good, mutually compatible stack (pandas 2.x / numpy 1.26 /
-# torch 2.5 / transformers 4.46). FinBERT/torch/xgboost are heavyweight but
-# optional at runtime: the app degrades gracefully to a lexicon sentiment
-# backend and rule-based scoring if they are unavailable.
+# This is the ONLY file Streamlit Community Cloud installs automatically. It is
+# intentionally lightweight so the free tier (~1 GB RAM) builds fast and never
+# OOMs. The optional FinBERT / XGBoost stack lives in requirements-ml.txt; when
+# it is absent the app degrades gracefully to a deterministic lexicon sentiment
+# backend and rule-based scoring with no loss of functionality.
+#
+#   pip install -r requirements.txt        # run the app (lexicon sentiment)
+#   pip install -r requirements-ml.txt     # optional: real FinBERT + XGBoost
+#   pip install -r requirements-dev.txt    # optional: tests + formatting
+#
+# Pins form a known-good, mutually compatible stack (pandas 2.x / numpy 1.26).
 
 # ---- Core app & dashboard ----
 streamlit==1.41.1
@@ -21,14 +28,5 @@ beautifulsoup4==4.12.3
 lxml==5.3.0
 python-dateutil==2.9.0.post0
 
-# ---- ML / NLP (zero-shot, pre-trained; optional at runtime) ----
+# ---- Lightweight ML (clustering); always available ----
 scikit-learn==1.5.2
-transformers==4.46.3
-torch==2.5.1
-xgboost==2.1.4
-
-# ---- Dev / test / quality ----
-pytest==8.3.4
-black==24.10.0
-isort==5.13.2
-pre-commit==4.0.1

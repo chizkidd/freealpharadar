@@ -1,0 +1,14 @@
+# FreeAlphaRadar — OPTIONAL heavyweight ML stack.
+#
+# Install on top of requirements.txt to enable the real pre-trained FinBERT
+# sentiment model (ProsusAI/finbert) and the XGBoost breakout-model skeleton:
+#
+#   pip install -r requirements.txt -r requirements-ml.txt
+#
+# Not installed on Streamlit Community Cloud by default (these total ~3.9 GB and
+# can exceed the free tier's build/memory limits). Without them the app
+# automatically uses the lexicon sentiment backend — see freealpharadar/ml/finbert.py.
+
+transformers==4.46.3
+torch==2.5.1
+xgboost==2.1.4

@@ -15,9 +15,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential libxml2-dev libxslt1-dev curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python deps first for better layer caching.
-COPY requirements.txt .
+# Install Python deps first for better layer caching. The slim runtime deps
+# keep the image small; the app uses the lexicon sentiment backend.
+COPY requirements.txt requirements-ml.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+# Optional: uncomment to bake in the real FinBERT + XGBoost stack (~3.9 GB).
+# RUN pip install --no-cache-dir -r requirements-ml.txt
 
 # Copy the application.
 COPY . .

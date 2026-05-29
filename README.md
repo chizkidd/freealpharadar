@@ -48,6 +48,14 @@ Re-score** to pull live data from the free sources.
 > `pip install -r requirements-ml.txt` (~3.9 GB). The app behaves identically
 > either way; only the sentiment engine swaps in.
 
+> **Customising the screening universe.** The default tickers live in
+> [`universe.txt`](universe.txt) (one or more per line, `#` comments allowed) —
+> edit it to change the default screen with no code changes. It's a curated
+> "under-the-radar deep tech" list, not a quote feed, so it doesn't need to
+> auto-update; the *data* for those tickers is what refreshes (via the
+> scheduler below). You can also just type any tickers into the sidebar at
+> runtime to override it for a session.
+
 ### Make targets
 
 ```bash
@@ -118,6 +126,7 @@ so free-tier rate limits are respected and the app remains usable offline.
 freealpharadar/
 ├── streamlit_app.py            # Streamlit entrypoint (stateless, cached)
 ├── run_scorer.py               # Batch scorer for cron / GitHub Actions
+├── universe.txt                # Editable default screening universe
 ├── manual_upload_template.csv  # Optional manual-signals template
 ├── colab_setup.ipynb           # One-click Colab/Kaggle launcher
 ├── Dockerfile / docker-compose.yml

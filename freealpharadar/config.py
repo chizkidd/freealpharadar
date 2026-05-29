@@ -25,6 +25,51 @@ WATCHLIST_CHANGES_DIR: Path = PROJECT_ROOT / "watchlist_changes"
 
 DEFAULT_DB_PATH: Path = DATA_DIR / "freealpharadar.sqlite"
 
+# Editable default screening universe. ``universe.txt`` at the repo root is the
+# source of truth so the list can be changed without code edits; the hard-coded
+# fallback below guarantees the app still works if the file is missing.
+UNIVERSE_FILE: Path = PROJECT_ROOT / "universe.txt"
+
+_FALLBACK_UNIVERSE: List[str] = [
+    "PLTR",
+    "BE",
+    "SNDK",
+    "IONQ",
+    "RKLB",
+    "OKLO",
+    "SMR",
+    "ASTS",
+    "TEM",
+    "RXRX",
+    "PATH",
+    "CRWD",
+]
+
+
+def _load_default_universe() -> List[str]:
+    """Load the default universe from ``universe.txt``.
+
+    The file allows one-or-more whitespace/comma-separated tickers per line,
+    blank lines, full-line ``#`` comments and inline ``# ...`` comments. Order
+    is preserved and duplicates removed. Falls back to :data:`_FALLBACK_UNIVERSE`
+    when the file is absent or yields nothing.
+    """
+    try:
+        raw = UNIVERSE_FILE.read_text(encoding="utf-8")
+    except OSError:
+        return list(_FALLBACK_UNIVERSE)
+
+    tickers: List[str] = []
+    seen: set[str] = set()
+    for line in raw.splitlines():
+        line = line.split("#", 1)[0]  # drop comments (full-line and inline)
+        for token in line.replace(",", " ").split():
+            sym = token.strip().upper()
+            if sym and sym not in seen:
+                seen.add(sym)
+                tickers.append(sym)
+    return tickers or list(_FALLBACK_UNIVERSE)
+
 
 def _env_int(name: str, default: int) -> int:
     """Read an integer environment variable with a fallback."""
@@ -102,22 +147,7 @@ class Settings:
     max_retries: int = _env_int("FAR_MAX_RETRIES", 4)
     request_concurrency: int = _env_int("FAR_CONCURRENCY", 5)
     finbert_model: str = os.environ.get("FAR_FINBERT_MODEL", "ProsusAI/finbert")
-    default_universe: List[str] = field(
-        default_factory=lambda: [
-            "PLTR",  # Palantir -- the archetypal under-the-radar breakout
-            "BE",  # Bloom Energy
-            "SNDK",  # SanDisk (Western Digital flash spin-off ticker)
-            "IONQ",  # IonQ -- quantum computing
-            "RKLB",  # Rocket Lab
-            "OKLO",  # Oklo -- advanced nuclear
-            "SMR",  # NuScale Power
-            "ASTS",  # AST SpaceMobile
-            "TEM",  # Tempus AI
-            "RXRX",  # Recursion Pharmaceuticals
-            "PATH",  # UiPath
-            "CRWD",  # CrowdStrike
-        ]
-    )
+    default_universe: List[str] = field(default_factory=_load_default_universe)
 
     def ensure_dirs(self) -> None:
         """Create all directories the application writes to."""

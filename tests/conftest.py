@@ -141,6 +141,22 @@ def handcrafted_company():
                 "regulatory_risk_count": 3,
             },
             "insider_transactions": {"form4_count": 5},
+            # 11 fiscal years (2014-2024): revenue grows exactly 20%/yr; gross
+            # margin rises exactly +0.01/yr (0.40 -> 0.50) for precise asserts.
+            "facts": {
+                "revenue": [
+                    {"fy": y, "end": f"{y}-12-31", "val": 100.0 * (1.2 ** (y - 2014))}
+                    for y in range(2014, 2025)
+                ],
+                "gross_profit": [
+                    {
+                        "fy": y,
+                        "end": f"{y}-12-31",
+                        "val": 100.0 * (1.2 ** (y - 2014)) * (0.40 + 0.01 * (y - 2014)),
+                    }
+                    for y in range(2014, 2025)
+                ],
+            },
         },
         patents={
             "total_patents": 100,

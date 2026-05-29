@@ -287,6 +287,40 @@ def _yf_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _sec_facts(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
+    """Synthesise a multi-year XBRL fact series (~12 fiscal years).
+
+    Shaped exactly like the SEC fetcher's ``facts`` output so the long-horizon
+    factors (5y/10y revenue CAGR, full-cycle margin trend) are exercised offline.
+    """
+    rng = _rng(ticker + "facts")
+    n_years = rng.randint(8, 14)
+    latest_fy = 2024
+    cagr = rng.uniform(0.08, 0.45)  # long-run annual growth
+    latest_rev = profile["cap"] * rng.uniform(0.05, 0.3)
+    margin0 = rng.uniform(0.3, 0.6)  # oldest-year gross margin
+    margin_drift = rng.uniform(-0.01, 0.03)  # per-year margin change
+
+    revenue, rnd, gross_profit, net_income = [], [], [], []
+    for i in range(n_years):
+        fy = latest_fy - (n_years - 1 - i)
+        rev = latest_rev / ((1 + cagr) ** (n_years - 1 - i))
+        margin = max(0.05, min(0.9, margin0 + margin_drift * i))
+        end = f"{fy}-12-31"
+        revenue.append({"fy": fy, "end": end, "val": round(rev, 2)})
+        gross_profit.append({"fy": fy, "end": end, "val": round(rev * margin, 2)})
+        rnd.append({"fy": fy, "end": end, "val": round(rev * rng.uniform(0.1, 0.4), 2)})
+        net_income.append(
+            {"fy": fy, "end": end, "val": round(rev * rng.uniform(-0.4, 0.2), 2)}
+        )
+    return {
+        "revenue": revenue,
+        "rnd": rnd,
+        "gross_profit": gross_profit,
+        "net_income": net_income,
+    }
+
+
 def _sec_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
     """Build an SEC-shaped sample payload."""
     rng = _rng(ticker + "sec")
@@ -304,7 +338,7 @@ def _sec_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
             "risk_factors": _RISK_TEMPLATE.format(theme=profile["theme"]),
             "mdna": "Management's Discussion. Revenue grew driven by demand.",
         },
-        "facts": {},
+        "facts": _sec_facts(ticker, profile),
         "insider_transactions": {"form4_count": rng.randint(0, 30), "recent": []},
         "flags": {
             "founder_led": profile["founder"],

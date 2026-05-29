@@ -79,7 +79,9 @@ class YFinanceFetcher(BaseFetcher):
 
         history_records: List[Dict[str, Any]] = []
         try:
-            hist = tk.history(period="5y", interval="1mo", auto_adjust=True)
+            # Full available price history (monthly) so older names get their
+            # complete record; recent IPOs simply return what exists.
+            hist = tk.history(period="max", interval="1mo", auto_adjust=True)
             if hist is not None and not hist.empty:
                 hist = hist.reset_index()
                 for _, row in hist.iterrows():

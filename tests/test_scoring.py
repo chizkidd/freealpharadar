@@ -104,6 +104,27 @@ class TestFactors:
     def test_news_tone(self, handcrafted_company):
         assert F.f_news_tone(handcrafted_company) == pytest.approx(2.5)
 
+    def test_revenue_cagr_5y_from_sec_facts(self, handcrafted_company):
+        # Revenue grows exactly 20%/yr in the SEC facts series.
+        assert F.f_revenue_cagr_5y(handcrafted_company) == pytest.approx(0.20)
+
+    def test_revenue_cagr_10y_from_sec_facts(self, handcrafted_company):
+        assert F.f_revenue_cagr_10y(handcrafted_company) == pytest.approx(0.20)
+
+    def test_gross_margin_trend_from_sec_facts(self, handcrafted_company):
+        # Gross margin rises exactly +0.01 per year.
+        assert F.f_gross_margin_trend(handcrafted_company) == pytest.approx(0.01)
+
+    def test_long_horizon_factors_none_without_facts(self, single_company):
+        # Sample companies via build_sample_dataset DO have facts; an explicit
+        # company without facts must yield None, not raise.
+        from freealpharadar.pipeline import CompanyData
+
+        bare = CompanyData(ticker="X")
+        assert F.f_revenue_cagr_5y(bare) is None
+        assert F.f_revenue_cagr_10y(bare) is None
+        assert F.f_gross_margin_trend(bare) is None
+
 
 # --------------------------------------------------------------------------- #
 # None-safety

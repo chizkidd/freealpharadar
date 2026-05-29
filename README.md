@@ -13,7 +13,9 @@ FreeAlphaRadar ingests financial, alternative and qualitative data from
 entirely zero-cost public feeds and produces a **ranked, transparently scored**
 list of high-potential, under-the-radar companies — ready for an investment
 committee discussion. Every score is fully drillable: raw value → normalised
-z-score → weighted contribution. This project is for **educational purposes only** and is not intended for real trading or investment.
+z-score → weighted contribution. 
+
+>This project is for **educational purposes only** and is not intended for real trading or investment.
 
 ---
 

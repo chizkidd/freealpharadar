@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freealpharadar"
+version = "0.1.0"
+description = "Zero-cost alpha discovery engine — find asymmetric breakout companies using only free public data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "FreeAlphaRadar contributors" }]
+keywords = ["finance", "quant", "alpha", "streamlit", "sec", "patents", "gdelt"]
+
+[tool.setuptools.packages.find]
+include = ["freealpharadar*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["freealpharadar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

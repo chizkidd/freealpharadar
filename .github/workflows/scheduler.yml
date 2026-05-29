@@ -1,0 +1,48 @@
+# Scheduled data refresh for FreeAlphaRadar.
+#
+# Runs the batch scorer on a cron schedule to keep the SQLite cache warm, then
+# commits the refreshed cache + score snapshots back to the repo so a hosted
+# Streamlit app reads pre-computed data. No secrets/API keys are required —
+# every data source is free and key-less.
+name: Refresh data & re-score
+
+on:
+  schedule:
+    # Every day at 06:00 UTC. Adjust as you like.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}  # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scorer (skip heavy ML for speed)
+        run: python run_scorer.py --no-ml
+
+      - name: Commit refreshed cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data/ watchlist_changes/ || true
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: scheduled data refresh [skip ci]"
+            git push
+          fi

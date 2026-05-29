@@ -1,0 +1,15 @@
+# Streamlit configuration. No secrets, no API keys — zero configuration.
+[theme]
+base = "dark"
+primaryColor = "#00e5ff"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1a1f2b"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false

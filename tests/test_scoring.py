@@ -234,3 +234,58 @@ class TestOfflinePipeline:
         for c in enriched:
             assert "controversy_score" in c.derived
             assert "finbert_sentiment" in c.derived
+
+
+# --------------------------------------------------------------------------- #
+# Universe configuration & sample coverage
+# --------------------------------------------------------------------------- #
+class TestUniverseConfig:
+    def test_universe_non_empty_and_unique(self):
+        from freealpharadar.config import settings
+
+        u = settings.default_universe
+        assert len(u) >= 12
+        assert len(u) == len(set(u))  # no duplicates
+        assert all(t == t.upper() for t in u)  # normalised
+
+    def test_universe_parser_handles_comments_and_separators(self, tmp_path):
+        import freealpharadar.config as cfg
+        from freealpharadar.config import UNIVERSE_FILE, _load_default_universe
+
+        f = tmp_path / "universe.txt"
+        f.write_text(
+            "# header\nPLTR  # inline\nBE, IONQ RKLB\n\nPLTR\n", encoding="utf-8"
+        )
+        original = cfg.UNIVERSE_FILE
+        try:
+            cfg.UNIVERSE_FILE = f
+            parsed = _load_default_universe()
+        finally:
+            cfg.UNIVERSE_FILE = original
+        assert parsed == ["PLTR", "BE", "IONQ", "RKLB"]  # deduped, ordered
+
+    def test_universe_falls_back_when_missing(self, tmp_path):
+        import freealpharadar.config as cfg
+        from freealpharadar.config import _FALLBACK_UNIVERSE, _load_default_universe
+
+        original = cfg.UNIVERSE_FILE
+        try:
+            cfg.UNIVERSE_FILE = tmp_path / "does_not_exist.txt"
+            assert _load_default_universe() == _FALLBACK_UNIVERSE
+        finally:
+            cfg.UNIVERSE_FILE = original
+
+    def test_sample_dataset_covers_full_universe(self):
+        from freealpharadar.config import settings
+        from freealpharadar.sample_data import build_sample_dataset
+
+        ds = build_sample_dataset()
+        assert all(t in ds for t in settings.default_universe)
+        # Every bundle has all four raw sources.
+        for bundle in ds.values():
+            assert {"yfinance", "sec", "patentsview", "gdelt"} <= set(bundle)
+
+    def test_rng_deterministic_across_calls(self):
+        from freealpharadar.sample_data import _rng
+
+        assert _rng("PLTR").random() == _rng("PLTR").random()

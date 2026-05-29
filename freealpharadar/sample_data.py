@@ -12,6 +12,7 @@ so the dashboard is populated and the scoring maths is exercised end to end.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -153,8 +154,45 @@ _BUSINESS_TEMPLATE = (
 
 
 def _rng(ticker: str) -> random.Random:
-    """Deterministic per-ticker RNG so sample data is stable across runs."""
-    return random.Random(hash(ticker) & 0xFFFFFFFF)
+    """Deterministic per-ticker RNG, stable across processes.
+
+    Uses a hashlib digest rather than the builtin ``hash`` (which is salted per
+    process via PYTHONHASHSEED) so the synthetic sample is reproducible.
+    """
+    seed = int(hashlib.md5(ticker.encode("utf-8")).hexdigest()[:8], 16)
+    return random.Random(seed)
+
+
+# Sector pool used to synthesise a plausible profile for any default-universe
+# ticker that lacks a curated entry in ``_PROFILES``.
+_GENERIC_SECTORS = (
+    ("Technology", "Software", "deep tech"),
+    ("Industrials", "Aerospace & Defense", "advanced manufacturing"),
+    ("Healthcare", "Biotechnology", "techbio"),
+    ("Utilities", "Utilities-Renewable", "clean energy"),
+    ("Communication Services", "Telecom", "connectivity"),
+)
+
+
+def _generic_profile(ticker: str) -> Dict[str, Any]:
+    """Synthesise a deterministic, plausible profile for an uncurated ticker.
+
+    Lets the offline sample cover the *entire* configured universe (not just the
+    hand-curated names) so the dashboard is never empty before a live refresh or
+    prewarm snapshot exists.
+    """
+    rng = _rng(ticker + "profile")
+    sector, industry, theme = _GENERIC_SECTORS[
+        int(hashlib.md5(ticker.encode("utf-8")).hexdigest(), 16) % len(_GENERIC_SECTORS)
+    ]
+    return {
+        "name": f"{ticker} (sample)",
+        "sector": sector,
+        "industry": industry,
+        "cap": rng.uniform(1.0, 30.0) * 1e9,
+        "founder": rng.random() > 0.5,
+        "theme": theme,
+    }
 
 
 def _yf_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
@@ -327,14 +365,24 @@ def _gdelt_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def build_sample_dataset() -> Dict[str, Dict[str, Any]]:
-    """Build the full sample dataset for the default universe.
+    """Build the synthetic sample dataset covering the full default universe.
+
+    Curated tickers use their hand-written :data:`_PROFILES` entry; any other
+    ticker in ``settings.default_universe`` gets a deterministic generic profile
+    so the offline dashboard is fully populated even after the universe expands.
 
     Returns:
         Mapping of ticker -> ``{"yfinance":..., "sec":..., "patentsview":...,
         "gdelt":...}``.
     """
+    tickers: List[str] = list(_PROFILES)
+    for ticker in settings.default_universe:
+        if ticker not in _PROFILES:
+            tickers.append(ticker)
+
     dataset: Dict[str, Dict[str, Any]] = {}
-    for ticker, profile in _PROFILES.items():
+    for ticker in tickers:
+        profile = _PROFILES.get(ticker) or _generic_profile(ticker)
         dataset[ticker] = {
             "yfinance": _yf_payload(ticker, profile),
             "sec": _sec_payload(ticker, profile),

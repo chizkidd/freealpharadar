@@ -189,11 +189,26 @@ which pre-fills the repo, `main` branch and `streamlit_app.py`.
 docker compose up --build       # http://localhost:8501
 ```
 
-### Scheduled refresh (GitHub Actions)
+### Scheduled refresh → pre-warmed cloud cache (GitHub Actions)
 
-`.github/workflows/scheduler.yml` runs `run_scorer.py` daily, warms the SQLite
-cache, and commits it back so a hosted app reads pre-computed data. No secrets
-required — trigger it manually any time from the **Actions** tab.
+`.github/workflows/scheduler.yml` runs daily (and on-demand via the **Actions**
+tab) to keep the hosted app showing **live data with no refresh wait**:
+
+1. `run_scorer.py --no-ml --export-snapshot` fetches fresh data for the default
+   universe and writes the warmed cache to a committed JSON snapshot,
+   `data/prewarm_cache.json`.
+2. The workflow commits that snapshot to the deploy branch, which triggers a
+   Streamlit Cloud redeploy.
+3. On boot the app calls `seed_from_snapshot()` (see `streamlit_app.py`) to load
+   the snapshot into its SQLite cache, so the Radar Screen renders real,
+   recent figures immediately. With no snapshot it falls back to the synthetic
+   sample seed.
+
+Why a JSON snapshot rather than the SQLite file? Streamlit Cloud's filesystem
+is ephemeral (the DB resets on restart) and binary SQLite makes messy git
+diffs, so the committed, diff-friendly JSON is the durable hand-off between the
+scheduler and the app. No secrets are required for any of this. To pre-warm
+locally on demand: `python run_scorer.py --export-snapshot`.
 
 ---
 

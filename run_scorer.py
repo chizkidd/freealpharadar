@@ -11,6 +11,7 @@ Usage::
     python run_scorer.py --no-refresh         # use cache where fresh
     python run_scorer.py --seed-sample        # (re)seed offline sample data
     python run_scorer.py --no-ml              # skip FinBERT/clustering
+    python run_scorer.py --export-snapshot    # write data/prewarm_cache.json
 
 The app remains fully functional even if this is never run: the Streamlit app
 self-seeds sample data on first launch.
@@ -23,7 +24,11 @@ import sys
 from typing import List
 
 from freealpharadar.config import settings
-from freealpharadar.sample_data import seed_cache, write_sample_json
+from freealpharadar.sample_data import (
+    export_cache_snapshot,
+    seed_cache,
+    write_sample_json,
+)
 from freealpharadar.service import run_pipeline
 from freealpharadar.utils import get_logger, setup_logging
 
@@ -53,6 +58,14 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         "--seed-sample",
         action="store_true",
         help="Seed/refresh the offline sample dataset before scoring.",
+    )
+    parser.add_argument(
+        "--export-snapshot",
+        action="store_true",
+        help=(
+            "After scoring, export the warmed cache to data/prewarm_cache.json "
+            "so a hosted Streamlit app starts with live data (no refresh wait)."
+        ),
     )
     return parser.parse_args(argv)
 
@@ -93,6 +106,10 @@ def main(argv: List[str]) -> int:
 
     if output.warnings:
         logger.warning("%d data warning(s) during run.", len(output.warnings))
+
+    if args.export_snapshot:
+        count = export_cache_snapshot(tickers)
+        logger.info("Exported prewarm snapshot for %d tickers.", count)
 
     return 0
 

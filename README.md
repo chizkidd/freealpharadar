@@ -34,7 +34,7 @@ z-score → weighted contribution.
 ```bash
 git clone https://github.com/chizkidd/freealpharadar.git
 cd freealpharadar
-pip install -r requirements.txt
+pip install -r requirements.txt          # slim runtime — uses lexicon sentiment
 streamlit run streamlit_app.py
 ```
 
@@ -42,16 +42,24 @@ That's it. The app seeds a local sample cache on first launch, so the dashboard
 is populated immediately — even with no internet. Click **Refresh Data &
 Re-score** to pull live data from the free sources.
 
+> **Optional — real FinBERT.** The slim install uses a deterministic lexicon
+> sentiment backend (fast, dependency-light). To enable the pre-trained FinBERT
+> model and the XGBoost skeleton, also run
+> `pip install -r requirements-ml.txt` (~3.9 GB). The app behaves identically
+> either way; only the sentiment engine swaps in.
+
 ### Make targets
 
 ```bash
-make install   # install pinned dependencies
-make run        # launch the Streamlit dashboard
-make scorer     # run the batch scorer (warms the cache)
-make seed       # (re)seed the offline sample dataset
-make test       # run the offline test-suite (no network)
-make format     # auto-format with black + isort
-make lint       # check formatting
+make install     # install slim runtime dependencies
+make install-ml  # also install FinBERT + XGBoost (optional, heavyweight)
+make install-dev # runtime + test/format tooling
+make run         # launch the Streamlit dashboard
+make scorer      # run the batch scorer (warms the cache)
+make seed        # (re)seed the offline sample dataset
+make test        # run the offline test-suite (no network)
+make format      # auto-format with black + isort
+make lint        # check formatting
 ```
 
 ---
@@ -149,11 +157,31 @@ freealpharadar/
 
 ## ☁️ Deployment
 
-### Streamlit Community Cloud (one click, no secrets)
+### Streamlit Community Cloud → `freealpharadar.streamlit.app`
 
-Click the **Open in Streamlit** badge above, or point Streamlit Cloud at this
-repo with main module `streamlit_app.py`. Because there are **zero secrets**,
-it works out of the box.
+There are **zero secrets**, and the only dependencies Streamlit Cloud installs
+are the slim `requirements.txt` (the heavyweight ML stack stays in the optional
+`requirements-ml.txt`), so the build is fast and reliable on the free tier.
+
+1. Go to **[share.streamlit.io](https://share.streamlit.io)** → sign in with
+   GitHub → **Create app** → **Deploy a public app from GitHub**.
+2. **Repository:** `chizkidd/freealpharadar` · **Branch:** `main` ·
+   **Main file path:** `streamlit_app.py`.
+3. In the **App URL** field, set the subdomain to `freealpharadar` so the public
+   URL becomes **`https://freealpharadar.streamlit.app`**. (The subdomain must be
+   globally unique; if it is taken, choose another. You can also change it later
+   under **App settings → General → Custom subdomain**.)
+4. Open **Advanced settings** and select **Python 3.11**. No secrets are needed.
+5. Click **Deploy**. The app self-seeds sample data on first load, so the Radar
+   Screen renders immediately while live data fetches in the background.
+
+> Streamlit Cloud's filesystem is ephemeral: the SQLite cache and any watchlist
+> changelogs reset when the container restarts. Sample data re-seeds
+> automatically, so the app is always populated. For a persistent, pre-warmed
+> cache use the scheduled refresh below.
+
+You can also click the **Open in Streamlit** badge at the top of this README,
+which pre-fills the repo, `main` branch and `streamlit_app.py`.
 
 ### Docker
 

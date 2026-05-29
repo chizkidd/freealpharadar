@@ -5,10 +5,6 @@
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=chizkidd.freealpharadar)
 
-> Zero-cost alpha discovery engine. Systematically surface the **next Palantir,
-> SanDisk, or Bloom Energy** using **only free, public data** — no API keys, no
-> sign-ups, no payment, ever.
-
 FreeAlphaRadar ingests financial, alternative and qualitative data from
 entirely zero-cost public feeds and produces a **ranked, transparently scored**
 list of high-potential, under-the-radar companies — ready for an investment

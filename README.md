@@ -76,14 +76,14 @@ make lint        # check formatting
 
 ## 🧠 The scoring framework — "Moat + Momentum + Misvaluation"
 
-32 factors across four groups, each **z-normalised within the current
+35 factors across four groups, each **z-normalised within the current
 universe** and combined via configurable sidebar sliders (equal-weight by
 default).
 
 | Group | Example factors |
 |-------|-----------------|
 | **Disruption & Moat** | Patent growth rate, R&D intensity, founder-led flag, product moat (manual), culture (manual) |
-| **Growth & Momentum** | 3-yr revenue CAGR, gross-margin expansion, price momentum, employee growth, customer-concentration risk |
+| **Growth & Momentum** | 3-yr revenue CAGR, **~5y & ~10y revenue CAGR + full-cycle margin trend (from full SEC XBRL history)**, gross-margin expansion, price momentum, employee growth, customer-concentration risk |
 | **Valuation & Inefficiency** | EV/Gross-Profit, P/E, P/B, short interest, institutional ownership, insider activity, Piotroski F-score |
 | **Qualitative Flags** | GDELT news tone, FinBERT controversy score, key-person dependency, regulatory-risk count |
 

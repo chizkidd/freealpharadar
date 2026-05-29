@@ -238,6 +238,88 @@ def f_customer_concentration(c: CompanyData) -> Optional[float]:
     return 1.0 if flags.get("customer_concentration") else 0.0
 
 
+# --- Long-horizon factors from SEC XBRL company facts ---------------------- #
+# These consume the *full* annual XBRL series (~10-15 years) that the SEC
+# fetcher retains in ``company.sec["facts"]`` -- deeper history than yfinance's
+# ~4 statement years -- to capture full-cycle behaviour, not just recent trend.
+def _sec_fact_series(c: CompanyData, *keys: str) -> List[tuple]:
+    """Return an ascending ``[(fiscal_year, value)]`` series from SEC facts.
+
+    Tries each concept ``key`` in turn (e.g. ``"revenue"`` then ``"revenue_alt"``)
+    and returns the first non-empty one, dropping points with missing values.
+    """
+    facts = c.sec.get("facts", {}) or {}
+    for key in keys:
+        rows = facts.get(key) or []
+        series = [
+            (int(r["fy"]), _to_float(r.get("val")))
+            for r in rows
+            if r.get("fy") is not None and _to_float(r.get("val")) is not None
+        ]
+        if series:
+            return sorted(series, key=lambda p: p[0])
+    return []
+
+
+def _cagr_over(series: List[tuple], years: int) -> Optional[float]:
+    """Annualised growth over the span closest to ``years`` in a yearly series.
+
+    Picks the historical point whose fiscal year is nearest to
+    ``latest_year - years`` and annualises over the *actual* span, so it
+    degrades gracefully when a company has less history than requested.
+    """
+    if len(series) < 2:
+        return None
+    latest_fy, latest_val = series[-1]
+    if latest_val is None or latest_val <= 0:
+        return None
+    target = latest_fy - years
+    old_fy, old_val = min(series, key=lambda p: abs(p[0] - target))
+    span = latest_fy - old_fy
+    if span <= 0 or old_val is None or old_val <= 0:
+        return None
+    return (latest_val / old_val) ** (1.0 / span) - 1.0
+
+
+def _linreg_slope(xs: List[float], ys: List[float]) -> Optional[float]:
+    """Ordinary-least-squares slope of ``ys`` vs ``xs`` (per unit x)."""
+    n = len(xs)
+    if n < 2:
+        return None
+    mean_x = sum(xs) / n
+    mean_y = sum(ys) / n
+    denom = sum((x - mean_x) ** 2 for x in xs)
+    if denom == 0:
+        return None
+    num = sum((x - mean_x) * (y - mean_y) for x, y in zip(xs, ys))
+    return num / denom
+
+
+def f_revenue_cagr_5y(c: CompanyData) -> Optional[float]:
+    """~5-year revenue CAGR from the full SEC XBRL revenue series."""
+    return _cagr_over(_sec_fact_series(c, "revenue", "revenue_alt"), 5)
+
+
+def f_revenue_cagr_10y(c: CompanyData) -> Optional[float]:
+    """~10-year revenue CAGR from the full SEC XBRL revenue series."""
+    return _cagr_over(_sec_fact_series(c, "revenue", "revenue_alt"), 10)
+
+
+def f_gross_margin_trend(c: CompanyData) -> Optional[float]:
+    """Full-cycle gross-margin trend: OLS slope of annual gross margin over time.
+
+    Uses the multi-year SEC gross-profit and revenue series; positive means
+    margins have structurally expanded across the available history.
+    """
+    rev = dict(_sec_fact_series(c, "revenue", "revenue_alt"))
+    gp = dict(_sec_fact_series(c, "gross_profit"))
+    years = sorted(set(rev) & set(gp))
+    margins = [(fy, gp[fy] / rev[fy]) for fy in years if rev[fy]]
+    if len(margins) < 3:
+        return None
+    return _linreg_slope([m[0] for m in margins], [m[1] for m in margins])
+
+
 # --------------------------------------------------------------------------- #
 # Valuation & Inefficiency
 # --------------------------------------------------------------------------- #
@@ -552,6 +634,30 @@ FACTORS: List[FactorSpec] = [
         f_customer_concentration,
         False,
         "Customer-concentration risk flagged in SEC filings.",
+    ),
+    FactorSpec(
+        "revenue_cagr_5y",
+        "Revenue CAGR (~5y, SEC)",
+        FactorGroup.MOMENTUM,
+        f_revenue_cagr_5y,
+        True,
+        "~5-year revenue CAGR from the full SEC XBRL revenue series.",
+    ),
+    FactorSpec(
+        "revenue_cagr_10y",
+        "Revenue CAGR (~10y, SEC)",
+        FactorGroup.MOMENTUM,
+        f_revenue_cagr_10y,
+        True,
+        "~10-year (full-cycle) revenue CAGR from SEC XBRL facts.",
+    ),
+    FactorSpec(
+        "gross_margin_trend",
+        "Gross margin trend (full-cycle)",
+        FactorGroup.MOMENTUM,
+        f_gross_margin_trend,
+        True,
+        "OLS slope of annual gross margin over the full SEC history.",
     ),
     # Valuation & Inefficiency
     FactorSpec(

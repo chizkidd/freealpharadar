@@ -1,5 +1,5 @@
 # FreeAlphaRadar — developer convenience targets.
-.PHONY: help install install-ml install-dev run scorer seed test lint format precommit docker-build docker-up clean
+.PHONY: help install install-ml install-dev install-warehouse run scorer seed warehouse discover test lint format precommit docker-build docker-up clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -14,6 +14,9 @@ install-ml: ## Also install the heavyweight FinBERT + XGBoost stack
 install-dev: ## Install runtime + test/format tooling
 	pip install -r requirements.txt -r requirements-dev.txt
 
+install-warehouse: ## Also install the bulk-warehouse/discovery deps (duckdb, pyarrow)
+	pip install -r requirements.txt -r requirements-warehouse.txt
+
 run: ## Launch the Streamlit dashboard
 	streamlit run streamlit_app.py
 
@@ -22,6 +25,12 @@ scorer: ## Run the batch scorer (refreshes cache + scores)
 
 seed: ## (Re)seed the offline sample dataset into SQLite
 	python run_scorer.py --seed-sample --no-refresh
+
+warehouse: ## Build the bulk SEC fundamentals warehouse (needs network)
+	python -m freealpharadar.warehouse build --since 2015
+
+discover: ## Scan all filers -> promote ranked under-the-radar top-10 (needs network)
+	python -m freealpharadar.discovery run --top 10
 
 test: ## Run the offline test-suite (no network); installs dev deps first
 	pip install -r requirements-dev.txt

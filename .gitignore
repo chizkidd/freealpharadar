@@ -22,6 +22,9 @@ data/*.sqlite-wal
 data/*.sqlite-shm
 watchlist_changes/*.txt
 
+# Bulk-fundamentals warehouse (multi-GB; rebuilt by the offline discovery job)
+data/warehouse/
+
 # Keep the sample dataset and the directory placeholders.
 !data/sample/
 !data/sample/*.json

@@ -24,6 +24,7 @@ z-score → weighted contribution.
 | **Works fully offline** | First launch seeds a SQLite cache with sample data; every fetcher falls back to cache on failure. |
 | **Totally transparent** | A waterfall chart decomposes every company's score, factor by factor. |
 | **Zero-shot ML** | Pre-trained FinBERT + PCA/K-Means clustering. Graceful lexicon fallback when offline. |
+| **Self-discovering** | An optional offline job scans **all ~8,000 SEC filers** and regenerates the watchlist with the ranked top under-the-radar names. |
 
 ---
 
@@ -48,25 +49,40 @@ Re-score** to pull live data from the free sources.
 
 > **Customising the screening universe.** The default tickers live in
 > [`universe.txt`](universe.txt) (one or more per line, `#` comments allowed) —
-> edit it to change the default screen with no code changes. It's a curated
-> "under-the-radar deep tech" list, not a quote feed, so it doesn't need to
-> auto-update; the *data* for those tickers is what refreshes (via the
-> scheduler below). You can also just type any tickers into the sidebar at
-> runtime to override it for a session.
+> edit it to change the default screen with no code changes. By default it's a
+> hand-curated "under-the-radar deep tech" list; you can also type any tickers
+> into the sidebar to override it for a session, or opt into the
+> [auto-discovery job](#-auto-discovered-universe-optional-offline) below, which
+> regenerates `universe.txt` from a market-wide scan.
 
 ### Make targets
 
 ```bash
-make install     # install slim runtime dependencies
-make install-ml  # also install FinBERT + XGBoost (optional, heavyweight)
-make install-dev # runtime + test/format tooling
-make run         # launch the Streamlit dashboard
-make scorer      # run the batch scorer (warms the cache)
-make seed        # (re)seed the offline sample dataset
-make test        # run the offline test-suite (no network)
-make format      # auto-format with black + isort
-make lint        # check formatting
+make install            # slim runtime deps (lexicon sentiment)
+make install-ml         # + FinBERT + XGBoost (optional, heavyweight)
+make install-dev        # runtime + pytest/black/isort
+make install-warehouse  # + duckdb/pyarrow for the discovery job
+make run                # launch the Streamlit dashboard
+make scorer             # batch scorer (warms the cache)
+make seed               # (re)seed the offline sample dataset
+make warehouse          # build the bulk SEC fundamentals store (needs network)
+make discover           # scan all filers → promote ranked top-10 (needs network)
+make test               # offline test-suite (no network)
+make lint / make format # black + isort (check / apply)
+make docker-up          # run via docker compose
+make clean              # remove caches/build artefacts
 ```
+
+### Dependency layers
+
+Dependencies are split so the cloud install stays lean; each layer is additive.
+
+| File | Installs | When |
+|------|----------|------|
+| `requirements.txt` | streamlit, pandas, plotly, yfinance, scikit-learn… | always (the only file Streamlit Cloud installs) |
+| `requirements-ml.txt` | transformers, torch, xgboost (~3.9 GB) | optional — real FinBERT + XGBoost locally |
+| `requirements-dev.txt` | pytest, black, isort, pre-commit | tests / contributing |
+| `requirements-warehouse.txt` | duckdb, pyarrow | the optional market-wide discovery job |
 
 ---
 
@@ -108,7 +124,7 @@ default).
 | Source | Library / endpoint | Used for |
 |--------|--------------------|----------|
 | **yfinance** | `yfinance` | Prices, income/balance/cash-flow statements, short interest, ownership |
-| **SEC EDGAR** | `data.sec.gov` + `sec-edgar-downloader` | Risk factors, MD&A, business description, Form 4 insider data, XBRL facts |
+| **SEC EDGAR** | `data.sec.gov` JSON + EDGAR archives (no key) | Risk factors, MD&A, business description, Form 4 insider data, XBRL facts |
 | **PatentsView** | `search.patentsview.org` (45 req/min, no key) | Patent counts, assignees, titles over time |
 | **GDELT 2.0** | `api.gdeltproject.org` Doc API | News sentiment (tone) and volume |
 | **Manual CSV** | optional upload | Employee/culture/product-moat signals — gracefully ignored if absent |
@@ -190,9 +206,6 @@ are the slim `requirements.txt` (the heavyweight ML stack stays in the optional
 > automatically, so the app is always populated. For a persistent, pre-warmed
 > cache use the scheduled refresh below.
 
-You can also click the **Open in Streamlit** badge at the top of this README,
-which pre-fills the repo, `main` branch and `streamlit_app.py`.
-
 ### Docker
 
 ```bash
@@ -264,9 +277,14 @@ make lint          # black --check + isort --check
 pre-commit install # black, isort, hygiene hooks on every commit
 ```
 
-The suite (`tests/test_scoring.py`) verifies scoring maths, factor parsing,
-normalisation, FinBERT fallback and the end-to-end offline pipeline using
-canned data only.
+~50+ tests run fully offline (`FAR_OFFLINE=1`, no network):
+
+* `tests/test_scoring.py` — normalisation, all 35 factors (incl. the SEC
+  long-horizon ones), the engine, the FinBERT lexicon fallback, the
+  universe loader, and the end-to-end offline pipeline on canned data.
+* `tests/test_warehouse.py` — the bulk loader, DuckDB store, Stage-1 screen
+  gates and discovery promotion against a synthetic SEC ZIP fixture (auto-
+  skipped if `duckdb`/`pyarrow` aren't installed).
 
 ---
 
@@ -279,7 +297,10 @@ variables for convenience:
 |----------|---------|---------|
 | `FAR_OFFLINE` | `false` | Force cache/sample-only mode (no network). |
 | `FAR_DB_PATH` | `data/freealpharadar.sqlite` | SQLite cache location. |
-| `FAR_TTL_PRICES` / `_FUNDAMENTALS` / `_SEC` / `_PATENTS` / `_NEWS` | varies | Per-source cache TTLs (seconds). |
+| `FAR_TTL_FUNDAMENTALS` / `_SEC` / `_PATENTS` / `_NEWS` | 1d / 1w / 1w / 12h | Per-source cache TTLs (seconds). |
+| `FAR_CONCURRENCY` / `FAR_MAX_RETRIES` / `FAR_HTTP_TIMEOUT` | `5` / `4` / `30` | Async fetch concurrency, retries, per-request timeout. |
+| `FAR_FINBERT_MODEL` | `ProsusAI/finbert` | HuggingFace sentiment model id. |
+| `FAR_SEC_USER_AGENT` | research UA | Identifies you to SEC EDGAR (set a real contact to reduce throttling). |
 | `FAR_LOG_LEVEL` | `INFO` | Logging verbosity. |
 
 ---

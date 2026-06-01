@@ -107,7 +107,7 @@ def _render_financials(company: CompanyData) -> None:
     if history:
         hdf = pd.DataFrame(history)
         st.plotly_chart(
-            px.line(hdf, x="date", y="close", title="Price history (5y, monthly)"),
+            px.line(hdf, x="date", y="close", title="Price history (full, monthly)"),
             use_container_width=True,
         )
 

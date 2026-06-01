@@ -8,10 +8,9 @@ Scrapes EDGAR directly -- no API key required -- to obtain:
 * **insider transactions** (Form 4) summarised from the submissions feed;
 * selected XBRL company facts (revenue, R&D, etc.) via ``companyfacts``.
 
-The heavy 10-K download leverages :mod:`sec_edgar_downloader` when available;
-otherwise we fall back to the public ``data.sec.gov`` JSON endpoints which are
-lighter weight and equally key-less. All requests send a descriptive
-User-Agent as the SEC fair-access policy requests.
+Everything is fetched from the public ``data.sec.gov`` JSON endpoints and the
+EDGAR archives -- lightweight and equally key-less. All requests send a
+descriptive User-Agent as the SEC fair-access policy requests.
 """
 
 from __future__ import annotations

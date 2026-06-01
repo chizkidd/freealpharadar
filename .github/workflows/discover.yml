@@ -48,7 +48,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add universe.txt data/prewarm_cache.json discoveries/ || true
+          # Stage each path independently and tolerate absent ones: when the
+          # coverage gate skips promotion, universe.txt/snapshot won't change but
+          # the diagnostic report still should be committed.
+          git add discoveries 2>/dev/null || true
+          git add universe.txt 2>/dev/null || true
+          git add data/prewarm_cache.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No discovery changes to commit."
           else

@@ -4,7 +4,7 @@
 # commits the refreshed cache + score snapshots back to the repo so a hosted
 # Streamlit app reads pre-computed data. No secrets/API keys are required —
 # every data source is free and key-less.
-name: Refresh data & re-score
+name: Daily Data Refresh & Re-Score # Refresh data & re-score
 
 on:
   schedule:

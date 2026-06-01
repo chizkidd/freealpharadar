@@ -130,7 +130,10 @@ default).
 | **Manual CSV** | optional upload | Employee/culture/product-moat signals — gracefully ignored if absent |
 
 Everything is cached in SQLite with per-source TTLs (configurable via env vars)
-so free-tier rate limits are respected and the app remains usable offline.
+so free-tier rate limits are respected and the app remains usable offline. For
+resilience from datacenter/CI IPs, yfinance uses a browser-impersonating
+`curl_cffi` session and falls back to **Stooq** for prices (with a SEC
+shares × price market-cap approximation) when Yahoo returns nothing.
 
 ---
 

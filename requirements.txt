@@ -21,6 +21,7 @@ numpy==1.26.4
 
 # ---- Free, key-less data sources ----
 yfinance==0.2.51
+curl_cffi==0.7.4        # browser-impersonating session: helps yfinance from CI/cloud IPs
 requests==2.32.3
 aiohttp==3.11.11
 beautifulsoup4==4.12.3

@@ -60,6 +60,7 @@ def run_discovery(
     max_market_cap: float = 20e9,
     run_ml: bool = True,
     write_outputs: bool = True,
+    min_promote_coverage: float = 0.5,
     universe_path: Optional[Path] = None,
     report_dir: Optional[Path] = None,
     snapshot_path: Optional[Path] = None,
@@ -76,7 +77,14 @@ def run_discovery(
         run_ml: Whether Stage 2 runs FinBERT/clustering enrichment.
         write_outputs: When ``True`` rewrite ``universe.txt``, regenerate the
             prewarm snapshot, and write the markdown report.
+        min_promote_coverage: Quality gate -- the promoted names must have a
+            market cap on at least this fraction, otherwise ``universe.txt`` and
+            the snapshot are left untouched (the report is still written). This
+            stops a Stage-2 run where the live data was blocked from replacing a
+            good universe with empty rows.
         universe_path: Override for the universe file (tests).
+        report_dir: Override for the report directory (tests).
+        snapshot_path: Override for the prewarm snapshot path (tests).
         pipeline_fn: Injectable scorer (defaults to
             :func:`freealpharadar.service.run_pipeline`); tests pass a stub.
 
@@ -112,17 +120,33 @@ def run_discovery(
     result = DiscoveryResult(names=names, candidates_screened=len(tickers))
 
     if write_outputs and names:
-        result.universe_path = str(
-            _write_universe([n.ticker for n in names], universe_path)
-        )
+        # Always write the report (useful diagnostics even on a thin run)...
         result.report_path = str(_write_report(result, report_dir))
-        _export_snapshot([n.ticker for n in names], snapshot_path)
+        # ...but only promote into the live universe/snapshot when the result
+        # is actually populated, so a blocked-data run can't ship empty rows.
+        coverage = sum(1 for n in names if n.market_cap) / len(names)
+        if coverage >= min_promote_coverage:
+            result.universe_path = str(_write_universe(names, universe_path))
+            _export_snapshot(
+                [n.ticker for n in names], snapshot_path, min_promote_coverage
+            )
+        else:
+            logger.warning(
+                "Discovered names have only %.0f%% market-cap coverage (< %.0f%%); "
+                "keeping the existing universe.txt/snapshot. See the report.",
+                coverage * 100,
+                min_promote_coverage * 100,
+            )
 
     return result
 
 
-def _write_universe(tickers: List[str], path: Optional[Path] = None) -> Path:
-    """Overwrite ``universe.txt`` with the auto-discovered tickers."""
+def _write_universe(names: List[DiscoveredName], path: Optional[Path] = None) -> Path:
+    """Overwrite ``universe.txt`` with the auto-discovered tickers.
+
+    Each line is ``TICKER  # Company Name`` so the file stays readable; the
+    universe loader strips the inline ``#`` comment.
+    """
     path = Path(path or UNIVERSE_FILE)
     today = _dt.date.today().isoformat()
     header = [
@@ -132,8 +156,14 @@ def _write_universe(tickers: List[str], path: Optional[Path] = None) -> Path:
         "# Edit freely; a future discovery run will overwrite this file.",
         "",
     ]
-    path.write_text("\n".join(header + tickers) + "\n", encoding="utf-8")
-    logger.info("Wrote auto-discovered universe (%d names) -> %s", len(tickers), path)
+    lines = []
+    for n in names:
+        if n.name and n.name != n.ticker:
+            lines.append(f"{n.ticker}  # {n.name}")
+        else:
+            lines.append(n.ticker)
+    path.write_text("\n".join(header + lines) + "\n", encoding="utf-8")
+    logger.info("Wrote auto-discovered universe (%d names) -> %s", len(names), path)
     return path
 
 
@@ -161,11 +191,13 @@ def _write_report(result: DiscoveryResult, report_dir: Optional[Path] = None) ->
     return path
 
 
-def _export_snapshot(tickers: List[str], path: Optional[Path] = None) -> None:
+def _export_snapshot(
+    tickers: List[str], path: Optional[Path] = None, min_coverage: float = 0.0
+) -> None:
     """Regenerate the prewarm snapshot for the freshly discovered tickers."""
     try:
         from freealpharadar.sample_data import export_cache_snapshot
 
-        export_cache_snapshot(tickers, path=path)
+        export_cache_snapshot(tickers, path=path, min_coverage=min_coverage)
     except Exception as exc:  # noqa: BLE001
         logger.warning("Could not export prewarm snapshot: %s", exc)

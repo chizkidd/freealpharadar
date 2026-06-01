@@ -115,6 +115,11 @@ async def gather_company(
             metrics["market_cap"] = market_cap
             metrics["market_cap_approx"] = True
 
+    # Prefer a real company name; fall back to the SEC filing name (always
+    # available even when yfinance is blocked) before the bare ticker.
+    if name == ticker:
+        name = sec_payload.get("company_name") or ticker
+
     return CompanyData(
         ticker=ticker,
         name=name,

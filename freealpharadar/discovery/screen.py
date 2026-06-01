@@ -118,6 +118,22 @@ def _f(value) -> Optional[float]:
         return None
 
 
+def _is_common_stock(ticker: str) -> bool:
+    """Heuristic: keep common shares, drop warrants/units/rights/preferred.
+
+    SEC's ticker map includes non-common securities. We drop tickers that carry
+    a separator (``AMPX-WT``, ``BRK.B``) and 5-letter symbols whose trailing
+    Nasdaq fifth-letter code marks a warrant/right/unit/when-issued/bankruptcy
+    (``W``/``R``/``U``/``Q``), e.g. ``SQLLW``, ``SBFMW``. Conservative by design.
+    """
+    t = ticker.upper().strip()
+    if not t or any(ch in t for ch in "-.$=+^/ "):
+        return False
+    if len(t) == 5 and t[-1] in {"W", "R", "U", "Q"}:
+        return False
+    return True
+
+
 def screen_candidates(
     store: WarehouseStore, cfg: Optional[ScreenConfig] = None
 ) -> pd.DataFrame:
@@ -133,6 +149,11 @@ def screen_candidates(
     """
     cfg = cfg or ScreenConfig()
     facts = store.query("SELECT * FROM facts WHERE ticker <> ''")
+    if facts.empty:
+        return pd.DataFrame()
+
+    # Drop warrants/units/rights/preferred up front (common stock only).
+    facts = facts[facts["ticker"].map(_is_common_stock)]
     if facts.empty:
         return pd.DataFrame()
 

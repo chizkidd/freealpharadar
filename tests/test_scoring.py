@@ -383,6 +383,41 @@ class TestMarketCapFallback:
             is None
         )
 
+    def test_name_falls_back_to_sec_when_yfinance_blank(self):
+        # When yfinance returns no name (blocked), the display name should come
+        # from the SEC filing, not the bare ticker.
+        import asyncio
+
+        from freealpharadar.database import get_db
+        from freealpharadar.pipeline import gather_company
+
+        db = get_db()
+        db.set_cache(
+            "yfinance",
+            "ZQX",
+            {
+                "info": {},
+                "history": [],
+                "income_statement": [],
+                "balance_sheet": [],
+                "cash_flow": [],
+                "key_metrics": {"market_cap": None, "sector": None},
+            },
+        )
+        db.set_cache(
+            "sec",
+            "ZQX",
+            {
+                "company_name": "Test Industries Inc.",
+                "sections": {},
+                "flags": {},
+                "facts": {},
+                "insider_transactions": {},
+            },
+        )
+        company = asyncio.run(gather_company("ZQX"))
+        assert company.name == "Test Industries Inc."
+
 
 # --------------------------------------------------------------------------- #
 # Robust SEC section extraction (#4)

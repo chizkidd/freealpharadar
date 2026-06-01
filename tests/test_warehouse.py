@@ -19,19 +19,22 @@ pytest.importorskip("pyarrow")
 from freealpharadar.discovery.discover import run_discovery  # noqa: E402
 from freealpharadar.discovery.screen import (  # noqa: E402
     ScreenConfig,
+    _is_common_stock,
     screen_candidates,
 )
 from freealpharadar.warehouse.loader import build_warehouse, load_quarter  # noqa: E402
 from freealpharadar.warehouse.store import WarehouseStore  # noqa: E402
 
-_CIK_MAP = {111: "AAA", 222: "BBB"}
+_CIK_MAP = {111: "AAA", 222: "BBB", 333: "ABCDW"}
 
 
 def _make_zip(path):
     """Write a synthetic quarter ZIP with sub.txt + num.txt.
 
-    AAA: small revenue (50M->~104M), 20%/yr growth -> should pass the screen.
-    BBB: large revenue (5B), flat -> gated out (too big, no growth).
+    AAA:   small revenue (50M->~104M), 20%/yr growth -> should pass the screen.
+    BBB:   large revenue (5B), flat -> gated out (too big, no growth).
+    ABCDW: same small-grower profile as AAA but a 5-letter warrant ticker ->
+           must be filtered out by the common-stock screen.
     """
     sub_rows = ["adsh\tcik\tname\tform\tfy\tfp\tperiod"]
     num_rows = ["adsh\ttag\tddate\tqtrs\tuom\tvalue"]
@@ -59,6 +62,17 @@ def _make_zip(path):
             rev * 2,
         )
         add(f"b{fy}", 222, "Beta Co", fy, 5e9, 5e9 * 0.4, 5e9 * 0.1, 5e9 * 0.1, 5e9 * 2)
+        add(
+            f"w{fy}",
+            333,
+            "Warrant Co",
+            fy,
+            rev,
+            rev * 0.5,
+            rev * 0.2,
+            rev * 0.05,
+            rev * 2,
+        )
 
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("sub.txt", "\n".join(sub_rows) + "\n")
@@ -104,6 +118,20 @@ class TestScreen:
         assert "AAA" in tickers  # small + 20%/yr growth qualifies
         assert "BBB" not in tickers  # $5B revenue exceeds max + no growth
 
+    def test_screen_drops_warrants(self, warehouse):
+        # ABCDW shares AAA's qualifying fundamentals but is a warrant ticker.
+        cands = screen_candidates(warehouse, ScreenConfig())
+        assert "ABCDW" not in set(cands["ticker"])
+
+    def test_is_common_stock_heuristic(self):
+        assert _is_common_stock("PLTR")
+        assert _is_common_stock("BE")
+        assert not _is_common_stock("SQLLW")  # warrant (5-letter, W)
+        assert not _is_common_stock("AMPX-WT")  # separator
+        assert not _is_common_stock("BRK.B")  # separator (class share)
+        assert not _is_common_stock("ABCDU")  # unit
+        assert not _is_common_stock("ABCDR")  # right
+
     def test_screen_metrics_present(self, warehouse):
         cands = screen_candidates(warehouse, ScreenConfig())
         row = cands[cands["ticker"] == "AAA"].iloc[0]
@@ -145,13 +173,48 @@ class TestDiscovery:
         # Mega-cap dropped; remaining ranked by score desc.
         assert [n.ticker for n in result.names] == ["AAA", "CCC"]
         assert result.names[0].rank == 1
-        # universe.txt written with the ranked tickers (comments ignored).
-        body = [
-            ln.strip()
-            for ln in uni.read_text().splitlines()
-            if ln.strip() and not ln.startswith("#")
+        # Coverage (1/2 with a cap) meets the 0.5 gate -> universe written.
+        text = uni.read_text()
+        # Tickers parse cleanly (first token of each non-comment line).
+        tickers = [
+            ln.split()[0]
+            for ln in text.splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")
         ]
-        assert body == ["AAA", "CCC"]
+        assert tickers == ["AAA", "CCC"]
+        # Full company names are written as inline comments.
+        assert "AAA  # Alpha Co" in text
+        assert "CCC  # Gamma Co" in text
+
+    def test_run_discovery_coverage_gate_keeps_universe(self, warehouse, tmp_path):
+        # All promoted names lack a market cap -> below the 0.5 gate -> the
+        # universe/snapshot are NOT overwritten, but the report is still written.
+        def fake_pipeline(tickers, **kwargs):
+            return SimpleNamespace(
+                results=[
+                    SimpleNamespace(
+                        ticker="AAA", name="Alpha", score=80.0, market_cap=None
+                    ),
+                    SimpleNamespace(
+                        ticker="CCC", name="Gamma", score=60.0, market_cap=None
+                    ),
+                ]
+            )
+
+        uni = tmp_path / "universe.txt"
+        result = run_discovery(
+            store=warehouse,
+            top_n=5,
+            write_outputs=True,
+            universe_path=uni,
+            report_dir=tmp_path,
+            snapshot_path=tmp_path / "p.json",
+            pipeline_fn=fake_pipeline,
+        )
+        assert result.names  # still computed
+        assert result.universe_path is None  # gate blocked promotion
+        assert not uni.exists()
+        assert result.report_path and (tmp_path / "p.json").exists() is False
 
     def test_run_discovery_dry_run_writes_nothing(self, warehouse, tmp_path):
         def fake_pipeline(tickers, **kwargs):

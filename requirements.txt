@@ -20,8 +20,8 @@ pandas==2.2.3
 numpy==1.26.4
 
 # ---- Free, key-less data sources ----
-yfinance==0.2.51
-curl_cffi==0.7.4        # browser-impersonating session: helps yfinance from CI/cloud IPs
+yfinance==0.2.65        # 0.2.51 broke against Yahoo's current API; 0.2.65 uses curl_cffi internally
+curl_cffi==0.7.4        # yfinance dependency (browser impersonation, managed by yfinance)
 requests==2.32.3
 aiohttp==3.11.11
 beautifulsoup4==4.12.3

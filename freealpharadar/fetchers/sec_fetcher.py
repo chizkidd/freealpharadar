@@ -227,13 +227,24 @@ class SECFetcher(BaseFetcher):
 # --------------------------------------------------------------------------- #
 def _html_to_text(html: str) -> str:
     """Strip HTML to plain text using BeautifulSoup when available."""
+    import warnings
+
     try:
         from bs4 import BeautifulSoup
 
-        soup = BeautifulSoup(html, "lxml")
-        for tag in soup(["script", "style"]):
-            tag.decompose()
-        text = soup.get_text(separator=" ")
+        # Modern 10-Ks are inline-XBRL (XHTML); parsing them with the HTML parser
+        # is intentional and fine here, so silence the noisy XMLParsedAsHTMLWarning.
+        with warnings.catch_warnings():
+            try:
+                from bs4 import XMLParsedAsHTMLWarning
+
+                warnings.simplefilter("ignore", XMLParsedAsHTMLWarning)
+            except Exception:  # noqa: BLE001
+                pass
+            soup = BeautifulSoup(html, "lxml")
+            for tag in soup(["script", "style"]):
+                tag.decompose()
+            text = soup.get_text(separator=" ")
     except Exception:  # noqa: BLE001
         text = re.sub(r"<[^>]+>", " ", html)
     return re.sub(r"\s+", " ", text).strip()

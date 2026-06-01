@@ -1,0 +1,11 @@
+# FreeAlphaRadar — OPTIONAL bulk-fundamentals warehouse + discovery deps.
+#
+# Needed only for the offline market-wide discovery job (scan all ~8,000 SEC
+# filers -> ranked under-the-radar shortlist). NOT installed on Streamlit Cloud
+# and never imported by the live app.
+#
+#   pip install -r requirements.txt -r requirements-warehouse.txt
+#   python -m freealpharadar.discovery run --top 10
+
+duckdb==1.1.3
+pyarrow==18.1.0

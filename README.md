@@ -140,7 +140,10 @@ freealpharadar/
 │   ├── scoring/                # factors, normalisation, engine
 │   ├── ml/                     # FinBERT, clustering, XGBoost skeleton, enrich
 │   ├── ui/                     # radar screen, deep dive, watchlist, sidebar
+│   ├── warehouse/              # optional bulk SEC fundamentals (DuckDB/Parquet)
+│   ├── discovery/              # optional market-wide screen → ranked top-N
 │   └── utils/                  # logging
+├── discoveries/                # dated auto-discovery reports
 ├── tests/                      # offline pytest suite (no network)
 └── data/sample/                # canned sample dataset
 ```
@@ -216,6 +219,40 @@ is ephemeral (the DB resets on restart) and binary SQLite makes messy git
 diffs, so the committed, diff-friendly JSON is the durable hand-off between the
 scheduler and the app. No secrets are required for any of this. To pre-warm
 locally on demand: `python run_scorer.py --export-snapshot`.
+
+---
+
+## 🛰️ Auto-discovered universe (optional, offline)
+
+Beyond the curated list, FreeAlphaRadar can **scan the entire market and pick
+its own watchlist** — "from all ~8,000 SEC filers, the top-10 under-the-radar
+names, ranked best→worst." It's a two-stage **offline** funnel (never runs
+inside the live app) built on free SEC bulk data:
+
+1. **Warehouse** (`freealpharadar/warehouse/`) — downloads SEC's free
+   **Financial Statement Data Sets** (quarterly, 2009→present, every XBRL
+   filer incl. delisted) into a gitignored DuckDB/Parquet store.
+2. **Stage 1 — bulk screen** (`discovery/screen.py`) — one DuckDB pass over all
+   filers computing cheap fundamentals (revenue CAGR, margin trend, R&D
+   intensity) with under-the-radar gates (small/mid revenue scale + sustained
+   growth) → ~100-name shortlist.
+3. **Stage 2 — full scoring** (`discovery/discover.py`) — runs the **existing
+   35-factor pipeline** on the shortlist, applies a market-cap ceiling, and
+   ranks → **top-10**.
+4. **Promote** — rewrites `universe.txt`, regenerates the prewarm snapshot, and
+   writes `discoveries/<date>.md`. The live app then shows the self-discovered
+   names.
+
+```bash
+pip install -r requirements.txt -r requirements-warehouse.txt   # duckdb, pyarrow
+make warehouse                       # build the store (needs network)
+python -m freealpharadar.discovery run --top 10
+```
+
+It runs weekly via `.github/workflows/discover.yml` (or on-demand), committing
+the refreshed `universe.txt` + snapshot + report — so the deployed app's list
+updates itself. Heavyweight by design (multi-GB store, needs network), opt-in,
+and entirely outside the app's hot path.
 
 ---
 

@@ -1,0 +1,57 @@
+# Weekly market-wide discovery: scan all SEC filers -> ranked under-the-radar
+# top-N, then promote into universe.txt + prewarm snapshot + a dated report.
+#
+# This is the offline two-stage funnel (bulk DuckDB screen -> full pipeline on
+# the shortlist). It needs network (sec.gov, yfinance, ...) which only GitHub's
+# runners have. No secrets/API keys required. Manual-dispatchable.
+name: Discover universe
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"  # Mondays 07:00 UTC
+  workflow_dispatch:
+    inputs:
+      since_year:
+        description: "Earliest fiscal year to ingest into the warehouse"
+        default: "2018"
+      top:
+        description: "Number of names to promote"
+        default: "10"
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-warehouse.txt
+
+      - name: Build bulk fundamentals warehouse
+        run: python -m freealpharadar.warehouse build --since "${{ github.event.inputs.since_year || '2018' }}"
+
+      - name: Discover + promote universe (rule-based; skips heavy ML)
+        run: python -m freealpharadar.discovery run --top "${{ github.event.inputs.top || '10' }}" --no-ml
+
+      - name: Commit refreshed universe + snapshot + report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add universe.txt data/prewarm_cache.json discoveries/ || true
+          if git diff --cached --quiet; then
+            echo "No discovery changes to commit."
+          else
+            git commit -m "chore: weekly auto-discovered universe [skip ci]"
+            git push
+          fi

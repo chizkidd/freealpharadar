@@ -465,10 +465,28 @@ def cache_is_empty(db: Database | None = None) -> bool:
     return db.get_cache("yfinance", first) is None
 
 
+def snapshot_coverage(snapshot: Dict[str, Dict[str, Any]]) -> float:
+    """Fraction of snapshot tickers that carry a usable market cap.
+
+    Market cap presence is the single best proxy for "did the live data
+    actually come through" -- it requires yfinance (or the SEC×price fallback)
+    to have succeeded. Empty snapshot -> ``0.0``.
+    """
+    if not snapshot:
+        return 0.0
+    have = 0
+    for bundle in snapshot.values():
+        km = (bundle.get("yfinance", {}) or {}).get("key_metrics", {}) or {}
+        if km.get("market_cap"):
+            have += 1
+    return have / len(snapshot)
+
+
 def export_cache_snapshot(
     tickers: Sequence[str],
     db: Database | None = None,
     path: Optional[Path] = None,
+    min_coverage: float = 0.0,
 ) -> int:
     """Export currently-cached source payloads for ``tickers`` to JSON.
 
@@ -480,9 +498,13 @@ def export_cache_snapshot(
         tickers: Universe to snapshot.
         db: Database to read from; defaults to the shared singleton.
         path: Output path; defaults to :data:`PREWARM_PATH`.
+        min_coverage: Quality gate -- if the freshly-built snapshot's market-cap
+            coverage is below this fraction, the file is **not** written (so a
+            thin CI run can't clobber a good committed snapshot). ``0.0`` = off.
 
     Returns:
-        Number of tickers with at least one cached source written.
+        Number of tickers written (``0`` if the snapshot was skipped by the
+        quality gate).
     """
     db = db or get_db()
     out_path = Path(path) if path else PREWARM_PATH
@@ -497,24 +519,44 @@ def export_cache_snapshot(
         if bundle:
             snapshot[key] = bundle
 
+    coverage = snapshot_coverage(snapshot)
+    if coverage < min_coverage:
+        logger.warning(
+            "Snapshot market-cap coverage %.0f%% < required %.0f%%; skipping write "
+            "to avoid clobbering a good snapshot (%s).",
+            coverage * 100,
+            min_coverage * 100,
+            out_path,
+        )
+        return 0
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(snapshot, indent=2, default=str), encoding="utf-8")
     logger.info(
-        "Exported prewarm snapshot for %d tickers to %s", len(snapshot), out_path
+        "Exported prewarm snapshot for %d tickers (%.0f%% market-cap coverage) to %s",
+        len(snapshot),
+        coverage * 100,
+        out_path,
     )
     return len(snapshot)
 
 
-def seed_from_snapshot(db: Database | None = None, path: Optional[Path] = None) -> int:
-    """Seed the cache from a committed prewarm snapshot, if one exists.
+def seed_from_snapshot(
+    db: Database | None = None,
+    path: Optional[Path] = None,
+    min_coverage: float = 0.0,
+) -> int:
+    """Seed the cache from a committed prewarm snapshot, if one is usable.
 
     Args:
         db: Database to seed; defaults to the shared singleton.
         path: Snapshot path; defaults to :data:`PREWARM_PATH`.
+        min_coverage: If the snapshot's market-cap coverage is below this
+            fraction it is treated as unusable and **not** seeded, so the caller
+            falls back to the synthetic sample rather than showing an empty app.
 
     Returns:
-        Number of tickers seeded (``0`` when no usable snapshot is present, so
-        callers can fall back to the synthetic :func:`seed_cache`).
+        Number of tickers seeded (``0`` when missing, unreadable, or too sparse).
     """
     db = db or get_db()
     in_path = Path(path) if path else PREWARM_PATH
@@ -526,6 +568,16 @@ def seed_from_snapshot(db: Database | None = None, path: Optional[Path] = None) 
         logger.warning("Could not read prewarm snapshot %s: %s", in_path, exc)
         return 0
 
+    coverage = snapshot_coverage(snapshot)
+    if coverage < min_coverage:
+        logger.warning(
+            "Prewarm snapshot too sparse (%.0f%% market-cap coverage < %.0f%%); "
+            "falling back to synthetic sample.",
+            coverage * 100,
+            min_coverage * 100,
+        )
+        return 0
+
     seeded = 0
     for ticker, sources in snapshot.items():
         if not isinstance(sources, dict):
@@ -534,5 +586,9 @@ def seed_from_snapshot(db: Database | None = None, path: Optional[Path] = None) 
             db.set_cache(source, ticker, payload)
         seeded += 1
     if seeded:
-        logger.info("Seeded cache from prewarm snapshot for %d tickers.", seeded)
+        logger.info(
+            "Seeded cache from prewarm snapshot for %d tickers (%.0f%% coverage).",
+            seeded,
+            coverage * 100,
+        )
     return seeded

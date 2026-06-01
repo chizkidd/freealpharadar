@@ -67,6 +67,15 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
             "so a hosted Streamlit app starts with live data (no refresh wait)."
         ),
     )
+    parser.add_argument(
+        "--min-coverage",
+        type=float,
+        default=0.6,
+        help=(
+            "Quality gate for --export-snapshot: only write if at least this "
+            "fraction of tickers have a market cap (else keep the prior snapshot)."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -108,8 +117,13 @@ def main(argv: List[str]) -> int:
         logger.warning("%d data warning(s) during run.", len(output.warnings))
 
     if args.export_snapshot:
-        count = export_cache_snapshot(tickers)
-        logger.info("Exported prewarm snapshot for %d tickers.", count)
+        count = export_cache_snapshot(tickers, min_coverage=args.min_coverage)
+        if count:
+            logger.info("Exported prewarm snapshot for %d tickers.", count)
+        else:
+            logger.warning(
+                "Snapshot not written (failed quality gate); prior snapshot kept."
+            )
 
     return 0
 

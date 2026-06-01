@@ -103,18 +103,60 @@ async def gather_company(
     ]
 
     metrics = yf_payload.get("key_metrics", {}) if yf_payload else {}
+    sec_payload = sec_res.payload or {}
+
+    # Market-cap fallback: when yfinance is blocked (common in CI), approximate
+    # market cap from SEC shares outstanding × the latest available close
+    # (yfinance or the Stooq fallback). Better a rough cap than "n/a".
+    market_cap = metrics.get("market_cap")
+    if market_cap is None:
+        market_cap = _approx_market_cap(yf_payload, sec_payload)
+        if market_cap is not None:
+            metrics["market_cap"] = market_cap
+            metrics["market_cap_approx"] = True
+
     return CompanyData(
         ticker=ticker,
         name=name,
         sector=(metrics.get("sector") or "Unknown"),
-        market_cap=metrics.get("market_cap"),
+        market_cap=market_cap,
         yfinance=yf_payload,
-        sec=sec_res.payload or {},
+        sec=sec_payload,
         patents=pat_res.payload or {},
         gdelt=gdelt_res.payload or {},
         manual=manual_signals or {},
         warnings=warnings,
     )
+
+
+def _approx_market_cap(
+    yf_payload: Dict[str, Any], sec_payload: Dict[str, Any]
+) -> Optional[float]:
+    """Approximate market cap as latest SEC shares outstanding × latest close.
+
+    Returns ``None`` unless both a positive share count and a positive recent
+    close are available.
+    """
+    shares_series = (sec_payload.get("facts", {}) or {}).get("shares") or []
+    shares = None
+    for point in reversed(shares_series):  # latest fiscal year first
+        val = point.get("val")
+        if val:
+            shares = float(val)
+            break
+    if not shares or shares <= 0:
+        return None
+
+    history = yf_payload.get("history", []) if yf_payload else []
+    last_close = None
+    for row in reversed(history):
+        close = row.get("close")
+        if close:
+            last_close = float(close)
+            break
+    if not last_close or last_close <= 0:
+        return None
+    return shares * last_close
 
 
 async def gather_universe(

@@ -134,7 +134,8 @@ class SECFetcher(BaseFetcher):
             logger.debug("companyfacts failed for CIK %s: %s", cik, exc)
             return {}
 
-        gaap = data.get("facts", {}).get("us-gaap", {})
+        facts = data.get("facts", {})
+        gaap = facts.get("us-gaap", {})
         wanted = {
             "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
             "revenue_alt": "Revenues",
@@ -149,6 +150,15 @@ class SECFetcher(BaseFetcher):
             series = _annual_series(gaap.get(concept))
             if series:
                 out[label] = series
+
+        # Shares outstanding (for a market-cap fallback when yfinance is blocked):
+        # the cover-page count lives under the ``dei`` taxonomy, with a us-gaap
+        # backup. Used with a last price to approximate market cap.
+        shares = _annual_series(
+            facts.get("dei", {}).get("EntityCommonStockSharesOutstanding")
+        ) or _annual_series(gaap.get("CommonStockSharesOutstanding"))
+        if shares:
+            out["shares"] = shares
         return out
 
     async def _fetch_filing_text(
@@ -184,11 +194,18 @@ class SECFetcher(BaseFetcher):
         return {
             "form": forms[target_idx],
             "filing_url": url,
-            "business": _extract_section(text, "Item 1", "Item 1A")[:6000],
-            "risk_factors": _extract_section(text, "Item 1A", "Item 2")[:8000],
+            "business": _extract_section(
+                text, r"item\s*1\.?\s*business", (r"item\s*1a\b",), max_len=6000
+            ),
+            "risk_factors": _extract_section(
+                text, r"item\s*1a\b", (r"item\s*1b\b", r"item\s*2\b"), max_len=8000
+            ),
             "mdna": _extract_section(
-                text, "Management", "Quantitative and Qualitative"
-            )[:8000],
+                text,
+                r"item\s*7\.?\s*management",
+                (r"item\s*7a\b", r"item\s*8\b"),
+                max_len=8000,
+            ),
         }
 
     @staticmethod
@@ -222,16 +239,44 @@ def _html_to_text(html: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def _extract_section(text: str, start_marker: str, end_marker: str) -> str:
-    """Extract the text between two item markers (case-insensitive)."""
-    lower = text.lower()
-    start = lower.find(start_marker.lower())
-    if start == -1:
+def _extract_section(
+    text: str, start_pattern: str, end_patterns: tuple, max_len: int = 8000
+) -> str:
+    """Extract a filing section between regex item markers, robustly.
+
+    Modern (inline-XBRL) 10-Ks repeat "Item 1A" in the table of contents, so a
+    naive first-match grab returns a one-line TOC stub. Instead we consider
+    *every* start-marker occurrence, take the text up to the next end marker for
+    each, and keep the **longest** candidate -- which is the real section body
+    rather than a TOC entry. All matching is case-insensitive and tolerant of
+    whitespace/punctuation between "item" and the number.
+
+    Args:
+        text: Whitespace-normalised plain text of the filing.
+        start_pattern: Regex marking the section start (e.g. ``r"item\\s*1a"``).
+        end_patterns: Regexes marking possible section ends; the earliest match
+            after the start wins.
+        max_len: Hard cap on the returned section length.
+
+    Returns:
+        The longest matching section (trimmed/capped), or ``""`` if not found.
+    """
+    starts = [m.start() for m in re.finditer(start_pattern, text, re.IGNORECASE)]
+    if not starts:
         return ""
-    end = lower.find(end_marker.lower(), start + len(start_marker))
-    if end == -1:
-        end = min(start + 8000, len(text))
-    return text[start:end].strip()
+    end_re = re.compile("|".join(end_patterns), re.IGNORECASE) if end_patterns else None
+
+    best = ""
+    for s in starts:
+        if end_re is not None:
+            m = end_re.search(text, s + 1)
+            e = m.start() if m else min(s + max_len, len(text))
+        else:
+            e = min(s + max_len, len(text))
+        candidate = text[s:e].strip()
+        if len(candidate) > len(best):
+            best = candidate
+    return best[:max_len]
 
 
 def _contains_any(text: str, keywords: tuple) -> bool:

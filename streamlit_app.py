@@ -46,7 +46,10 @@ def _ensure_seeded() -> bool:
     to the deterministic synthetic sample when no snapshot is present.
     """
     if cache_is_empty():
-        if seed_from_snapshot() == 0:
+        # Use the committed prewarm snapshot only if it's reasonably populated;
+        # a thin/failed snapshot falls back to the synthetic sample so the app
+        # is never a wall of "n/a".
+        if seed_from_snapshot(min_coverage=0.3) == 0:
             seed_cache()
     return True
 

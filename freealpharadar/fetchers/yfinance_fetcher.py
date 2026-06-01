@@ -69,7 +69,10 @@ class YFinanceFetcher(BaseFetcher):
         """Synchronous yfinance pull, executed off the event loop."""
         import yfinance as yf  # imported lazily so the package imports offline
 
-        tk = yf.Ticker(ticker)
+        # A browser-impersonating curl_cffi session greatly improves yfinance's
+        # success rate from datacenter/CI IPs (Yahoo often blocks plain
+        # requests there). Falls back to yfinance's default session if absent.
+        tk = yf.Ticker(ticker, session=_browser_session())
 
         info: Dict[str, Any] = {}
         try:
@@ -96,6 +99,12 @@ class YFinanceFetcher(BaseFetcher):
         except Exception as exc:  # noqa: BLE001
             logger.debug("history() failed for %s: %s", ticker, exc)
 
+        # Free, key-less fallback when Yahoo returns nothing (common in CI):
+        # Stooq monthly closes. Restores price history + a last close so the
+        # price-momentum factor and a market-cap approximation still work.
+        if not history_records:
+            history_records = _stooq_history(ticker)
+
         payload: Dict[str, Any] = {
             "ticker": ticker.upper(),
             "info": _clean_info(info),
@@ -120,6 +129,57 @@ class YFinanceFetcher(BaseFetcher):
             },
         }
         return payload
+
+
+def _browser_session() -> Any:
+    """Return a Chrome-impersonating ``curl_cffi`` session, or ``None``.
+
+    Passing this to ``yf.Ticker`` markedly improves success from datacenter/CI
+    IPs. Returns ``None`` (yfinance's default session) when ``curl_cffi`` isn't
+    installed, so behaviour is unchanged in that case.
+    """
+    try:
+        from curl_cffi import requests as cffi_requests
+
+        return cffi_requests.Session(impersonate="chrome")
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _stooq_history(ticker: str) -> List[Dict[str, Any]]:
+    """Fetch monthly close history from Stooq (free, key-less) as a fallback.
+
+    Stooq serves US equities as ``<ticker>.us``. Returns ``[]`` on any failure
+    so the caller simply ends up with no price history.
+    """
+    import csv
+    import io
+    import urllib.request
+
+    url = f"https://stooq.com/q/d/l/?s={ticker.lower()}.us&i=m"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            body = resp.read().decode("utf-8", "replace")
+    except Exception as exc:  # noqa: BLE001
+        logger.debug("Stooq fallback failed for %s: %s", ticker, exc)
+        return []
+
+    records: List[Dict[str, Any]] = []
+    reader = csv.DictReader(io.StringIO(body))
+    for row in reader:
+        close = _safe_float(row.get("Close"))
+        if close is not None:
+            records.append(
+                {
+                    "date": row.get("Date", ""),
+                    "close": close,
+                    "volume": _safe_float(row.get("Volume")),
+                }
+            )
+    if records:
+        logger.info("Stooq supplied %d monthly closes for %s", len(records), ticker)
+    return records
 
 
 def _safe_records(tk: Any, attr: str) -> List[Dict[str, Any]]:

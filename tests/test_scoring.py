@@ -7,6 +7,7 @@ reproducible. Run with ``make test`` or ``pytest``.
 
 from __future__ import annotations
 
+import json
 import math
 
 import pytest
@@ -310,3 +311,100 @@ class TestUniverseConfig:
         from freealpharadar.sample_data import _rng
 
         assert _rng("PLTR").random() == _rng("PLTR").random()
+
+
+# --------------------------------------------------------------------------- #
+# Snapshot quality gate (#2)
+# --------------------------------------------------------------------------- #
+class TestSnapshotQualityGate:
+    def test_coverage_fraction(self):
+        from freealpharadar.sample_data import snapshot_coverage
+
+        snap = {
+            "A": {"yfinance": {"key_metrics": {"market_cap": 1e9}}},
+            "B": {"yfinance": {"key_metrics": {"market_cap": None}}},
+            "C": {"sec": {"company_name": "C"}},
+        }
+        assert snapshot_coverage(snap) == pytest.approx(1 / 3)
+        assert snapshot_coverage({}) == 0.0
+
+    def test_seed_rejects_sparse_snapshot(self, tmp_path):
+        from freealpharadar.database import Database
+        from freealpharadar.sample_data import seed_from_snapshot
+
+        snap = {"A": {"sec": {"company_name": "A"}}}  # no market cap → coverage 0
+        p = tmp_path / "snap.json"
+        p.write_text(json.dumps(snap))
+        db = Database(tmp_path / "g.sqlite")
+        assert seed_from_snapshot(db=db, path=p, min_coverage=0.3) == 0  # rejected
+        assert seed_from_snapshot(db=db, path=p, min_coverage=0.0) == 1  # accepted
+
+    def test_export_gate_skips_thin_snapshot(self, tmp_path):
+        from freealpharadar.database import Database
+        from freealpharadar.sample_data import export_cache_snapshot
+
+        db = Database(tmp_path / "e.sqlite")
+        db.set_cache("sec", "A", {"company_name": "A"})  # no yfinance market cap
+        out = tmp_path / "out.json"
+        assert export_cache_snapshot(["A"], db=db, path=out, min_coverage=0.6) == 0
+        assert not out.exists()  # gate blocked the write
+        assert export_cache_snapshot(["A"], db=db, path=out, min_coverage=0.0) == 1
+        assert out.exists()  # gate off → written
+
+
+# --------------------------------------------------------------------------- #
+# Market-cap fallback (#3)
+# --------------------------------------------------------------------------- #
+class TestMarketCapFallback:
+    def test_approx_from_shares_and_last_close(self):
+        from freealpharadar.pipeline import _approx_market_cap
+
+        yf = {
+            "history": [
+                {"date": "2024-01", "close": 10.0},
+                {"date": "2024-02", "close": 12.0},
+            ]
+        }
+        sec = {
+            "facts": {
+                "shares": [{"fy": 2022, "val": 500_000}, {"fy": 2023, "val": 1_000_000}]
+            }
+        }
+        assert _approx_market_cap(yf, sec) == pytest.approx(12.0 * 1_000_000)
+
+    def test_none_without_shares_or_price(self):
+        from freealpharadar.pipeline import _approx_market_cap
+
+        assert _approx_market_cap({}, {}) is None
+        assert (
+            _approx_market_cap(
+                {"history": [{"date": "x", "close": 5.0}]}, {"facts": {}}
+            )
+            is None
+        )
+
+
+# --------------------------------------------------------------------------- #
+# Robust SEC section extraction (#4)
+# --------------------------------------------------------------------------- #
+class TestSecSectionExtraction:
+    def test_longest_match_skips_table_of_contents(self):
+        from freealpharadar.fetchers.sec_fetcher import _extract_section
+
+        body = (
+            "Item 1A. Risk Factors. "
+            + "We face many material risks and uncertainties. " * 40
+            + " Item 1B. Unresolved Staff Comments."
+        )
+        # A TOC mentions Item 1A/1B first (short), the real section comes later.
+        text = "Table of Contents Item 1A Risk Factors 12 Item 1B Comments 14 " + body
+        out = _extract_section(
+            text, r"item\s*1a\b", (r"item\s*1b\b", r"item\s*2\b"), max_len=8000
+        )
+        assert "We face many material risks" in out
+        assert len(out) > 500  # not the one-line TOC stub
+
+    def test_missing_section_returns_empty(self):
+        from freealpharadar.fetchers.sec_fetcher import _extract_section
+
+        assert _extract_section("nothing here", r"item\s*1a\b", (r"item\s*2\b",)) == ""

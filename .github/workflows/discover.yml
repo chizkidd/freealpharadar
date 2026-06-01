@@ -4,7 +4,7 @@
 # This is the offline two-stage funnel (bulk DuckDB screen -> full pipeline on
 # the shortlist). It needs network (sec.gov, yfinance, ...) which only GitHub's
 # runners have. No secrets/API keys required. Manual-dispatchable.
-name: Discover universe
+name: Weekly Market-Wide Discovery # Discover universe
 
 on:
   schedule:

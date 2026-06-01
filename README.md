@@ -1,6 +1,8 @@
 # 📡 FreeAlphaRadar
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?logo=streamlit&logoColor=white)](https://freealpharadar.streamlit.app/)
+[![Daily Data Refresh & Re-score](https://github.com/chizkidd/freealpharadar/actions/workflows/scheduler.yml/badge.svg)](https://github.com/chizkidd/freealpharadar/actions/workflows/scheduler.yml)
+[![Weekly Discovery](https://github.com/chizkidd/freealpharadar/actions/workflows/discover.yml/badge.svg)](https://github.com/chizkidd/freealpharadar/actions/workflows/discover.yml)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chizkidd/freealpharadar/blob/main/colab_setup.ipynb)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)

@@ -203,7 +203,11 @@ are the slim `requirements.txt` (the heavyweight ML stack stays in the optional
    URL becomes **`https://freealpharadar.streamlit.app`**. (The subdomain must be
    globally unique; if it is taken, choose another. You can also change it later
    under **App settings → General → Custom subdomain**.)
-4. Open **Advanced settings** and select **Python 3.11**. No secrets are needed.
+4. Open **Advanced settings** and select **Python 3.11 or 3.12** (⚠️ *not* the
+   newest default like 3.14 — the pinned scientific stack has no prebuilt wheels
+   for it yet, so the build would try to compile from source and fail). No
+   secrets are needed. If a deploy fails on a wheel build, this is almost always
+   the cause: **Manage app → Settings → Python version → 3.12 → Reboot**.
 5. Click **Deploy**. The app self-seeds sample data on first load, so the Radar
    Screen renders immediately while live data fetches in the background.
 

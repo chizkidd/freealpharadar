@@ -1,0 +1,5 @@
+# System (apt) packages for build/runtime on hosts that compile wheels from
+# source (e.g. Streamlit Community Cloud). lxml needs the libxml2/libxslt
+# development headers if no prebuilt wheel is available for the Python version.
+libxml2-dev
+libxslt1-dev

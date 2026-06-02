@@ -307,7 +307,7 @@ variables for convenience:
 | `FAR_CONCURRENCY` / `FAR_MAX_RETRIES` / `FAR_HTTP_TIMEOUT` | `5` / `4` / `30` | Async fetch concurrency, retries, per-request timeout. |
 | `FAR_FINBERT_MODEL` | `ProsusAI/finbert` | HuggingFace sentiment model id. |
 | `FAR_SEC_USER_AGENT` | research UA | Identifies you to SEC EDGAR (set a real contact to reduce throttling). |
-| `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab; omit to skip patents. |
+| `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab; omit to skip patents. For the GitHub Actions to include patents, add it as a repo **Actions secret** of the same name. |
 | `FAR_GDELT_INTERVAL` | `2.0` | Seconds between GDELT calls (raise if you still hit `429`s). |
 | `FAR_LOG_LEVEL` | `INFO` | Logging verbosity. |
 

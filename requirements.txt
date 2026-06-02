@@ -11,22 +11,34 @@
 #   pip install -r requirements-ml.txt     # optional: real FinBERT + XGBoost
 #   pip install -r requirements-dev.txt    # optional: tests + formatting
 #
-# Pins form a known-good, mutually compatible stack (pandas 2.x / numpy 1.26).
+# ---------------------------------------------------------------------------
+# Version strategy: floors, not hard pins, on the *compiled* packages.
+#
+# Streamlit Community Cloud picks the Python version itself (currently 3.14),
+# and a hard pin like `pandas==2.2.3` / `lxml==5.3.0` has NO prebuilt wheel for
+# the newest Python -> pip falls back to building from source, which times out
+# or fails (lxml needs libxml2 headers, pandas needs a C/Cython toolchain) and
+# the deploy never starts. Using `>=` floors lets pip resolve whatever recent
+# version ships a prebuilt wheel for the interpreter in play, so the app builds
+# fast and starts with ZERO manual settings changes on any Python (3.11–3.14).
+# Upper caps (<next-major) guard against surprise breaking releases. The code is
+# verified green against both the floors and the latest majors (pandas 3.x /
+# numpy 2.x) by the test suite.
 
 # ---- Core app & dashboard ----
-streamlit==1.41.1
-plotly==5.24.1
-pandas==2.2.3
-numpy==1.26.4
+streamlit>=1.41.1
+plotly>=5.24.1,<7
+pandas>=2.2.3,<4
+numpy>=1.26.4,<3
 
 # ---- Free, key-less data sources ----
-yfinance==0.2.65        # 0.2.51 broke against Yahoo's current API; 0.2.65 uses curl_cffi internally
-curl_cffi==0.7.4        # yfinance dependency (browser impersonation, managed by yfinance)
-requests==2.32.3
-aiohttp==3.11.11
-beautifulsoup4==4.12.3
-lxml==5.3.0
-python-dateutil==2.9.0.post0
+yfinance==0.2.65        # pinned: pure-python, 0.2.51 broke vs Yahoo's API; 0.2.65 manages curl_cffi itself
+curl_cffi>=0.7.4        # yfinance dependency (browser impersonation, managed by yfinance)
+requests>=2.32.3
+aiohttp>=3.11.11
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+python-dateutil>=2.9.0
 
 # ---- Lightweight ML (clustering); always available ----
-scikit-learn==1.5.2
+scikit-learn>=1.5.2

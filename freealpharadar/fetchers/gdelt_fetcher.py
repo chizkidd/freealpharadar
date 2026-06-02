@@ -12,6 +12,7 @@ import asyncio
 import os
 import statistics
 import time
+import weakref
 from typing import Any, Dict, List
 
 from freealpharadar.config import GDELT_DOC_ENDPOINT, settings
@@ -23,15 +24,31 @@ logger = get_logger(__name__)
 # GDELT rate-limits aggressively (HTTP 429) when called concurrently. Serialise
 # all GDELT requests across the process and space them out so a 32-name batch
 # doesn't trip the limiter. Tunable via FAR_GDELT_INTERVAL (seconds).
-_GDELT_LOCK = asyncio.Lock()
 _GDELT_MIN_INTERVAL = float(os.environ.get("FAR_GDELT_INTERVAL", "2.0"))
 _gdelt_last_call = 0.0
+# An asyncio.Lock binds to the event loop that is running when it is created.
+# Streamlit starts a fresh loop on every rerun, so a module-level lock would
+# raise "bound to a different event loop". Cache one lock per running loop, with
+# weak keys so locks for finished loops are garbage-collected automatically.
+_gdelt_locks: "weakref.WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Lock]" = (
+    weakref.WeakKeyDictionary()
+)
+
+
+def _get_gdelt_lock() -> asyncio.Lock:
+    """Return a lock bound to the currently running event loop."""
+    loop = asyncio.get_running_loop()
+    lock = _gdelt_locks.get(loop)
+    if lock is None:
+        lock = asyncio.Lock()
+        _gdelt_locks[loop] = lock
+    return lock
 
 
 async def _gdelt_throttle() -> None:
     """Block until at least ``_GDELT_MIN_INTERVAL`` has passed since the last call."""
     global _gdelt_last_call
-    async with _GDELT_LOCK:
+    async with _get_gdelt_lock():
         wait = _GDELT_MIN_INTERVAL - (time.monotonic() - _gdelt_last_call)
         if wait > 0:
             await asyncio.sleep(wait)

@@ -107,6 +107,10 @@ class CacheTTL:
 # --------------------------------------------------------------------------- #
 PATENTSVIEW_ENDPOINT = "https://search.patentsview.org/api/v1/patent/"
 PATENTSVIEW_LEGACY_ENDPOINT = "https://api.patentsview.org/patents/query"
+# PatentsView's current Search API requires a *free* API key (request one at
+# https://patentsview.org/apis/keyrequest). It's optional: without it the app
+# simply shows no patent data — the zero-config promise is preserved.
+PATENTSVIEW_API_KEY = os.environ.get("FAR_PATENTSVIEW_API_KEY", "")
 GDELT_DOC_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 SEC_COMPANY_FACTS = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
 SEC_TICKER_MAP = "https://www.sec.gov/files/company_tickers.json"

@@ -8,7 +8,10 @@ per-article tone are cached so that the dashboard's news feed and the
 
 from __future__ import annotations
 
+import asyncio
+import os
 import statistics
+import time
 from typing import Any, Dict, List
 
 from freealpharadar.config import GDELT_DOC_ENDPOINT, settings
@@ -16,6 +19,23 @@ from freealpharadar.fetchers.base import BaseFetcher
 from freealpharadar.utils import get_logger
 
 logger = get_logger(__name__)
+
+# GDELT rate-limits aggressively (HTTP 429) when called concurrently. Serialise
+# all GDELT requests across the process and space them out so a 32-name batch
+# doesn't trip the limiter. Tunable via FAR_GDELT_INTERVAL (seconds).
+_GDELT_LOCK = asyncio.Lock()
+_GDELT_MIN_INTERVAL = float(os.environ.get("FAR_GDELT_INTERVAL", "2.0"))
+_gdelt_last_call = 0.0
+
+
+async def _gdelt_throttle() -> None:
+    """Block until at least ``_GDELT_MIN_INTERVAL`` has passed since the last call."""
+    global _gdelt_last_call
+    async with _GDELT_LOCK:
+        wait = _GDELT_MIN_INTERVAL - (time.monotonic() - _gdelt_last_call)
+        if wait > 0:
+            await asyncio.sleep(wait)
+        _gdelt_last_call = time.monotonic()
 
 
 class GDELTFetcher(BaseFetcher):
@@ -39,6 +59,8 @@ class GDELTFetcher(BaseFetcher):
             "timespan": "3m",
         }
         # The ToneChart mode returns a tone histogram; ArtList returns articles.
+        # Throttle both calls so concurrent tickers don't trip GDELT's limiter.
+        await _gdelt_throttle()
         tone_data = await self._http_get_json(GDELT_DOC_ENDPOINT, params=params)
 
         art_params = {
@@ -49,6 +71,7 @@ class GDELTFetcher(BaseFetcher):
             "timespan": "3m",
             "sort": "datedesc",
         }
+        await _gdelt_throttle()
         art_data = await self._http_get_json(GDELT_DOC_ENDPOINT, params=art_params)
 
         return self._summarise(company_name, tone_data, art_data)

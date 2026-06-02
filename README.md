@@ -22,7 +22,7 @@ z-score → weighted contribution.
 
 | Principle | What it means here |
 |-----------|--------------------|
-| **100% free data** | yfinance, SEC EDGAR, PatentsView, GDELT — all key-less and free. |
+| **100% free data** | yfinance, SEC EDGAR, GDELT — key-less and free (PatentsView needs a free, optional key). |
 | **Zero configuration** | No `.env`, no secrets, no registration. `streamlit run` and go. |
 | **Works fully offline** | First launch seeds a SQLite cache with sample data; every fetcher falls back to cache on failure. |
 | **Totally transparent** | A waterfall chart decomposes every company's score, factor by factor. |
@@ -128,7 +128,7 @@ default).
 |--------|--------------------|----------|
 | **yfinance** | `yfinance` | Prices, income/balance/cash-flow statements, short interest, ownership |
 | **SEC EDGAR** | `data.sec.gov` JSON + EDGAR archives (no key) | Risk factors, MD&A, business description, Form 4 insider data, XBRL facts |
-| **PatentsView** | `search.patentsview.org` (45 req/min, no key) | Patent counts, assignees, titles over time |
+| **PatentsView** | `search.patentsview.org` (free API key, optional) | Patent counts, assignees, titles over time |
 | **GDELT 2.0** | `api.gdeltproject.org` Doc API | News sentiment (tone) and volume |
 | **Manual CSV** | optional upload | Employee/culture/product-moat signals — gracefully ignored if absent |
 
@@ -307,6 +307,8 @@ variables for convenience:
 | `FAR_CONCURRENCY` / `FAR_MAX_RETRIES` / `FAR_HTTP_TIMEOUT` | `5` / `4` / `30` | Async fetch concurrency, retries, per-request timeout. |
 | `FAR_FINBERT_MODEL` | `ProsusAI/finbert` | HuggingFace sentiment model id. |
 | `FAR_SEC_USER_AGENT` | research UA | Identifies you to SEC EDGAR (set a real contact to reduce throttling). |
+| `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab; omit to skip patents. |
+| `FAR_GDELT_INTERVAL` | `2.0` | Seconds between GDELT calls (raise if you still hit `429`s). |
 | `FAR_LOG_LEVEL` | `INFO` | Logging verbosity. |
 
 ---

@@ -42,9 +42,11 @@ jobs:
         run: python -m freealpharadar.warehouse build --since "${{ github.event.inputs.since_year || '2018' }}"
 
       - name: Discover + promote universe (rule-based; skips heavy ML)
-        # FAR_PATENTSVIEW_API_KEY (optional repo secret) enables the patents data.
+        # FAR_PATENTSVIEW_API_KEY / FAR_LENS_API_TOKEN (optional repo secrets)
+        # enable the patents data; set whichever provider you prefer.
         env:
           FAR_PATENTSVIEW_API_KEY: ${{ secrets.FAR_PATENTSVIEW_API_KEY }}
+          FAR_LENS_API_TOKEN: ${{ secrets.FAR_LENS_API_TOKEN }}
         run: python -m freealpharadar.discovery run --top "${{ github.event.inputs.top || '15' }}" --no-ml
 
       - name: Commit refreshed universe + snapshot + report

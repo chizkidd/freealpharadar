@@ -1,0 +1,53 @@
+# FreeAlphaRadar — CURATED baseline universe (backup).
+#
+# This is the hand-picked 24-name "under-the-radar deep tech" list. It is kept
+# here as a stable backup so you can experiment with the weekly auto-discovery
+# (which OVERWRITES universe.txt with machine-picked names) and restore the
+# curated list afterwards:
+#
+#     cp universe.curated.txt universe.txt
+#
+# Do not wire this file into the app; `universe.txt` remains the live source of
+# truth that the app and discovery read/write.
+
+# --- AI, data & automation ---
+PLTR    # Palantir — AI/data, the archetypal under-the-radar breakout
+AI      # C3.ai — enterprise AI
+PATH    # UiPath — automation
+TEM     # Tempus AI — AI diagnostics
+
+# --- Quantum computing ---
+IONQ    # IonQ
+RGTI    # Rigetti Computing
+
+# --- Space & satellite ---
+RKLB    # Rocket Lab
+ASTS    # AST SpaceMobile
+PL      # Planet Labs
+
+# --- Defense & autonomy ---
+KTOS    # Kratos Defense
+AVAV    # AeroVironment
+
+# --- Energy & advanced nuclear ---
+BE      # Bloom Energy — fuel cells
+OKLO    # Oklo — advanced fission
+SMR     # NuScale Power
+LEU     # Centrus Energy — enrichment
+
+# --- Semiconductors & hardware ---
+SNDK    # Sandisk — flash storage
+CRDO    # Credo Technology — connectivity
+ALAB    # Astera Labs — AI interconnect
+
+# --- Robotics & automation ---
+SYM     # Symbotic — warehouse robotics
+
+# --- Techbio & genomics ---
+RXRX    # Recursion Pharmaceuticals — AI drug discovery
+SDGR    # Schrödinger — computational drug design
+CRSP    # CRISPR Therapeutics
+
+# --- Cybersecurity ---
+CRWD    # CrowdStrike
+S       # SentinelOne

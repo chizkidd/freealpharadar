@@ -14,13 +14,18 @@ any *required* (key-less) source fails, so it doubles as a smoke test.
 
 from __future__ import annotations
 
+import os
 import sys
 import time
 from typing import Callable, Dict, Tuple
 
-import requests
+# Allow running as a plain script (``python scripts/check_sources.py``): ensure
+# the repo root is importable even though Python puts the script's own dir first.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from freealpharadar.config import (
+import requests  # noqa: E402
+
+from freealpharadar.config import (  # noqa: E402
     LENS_API_TOKEN,
     LENS_ENDPOINT,
     PATENTSVIEW_API_KEY,

@@ -70,7 +70,7 @@ make run                # launch the Streamlit dashboard
 make scorer             # batch scorer (warms the cache)
 make seed               # (re)seed the offline sample dataset
 make warehouse          # build the bulk SEC fundamentals store (needs network)
-make discover           # scan all filers → promote ranked top-10 (needs network)
+make discover           # scan all filers → promote ranked top-15 (needs network)
 make test               # offline test-suite (no network)
 make lint / make format # black + isort (check / apply)
 make docker-up          # run via docker compose

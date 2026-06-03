@@ -6,6 +6,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chizkidd/freealpharadar/blob/main/colab_setup.ipynb)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/chizkidd/freealpharadar)
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=chizkidd.freealpharadar)
 
 FreeAlphaRadar ingests financial, alternative and qualitative data from

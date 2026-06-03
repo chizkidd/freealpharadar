@@ -22,7 +22,10 @@ from __future__ import annotations
 from freealpharadar.fetchers.base import BaseFetcher, FetchResult
 from freealpharadar.fetchers.gdelt_fetcher import GDELTFetcher
 from freealpharadar.fetchers.manual_csv import load_manual_csv
-from freealpharadar.fetchers.patents_fetcher import PatentsViewFetcher
+from freealpharadar.fetchers.patents_fetcher import (
+    PatentFetcher,
+    PatentsViewFetcher,
+)
 from freealpharadar.fetchers.sec_fetcher import SECFetcher
 from freealpharadar.fetchers.yfinance_fetcher import YFinanceFetcher
 
@@ -31,6 +34,7 @@ __all__ = [
     "FetchResult",
     "YFinanceFetcher",
     "SECFetcher",
+    "PatentFetcher",
     "PatentsViewFetcher",
     "GDELTFetcher",
     "load_manual_csv",

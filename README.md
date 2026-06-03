@@ -203,13 +203,13 @@ are the slim `requirements.txt` (the heavyweight ML stack stays in the optional
    URL becomes **`https://freealpharadar.streamlit.app`**. (The subdomain must be
    globally unique; if it is taken, choose another. You can also change it later
    under **App settings → General → Custom subdomain**.)
-4. Open **Advanced settings** and select **Python 3.11 or 3.12** (⚠️ *not* the
-   newest default like 3.14 — the pinned scientific stack has no prebuilt wheels
-   for it yet, so the build would try to compile from source and fail). No
-   secrets are needed. If a deploy fails on a wheel build, this is almost always
-   the cause: **Manage app → Settings → Python version → 3.12 → Reboot**.
-5. Click **Deploy**. The app self-seeds sample data on first load, so the Radar
-   Screen renders immediately while live data fetches in the background.
+4. Click **Deploy** — that's it. No Advanced-settings or Python-version changes
+   are needed: `requirements.txt` floats its compiled dependencies to whatever
+   prebuilt wheel matches the interpreter Streamlit Cloud picks (3.11–3.14), so
+   the build never falls back to a slow/failing source compile. No secrets.
+5. The app paints instantly from the committed prewarm snapshot (or the
+   deterministic sample if none), so the Radar Screen is populated on first
+   load. News is fetched lazily per company when you open a Deep Dive.
 
 > Streamlit Cloud's filesystem is ephemeral: the SQLite cache and any watchlist
 > changelogs reset when the container restarts. Sample data re-seeds
@@ -221,6 +221,19 @@ are the slim `requirements.txt` (the heavyweight ML stack stays in the optional
 ```bash
 docker compose up --build       # http://localhost:8501
 ```
+
+### Hugging Face Spaces (more headroom)
+
+If you outgrow Streamlit Cloud's ~1 GB free tier (e.g. you want a larger
+universe or the FinBERT ML stack on by default), the same app runs unchanged on
+a **Docker Space** (~16 GB RAM, less aggressive sleeping):
+
+1. Create a Space → **SDK: Docker** → push this repo (it auto-builds the
+   committed `Dockerfile`).
+2. Tell the Space which port the app serves by adding this to the Space's
+   `README.md` YAML front-matter: `app_port: 8501`.
+3. (Optional) add `FAR_PATENTSVIEW_API_KEY` or `FAR_LENS_API_TOKEN` as Space
+   **secrets** to enable the Patents tab. Everything else stays key-less.
 
 ### Scheduled refresh → pre-warmed cloud cache (GitHub Actions)
 
@@ -311,8 +324,9 @@ variables for convenience:
 | `FAR_CONCURRENCY` / `FAR_MAX_RETRIES` / `FAR_HTTP_TIMEOUT` | `5` / `4` / `30` | Async fetch concurrency, retries, per-request timeout. |
 | `FAR_FINBERT_MODEL` | `ProsusAI/finbert` | HuggingFace sentiment model id. |
 | `FAR_SEC_USER_AGENT` | research UA | Identifies you to SEC EDGAR (set a real contact to reduce throttling). |
-| `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab; omit to skip patents. For the GitHub Actions to include patents, add it as a repo **Actions secret** of the same name. |
-| `FAR_GDELT_INTERVAL` | `2.0` | Seconds between GDELT calls (raise if you still hit `429`s). |
+| `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab (lowest-friction for a US universe). For the GitHub Actions to include patents, add it as a repo **Actions secret** of the same name. |
+| `FAR_LENS_API_TOKEN` | _(unset)_ | Optional [Lens.org](https://www.lens.org/lens/user/subscriptions#scholar) token — alternative, **global** patent provider. The fetcher uses PatentsView if its key is set, else Lens, else skips patents. Set **either** to enable the Patents tab. |
+| `FAR_GDELT_INTERVAL` | `5.0` | Seconds between GDELT calls (raise if you still hit `429`s). News is fetched lazily per company, so this only spaces the two calls behind an opened News tab. |
 | `FAR_LOG_LEVEL` | `INFO` | Logging verbosity. |
 
 ---

@@ -227,6 +227,20 @@ class BaseFetcher:
                 resp.raise_for_status()
                 return await resp.json(content_type=None)
 
+    async def _http_post_json(
+        self,
+        url: str,
+        *,
+        json_body: Optional[Dict[str, Any]] = None,
+        headers: Optional[Dict[str, str]] = None,
+    ) -> Any:
+        """POST ``json_body`` to ``url`` and return parsed JSON."""
+        timeout = aiohttp.ClientTimeout(total=settings.http_timeout)
+        async with aiohttp.ClientSession(timeout=timeout) as session:
+            async with session.post(url, json=json_body, headers=headers) as resp:
+                resp.raise_for_status()
+                return await resp.json(content_type=None)
+
     async def _http_get_text(
         self,
         url: str,

@@ -9,26 +9,22 @@
 #
 # Users can always override this at runtime by typing tickers in the sidebar.
 # The list is a deliberate "under-the-radar deep tech" thesis, not a quote feed.
+# Kept to ~24 names: enough cross-section for meaningful z-scores, while tight
+# enough to load fast and stay high-conviction.
 
 # --- AI, data & automation ---
 PLTR    # Palantir — AI/data, the archetypal under-the-radar breakout
 AI      # C3.ai — enterprise AI
-BBAI    # BigBear.ai — decision intelligence
-SOUN    # SoundHound AI — voice AI
-NBIS    # Nebius — AI cloud / GPU infrastructure
 PATH    # UiPath — automation
 TEM     # Tempus AI — AI diagnostics
 
 # --- Quantum computing ---
 IONQ    # IonQ
 RGTI    # Rigetti Computing
-QBTS    # D-Wave Quantum
 
 # --- Space & satellite ---
 RKLB    # Rocket Lab
 ASTS    # AST SpaceMobile
-LUNR    # Intuitive Machines
-RDW     # Redwire
 PL      # Planet Labs
 
 # --- Defense & autonomy ---
@@ -40,7 +36,6 @@ BE      # Bloom Energy — fuel cells
 OKLO    # Oklo — advanced fission
 SMR     # NuScale Power
 LEU     # Centrus Energy — enrichment
-NNE     # Nano Nuclear Energy
 
 # --- Semiconductors & hardware ---
 SNDK    # Sandisk — flash storage
@@ -49,7 +44,6 @@ ALAB    # Astera Labs — AI interconnect
 
 # --- Robotics & automation ---
 SYM     # Symbotic — warehouse robotics
-SERV    # Serve Robotics — delivery robots
 
 # --- Techbio & genomics ---
 RXRX    # Recursion Pharmaceuticals — AI drug discovery

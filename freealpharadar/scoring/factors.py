@@ -296,13 +296,16 @@ def _linreg_slope(xs: List[float], ys: List[float]) -> Optional[float]:
 
 
 def f_revenue_cagr_5y(c: CompanyData) -> Optional[float]:
-    """~5-year revenue CAGR from the full SEC XBRL revenue series."""
-    return _cagr_over(_sec_fact_series(c, "revenue", "revenue_alt"), 5)
+    """~5-year revenue CAGR from the full SEC XBRL revenue series.
 
-
-def f_revenue_cagr_10y(c: CompanyData) -> Optional[float]:
-    """~10-year revenue CAGR from the full SEC XBRL revenue series."""
-    return _cagr_over(_sec_fact_series(c, "revenue", "revenue_alt"), 10)
+    ``_cagr_over`` annualises over the *actual* span when a company has less
+    history, so this degrades gracefully for recent IPOs. (A separate ~10y
+    factor was dropped: for this young universe it annualises over the same
+    short span and is near-collinear with this one.)
+    """
+    return _cagr_over(
+        _sec_fact_series(c, "revenue", "revenue_alt", "revenue_alt2", "revenue_alt3"), 5
+    )
 
 
 def f_gross_margin_trend(c: CompanyData) -> Optional[float]:
@@ -311,7 +314,9 @@ def f_gross_margin_trend(c: CompanyData) -> Optional[float]:
     Uses the multi-year SEC gross-profit and revenue series; positive means
     margins have structurally expanded across the available history.
     """
-    rev = dict(_sec_fact_series(c, "revenue", "revenue_alt"))
+    rev = dict(
+        _sec_fact_series(c, "revenue", "revenue_alt", "revenue_alt2", "revenue_alt3")
+    )
     gp = dict(_sec_fact_series(c, "gross_profit"))
     years = sorted(set(rev) & set(gp))
     margins = [(fy, gp[fy] / rev[fy]) for fy in years if rev[fy]]
@@ -642,14 +647,6 @@ FACTORS: List[FactorSpec] = [
         f_revenue_cagr_5y,
         True,
         "~5-year revenue CAGR from the full SEC XBRL revenue series.",
-    ),
-    FactorSpec(
-        "revenue_cagr_10y",
-        "Revenue CAGR (~10y, SEC)",
-        FactorGroup.MOMENTUM,
-        f_revenue_cagr_10y,
-        True,
-        "~10-year (full-cycle) revenue CAGR from SEC XBRL facts.",
     ),
     FactorSpec(
         "gross_margin_trend",

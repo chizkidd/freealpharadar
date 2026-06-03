@@ -16,7 +16,7 @@ on:
         default: "2018"
       top:
         description: "Number of names to promote"
-        default: "10"
+        default: "15"
 
 permissions:
   contents: write
@@ -45,7 +45,7 @@ jobs:
         # FAR_PATENTSVIEW_API_KEY (optional repo secret) enables the patents data.
         env:
           FAR_PATENTSVIEW_API_KEY: ${{ secrets.FAR_PATENTSVIEW_API_KEY }}
-        run: python -m freealpharadar.discovery run --top "${{ github.event.inputs.top || '10' }}" --no-ml
+        run: python -m freealpharadar.discovery run --top "${{ github.event.inputs.top || '15' }}" --no-ml
 
       - name: Commit refreshed universe + snapshot + report
         run: |

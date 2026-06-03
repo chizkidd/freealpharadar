@@ -1,14 +1,18 @@
-"""PatentsView patent data fetcher.
+"""Provider-agnostic patent data fetcher.
 
 Collects, for a given company, the number of granted patents over time and a
 sample of patent titles, which feed the "Disruption & Moat" factor group.
 
-PatentsView's current Search API (``search.patentsview.org``) requires a
-**free** API key (the legacy key-less endpoint was retired). The key is
-optional here: set ``FAR_PATENTSVIEW_API_KEY`` to enable patents; without it the
-fetcher returns an empty result and the app simply shows no patent data, so the
-zero-config default is preserved. Results are cached aggressively (the free tier
-allows ~45 requests/minute).
+The fetcher supports two free providers and picks whichever is configured:
+
+* **PatentsView** (``search.patentsview.org``) -- lowest-friction for a US
+  universe. Set ``FAR_PATENTSVIEW_API_KEY`` (free key request at
+  https://patentsview.org/apis/keyrequest).
+* **Lens.org** (``api.lens.org``) -- global coverage. Set ``FAR_LENS_API_TOKEN``.
+
+If **neither** token is set the fetcher returns an empty result and the app
+simply shows no patent data, so the zero-config / zero-key default is preserved.
+PatentsView takes precedence when both are set. Results are cached aggressively.
 """
 
 from __future__ import annotations
@@ -18,6 +22,8 @@ from collections import Counter
 from typing import Any, Dict, List
 
 from freealpharadar.config import (
+    LENS_API_TOKEN,
+    LENS_ENDPOINT,
     PATENTSVIEW_API_KEY,
     PATENTSVIEW_ENDPOINT,
     settings,
@@ -28,18 +34,18 @@ from freealpharadar.utils import get_logger
 logger = get_logger(__name__)
 
 
-class PatentsViewFetcher(BaseFetcher):
-    """Fetch patent counts, assignees and titles for a company name."""
+class PatentFetcher(BaseFetcher):
+    """Fetch patent counts and titles for a company from PatentsView or Lens."""
 
     def __init__(self, **kwargs: Any) -> None:
-        super().__init__(source="patentsview", ttl=settings.ttl.patents, **kwargs)
+        super().__init__(source="patents", ttl=settings.ttl.patents, **kwargs)
 
     async def _fetch_remote(self, key: str, **kwargs: Any) -> Dict[str, Any]:
-        """Query PatentsView for patents assigned to the company named ``key``.
+        """Query the configured provider for patents assigned to ``company_name``.
 
-        The current PatentsView Search API requires a free API key. When it is
-        not configured (``FAR_PATENTSVIEW_API_KEY``), we skip the call and return
-        an empty result so the rest of the pipeline is unaffected.
+        Selects PatentsView when ``FAR_PATENTSVIEW_API_KEY`` is set, else Lens
+        when ``FAR_LENS_API_TOKEN`` is set, else returns an empty result so the
+        rest of the pipeline is unaffected (zero-key default).
 
         Args:
             key: Used here as a cache key (typically the ticker).
@@ -47,17 +53,20 @@ class PatentsViewFetcher(BaseFetcher):
                 ``key`` when not provided.
         """
         company_name: str = kwargs.get("company_name") or key
-        if not PATENTSVIEW_API_KEY:
+        if PATENTSVIEW_API_KEY:
+            patents = await self._query_patentsview(company_name)
+        elif LENS_API_TOKEN:
+            patents = await self._query_lens(company_name)
+        else:
             logger.debug(
-                "PatentsView API key not set (FAR_PATENTSVIEW_API_KEY); "
-                "skipping patents for %s.",
+                "No patent provider configured (FAR_PATENTSVIEW_API_KEY / "
+                "FAR_LENS_API_TOKEN); skipping patents for %s.",
                 company_name,
             )
             return self._summarise(company_name, [])
-        patents = await self._query_modern(company_name)
         return self._summarise(company_name, patents)
 
-    async def _query_modern(self, company_name: str) -> List[Dict[str, Any]]:
+    async def _query_patentsview(self, company_name: str) -> List[Dict[str, Any]]:
         """Query the current ``search.patentsview.org`` endpoint (needs a key)."""
         query = {
             "q": {"_text_phrase": {"assignees.assignee_organization": company_name}},
@@ -74,6 +83,34 @@ class PatentsViewFetcher(BaseFetcher):
             PATENTSVIEW_ENDPOINT, params=params, headers=headers
         )
         return data.get("patents", []) or []
+
+    async def _query_lens(self, company_name: str) -> List[Dict[str, Any]]:
+        """Query the Lens.org patent search API (needs a Bearer token).
+
+        Normalises each Lens record to the same ``{patent_title, patent_date}``
+        shape that :meth:`_summarise` consumes, so downstream scoring is
+        provider-agnostic.
+        """
+        body = {
+            "query": {"match_phrase": {"applicant.name": company_name}},
+            "size": 100,
+            "include": ["biblio.invention_title.text", "date_published"],
+        }
+        headers = {
+            "Authorization": f"Bearer {LENS_API_TOKEN}",
+            "Content-Type": "application/json",
+        }
+        data = await self._http_post_json(
+            LENS_ENDPOINT, json_body=body, headers=headers
+        )
+        out: List[Dict[str, Any]] = []
+        for hit in data.get("data", []) or []:
+            titles = (hit.get("biblio", {}) or {}).get("invention_title", []) or []
+            title = titles[0].get("text") if titles else None
+            out.append(
+                {"patent_title": title, "patent_date": hit.get("date_published")}
+            )
+        return out
 
     @staticmethod
     def _summarise(company_name: str, patents: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -100,6 +137,10 @@ class PatentsViewFetcher(BaseFetcher):
             "patent_growth_rate": growth_rate,
             "sample_titles": titles[:20],
         }
+
+
+# Backwards-compatible alias: the class was provider-specific historically.
+PatentsViewFetcher = PatentFetcher
 
 
 def _trailing_growth(yearly_counts: List[int]) -> float:

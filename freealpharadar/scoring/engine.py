@@ -137,21 +137,29 @@ class ScoringEngine:
             for spec in self.factors:
                 weight = self.weights.get(spec.name, 1.0)
                 z = z_matrix[spec.name][idx]
+                raw = raw_matrix[spec.name][idx]
                 contribution = weight * z
                 contribs.append(
                     FactorContribution(
                         name=spec.name,
                         label=spec.label,
                         group=spec.group.value,
-                        raw=raw_matrix[spec.name][idx],
+                        raw=raw,
                         zscore=z,
                         weight=weight,
                         contribution=contribution,
                     )
                 )
-                weighted_sum += contribution
-                total_weight += abs(weight)
-                group_acc.setdefault(spec.group.value, []).append(z)
+                # Only factors that actually have a value for this company move
+                # the composite. A missing factor is *neutral* (excluded from the
+                # weighted average), not a zero that drags the score toward the
+                # mean -- otherwise the many perpetually-empty factors in a young,
+                # key-less universe (no 10y history, no P/E, no patents/manual)
+                # would compress every company's score.
+                if raw is not None:
+                    weighted_sum += contribution
+                    total_weight += abs(weight)
+                    group_acc.setdefault(spec.group.value, []).append(z)
 
             composite = weighted_sum / total_weight if total_weight else 0.0
             composites.append(composite)

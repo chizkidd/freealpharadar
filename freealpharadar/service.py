@@ -44,6 +44,7 @@ async def run_pipeline_async(
     run_ml: bool = True,
     progress_cb: Optional[Callable[[int, int, str], None]] = None,
     persist: bool = True,
+    fetch_news: bool = False,
 ) -> PipelineOutput:
     """Run the full ingest -> enrich -> score pipeline asynchronously.
 
@@ -55,6 +56,9 @@ async def run_pipeline_async(
         run_ml: Whether to run FinBERT/clustering enrichment.
         progress_cb: Progress callback forwarded to ingestion.
         persist: Whether to write score snapshots to SQLite.
+        fetch_news: Fetch GDELT news/tone for every name. Off by default so
+            universe scoring stays fast; the deep-dive News tab loads news for
+            a single company on demand instead.
 
     Returns:
         A :class:`PipelineOutput`.
@@ -64,6 +68,7 @@ async def run_pipeline_async(
         manual_signals=manual_signals,
         force_refresh=force_refresh,
         progress_cb=progress_cb,
+        fetch_news=fetch_news,
     )
 
     if run_ml:
@@ -97,6 +102,32 @@ async def run_pipeline_async(
     return PipelineOutput(results=results, companies=companies, warnings=warnings)
 
 
+def fetch_company_news(
+    ticker: str, company_name: Optional[str] = None
+) -> Dict[str, Any]:
+    """Fetch GDELT news/tone for a single company on demand.
+
+    Used by the deep-dive News tab so news is loaded lazily (per opened
+    company) instead of for the whole universe up front -- this is what keeps
+    the radar fast and avoids GDELT's rate limiter. The result is cached in
+    SQLite, so reopening the tab is instant. Returns an empty dict on failure
+    (the caller shows a gentle "no news yet" note rather than a warning).
+    """
+    from freealpharadar.fetchers import GDELTFetcher
+
+    async def _go() -> Dict[str, Any]:
+        res = await GDELTFetcher().fetch(ticker, company_name=company_name)
+        if res.warning:
+            logger.debug("gdelt (on-demand): %s", res.warning)
+        return res.payload or {}
+
+    try:
+        return asyncio.run(_go())
+    except Exception as exc:  # noqa: BLE001
+        logger.debug("on-demand news fetch failed for %s: %s", ticker, exc)
+        return {}
+
+
 def run_pipeline(
     tickers: List[str],
     weights: Optional[Dict[str, float]] = None,
@@ -105,6 +136,7 @@ def run_pipeline(
     run_ml: bool = True,
     progress_cb: Optional[Callable[[int, int, str], None]] = None,
     persist: bool = True,
+    fetch_news: bool = False,
 ) -> PipelineOutput:
     """Synchronous wrapper around :func:`run_pipeline_async`.
 
@@ -119,5 +151,6 @@ def run_pipeline(
             run_ml=run_ml,
             progress_cb=progress_cb,
             persist=persist,
+            fetch_news=fetch_news,
         )
     )

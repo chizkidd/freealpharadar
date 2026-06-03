@@ -13,7 +13,9 @@ import os
 import statistics
 import time
 import weakref
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
+
+import aiohttp
 
 from freealpharadar.config import GDELT_DOC_ENDPOINT, settings
 from freealpharadar.fetchers.base import BaseFetcher
@@ -22,9 +24,11 @@ from freealpharadar.utils import get_logger
 logger = get_logger(__name__)
 
 # GDELT rate-limits aggressively (HTTP 429) when called concurrently. Serialise
-# all GDELT requests across the process and space them out so a 32-name batch
-# doesn't trip the limiter. Tunable via FAR_GDELT_INTERVAL (seconds).
-_GDELT_MIN_INTERVAL = float(os.environ.get("FAR_GDELT_INTERVAL", "2.0"))
+# all GDELT requests across the process and space them out so a batch doesn't
+# trip the limiter. Tunable via FAR_GDELT_INTERVAL (seconds). News is fetched
+# lazily (one company at a time when its News tab opens), so this only spaces
+# the two calls per company; a conservative default avoids 429s on cold caches.
+_GDELT_MIN_INTERVAL = float(os.environ.get("FAR_GDELT_INTERVAL", "5.0"))
 _gdelt_last_call = 0.0
 # An asyncio.Lock binds to the event loop that is running when it is created.
 # Streamlit starts a fresh loop on every rerun, so a module-level lock would
@@ -69,29 +73,43 @@ class GDELTFetcher(BaseFetcher):
             company_name: Search phrase; falls back to ``key``.
         """
         company_name: str = kwargs.get("company_name") or key
-        params = {
-            "query": f'"{company_name}"',
-            "mode": "ToneChart",
-            "format": "json",
-            "timespan": "3m",
-        }
         # The ToneChart mode returns a tone histogram; ArtList returns articles.
         # Throttle both calls so concurrent tickers don't trip GDELT's limiter.
-        await _gdelt_throttle()
-        tone_data = await self._http_get_json(GDELT_DOC_ENDPOINT, params=params)
-
-        art_params = {
-            "query": f'"{company_name}"',
-            "mode": "ArtList",
-            "format": "json",
-            "maxrecords": "50",
-            "timespan": "3m",
-            "sort": "datedesc",
-        }
-        await _gdelt_throttle()
-        art_data = await self._http_get_json(GDELT_DOC_ENDPOINT, params=art_params)
-
+        tone_data = await self._gdelt_get(
+            {
+                "query": f'"{company_name}"',
+                "mode": "ToneChart",
+                "format": "json",
+                "timespan": "3m",
+            }
+        )
+        art_data = await self._gdelt_get(
+            {
+                "query": f'"{company_name}"',
+                "mode": "ArtList",
+                "format": "json",
+                "maxrecords": "50",
+                "timespan": "3m",
+                "sort": "datedesc",
+            }
+        )
         return self._summarise(company_name, tone_data, art_data)
+
+    async def _gdelt_get(self, params: Dict[str, Any]) -> Dict[str, Any]:
+        """Throttled GET that honours GDELT's 429 ``Retry-After`` on backoff."""
+        global _gdelt_last_call
+        await _gdelt_throttle()
+        try:
+            return await self._http_get_json(GDELT_DOC_ENDPOINT, params=params)
+        except aiohttp.ClientResponseError as exc:
+            if exc.status == 429:
+                # Respect Retry-After when present; otherwise widen the spacing.
+                wait = _parse_retry_after(exc.headers) or (_GDELT_MIN_INTERVAL * 2)
+                logger.debug("GDELT 429; backing off %.1fs before retry", wait)
+                await asyncio.sleep(wait)
+                # Push the next call further out so the base-class retry re-spaces.
+                _gdelt_last_call = time.monotonic()
+            raise
 
     @staticmethod
     def _summarise(
@@ -137,6 +155,15 @@ def _avg_article_tone(articles: List[Dict[str, Any]]) -> float:
     """Mean tone across articles that report one; ``0.0`` if none."""
     tones = [a["tone"] for a in articles if a.get("tone") is not None]
     return statistics.mean(tones) if tones else 0.0
+
+
+def _parse_retry_after(headers: Any) -> Optional[float]:
+    """Parse a ``Retry-After`` header expressed in seconds; ``None`` if absent."""
+    try:
+        raw = headers.get("Retry-After") if headers else None
+        return float(raw) if raw is not None else None
+    except (TypeError, ValueError):
+        return None
 
 
 def _safe_float(value: Any) -> Any:

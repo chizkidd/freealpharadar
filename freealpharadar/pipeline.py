@@ -19,7 +19,7 @@ from typing import Any, Dict, List, Optional
 from freealpharadar.config import settings
 from freealpharadar.fetchers import (
     GDELTFetcher,
-    PatentsViewFetcher,
+    PatentFetcher,
     SECFetcher,
     YFinanceFetcher,
 )
@@ -70,6 +70,7 @@ async def gather_company(
     ticker: str,
     manual_signals: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
+    fetch_news: bool = False,
 ) -> CompanyData:
     """Fetch and assemble all data for a single ticker.
 
@@ -77,6 +78,10 @@ async def gather_company(
         ticker: The ticker symbol to gather.
         manual_signals: Optional per-ticker manual CSV signals.
         force_refresh: Bypass cache freshness checks across all fetchers.
+        fetch_news: When ``True`` also fetch GDELT news/tone. Defaults to
+            ``False`` so universe-wide scoring stays fast and never trips
+            GDELT's rate limiter; the deep-dive News tab fetches it on demand
+            for the single selected company.
 
     Returns:
         A populated :class:`CompanyData` instance.
@@ -84,23 +89,30 @@ async def gather_company(
     ticker = ticker.upper()
     yf = YFinanceFetcher()
     sec = SECFetcher()
-    patents = PatentsViewFetcher()
-    gdelt = GDELTFetcher()
+    patents = PatentFetcher()
 
     # yfinance first so we can derive the company name for name-based queries.
     yf_res: FetchResult = await yf.fetch(ticker, force_refresh=force_refresh)
     yf_payload = yf_res.payload or {}
     name = _company_name_from(yf_payload, ticker)
 
-    sec_res, pat_res, gdelt_res = await asyncio.gather(
+    sec_res, pat_res = await asyncio.gather(
         sec.fetch(ticker, force_refresh=force_refresh),
         patents.fetch(ticker, force_refresh=force_refresh, company_name=name),
-        gdelt.fetch(ticker, force_refresh=force_refresh, company_name=name),
     )
 
-    warnings: List[str] = [
-        r.warning for r in (yf_res, sec_res, pat_res, gdelt_res) if r.warning
-    ]
+    gdelt_payload: Dict[str, Any] = {}
+    if fetch_news:
+        gdelt_res = await GDELTFetcher().fetch(
+            ticker, force_refresh=force_refresh, company_name=name
+        )
+        gdelt_payload = gdelt_res.payload or {}
+        # News is an optional enrichment: keep its failures quiet (debug-only)
+        # rather than surfacing them as loud data warnings on the dashboard.
+        if gdelt_res.warning:
+            logger.debug("gdelt: %s", gdelt_res.warning)
+
+    warnings: List[str] = [r.warning for r in (yf_res, sec_res, pat_res) if r.warning]
 
     metrics = yf_payload.get("key_metrics", {}) if yf_payload else {}
     sec_payload = sec_res.payload or {}
@@ -128,7 +140,7 @@ async def gather_company(
         yfinance=yf_payload,
         sec=sec_payload,
         patents=pat_res.payload or {},
-        gdelt=gdelt_res.payload or {},
+        gdelt=gdelt_payload,
         manual=manual_signals or {},
         warnings=warnings,
     )
@@ -169,6 +181,7 @@ async def gather_universe(
     manual_signals: Optional[Dict[str, Dict[str, Any]]] = None,
     force_refresh: bool = False,
     progress_cb: Optional[Any] = None,
+    fetch_news: bool = False,
 ) -> List[CompanyData]:
     """Gather data for a list of tickers with bounded concurrency.
 
@@ -197,6 +210,7 @@ async def gather_universe(
                     tk,
                     manual_signals=manual_signals.get(tk.upper()),
                     force_refresh=force_refresh,
+                    fetch_news=fetch_news,
                 )
             except Exception as exc:  # noqa: BLE001
                 logger.warning("Failed to gather %s: %s", tk, exc)

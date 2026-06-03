@@ -17,6 +17,7 @@ import streamlit as st
 from freealpharadar.ml.finbert import FinBERTSentiment
 from freealpharadar.pipeline import CompanyData
 from freealpharadar.scoring import ScoreResult
+from freealpharadar.service import fetch_company_news
 
 
 def render_deep_dive(
@@ -186,11 +187,17 @@ def _render_patents(company: CompanyData) -> None:
 
 
 def _render_news(company: CompanyData) -> None:
-    """GDELT news feed with per-article tone bars."""
+    """GDELT news feed with per-article tone bars (fetched lazily on open)."""
     gdelt = company.gdelt or {}
+    # News is fetched on demand here -- not during universe scoring -- so the
+    # radar stays fast and we never fire 32 GDELT calls at once (the 429 source).
+    if not gdelt:
+        with st.spinner("Fetching recent news…"):
+            gdelt = fetch_company_news(company.ticker, company.name) or {}
+            company.gdelt = gdelt  # cache on the bundle for this session
     articles = gdelt.get("articles", [])
     if not articles:
-        st.info("No recent GDELT news available.")
+        st.info("No recent news available yet for this company.")
         return
     avg = gdelt.get("avg_tone")
     st.metric("Average news tone", f"{avg:+.2f}" if avg is not None else "n/a")
@@ -247,18 +254,32 @@ def _render_waterfall(result: ScoreResult) -> None:
     st.plotly_chart(fig, use_container_width=True)
 
     st.subheader("Factor detail")
+    # Factors with no data for this company are neutral -- they don't move the
+    # score (see ScoringEngine) -- so surface them as "n/a" and sort them last,
+    # making it clear *why* a row contributes nothing instead of showing a bare 0.
+    present = [c for c in result.contributions if c.raw is not None]
+    missing = [c for c in result.contributions if c.raw is None]
+    present.sort(key=lambda c: abs(c.contribution), reverse=True)
     rows = [
         {
             "Factor": c.label,
             "Group": c.group,
-            "Raw value": c.raw,
-            "Z-score": round(c.zscore, 3),
+            "Raw value": round(c.raw, 4) if c.raw is not None else "n/a — no data",
+            "Z-score": round(c.zscore, 3) if c.raw is not None else "—",
             "Weight": c.weight,
-            "Contribution": round(c.contribution, 4),
+            "Contribution": round(c.contribution, 4) if c.raw is not None else 0.0,
         }
-        for c in result.contributions
+        for c in (present + missing)
     ]
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+    n_missing = len(missing)
+    if n_missing:
+        st.caption(
+            f"{n_missing} factor(s) show **n/a** — no data for this company "
+            "(e.g. no long filing history, no positive earnings, or patent/manual "
+            "signals not configured). They are treated as neutral and do not "
+            "drag the score."
+        )
 
 
 def _first_col(df: pd.DataFrame, candidates: List[str]) -> Optional[str]:

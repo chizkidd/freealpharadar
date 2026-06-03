@@ -28,7 +28,7 @@ def _parse(argv: List[str]) -> argparse.Namespace:
     sub = p.add_subparsers(dest="cmd", required=True)
 
     run = sub.add_parser("run", help="Screen + full-score + promote top-N.")
-    run.add_argument("--top", type=int, default=10, help="Names to promote.")
+    run.add_argument("--top", type=int, default=15, help="Names to promote.")
     run.add_argument(
         "--candidates", type=int, default=100, help="Stage-1 shortlist size."
     )

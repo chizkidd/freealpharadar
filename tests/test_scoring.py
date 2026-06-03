@@ -109,12 +109,20 @@ class TestFactors:
         # Revenue grows exactly 20%/yr in the SEC facts series.
         assert F.f_revenue_cagr_5y(handcrafted_company) == pytest.approx(0.20)
 
-    def test_revenue_cagr_10y_from_sec_facts(self, handcrafted_company):
-        assert F.f_revenue_cagr_10y(handcrafted_company) == pytest.approx(0.20)
-
     def test_gross_margin_trend_from_sec_facts(self, handcrafted_company):
         # Gross margin rises exactly +0.01 per year.
         assert F.f_gross_margin_trend(handcrafted_company) == pytest.approx(0.01)
+
+    def test_revenue_cagr_uses_alternate_concepts(self):
+        # Mature filers tag revenue under SalesRevenueNet (revenue_alt2) rather
+        # than the primary concept; the factor must fall back to it.
+        from freealpharadar.pipeline import CompanyData
+
+        facts = {
+            "revenue_alt2": [{"fy": 2019, "val": 100.0}, {"fy": 2024, "val": 200.0}]
+        }
+        c = CompanyData(ticker="X", sec={"facts": facts})
+        assert F.f_revenue_cagr_5y(c) == pytest.approx(2.0 ** (1 / 5) - 1.0)
 
     def test_long_horizon_factors_none_without_facts(self, single_company):
         # Sample companies via build_sample_dataset DO have facts; an explicit
@@ -123,7 +131,6 @@ class TestFactors:
 
         bare = CompanyData(ticker="X")
         assert F.f_revenue_cagr_5y(bare) is None
-        assert F.f_revenue_cagr_10y(bare) is None
         assert F.f_gross_margin_trend(bare) is None
 
 
@@ -199,6 +206,79 @@ class TestEngine:
         results = ScoringEngine(weights=weights).score_universe(sample_universe)
         for r in results:
             assert all(c.contribution == 0.0 for c in r.contributions)
+
+    def test_missing_factor_does_not_dilute_composite(self):
+        # A factor that is None for every company must be *neutral* (excluded
+        # from the weighted average), not a zero that drags the composite toward
+        # the mean. Including such a factor must not change raw_composite.
+        from freealpharadar.scoring.factors import FactorGroup, FactorSpec
+
+        c1, c2 = CompanyData(ticker="A"), CompanyData(ticker="B")
+        present = FactorSpec(
+            "present",
+            "P",
+            FactorGroup.MOMENTUM,
+            lambda c: 1.0 if c.ticker == "A" else 0.0,
+            True,
+            "",
+        )
+        missing = FactorSpec(
+            "missing", "M", FactorGroup.MOMENTUM, lambda c: None, True, ""
+        )
+        only = ScoringEngine(factors=[present]).score_universe([c1, c2])
+        both = ScoringEngine(factors=[present, missing]).score_universe([c1, c2])
+        only_map = {r.ticker: r.raw_composite for r in only}
+        both_map = {r.ticker: r.raw_composite for r in both}
+        assert only_map == both_map
+
+
+# --------------------------------------------------------------------------- #
+# Provider-agnostic patent fetcher (offline; providers stubbed)
+# --------------------------------------------------------------------------- #
+class TestPatentProviders:
+    def test_no_provider_returns_empty(self, monkeypatch):
+        import asyncio
+
+        from freealpharadar.fetchers import patents_fetcher as PF
+
+        monkeypatch.setattr(PF, "PATENTSVIEW_API_KEY", "")
+        monkeypatch.setattr(PF, "LENS_API_TOKEN", "")
+        out = asyncio.run(PF.PatentFetcher()._fetch_remote("AAA", company_name="Acme"))
+        assert out["total_patents"] == 0
+        assert out["sample_titles"] == []
+
+    def test_lens_response_is_normalised(self, monkeypatch):
+        import asyncio
+
+        from freealpharadar.fetchers import patents_fetcher as PF
+
+        monkeypatch.setattr(PF, "PATENTSVIEW_API_KEY", "")
+        monkeypatch.setattr(PF, "LENS_API_TOKEN", "tok")
+
+        async def fake_post(self, url, *, json_body=None, headers=None):
+            assert headers["Authorization"] == "Bearer tok"
+            return {
+                "data": [
+                    {
+                        "biblio": {"invention_title": [{"text": "Quantum widget"}]},
+                        "date_published": "2023-05-01",
+                    },
+                    {
+                        "biblio": {"invention_title": [{"text": "AI gadget"}]},
+                        "date_published": "2022-01-01",
+                    },
+                ]
+            }
+
+        monkeypatch.setattr(PF.PatentFetcher, "_http_post_json", fake_post)
+        out = asyncio.run(PF.PatentFetcher()._fetch_remote("AAA", company_name="Acme"))
+        assert out["total_patents"] == 2
+        assert "Quantum widget" in out["sample_titles"]
+
+    def test_patentsview_alias_is_provider_class(self):
+        from freealpharadar.fetchers import patents_fetcher as PF
+
+        assert PF.PatentsViewFetcher is PF.PatentFetcher
 
 
 # --------------------------------------------------------------------------- #

@@ -136,9 +136,14 @@ class SECFetcher(BaseFetcher):
 
         facts = data.get("facts", {})
         gaap = facts.get("us-gaap", {})
+        # Revenue is tagged under several us-gaap concepts depending on the
+        # filer/era; capture each so the CAGR/margin factors can fall back in
+        # priority order and mature names don't end up with an empty series.
         wanted = {
             "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
             "revenue_alt": "Revenues",
+            "revenue_alt2": "SalesRevenueNet",
+            "revenue_alt3": "RevenueFromContractWithCustomerIncludingAssessedTax",
             "rnd": "ResearchAndDevelopmentExpense",
             "gross_profit": "GrossProfit",
             "net_income": "NetIncomeLoss",

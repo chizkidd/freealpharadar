@@ -30,7 +30,13 @@ class WarehouseStore:
             )
 
     def _connect(self):
-        import duckdb
+        try:
+            import duckdb
+        except ModuleNotFoundError as exc:  # pragma: no cover - import guard
+            raise ModuleNotFoundError(
+                "The warehouse/discovery feature needs DuckDB. Install the "
+                "optional deps with:  pip install -r requirements-warehouse.txt"
+            ) from exc
 
         con = duckdb.connect(database=":memory:")
         con.execute(

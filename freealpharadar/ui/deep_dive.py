@@ -1,8 +1,9 @@
 """The Deep Dive view for a single company.
 
 Shows the financial trajectory, an SEC risk-factor excerpt with FinBERT
-sentiment highlighting, the patent-filing timeline and top assignees, the GDELT
-news feed with tone bars, and a waterfall chart decomposing the final score.
+sentiment highlighting, the patent-filing timeline and top assignees, the Yahoo
+Finance news feed with sentiment bars, and a waterfall chart decomposing the
+final score.
 """
 
 from __future__ import annotations
@@ -53,7 +54,7 @@ def render_deep_dive(
     with tabs[2]:
         _render_patents(company)
     with tabs[3]:
-        _render_news(company)
+        _render_news(company, analyzer)
     with tabs[4]:
         _render_waterfall(result)
 
@@ -186,45 +187,57 @@ def _render_patents(company: CompanyData) -> None:
             st.markdown(f"- {t}")
 
 
-def _render_news(company: CompanyData) -> None:
-    """GDELT news feed with per-article tone bars (fetched lazily on open)."""
-    gdelt = company.gdelt or {}
-    # News is fetched on demand here -- not during universe scoring -- so the
-    # radar stays fast and we never fire 32 GDELT calls at once (the 429 source).
-    if not gdelt:
+def _render_news(
+    company: CompanyData, analyzer: Optional[FinBERTSentiment] = None
+) -> None:
+    """Yahoo Finance news feed with per-headline sentiment bars.
+
+    News is fetched inline with scoring, but if a company's bundle has none
+    cached (e.g. seeded from an older snapshot) we fetch it on demand here.
+    Yahoo carries no tone, so per-headline sentiment is scored with the shared
+    analyzer (FinBERT or the offline lexicon fallback).
+    """
+    news = company.news or {}
+    if not news:
         with st.spinner("Fetching recent news…"):
-            gdelt = fetch_company_news(company.ticker, company.name) or {}
-            company.gdelt = gdelt  # cache on the bundle for this session
-    articles = gdelt.get("articles", [])
+            news = fetch_company_news(company.ticker, company.name) or {}
+            company.news = news  # cache on the bundle for this session
+    articles = news.get("articles", [])
     if not articles:
         st.info("No recent news available yet for this company.")
         return
-    avg = gdelt.get("avg_tone")
-    st.metric("Average news tone", f"{avg:+.2f}" if avg is not None else "n/a")
 
-    adf = pd.DataFrame(articles)
-    if "tone" in adf.columns:
-        tdf = adf.dropna(subset=["tone"]).head(25)
-        if not tdf.empty:
-            fig = px.bar(
-                tdf,
-                x="tone",
-                y=tdf.get("title", tdf.index).astype(str).str.slice(0, 60),
-                orientation="h",
-                color="tone",
-                color_continuous_scale="RdYlGn",
-                title="Article tone (red = negative, green = positive)",
-            )
-            fig.update_layout(height=600, yaxis_title="")
-            st.plotly_chart(fig, use_container_width=True)
+    analyzer = analyzer or FinBERTSentiment()
+    rows = []
+    for art in articles[:25]:
+        title = art.get("title") or ""
+        tone = analyzer.analyze(title).score if title else None
+        rows.append({**art, "tone": tone})
+    tones = [r["tone"] for r in rows if r["tone"] is not None]
+    avg = sum(tones) / len(tones) if tones else None
+    st.metric("Average news sentiment", f"{avg:+.2f}" if avg is not None else "n/a")
+
+    tdf = pd.DataFrame([r for r in rows if r["tone"] is not None])
+    if not tdf.empty:
+        fig = px.bar(
+            tdf,
+            x="tone",
+            y=tdf["title"].astype(str).str.slice(0, 60),
+            orientation="h",
+            color="tone",
+            color_continuous_scale="RdYlGn",
+            title="Headline sentiment (red = negative, green = positive)",
+        )
+        fig.update_layout(height=600, yaxis_title="")
+        st.plotly_chart(fig, use_container_width=True)
 
     st.subheader("Headlines")
-    for art in articles[:20]:
+    for art in rows[:20]:
         tone = art.get("tone")
-        tone_str = f" ({tone:+.1f})" if tone is not None else ""
-        url = art.get("url", "#")
-        title = art.get("title", "(untitled)")
-        st.markdown(f"- [{title}]({url}){tone_str} — *{art.get('domain', '')}*")
+        tone_str = f" ({tone:+.2f})" if tone is not None else ""
+        url = art.get("url") or "#"
+        title = art.get("title") or "(untitled)"
+        st.markdown(f"- [{title}]({url}){tone_str} — *{art.get('publisher') or ''}*")
 
 
 def _render_waterfall(result: ScoreResult) -> None:

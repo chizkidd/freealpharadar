@@ -3,7 +3,7 @@
 When the ``transformers`` stack and the pre-trained ``ProsusAI/finbert`` model
 are available (and the model can be loaded -- it is downloaded on first use),
 this module runs proper FinBERT sentiment classification over SEC filing
-sections and GDELT headlines.
+sections and news headlines.
 
 When that is **not** possible -- no network to download weights, ``torch`` not
 installed, or running in a constrained CI/Colab sandbox -- it transparently

@@ -8,8 +8,8 @@ The app is stateless and zero-config: it requires no API keys and no secrets.
 On first launch it seeds a local SQLite cache with deterministic sample data so
 the dashboard is fully populated and usable **even with no network access**.
 Clicking "Refresh Data & Re-score" then pulls live data from the free public
-sources (yfinance, SEC EDGAR, PatentsView, GDELT) where reachable, always
-falling back to cache on failure.
+sources (yfinance, SEC EDGAR, Yahoo Finance news, optional patents) where
+reachable, always falling back to cache on failure.
 """
 
 from __future__ import annotations
@@ -126,8 +126,8 @@ def main() -> None:
 
     st.sidebar.markdown("---")
     st.sidebar.caption(
-        "Data: yfinance · SEC EDGAR · PatentsView · GDELT — all free, no keys. "
-        "Not investment advice."
+        "Data: yfinance · SEC EDGAR · Yahoo Finance news · optional patents — "
+        "free, no keys. Not investment advice."
     )
 
 

@@ -7,7 +7,8 @@ transparently scored list of high-potential, under-the-radar companies.
 The package is organised into a handful of focused sub-packages:
 
 * :mod:`freealpharadar.fetchers` -- data ingestion (yfinance, SEC EDGAR,
-  PatentsView, GDELT, manual CSV) with caching and offline fallbacks.
+  Yahoo Finance news, optional patents, manual CSV) with caching and offline
+  fallbacks.
 * :mod:`freealpharadar.scoring` -- the multi-factor "Moat + Momentum +
   Misvaluation" scoring engine.
 * :mod:`freealpharadar.ml` -- zero-shot ML enhancements (FinBERT sentiment,

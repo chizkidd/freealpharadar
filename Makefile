@@ -1,5 +1,5 @@
 # FreeAlphaRadar — developer convenience targets.
-.PHONY: help install install-ml install-dev install-warehouse run scorer seed warehouse discover test lint format precommit docker-build docker-up clean
+.PHONY: help install install-ml install-dev install-warehouse run scorer seed warehouse discover check-sources test lint format precommit docker-build docker-up clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -27,10 +27,13 @@ seed: ## (Re)seed the offline sample dataset into SQLite
 	python run_scorer.py --seed-sample --no-refresh
 
 warehouse: ## Build the bulk SEC fundamentals warehouse (needs network)
-	python -m freealpharadar.warehouse build --since 2015
+	python -m freealpharadar.warehouse build --since 2018
 
-discover: ## Scan all filers -> promote ranked under-the-radar top-10 (needs network)
-	python -m freealpharadar.discovery run --top 10
+discover: ## Scan all filers -> promote ranked under-the-radar top-15 (needs network)
+	python -m freealpharadar.discovery run --top 15
+
+check-sources: ## Probe every free data endpoint (yfinance/news/SEC/patents)
+	python scripts/check_sources.py
 
 test: ## Run the offline test-suite (no network); installs dev deps first
 	pip install -r requirements-dev.txt

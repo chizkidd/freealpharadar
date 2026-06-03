@@ -91,10 +91,12 @@ class PatentFetcher(BaseFetcher):
         shape that :meth:`_summarise` consumes, so downstream scoring is
         provider-agnostic.
         """
+        # Structured query + field projection per the Lens patent API:
+        # https://support.lens.org/knowledge-base/lens-patent-and-scholar-api/
         body = {
             "query": {"match_phrase": {"applicant.name": company_name}},
             "size": 100,
-            "include": ["biblio.invention_title.text", "date_published"],
+            "include": ["biblio.invention_title", "date_published"],
         }
         headers = {
             "Authorization": f"Bearer {LENS_API_TOKEN}",

@@ -12,16 +12,16 @@ Public fetchers:
 
 * :class:`~freealpharadar.fetchers.yfinance_fetcher.YFinanceFetcher`
 * :class:`~freealpharadar.fetchers.sec_fetcher.SECFetcher`
-* :class:`~freealpharadar.fetchers.patents_fetcher.PatentsViewFetcher`
-* :class:`~freealpharadar.fetchers.gdelt_fetcher.GDELTFetcher`
+* :class:`~freealpharadar.fetchers.patents_fetcher.PatentFetcher`
+* :class:`~freealpharadar.fetchers.news_fetcher.NewsFetcher`
 * :func:`~freealpharadar.fetchers.manual_csv.load_manual_csv`
 """
 
 from __future__ import annotations
 
 from freealpharadar.fetchers.base import BaseFetcher, FetchResult
-from freealpharadar.fetchers.gdelt_fetcher import GDELTFetcher
 from freealpharadar.fetchers.manual_csv import load_manual_csv
+from freealpharadar.fetchers.news_fetcher import NewsFetcher
 from freealpharadar.fetchers.patents_fetcher import (
     PatentFetcher,
     PatentsViewFetcher,
@@ -36,6 +36,6 @@ __all__ = [
     "SECFetcher",
     "PatentFetcher",
     "PatentsViewFetcher",
-    "GDELTFetcher",
+    "NewsFetcher",
     "load_manual_csv",
 ]

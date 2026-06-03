@@ -18,7 +18,7 @@ from typing import Any, Dict, List, Optional
 
 from freealpharadar.config import settings
 from freealpharadar.fetchers import (
-    GDELTFetcher,
+    NewsFetcher,
     PatentFetcher,
     SECFetcher,
     YFinanceFetcher,
@@ -40,8 +40,8 @@ class CompanyData:
         market_cap: Market capitalisation in USD, if known.
         yfinance: yfinance payload (prices, statements, key metrics).
         sec: SEC payload (sections, facts, insider, flags).
-        patents: PatentsView payload (counts, growth, titles).
-        gdelt: GDELT payload (articles, average tone).
+        patents: Patent payload (counts, growth, titles).
+        news: Yahoo Finance news payload (recent articles).
         manual: Manual CSV signals for this ticker.
         derived: ML-enrichment outputs (FinBERT sentiment, controversy, cluster).
         warnings: Non-fatal warnings collected from fetchers.
@@ -54,7 +54,7 @@ class CompanyData:
     yfinance: Dict[str, Any] = field(default_factory=dict)
     sec: Dict[str, Any] = field(default_factory=dict)
     patents: Dict[str, Any] = field(default_factory=dict)
-    gdelt: Dict[str, Any] = field(default_factory=dict)
+    news: Dict[str, Any] = field(default_factory=dict)
     manual: Dict[str, Any] = field(default_factory=dict)
     derived: Dict[str, Any] = field(default_factory=dict)
     warnings: List[str] = field(default_factory=list)
@@ -70,7 +70,7 @@ async def gather_company(
     ticker: str,
     manual_signals: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
-    fetch_news: bool = False,
+    fetch_news: bool = True,
 ) -> CompanyData:
     """Fetch and assemble all data for a single ticker.
 
@@ -78,10 +78,9 @@ async def gather_company(
         ticker: The ticker symbol to gather.
         manual_signals: Optional per-ticker manual CSV signals.
         force_refresh: Bypass cache freshness checks across all fetchers.
-        fetch_news: When ``True`` also fetch GDELT news/tone. Defaults to
-            ``False`` so universe-wide scoring stays fast and never trips
-            GDELT's rate limiter; the deep-dive News tab fetches it on demand
-            for the single selected company.
+        fetch_news: When ``True`` (default) also fetch Yahoo Finance news. It is
+            one cheap, key-less call per ticker (unlike GDELT, which 429s), so
+            it runs inline with scoring; discovery passes ``False`` to skip it.
 
     Returns:
         A populated :class:`CompanyData` instance.
@@ -101,16 +100,16 @@ async def gather_company(
         patents.fetch(ticker, force_refresh=force_refresh, company_name=name),
     )
 
-    gdelt_payload: Dict[str, Any] = {}
+    news_payload: Dict[str, Any] = {}
     if fetch_news:
-        gdelt_res = await GDELTFetcher().fetch(
+        news_res = await NewsFetcher().fetch(
             ticker, force_refresh=force_refresh, company_name=name
         )
-        gdelt_payload = gdelt_res.payload or {}
+        news_payload = news_res.payload or {}
         # News is an optional enrichment: keep its failures quiet (debug-only)
         # rather than surfacing them as loud data warnings on the dashboard.
-        if gdelt_res.warning:
-            logger.debug("gdelt: %s", gdelt_res.warning)
+        if news_res.warning:
+            logger.debug("news: %s", news_res.warning)
 
     warnings: List[str] = [r.warning for r in (yf_res, sec_res, pat_res) if r.warning]
 
@@ -140,7 +139,7 @@ async def gather_company(
         yfinance=yf_payload,
         sec=sec_payload,
         patents=pat_res.payload or {},
-        gdelt=gdelt_payload,
+        news=news_payload,
         manual=manual_signals or {},
         warnings=warnings,
     )
@@ -181,7 +180,7 @@ async def gather_universe(
     manual_signals: Optional[Dict[str, Dict[str, Any]]] = None,
     force_refresh: bool = False,
     progress_cb: Optional[Any] = None,
-    fetch_news: bool = False,
+    fetch_news: bool = True,
 ) -> List[CompanyData]:
     """Gather data for a list of tickers with bounded concurrency.
 

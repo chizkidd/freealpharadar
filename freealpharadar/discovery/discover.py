@@ -103,7 +103,10 @@ def run_discovery(
     if pipeline_fn is None:
         from freealpharadar.service import run_pipeline as pipeline_fn  # lazy
 
-    output = pipeline_fn(tickers, run_ml=run_ml, force_refresh=True, persist=True)
+    # News doesn't affect the discovery ranking, so skip it for speed.
+    output = pipeline_fn(
+        tickers, run_ml=run_ml, force_refresh=True, persist=True, fetch_news=False
+    )
 
     eligible = [
         r

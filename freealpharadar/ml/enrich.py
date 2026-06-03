@@ -5,7 +5,7 @@ objects *before* scoring, populating their ``derived`` dict with:
 
 * ``finbert_sentiment`` -- FinBERT (or lexicon) sentiment of the SEC risk
   section, in ``[-1, 1]``.
-* ``finbert_news_sentiment`` -- sentiment of recent GDELT headlines.
+* ``finbert_news_sentiment`` -- sentiment of recent Yahoo Finance headlines.
 * ``controversy_score`` -- a blended controversy metric (higher = more
   controversial).
 * ``cluster`` -- the PCA/K-Means peer-cluster label.
@@ -49,7 +49,7 @@ def enrich_companies(
 
         headlines = [
             a.get("title", "")
-            for a in (company.gdelt.get("articles", []) or [])
+            for a in (company.news.get("articles", []) or [])
             if a.get("title")
         ][:15]
         news_sent = analyzer.analyze_many(headlines) if headlines else None

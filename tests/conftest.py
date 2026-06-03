@@ -42,8 +42,8 @@ def _company_from_sample(ticker: str) -> CompanyData:
         market_cap=metrics["market_cap"],
         yfinance=yf,
         sec=bundle["sec"],
-        patents=bundle["patentsview"],
-        gdelt=bundle["gdelt"],
+        patents=bundle["patents"],
+        news=bundle["news"],
         manual={},
     )
 
@@ -169,14 +169,15 @@ def handcrafted_company():
             ],
             "sample_titles": ["A", "B", "C"],
         },
-        gdelt={
-            "avg_tone": 2.5,
+        news={
             "article_count": 12,
             "articles": [
-                {"title": "Great growth and record profit", "tone": 4.0},
-                {"title": "Lawsuit and investigation risk", "tone": -3.0},
+                {"title": "Great growth and record profit"},
+                {"title": "Lawsuit and investigation risk"},
             ],
         },
+        # News tone is supplied by ML enrichment; preset it for factor asserts.
+        derived={"finbert_news_sentiment": 2.5},
         manual={
             "product_moat_score": 8.0,
             "culture_score": 7.5,

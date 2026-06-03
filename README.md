@@ -22,7 +22,7 @@ z-score → weighted contribution.
 
 | Principle | What it means here |
 |-----------|--------------------|
-| **100% free data** | yfinance, SEC EDGAR, GDELT — key-less and free (PatentsView needs a free, optional key). |
+| **100% free data** | yfinance, SEC EDGAR, Yahoo Finance news — key-less and free (patents need a free, optional PatentsView or Lens key). |
 | **Zero configuration** | No `.env`, no secrets, no registration. `streamlit run` and go. |
 | **Works fully offline** | First launch seeds a SQLite cache with sample data; every fetcher falls back to cache on failure. |
 | **Totally transparent** | A waterfall chart decomposes every company's score, factor by factor. |
@@ -100,7 +100,7 @@ default).
 | **Disruption & Moat** | Patent growth rate, R&D intensity, founder-led flag, product moat (manual), culture (manual) |
 | **Growth & Momentum** | 3-yr revenue CAGR, **~5y & ~10y revenue CAGR + full-cycle margin trend (from full SEC XBRL history)**, gross-margin expansion, price momentum, employee growth, customer-concentration risk |
 | **Valuation & Inefficiency** | EV/Gross-Profit, P/E, P/B, short interest, institutional ownership, insider activity, Piotroski F-score |
-| **Qualitative Flags** | GDELT news tone, FinBERT controversy score, key-person dependency, regulatory-risk count |
+| **Qualitative Flags** | News-headline sentiment (Yahoo + FinBERT), FinBERT controversy score, key-person dependency, regulatory-risk count |
 
 > **Under-the-radar lens:** factors like *institutional ownership* are oriented
 > so that **lower** is more attractive — the hallmark of a genuinely
@@ -114,8 +114,8 @@ default).
   sector, with hover company cards and live filters for sector, market-cap
   range and score threshold.
 * **🔬 Deep Dive** — financial trajectory, SEC risk-factor excerpt with FinBERT
-  sentiment highlighting, patent timeline + top assignees, GDELT news feed with
-  tone bars, and a **waterfall** of the score breakdown.
+  sentiment highlighting, patent timeline + top assignees, a Yahoo Finance news
+  feed with headline-sentiment bars, and a **waterfall** of the score breakdown.
 * **⭐ Watchlist** — save/remove companies (SQLite), then **Check for Changes**
   to re-score and write a changelog to `watchlist_changes/<ticker>_<date>.txt`,
   with deltas shown inline.
@@ -128,8 +128,8 @@ default).
 |--------|--------------------|----------|
 | **yfinance** | `yfinance` | Prices, income/balance/cash-flow statements, short interest, ownership |
 | **SEC EDGAR** | `data.sec.gov` JSON + EDGAR archives (no key) | Risk factors, MD&A, business description, Form 4 insider data, XBRL facts |
-| **PatentsView** | `search.patentsview.org` (free API key, optional) | Patent counts, assignees, titles over time |
-| **GDELT 2.0** | `api.gdeltproject.org` Doc API | News sentiment (tone) and volume |
+| **PatentsView / Lens** | `search.patentsview.org` or `api.lens.org` (free API key/token, optional) | Patent counts, assignees, titles over time |
+| **Yahoo Finance news** | `yfinance` `Ticker.news` (no key) | Recent news headlines; sentiment scored by FinBERT/lexicon, plus volume |
 | **Manual CSV** | optional upload | Employee/culture/product-moat signals — gracefully ignored if absent |
 
 Everything is cached in SQLite with per-source TTLs (configurable via env vars)
@@ -158,7 +158,7 @@ freealpharadar/
 │   ├── service.py              # ingest → enrich → score pipeline
 │   ├── sample_data.py          # Deterministic offline sample data
 │   ├── watchlist.py            # Re-scoring + changelog writing
-│   ├── fetchers/               # yfinance, SEC, PatentsView, GDELT, manual CSV
+│   ├── fetchers/               # yfinance, SEC, patents, Yahoo news, manual CSV
 │   ├── scoring/                # factors, normalisation, engine
 │   ├── ml/                     # FinBERT, clustering, XGBoost skeleton, enrich
 │   ├── ui/                     # radar screen, deep dive, watchlist, sidebar
@@ -174,7 +174,7 @@ freealpharadar/
 
 ## 🤖 AI / ML
 
-* **FinBERT** (`ProsusAI/finbert`) classifies SEC risk-section and GDELT
+* **FinBERT** (`ProsusAI/finbert`) classifies SEC risk-section and news
   headline sentiment into a per-company controversy score. If the model can't
   be downloaded (offline / constrained runtime), a deterministic finance
   lexicon backend takes over with an identical API.
@@ -326,7 +326,6 @@ variables for convenience:
 | `FAR_SEC_USER_AGENT` | research UA | Identifies you to SEC EDGAR (set a real contact to reduce throttling). |
 | `FAR_PATENTSVIEW_API_KEY` | _(unset)_ | Optional [free PatentsView key](https://patentsview.org/apis/keyrequest) — enables the Patents tab (lowest-friction for a US universe). For the GitHub Actions to include patents, add it as a repo **Actions secret** of the same name. |
 | `FAR_LENS_API_TOKEN` | _(unset)_ | Optional [Lens.org](https://www.lens.org/lens/user/subscriptions#scholar) token — alternative, **global** patent provider. The fetcher uses PatentsView if its key is set, else Lens, else skips patents. Set **either** to enable the Patents tab. |
-| `FAR_GDELT_INTERVAL` | `5.0` | Seconds between GDELT calls (raise if you still hit `429`s). News is fetched lazily per company, so this only spaces the two calls behind an opened News tab. |
 | `FAR_LOG_LEVEL` | `INFO` | Logging verbosity. |
 
 ---

@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "FreeAlphaRadar contributors" }]
-keywords = ["finance", "quant", "alpha", "streamlit", "sec", "patents", "gdelt"]
+keywords = ["finance", "quant", "alpha", "streamlit", "sec", "patents", "news"]
 
 [tool.setuptools.packages.find]
 include = ["freealpharadar*"]

@@ -385,7 +385,7 @@ class TestUniverseConfig:
         assert all(t in ds for t in settings.default_universe)
         # Every bundle has all four raw sources.
         for bundle in ds.values():
-            assert {"yfinance", "sec", "patentsview", "gdelt"} <= set(bundle)
+            assert {"yfinance", "sec", "patents", "news"} <= set(bundle)
 
     def test_rng_deterministic_across_calls(self):
         from freealpharadar.sample_data import _rng

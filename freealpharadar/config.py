@@ -118,7 +118,6 @@ PATENTSVIEW_API_KEY = os.environ.get("FAR_PATENTSVIEW_API_KEY", "")
 LENS_ENDPOINT = "https://api.lens.org/patent/search"
 LENS_API_TOKEN = os.environ.get("FAR_LENS_API_TOKEN", "")
 
-GDELT_DOC_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 SEC_COMPANY_FACTS = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
 SEC_TICKER_MAP = "https://www.sec.gov/files/company_tickers.json"
 SEC_SUBMISSIONS = "https://data.sec.gov/submissions/CIK{cik}.json"

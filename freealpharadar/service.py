@@ -44,7 +44,7 @@ async def run_pipeline_async(
     run_ml: bool = True,
     progress_cb: Optional[Callable[[int, int, str], None]] = None,
     persist: bool = True,
-    fetch_news: bool = False,
+    fetch_news: bool = True,
 ) -> PipelineOutput:
     """Run the full ingest -> enrich -> score pipeline asynchronously.
 
@@ -56,9 +56,9 @@ async def run_pipeline_async(
         run_ml: Whether to run FinBERT/clustering enrichment.
         progress_cb: Progress callback forwarded to ingestion.
         persist: Whether to write score snapshots to SQLite.
-        fetch_news: Fetch GDELT news/tone for every name. Off by default so
-            universe scoring stays fast; the deep-dive News tab loads news for
-            a single company on demand instead.
+        fetch_news: Fetch Yahoo Finance news for every name (default ``True``).
+            It is a cheap, key-less call per ticker, so it runs inline; the
+            discovery job passes ``False`` to skip it for speed.
 
     Returns:
         A :class:`PipelineOutput`.
@@ -105,20 +105,20 @@ async def run_pipeline_async(
 def fetch_company_news(
     ticker: str, company_name: Optional[str] = None
 ) -> Dict[str, Any]:
-    """Fetch GDELT news/tone for a single company on demand.
+    """Fetch Yahoo Finance news for a single company on demand.
 
-    Used by the deep-dive News tab so news is loaded lazily (per opened
-    company) instead of for the whole universe up front -- this is what keeps
-    the radar fast and avoids GDELT's rate limiter. The result is cached in
-    SQLite, so reopening the tab is instant. Returns an empty dict on failure
-    (the caller shows a gentle "no news yet" note rather than a warning).
+    The universe run already fetches news inline, but this is a cheap fallback
+    for the deep-dive News tab when a company's bundle has no news cached yet
+    (e.g. seeded from an older snapshot). The result is cached in SQLite, so
+    reopening the tab is instant. Returns an empty dict on failure (the caller
+    shows a gentle "no news yet" note rather than a warning).
     """
-    from freealpharadar.fetchers import GDELTFetcher
+    from freealpharadar.fetchers import NewsFetcher
 
     async def _go() -> Dict[str, Any]:
-        res = await GDELTFetcher().fetch(ticker, company_name=company_name)
+        res = await NewsFetcher().fetch(ticker, company_name=company_name)
         if res.warning:
-            logger.debug("gdelt (on-demand): %s", res.warning)
+            logger.debug("news (on-demand): %s", res.warning)
         return res.payload or {}
 
     try:
@@ -136,7 +136,7 @@ def run_pipeline(
     run_ml: bool = True,
     progress_cb: Optional[Callable[[int, int, str], None]] = None,
     persist: bool = True,
-    fetch_news: bool = False,
+    fetch_news: bool = True,
 ) -> PipelineOutput:
     """Synchronous wrapper around :func:`run_pipeline_async`.
 

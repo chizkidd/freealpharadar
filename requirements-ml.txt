@@ -8,7 +8,10 @@
 # Not installed on Streamlit Community Cloud by default (these total ~3.9 GB and
 # can exceed the free tier's build/memory limits). Without them the app
 # automatically uses the lexicon sentiment backend — see freealpharadar/ml/finbert.py.
+#
+# Floors (not hard pins) on the compiled packages so a prebuilt wheel resolves
+# on whatever Python is in play (3.11–3.14), matching requirements.txt.
 
-transformers==4.46.3
-torch==2.5.1
-xgboost==2.1.4
+transformers>=4.46.3,<5
+torch>=2.5.1,<3
+xgboost>=2.1.4,<4

@@ -33,7 +33,7 @@ PREWARM_PATH: Path = DATA_DIR / "prewarm_cache.json"
 
 # The raw fetcher sources captured in a prewarm snapshot (ML enrichment is
 # recomputed by the app from these, so it is not stored).
-_PREWARM_SOURCES: Sequence[str] = ("yfinance", "sec", "patentsview", "gdelt")
+_PREWARM_SOURCES: Sequence[str] = ("yfinance", "sec", "patents", "news")
 
 # Curated metadata so the sample universe looks realistic (sector, scale, theme).
 _PROFILES: Dict[str, Dict[str, Any]] = {
@@ -372,28 +372,23 @@ def _patents_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def _gdelt_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
-    """Build a GDELT-shaped sample payload."""
+def _news_payload(ticker: str, profile: Dict[str, Any]) -> Dict[str, Any]:
+    """Build a Yahoo-news-shaped sample payload (no tone; scored downstream)."""
     rng = _rng(ticker + "news")
     n = rng.randint(5, 30)
     articles = []
     for i in range(n):
-        tone = rng.uniform(-6, 6)
         articles.append(
             {
                 "title": f"{profile['name']} advances in {profile['theme']} ({i})",
-                "url": f"https://news.example.com/{ticker.lower()}/{i}",
-                "domain": "news.example.com",
-                "seendate": "20250115T120000Z",
-                "tone": round(tone, 2),
-                "language": "English",
+                "url": f"https://finance.yahoo.com/news/{ticker.lower()}-{i}.html",
+                "publisher": "Yahoo Finance",
+                "published": "2025-01-15T12:00:00+00:00",
             }
         )
-    avg = sum(a["tone"] for a in articles) / len(articles)
     return {
         "company_name": profile["name"],
         "article_count": n,
-        "avg_tone": round(avg, 2),
         "articles": articles,
     }
 
@@ -406,8 +401,8 @@ def build_sample_dataset() -> Dict[str, Dict[str, Any]]:
     so the offline dashboard is fully populated even after the universe expands.
 
     Returns:
-        Mapping of ticker -> ``{"yfinance":..., "sec":..., "patentsview":...,
-        "gdelt":...}``.
+        Mapping of ticker -> ``{"yfinance":..., "sec":..., "patents":...,
+        "news":...}``.
     """
     tickers: List[str] = list(_PROFILES)
     for ticker in settings.default_universe:
@@ -420,8 +415,8 @@ def build_sample_dataset() -> Dict[str, Dict[str, Any]]:
         dataset[ticker] = {
             "yfinance": _yf_payload(ticker, profile),
             "sec": _sec_payload(ticker, profile),
-            "patentsview": _patents_payload(ticker, profile),
-            "gdelt": _gdelt_payload(ticker, profile),
+            "patents": _patents_payload(ticker, profile),
+            "news": _news_payload(ticker, profile),
         }
     return dataset
 

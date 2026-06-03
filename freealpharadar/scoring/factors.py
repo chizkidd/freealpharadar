@@ -458,23 +458,27 @@ def f_fcf_positive(c: CompanyData) -> Optional[float]:
 # Qualitative Flags
 # --------------------------------------------------------------------------- #
 def f_news_tone(c: CompanyData) -> Optional[float]:
-    """Average GDELT news tone (higher = more positive coverage)."""
-    if not c.gdelt:
-        return None
-    return _to_float(c.gdelt.get("avg_tone"))
+    """Sentiment of recent news headlines (higher = more positive coverage).
+
+    Yahoo Finance news carries no tone score, so this reads the FinBERT/lexicon
+    sentiment computed over the headlines by the ML enrichment step; ``None``
+    when enrichment has not run for this company.
+    """
+    derived = getattr(c, "derived", {}) or {}
+    return _to_float(derived.get("finbert_news_sentiment"))
 
 
 def f_controversy(c: CompanyData) -> Optional[float]:
     """Controversy score (lower is better).
 
     Prefers the FinBERT-derived score attached to ``derived`` when available;
-    otherwise falls back to a heuristic combining negative news tone and the
-    SEC regulatory-risk keyword count so the factor works fully offline.
+    otherwise falls back to a heuristic combining negative news sentiment and
+    the SEC regulatory-risk keyword count so the factor works fully offline.
     """
     derived = getattr(c, "derived", {}) or {}
     if "controversy_score" in derived and derived["controversy_score"] is not None:
         return _to_float(derived["controversy_score"])
-    tone = c.gdelt.get("avg_tone") if c.gdelt else None
+    tone = derived.get("finbert_news_sentiment")
     reg = c.sec.get("flags", {}).get("regulatory_risk_count")
     if tone is None and reg is None:
         return None
@@ -511,10 +515,10 @@ def f_regulatory_risk(c: CompanyData) -> Optional[float]:
 
 
 def f_news_volume(c: CompanyData) -> Optional[float]:
-    """Volume of recent news coverage (GDELT article count)."""
-    if not c.gdelt:
+    """Volume of recent news coverage (Yahoo Finance article count)."""
+    if not c.news:
         return None
-    return _to_float(c.gdelt.get("article_count"))
+    return _to_float(c.news.get("article_count"))
 
 
 def f_glassdoor(c: CompanyData) -> Optional[float]:
@@ -748,11 +752,11 @@ FACTORS: List[FactorSpec] = [
     # Qualitative Flags
     FactorSpec(
         "news_tone",
-        "News tone (GDELT)",
+        "News tone (Yahoo/FinBERT)",
         FactorGroup.QUALITATIVE,
         f_news_tone,
         True,
-        "Average GDELT news tone.",
+        "FinBERT/lexicon sentiment of recent Yahoo Finance headlines.",
     ),
     FactorSpec(
         "controversy",
@@ -760,7 +764,7 @@ FACTORS: List[FactorSpec] = [
         FactorGroup.QUALITATIVE,
         f_controversy,
         False,
-        "FinBERT/GDELT-derived controversy (lower better).",
+        "FinBERT/news-derived controversy (lower better).",
     ),
     FactorSpec(
         "finbert_sentiment",
@@ -792,7 +796,7 @@ FACTORS: List[FactorSpec] = [
         FactorGroup.QUALITATIVE,
         f_news_volume,
         True,
-        "Recent GDELT article count.",
+        "Recent Yahoo Finance article count.",
     ),
     FactorSpec(
         "glassdoor",

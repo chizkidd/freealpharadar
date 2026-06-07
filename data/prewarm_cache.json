@@ -3,21 +3,21 @@
     "yfinance": {
       "ticker": "PLTR",
       "info": {
+        "longBusinessSummary": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom, and internationally. It provides Palantir Gotham integrates with other platforms for defense offerings which enables users to see, understand, and act in the modern battlespace; operations centers to the tactical edge; integrating data from domains and sensors in near real-time; and situational awareness and accelerating operational decision-making, as well as facilitates the hand-off between analysts and operational users, helping operators plan and execute real-world responses to threats that have been identified within the platform. The company also offers Palantir Foundry, a platform that helps organizations operate by creating a central operating system for their data; and allows individual users to integrate and analyze the data they need in one place. In addition, it provides Palantir Apollo, a software that delivers software and updates across the business, as well as enables customers to deploy their software virtually in any environment; and Palantir Artificial Intelligence Platform that provides unified access to open-source, self-hosted, and commercial large language models (LLMs) that can transform structured and unstructured data into LLM-understandable objects and can turn organizations' actions and processes into tools for humans and LLM-driven agents. The company also has a strategic partnership with Ondas Inc. to develop and deploy AI-enabled operational capabilities to scale stratospheric, aerial, and land-based ISR missions. The company was incorporated in 2003 and is headquartered in Aventura, Florida.",
+        "shortName": "Palantir Technologies Inc.",
+        "longName": "Palantir Technologies Inc.",
+        "totalRevenue": 5224174080,
         "enterpriseValue": 317199876096,
         "industry": "Software - Infrastructure",
-        "country": "United States",
-        "totalRevenue": 5224174080,
-        "shortName": "Palantir Technologies Inc.",
-        "freeCashflow": 1752997120,
-        "grossProfits": 4392168960,
-        "ebitda": 2018253056,
-        "symbol": "PLTR",
-        "longName": "Palantir Technologies Inc.",
-        "longBusinessSummary": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom, and internationally. It provides Palantir Gotham integrates with other platforms for defense offerings which enables users to see, understand, and act in the modern battlespace; operations centers to the tactical edge; integrating data from domains and sensors in near real-time; and situational awareness and accelerating operational decision-making, as well as facilitates the hand-off between analysts and operational users, helping operators plan and execute real-world responses to threats that have been identified within the platform. The company also offers Palantir Foundry, a platform that helps organizations operate by creating a central operating system for their data; and allows individual users to integrate and analyze the data they need in one place. In addition, it provides Palantir Apollo, a software that delivers software and updates across the business, as well as enables customers to deploy their software virtually in any environment; and Palantir Artificial Intelligence Platform that provides unified access to open-source, self-hosted, and commercial large language models (LLMs) that can transform structured and unstructured data into LLM-understandable objects and can turn organizations' actions and processes into tools for humans and LLM-driven agents. The company also has a strategic partnership with Ondas Inc. to develop and deploy AI-enabled operational capabilities to scale stratospheric, aerial, and land-based ISR missions. The company was incorporated in 2003 and is headquartered in Aventura, Florida.",
-        "marketCap": 324907696128,
-        "website": "https://www.palantir.com",
         "sector": "Technology",
-        "fullTimeEmployees": 4395
+        "fullTimeEmployees": 4395,
+        "freeCashflow": 1752997120,
+        "website": "https://www.palantir.com",
+        "grossProfits": 4392168960,
+        "symbol": "PLTR",
+        "ebitda": 2018253056,
+        "country": "United States",
+        "marketCap": 324907696128
       },
       "history": [
         {
@@ -382,7 +382,7 @@
           "Reconciled Cost Of Revenue": 789177000.0,
           "EBITDA": 1440160000.0,
           "EBIT": 1414015000.0,
-          "Net Interest Income": null,
+          "Net Interest Income": 229181000.0,
           "Interest Expense": null,
           "Interest Income": 229181000.0,
           "Normalized Income": 1625033000.0,
@@ -412,7 +412,7 @@
           "Operating Expense": 2272254000.0,
           "Research And Development": 557677000.0,
           "Selling General And Administration": 1714577000.0,
-          "Selling And Marketing Expense": null,
+          "Selling And Marketing Expense": 1056859000.0,
           "General And Administrative Expense": 657718000.0,
           "Other Gand A": 657718000.0,
           "Gross Profit": 3686269000.0,
@@ -574,7 +574,7 @@
           "Reconciled Cost Of Revenue": null,
           "EBITDA": null,
           "EBIT": null,
-          "Net Interest Income": -2033000.0,
+          "Net Interest Income": null,
           "Interest Expense": 3640000.0,
           "Interest Income": null,
           "Normalized Income": null,
@@ -604,7 +604,7 @@
           "Operating Expense": null,
           "Research And Development": null,
           "Selling General And Administration": null,
-          "Selling And Marketing Expense": 614512000.0,
+          "Selling And Marketing Expense": null,
           "General And Administrative Expense": null,
           "Other Gand A": null,
           "Gross Profit": null,
@@ -982,7 +982,7 @@
           "Change In Account Payable": 4659000.0,
           "Change In Prepaid Assets": 51979000.0,
           "Change In Receivables": -450429000.0,
-          "Changes In Account Receivables": null,
+          "Changes In Account Receivables": -450429000.0,
           "Other Non Cash Items": -21614000.0,
           "Stock Based Compensation": 684033000.0,
           "Unrealized Gain Loss On Investment Securities": 21228000.0,
@@ -1230,7 +1230,7 @@
           "Change In Account Payable": null,
           "Change In Prepaid Assets": null,
           "Change In Receivables": null,
-          "Changes In Account Receivables": -35237000.0,
+          "Changes In Account Receivables": null,
           "Other Non Cash Items": null,
           "Stock Based Compensation": null,
           "Unrealized Gain Loss On Investment Securities": null,
@@ -1588,6 +1588,18 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Forget Palantir Stock at $140 per Share. Buy This Artificial Intelligence (AI) Chip ETF Instead.",
+          "url": "https://www.fool.com/investing/2026/06/06/forget-palantir-stock-at-140-per-share-buy-this-ar/",
+          "publisher": "Motley Fool",
+          "published": "2026-06-07T02:50:00Z"
+        },
+        {
+          "title": "Does Palantir's Valuation Make It Too Dangerous to Buy?",
+          "url": "https://www.fool.com/investing/2026/06/06/does-palantirs-valuation-make-it-too-dangerous-to/",
+          "publisher": "Motley Fool",
+          "published": "2026-06-06T23:24:00Z"
+        },
+        {
           "title": "Why Palantir Stock Sank Today",
           "url": "https://www.fool.com/investing/2026/06/05/why-palantir-stock-sank-today/",
           "publisher": "Motley Fool",
@@ -1634,18 +1646,6 @@
           "url": "https://247wallst.com/investing/2026/06/05/prediction-palantir-stock-will-hit-200-on-this-date/",
           "publisher": "24/7 Wall St.",
           "published": "2026-06-05T15:23:16Z"
-        },
-        {
-          "title": "Palantir Technologies Expanding AI Use Cases Strengthen Competitive Position, Wedbush Says",
-          "url": "https://finance.yahoo.com/sectors/technology/articles/palantir-technologies-expanding-ai-cases-145657471.html",
-          "publisher": "MT Newswires",
-          "published": "2026-06-05T14:56:57Z"
-        },
-        {
-          "title": "Read Between The Lines To Analyze Nvidia, Palantir And This IPO Leader",
-          "url": "https://www.investors.com/how-to-invest/how-to-invest-using-stock-charts-moving-averages-apple-nvidia-palantir-broadcom/?src=A00220&yptr=yahoo",
-          "publisher": "Investor's Business Daily",
-          "published": "2026-06-05T14:54:22Z"
         }
       ]
     }
@@ -1654,21 +1654,21 @@
     "yfinance": {
       "ticker": "AI",
       "info": {
+        "longBusinessSummary": "C3.ai, Inc. operates as an enterprise artificial intelligence application software company. The company offers C3 agentic AI platform, an application development and runtime environment that enables customers to design, develop, and deploy enterprise AI applications; C3 AI CRM Suite, a customer relationship management solution; C3 Generative AI that enables to locate, retrieve, present information, disparate data stores, applications, and enterprise information systems; C3 AI Health Suite to accelerate healthcare innovation; and C3 AI Financial Services Suite. Its C3 AI Applications include C3 AI Asset Performance suite, which consists of C3 AI Reliability, C3 AI Process Optimization, and C3 AI Energy Management applications. The company's C3 AI Supply Chain Suite comprises C3 AI Supply Network Risk, C3 AI Inventory Optimization, C3 AI Demand Forecasting, C3 AI Production Schedule Optimization, and C3 AI Sourcing Optimization solutions; C3 AI Sustainability Suite includes C3 AI ESG and C3 AI Energy Management applications to decrease greenhouse gas emissions; and C3 AI Defense & Intelligence Suite. It provides C3 AI State and Local Government Suite that includes various applications, such as C3 Law Enforcement for state, county, and municipal law enforcement agencies; C3 AI Residential Property Appraisal and C3 AI Commercial Property Appraisal for county property assessors and appraisers; and C3 Generative AI for Government Programs and C3 Generative AI for Constituent Services for federal, state, and local governments. It has strategic partnerships with Microsoft Azure, AWS, Google Cloud, McKinsey & Company, Baker Hughes, Booz Allen, and others. The company has a strategic alliance with SMX Group, LLC for the development of mission critical AI in the secure environments. The company was formerly known as C3 IoT, Inc. and changed its name to C3.ai, Inc. in June 2019. C3.ai, Inc. was incorporated in 2009 and is headquartered in Redwood City, California.",
+        "shortName": "C3.ai, Inc.",
+        "longName": "C3.ai, Inc.",
+        "totalRevenue": 250268000,
         "enterpriseValue": 1004058304,
         "industry": "Software - Infrastructure",
-        "country": "United States",
-        "totalRevenue": 250268000,
-        "shortName": "C3.ai, Inc.",
-        "freeCashflow": -20899750,
-        "grossProfits": 78665000,
-        "ebitda": -474116000,
-        "symbol": "AI",
-        "longName": "C3.ai, Inc.",
-        "longBusinessSummary": "C3.ai, Inc. operates as an enterprise artificial intelligence application software company. The company offers C3 agentic AI platform, an application development and runtime environment that enables customers to design, develop, and deploy enterprise AI applications; C3 AI CRM Suite, a customer relationship management solution; C3 Generative AI that enables to locate, retrieve, present information, disparate data stores, applications, and enterprise information systems; C3 AI Health Suite to accelerate healthcare innovation; and C3 AI Financial Services Suite. Its C3 AI Applications include C3 AI Asset Performance suite, which consists of C3 AI Reliability, C3 AI Process Optimization, and C3 AI Energy Management applications. The company's C3 AI Supply Chain Suite comprises C3 AI Supply Network Risk, C3 AI Inventory Optimization, C3 AI Demand Forecasting, C3 AI Production Schedule Optimization, and C3 AI Sourcing Optimization solutions; C3 AI Sustainability Suite includes C3 AI ESG and C3 AI Energy Management applications to decrease greenhouse gas emissions; and C3 AI Defense & Intelligence Suite. It provides C3 AI State and Local Government Suite that includes various applications, such as C3 Law Enforcement for state, county, and municipal law enforcement agencies; C3 AI Residential Property Appraisal and C3 AI Commercial Property Appraisal for county property assessors and appraisers; and C3 Generative AI for Government Programs and C3 Generative AI for Constituent Services for federal, state, and local governments. It has strategic partnerships with Microsoft Azure, AWS, Google Cloud, McKinsey & Company, Baker Hughes, Booz Allen, and others. The company has a strategic alliance with SMX Group, LLC for the development of mission critical AI in the secure environments. The company was formerly known as C3 IoT, Inc. and changed its name to C3.ai, Inc. in June 2019. C3.ai, Inc. was incorporated in 2009 and is headquartered in Redwood City, California.",
-        "marketCap": 1515387392,
-        "website": "https://www.c3.ai",
         "sector": "Technology",
-        "fullTimeEmployees": null
+        "fullTimeEmployees": null,
+        "freeCashflow": -20899750,
+        "website": "https://www.c3.ai",
+        "grossProfits": 78665000,
+        "symbol": "AI",
+        "ebitda": -474116000,
+        "country": "United States",
+        "marketCap": 1515387392
       },
       "history": [
         {
@@ -3002,21 +3002,21 @@
     "yfinance": {
       "ticker": "PATH",
       "info": {
+        "longBusinessSummary": "UiPath, Inc. provides an automation platform that offers a range of robotic process automation (RPA) solutions primarily in the United States, Romania, the United Kingdom, the Netherlands, and internationally. It offers the UiPath platform, an integrated enterprise software platform that enables AI agents, robots, people, and models to work together in coordinated workflows. The company's UiPath platform includes the UiPath Maestro process orchestration and process intelligence; UiPath agent builder; RPA and API automation; UiPath intelligent xtraction and processing; UiPath test cloud for testing and quality assurance; UiPath packaged and prebuilt agentic solutions; and centralized governance capabilities that apply across automations, AI agents, and manual tasks. It serves the financial services, healthcare, manufacturing, retail, and public sectors. The company was founded in 2005 and is headquartered in New York, New York.",
+        "shortName": "UiPath, Inc.",
+        "longName": "UiPath, Inc.",
+        "totalRevenue": 1672329984,
         "enterpriseValue": 4599430656,
         "industry": "Software - Infrastructure",
-        "country": "United States",
-        "totalRevenue": 1672329984,
-        "shortName": "UiPath, Inc.",
-        "freeCashflow": 511553632,
-        "grossProfits": 1388871936,
-        "ebitda": 123626000,
-        "symbol": "PATH",
-        "longName": "UiPath, Inc.",
-        "longBusinessSummary": "UiPath, Inc. provides an automation platform that offers a range of robotic process automation (RPA) solutions primarily in the United States, Romania, the United Kingdom, the Netherlands, and internationally. It offers the UiPath platform, an integrated enterprise software platform that enables AI agents, robots, people, and models to work together in coordinated workflows. The company's UiPath platform includes the UiPath Maestro process orchestration and process intelligence; UiPath agent builder; RPA and API automation; UiPath intelligent xtraction and processing; UiPath test cloud for testing and quality assurance; UiPath packaged and prebuilt agentic solutions; and centralized governance capabilities that apply across automations, AI agents, and manual tasks. It serves the financial services, healthcare, manufacturing, retail, and public sectors. The company was founded in 2005 and is headquartered in New York, New York.",
-        "marketCap": 5823671808,
-        "website": "https://www.uipath.com",
         "sector": "Technology",
-        "fullTimeEmployees": 3981
+        "fullTimeEmployees": 3981,
+        "freeCashflow": 511553632,
+        "website": "https://www.uipath.com",
+        "grossProfits": 1388871936,
+        "symbol": "PATH",
+        "ebitda": 123626000,
+        "country": "United States",
+        "marketCap": 5823671808
       },
       "history": [
         {
@@ -4248,12 +4248,12 @@
         "enterprise_value": 4599430656,
         "short_ratio": 4.58,
         "short_percent_of_float": 0.31780002,
-        "held_percent_institutions": 0.81869006,
-        "held_percent_insiders": 0.094919994,
+        "held_percent_institutions": 0.82288,
+        "held_percent_insiders": 0.095410004,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
         "trailing_pe": 18.733332,
-        "price_to_book": 3.0921595,
+        "price_to_book": 3.0743983,
         "gross_margins": 0.8305,
         "profit_margins": 0.19578,
         "revenue_growth": 0.173
@@ -4527,6 +4527,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "DocuSign (DOCU) Is Down 10.0% After AI-Focused Q1 Results And Guidance Update - What's Changed",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/docusign-docu-down-10-0-221018412.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T22:10:18Z"
+        },
+        {
           "title": "UiPath Just Delivered 2 Bullish Signals and 1 Warning Sign for Investors",
           "url": "https://www.barchart.com/story/news/2310774/uipath-just-delivered-2-bullish-signals-and-1-warning-sign-for-investors",
           "publisher": "Barchart",
@@ -4579,12 +4585,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-retains-underperform-rating-uipath-083058246.html",
           "publisher": "Insider Monkey",
           "published": "2026-06-01T08:30:58Z"
-        },
-        {
-          "title": "Morgan Stanley slashes targets on 3 software stocks after earnings",
-          "url": "https://www.thestreet.com/investing/morgan-stanley-resets-elastic-uipath-pager-duty-price-targets-after-earnings",
-          "publisher": "TheStreet",
-          "published": "2026-05-31T18:03:00Z"
         }
       ]
     }
@@ -4593,21 +4593,21 @@
     "yfinance": {
       "ticker": "TEM",
       "info": {
+        "longBusinessSummary": "Tempus AI, Inc. operates as a healthcare technology company in the United States. It offers the Tempus platform, a closed-loop, full-stack, bi-directional integrations between a clinician's desktop and its laboratory diagnostic capabilities, analytics platform, and repository of multimodal data; and Hub, a clinical application for physicians and other healthcare providers for use in the diagnostics product line as an end-to-end application for healthcare providers for NGS tests. The company also provides Lens, a software application for life sciences and advanced precision research; diagnostics services, such as NGS diagnostics, PCR profiling, and other anatomic and molecular pathology tests; and large-panel solid tumor and hematologic testing through multiple assays, with its core clinical assay (xT and xR) offering large panel DNA, RNA full transcriptome, and incidental germline findings through normal blood or saliva analyses. In addition, it provides genetic tests focused on inherited conditions; an nP assay for pharmacogenomic testing for patients with psychiatric conditions, including depression, general anxiety disorder, bipolar disorder, and other relevant diagnoses; Insights, which licenses libraries of linked, de-identified clinical, molecular, and imaging data; Organoids, a tumor derived biological modeling. Further, the company offers Trials for clinical trial matching services; Next, an AI platform; Algos, an algorithm-based diagnostics application. It has Strategic Collaborations with AstraZeneca AB, Pathos AI, Inc., GlaxoSmithKline, Merck, and Recursion Pharmaceuticals, Inc. Additionally, it also has a strategic collaboration with Blood Cancer United to develop registry for pediatric acute myeloid leukemia. The company was formerly known as Tempus Labs, Inc. and changed its name to Tempus AI, Inc. in January 2023. Tempus AI, Inc. was incorporated in 2015 and is headquartered in Chicago, Illinois.",
+        "shortName": "Tempus AI, Inc.",
+        "longName": "Tempus AI, Inc.",
+        "totalRevenue": 1364167936,
         "enterpriseValue": 9016651776,
         "industry": "Health Information Services",
-        "country": "United States",
-        "totalRevenue": 1364167936,
-        "shortName": "Tempus AI, Inc.",
-        "freeCashflow": -55760000,
-        "grossProfits": 864734976,
-        "ebitda": -185246000,
-        "symbol": "TEM",
-        "longName": "Tempus AI, Inc.",
-        "longBusinessSummary": "Tempus AI, Inc. operates as a healthcare technology company in the United States. It offers the Tempus platform, a closed-loop, full-stack, bi-directional integrations between a clinician's desktop and its laboratory diagnostic capabilities, analytics platform, and repository of multimodal data; and Hub, a clinical application for physicians and other healthcare providers for use in the diagnostics product line as an end-to-end application for healthcare providers for NGS tests. The company also provides Lens, a software application for life sciences and advanced precision research; diagnostics services, such as NGS diagnostics, PCR profiling, and other anatomic and molecular pathology tests; and large-panel solid tumor and hematologic testing through multiple assays, with its core clinical assay (xT and xR) offering large panel DNA, RNA full transcriptome, and incidental germline findings through normal blood or saliva analyses. In addition, it provides genetic tests focused on inherited conditions; an nP assay for pharmacogenomic testing for patients with psychiatric conditions, including depression, general anxiety disorder, bipolar disorder, and other relevant diagnoses; Insights, which licenses libraries of linked, de-identified clinical, molecular, and imaging data; Organoids, a tumor derived biological modeling. Further, the company offers Trials for clinical trial matching services; Next, an AI platform; Algos, an algorithm-based diagnostics application. It has Strategic Collaborations with AstraZeneca AB, Pathos AI, Inc., GlaxoSmithKline, Merck, and Recursion Pharmaceuticals, Inc. Additionally, it also has a strategic collaboration with Blood Cancer United to develop registry for pediatric acute myeloid leukemia. The company was formerly known as Tempus Labs, Inc. and changed its name to Tempus AI, Inc. in January 2023. Tempus AI, Inc. was incorporated in 2015 and is headquartered in Chicago, Illinois.",
-        "marketCap": 8337192448,
-        "website": "https://www.tempus.com",
         "sector": "Healthcare",
-        "fullTimeEmployees": 3800
+        "fullTimeEmployees": 3800,
+        "freeCashflow": -55760000,
+        "website": "https://www.tempus.com",
+        "grossProfits": 864734976,
+        "symbol": "TEM",
+        "ebitda": -185246000,
+        "country": "United States",
+        "marketCap": 8337192448
       },
       "history": [
         {
@@ -6015,21 +6015,21 @@
     "yfinance": {
       "ticker": "IONQ",
       "info": {
+        "longBusinessSummary": "IonQ, Inc. develops quantum computing systems in the United States, Switzerland, and Internationally. It sells access to quantum computers of various qubit capacities. The company also makes access to its quantum computers through cloud platforms, such as Amazon Web Services (AWS), Braket, Microsoft's Azure Quantum, and Google's Cloud Marketplace, as well as through its cloud service. The company engages in quantum-safe communications and quantum detection systems. It provides contracts associated with the design, development, construction, and sale of specialized quantum computing hardware systems; maintenance and support services; and consulting services related to co-developing algorithms on quantum computing systems. The company has a collaboration agreement with University of Chicago. The company was founded in 2015 and is headquartered in College Park, Maryland.",
+        "shortName": "IonQ, Inc.",
+        "longName": "IonQ, Inc.",
+        "totalRevenue": 187118000,
         "enterpriseValue": 19204974592,
         "industry": "Computer Hardware",
-        "country": "United States",
-        "totalRevenue": 187118000,
-        "shortName": "IonQ, Inc.",
-        "freeCashflow": -91360376,
-        "grossProfits": 67569000,
-        "ebitda": -662371008,
-        "symbol": "IONQ",
-        "longName": "IonQ, Inc.",
-        "longBusinessSummary": "IonQ, Inc. develops quantum computing systems in the United States, Switzerland, and Internationally. It sells access to quantum computers of various qubit capacities. The company also makes access to its quantum computers through cloud platforms, such as Amazon Web Services (AWS), Braket, Microsoft's Azure Quantum, and Google's Cloud Marketplace, as well as through its cloud service. The company engages in quantum-safe communications and quantum detection systems. It provides contracts associated with the design, development, construction, and sale of specialized quantum computing hardware systems; maintenance and support services; and consulting services related to co-developing algorithms on quantum computing systems. The company has a collaboration agreement with University of Chicago. The company was founded in 2015 and is headquartered in College Park, Maryland.",
-        "marketCap": 21194266624,
-        "website": "https://www.ionq.com",
         "sector": "Technology",
-        "fullTimeEmployees": 1132
+        "fullTimeEmployees": 1132,
+        "freeCashflow": -91360376,
+        "website": "https://www.ionq.com",
+        "grossProfits": 67569000,
+        "symbol": "IONQ",
+        "ebitda": -662371008,
+        "country": "United States",
+        "marketCap": 21194266624
       },
       "history": [
         {
@@ -7540,6 +7540,18 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "IonQ (IONQ) Valuation Check After Sharp Pullback And Popular Overvaluation Narrative",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ionq-valuation-check-sharp-170728423.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T17:07:28Z"
+        },
+        {
+          "title": "The Next Quantum Computing IPO CEO Just Told CNBC \u2018It Is Not 10 to 15 Years Out. It\u2019s Very Much Now\u2019",
+          "url": "https://247wallst.com/investing/2026/06/06/the-next-quantum-computing-ipo-ceo-just-told-cnbc-it-is-not-10-to-15-years-out-its-very-much-now/",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-06-06T12:38:57Z"
+        },
+        {
           "title": "Quantinuum Stock Closes Below Its Offer Price. Why the Buzzy Quantum IPO Is Faltering.",
           "url": "https://www.barrons.com/articles/quantinuum-stock-ipo-price-quantum-computing-a4fcc39d?siteid=yhoof2&yptr=yahoo",
           "publisher": "Barrons.com",
@@ -7586,18 +7598,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ionq-down-6-4-081526015.html",
           "publisher": "Simply Wall St.",
           "published": "2026-06-05T08:15:26Z"
-        },
-        {
-          "title": "QNT Stock Closes Flat On Debut Amid Market Pressure: Retail Turns Bullish, Interest Grows",
-          "url": "https://stocktwits.com/news-articles/markets/equity/qnt-stock-closes-flat-on-debut-amid-market-pressure-retail-turns-bullish-interest-grows/cZ0FEWCRezN",
-          "publisher": "Stocktwits",
-          "published": "2026-06-05T03:48:04Z"
-        },
-        {
-          "title": "IonQ is the First Pure-Play Quantum Computing Company To Generate Over $100 Million in Revenue. Is the Stock Headed to $100?",
-          "url": "https://www.fool.com/investing/2026/06/04/ionq-is-the-first-pure-play-quantum-computing-comp/",
-          "publisher": "Motley Fool",
-          "published": "2026-06-04T20:25:00Z"
         }
       ]
     }
@@ -7606,21 +7606,21 @@
     "yfinance": {
       "ticker": "RGTI",
       "info": {
+        "longBusinessSummary": "Rigetti Computing, Inc., through its subsidiaries, builds and operates quantum computers and the superconducting quantum processors the United States, the United Kingdom, rest of Europe, Asia, and internationally. The company offers quantum processing units (QPUs) and quantum computing systems to provide access to quantum computing systems through the cloud in the form of quantum computing as a service (QCaaS). It provides Novera, a 9-qubit chip QPU that features tunable couplers for fast two-qubit operations and a 5-qubit chip for testing single-qubit operations; Novera QPU that is based in fourth generation Ankaa-class architecture; 36-qubit Cepheus-1-36Q system, a multi-chip quantum computer; and 84-qubit Ankaa-3 quantum computer. The company also sells access to its quantum computers through QCaaS. In addition, the company offers Rigetti quantum cloud services, a platform that provides support for various range of programming capabilities, public or private clouds integration, and connectivity, as well as quantum operating system software that supports public and private cloud architectures. Further, it offers QCS Outpost, a distributed software environment for operating, administering, and monitoring the overall system; Rigetti Foundry Services that delivers superconducting quantum chips to advance and accelerate quantum information science and technology research and development; and professional services, such as algorithm development, benchmarking, quantum application programming, and software development. The company serves commercial enterprises, government organizations, and international government entities, as well as academia, defense laboratories, and national laboratories. Rigetti Computing, Inc. was founded in 2013 and is headquartered in Berkeley, California.",
+        "shortName": "Rigetti Computing, Inc.",
+        "longName": "Rigetti Computing, Inc.",
+        "totalRevenue": 10016000,
         "enterpriseValue": 6462544384,
         "industry": "Computer Hardware",
-        "country": "United States",
-        "totalRevenue": 10016000,
-        "shortName": "Rigetti Computing, Inc.",
-        "freeCashflow": -6209875,
-        "grossProfits": 3000000,
-        "ebitda": -80024000,
-        "symbol": "RGTI",
-        "longName": "Rigetti Computing, Inc.",
-        "longBusinessSummary": "Rigetti Computing, Inc., through its subsidiaries, builds and operates quantum computers and the superconducting quantum processors the United States, the United Kingdom, rest of Europe, Asia, and internationally. The company offers quantum processing units (QPUs) and quantum computing systems to provide access to quantum computing systems through the cloud in the form of quantum computing as a service (QCaaS). It provides Novera, a 9-qubit chip QPU that features tunable couplers for fast two-qubit operations and a 5-qubit chip for testing single-qubit operations; Novera QPU that is based in fourth generation Ankaa-class architecture; 36-qubit Cepheus-1-36Q system, a multi-chip quantum computer; and 84-qubit Ankaa-3 quantum computer. The company also sells access to its quantum computers through QCaaS. In addition, the company offers Rigetti quantum cloud services, a platform that provides support for various range of programming capabilities, public or private clouds integration, and connectivity, as well as quantum operating system software that supports public and private cloud architectures. Further, it offers QCS Outpost, a distributed software environment for operating, administering, and monitoring the overall system; Rigetti Foundry Services that delivers superconducting quantum chips to advance and accelerate quantum information science and technology research and development; and professional services, such as algorithm development, benchmarking, quantum application programming, and software development. The company serves commercial enterprises, government organizations, and international government entities, as well as academia, defense laboratories, and national laboratories. Rigetti Computing, Inc. was founded in 2013 and is headquartered in Berkeley, California.",
-        "marketCap": 6874007552,
-        "website": "https://www.rigetti.com",
         "sector": "Technology",
-        "fullTimeEmployees": 162
+        "fullTimeEmployees": 162,
+        "freeCashflow": -6209875,
+        "website": "https://www.rigetti.com",
+        "grossProfits": 3000000,
+        "symbol": "RGTI",
+        "ebitda": -80024000,
+        "country": "United States",
+        "marketCap": 6874007552
       },
       "history": [
         {
@@ -8943,6 +8943,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "The Next Quantum Computing IPO CEO Just Told CNBC \u2018It Is Not 10 to 15 Years Out. It\u2019s Very Much Now\u2019",
+          "url": "https://247wallst.com/investing/2026/06/06/the-next-quantum-computing-ipo-ceo-just-told-cnbc-it-is-not-10-to-15-years-out-its-very-much-now/",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-06-06T12:38:57Z"
+        },
+        {
           "title": "Forget This Cash-Burning Quantum Speculation and Buy the Stock With a Real Enterprise Backlog",
           "url": "https://247wallst.com/investing/2026/06/05/forget-this-cash-burning-quantum-speculation-and-buy-the-stock-with-a-real-enterprise-backlog/",
           "publisher": "24/7 Wall St.",
@@ -8995,12 +9001,6 @@
           "url": "https://www.barrons.com/articles/6-ipos-to-watch-this-week-ahead-spacex-f46496ef?siteid=yhoof2&yptr=yahoo",
           "publisher": "Barrons.com",
           "published": "2026-06-04T17:55:00Z"
-        },
-        {
-          "title": "Rigetti, D-Wave, IonQ Stocks Sink as Quantinuum's $1.5 Billion IPO Nears Nasdaq Debut",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/quantum-computing-shares-sink-ahead-123914425.html",
-          "publisher": "GuruFocus.com",
-          "published": "2026-06-04T12:39:14Z"
         }
       ]
     }
@@ -9009,21 +9009,21 @@
     "yfinance": {
       "ticker": "RKLB",
       "info": {
+        "longBusinessSummary": "Rocket Lab Corporation, a space company, provides launch services and space systems solutions in the United States, Canada, Japan, and internationally. The company operates through launch services and space systems segments. The company provides launch services, spacecraft design services, spacecraft components, spacecraft manufacturing, optical systems, and other spacecraft and on-orbit management solutions and constellation management services, as well as designs and manufactures small and medium-class rockets and develops flight and ground software. It also designs, manufactures, and sells Electron, an orbital small launch vehicle for small spacecraft launch services, as well as develops Neutron launch vehicles for large constellation deployments, interplanetary missions, and potentially for human spaceflight. In addition, the company designs and manufactures a range of components and subsystems for its launch vehicles and spacecraft. It serves commercial, aerospace prime contractors, and government customers. Rocket Lab Corporation was formerly known as Rocket Lab USA, Inc. and changed its name to Rocket Lab Corporation in August 2021. The company was founded in 2006 and is headquartered in Long Beach, California.",
+        "shortName": "Rocket Lab Corporation",
+        "longName": "Rocket Lab Corporation",
+        "totalRevenue": 679577984,
         "enterpriseValue": 62464233472,
         "industry": "Aerospace & Defense",
-        "country": "United States",
-        "totalRevenue": 679577984,
-        "shortName": "Rocket Lab Corporation",
-        "freeCashflow": -214999376,
-        "grossProfits": 248427008,
-        "ebitda": -164831008,
-        "symbol": "RKLB",
-        "longName": "Rocket Lab Corporation",
-        "longBusinessSummary": "Rocket Lab Corporation, a space company, provides launch services and space systems solutions in the United States, Canada, Japan, and internationally. The company operates through launch services and space systems segments. The company provides launch services, spacecraft design services, spacecraft components, spacecraft manufacturing, optical systems, and other spacecraft and on-orbit management solutions and constellation management services, as well as designs and manufactures small and medium-class rockets and develops flight and ground software. It also designs, manufactures, and sells Electron, an orbital small launch vehicle for small spacecraft launch services, as well as develops Neutron launch vehicles for large constellation deployments, interplanetary missions, and potentially for human spaceflight. In addition, the company designs and manufactures a range of components and subsystems for its launch vehicles and spacecraft. It serves commercial, aerospace prime contractors, and government customers. Rocket Lab Corporation was formerly known as Rocket Lab USA, Inc. and changed its name to Rocket Lab Corporation in August 2021. The company was founded in 2006 and is headquartered in Long Beach, California.",
-        "marketCap": 68780048384,
-        "website": "https://rocketlabcorp.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 2600
+        "fullTimeEmployees": 2600,
+        "freeCashflow": -214999376,
+        "website": "https://rocketlabcorp.com",
+        "grossProfits": 248427008,
+        "symbol": "RKLB",
+        "ebitda": -164831008,
+        "country": "United States",
+        "marketCap": 68780048384
       },
       "history": [
         {
@@ -10686,6 +10686,24 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "SpaceX IPO Could Create More Wealth Than All IPOs in the Last 20 Years Combined. Here\u2019s Why Early Investors Are Banking On It",
+          "url": "https://247wallst.com/investing/2026/06/06/spacex-ipo-could-create-more-wealth-than-all-ipos-in-the-last-20-years-combined-heres-why-early-investors-are-banking-on-it/",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-06-06T15:04:00Z"
+        },
+        {
+          "title": "Intuitive Machines Is Selling Off Before the SpaceX IPO. It\u2019s a Much-Needed Reset for LUNR Stock.",
+          "url": "https://www.barchart.com/story/news/2339665/intuitive-machines-is-selling-off-before-the-spacex-ipo-its-a-much-needed-reset-for-lunr-stock",
+          "publisher": "Barchart",
+          "published": "2026-06-06T13:30:02Z"
+        },
+        {
+          "title": "Rocket Lab\u2019s Neutron Opportunity Grows As Medium Lift Competition Thins",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-neutron-opportunity-grows-131910112.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T13:19:10Z"
+        },
+        {
           "title": "Space Farming Takes Off: Redwire Wins Landmark Mission",
           "url": "https://finance.yahoo.com/sectors/technology/articles/space-farming-takes-off-redwire-211711241.html",
           "publisher": "IPO-Edge.com",
@@ -10726,24 +10744,6 @@
           "url": "https://stocktwits.com/news-articles/markets/equity/space-stocks-slip-spacex-sp500-retail-hopes-hit/cZ0FPNHRezh",
           "publisher": "Stocktwits",
           "published": "2026-06-05T02:02:26Z"
-        },
-        {
-          "title": "Wall Street Sees SpaceX\u2019s AI Revenue 100 Times Higher by 2030",
-          "url": "https://finance.yahoo.com/sectors/technology/articles/wall-street-sees-spacex-ai-222816264.html",
-          "publisher": "Bloomberg",
-          "published": "2026-06-04T22:28:16Z"
-        },
-        {
-          "title": "Redwire Has a Contract to Grow Strawberries in Space\u2014and Space Stocks Are Soaring Yet Again",
-          "url": "https://www.barrons.com/articles/redwire-stock-price-strawberries-space-1e3fb48b?siteid=yhoof2&yptr=yahoo",
-          "publisher": "Barrons.com",
-          "published": "2026-06-04T20:30:00Z"
-        },
-        {
-          "title": "Rocket Lab Stock Is Up 330% Over the Past Year. The SpaceX IPO Threatens to Rock the Boat.",
-          "url": "https://www.barchart.com/story/news/2312846/rocket-lab-stock-is-up-330-over-the-past-year-the-spacex-ipo-threatens-to-rock-the-boat",
-          "publisher": "Barchart",
-          "published": "2026-06-04T20:28:52Z"
         }
       ]
     }
@@ -10752,21 +10752,21 @@
     "yfinance": {
       "ticker": "ASTS",
       "info": {
+        "longBusinessSummary": "AST SpaceMobile, Inc., together with its subsidiaries, designs and develops the constellation of BlueBird satellites in the United States. The company provides a cellular broadband network in space to be accessible directly by smartphones for commercial use and other applications, as well as for government use. Its SpaceMobile service provides cellular broadband services to end-users who are out of terrestrial cellular coverage. The company was founded in 2017 and is headquartered in Midland, Texas.",
+        "shortName": "AST SpaceMobile, Inc.",
+        "longName": "AST SpaceMobile, Inc.",
+        "totalRevenue": 84935000,
         "enterpriseValue": 28505931776,
         "industry": "Communication Equipment",
-        "country": "United States",
-        "totalRevenue": 84935000,
-        "shortName": "AST SpaceMobile, Inc.",
-        "freeCashflow": -1412748416,
-        "grossProfits": 38070000,
-        "ebitda": -316393984,
-        "symbol": "ASTS",
-        "longName": "AST SpaceMobile, Inc.",
-        "longBusinessSummary": "AST SpaceMobile, Inc., together with its subsidiaries, designs and develops the constellation of BlueBird satellites in the United States. The company provides a cellular broadband network in space to be accessible directly by smartphones for commercial use and other applications, as well as for government use. Its SpaceMobile service provides cellular broadband services to end-users who are out of terrestrial cellular coverage. The company was founded in 2017 and is headquartered in Midland, Texas.",
-        "marketCap": 36328460288,
-        "website": "https://ast-science.com",
         "sector": "Technology",
-        "fullTimeEmployees": 1126
+        "fullTimeEmployees": 1126,
+        "freeCashflow": -1412748416,
+        "website": "https://ast-science.com",
+        "grossProfits": 38070000,
+        "symbol": "ASTS",
+        "ebitda": -316393984,
+        "country": "United States",
+        "marketCap": 36328460288
       },
       "history": [
         {
@@ -12485,21 +12485,21 @@
     "yfinance": {
       "ticker": "PL",
       "info": {
+        "longBusinessSummary": "Planet Labs PBC engages in the design, construction, and launch of constellations of satellites with the intent of providing high-cadence geospatial data delivered to customers through an online platform in the United States and internationally. The company offers SuperDove satellites to create an always-online scanner for the planet, with the goal of imaging the Earth every day at a ground sampling distance (GSD) resolution of up to 3.5 meters. This combines planet monitoring with other scientific-grade radiometric data from public satellite data programs; and SkySat and Pelican satellites to capture a specified location several times per day, achieving a GSD resolution of up to 50 centimeters after processing, powered by an application programming interface. It also provides Tanager, a hyperspectral imaging satellite that delivers full-spectrum imagery across the visible and shortwave infrared regions, and the Earth Observation platform, which enables customers and partners to access, analyze, and act on its proprietary data catalog by discovering image tasking capacity, relevant data layers, extracting useful information, and delivering insights through custom-built solutions or GIS workflows via APIs and browser-based applications. In addition, the company's satellite services arrangements include designing and manufacturing customer-owned satellites, mission systems engineering, launch procurement, ground station infrastructure, satellite operations, and maintenance, as well as dedicated image tasking capacity on company-owned or customer-owned satellites. It serves agriculture, mapping, energy, forestry, finance, and insurance companies, as well as government agencies. Planet Labs PBC was founded in 2010 and is headquartered in San Francisco, California.",
+        "shortName": "Planet Labs PBC",
+        "longName": "Planet Labs PBC",
+        "totalRevenue": 335612000,
         "enterpriseValue": 11240488960,
         "industry": "Aerospace & Defense",
-        "country": "United States",
-        "totalRevenue": 335612000,
-        "shortName": "Planet Labs PBC",
-        "freeCashflow": 84853752,
-        "grossProfits": 186528992,
-        "ebitda": -51719000,
-        "symbol": "PL",
-        "longName": "Planet Labs PBC",
-        "longBusinessSummary": "Planet Labs PBC engages in the design, construction, and launch of constellations of satellites with the intent of providing high-cadence geospatial data delivered to customers through an online platform in the United States and internationally. The company offers SuperDove satellites to create an always-online scanner for the planet, with the goal of imaging the Earth every day at a ground sampling distance (GSD) resolution of up to 3.5 meters. This combines planet monitoring with other scientific-grade radiometric data from public satellite data programs; and SkySat and Pelican satellites to capture a specified location several times per day, achieving a GSD resolution of up to 50 centimeters after processing, powered by an application programming interface. It also provides Tanager, a hyperspectral imaging satellite that delivers full-spectrum imagery across the visible and shortwave infrared regions, and the Earth Observation platform, which enables customers and partners to access, analyze, and act on its proprietary data catalog by discovering image tasking capacity, relevant data layers, extracting useful information, and delivering insights through custom-built solutions or GIS workflows via APIs and browser-based applications. In addition, the company's satellite services arrangements include designing and manufacturing customer-owned satellites, mission systems engineering, launch procurement, ground station infrastructure, satellite operations, and maintenance, as well as dedicated image tasking capacity on company-owned or customer-owned satellites. It serves agriculture, mapping, energy, forestry, finance, and insurance companies, as well as government agencies. Planet Labs PBC was founded in 2010 and is headquartered in San Francisco, California.",
-        "marketCap": 11482988544,
-        "website": "https://www.planet.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 945
+        "fullTimeEmployees": 945,
+        "freeCashflow": 84853752,
+        "website": "https://www.planet.com",
+        "grossProfits": 186528992,
+        "symbol": "PL",
+        "ebitda": -51719000,
+        "country": "United States",
+        "marketCap": 11482988544
       },
       "history": [
         {
@@ -14060,6 +14060,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Assessing Planet Labs (PL) Valuation After Sharp Short Term Share Price Volatility",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-planet-labs-pl-valuation-051001986.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-07T05:10:01Z"
+        },
+        {
           "title": "Planet Labs Stock Plunges After $1.5 Billion Capital Raise",
           "url": "https://finance.yahoo.com/markets/stocks/articles/planet-labs-stock-plunges-1-174909973.html",
           "publisher": "GuruFocus.com",
@@ -14112,12 +14118,6 @@
           "url": "https://www.fool.com/earnings/call-transcripts/2026/06/05/planet-labs-pl-q1-2027-earnings-transcript/",
           "publisher": "Motley Fool",
           "published": "2026-06-05T05:19:45Z"
-        },
-        {
-          "title": "Planet Labs PBC (PL) Q1 2027 Earnings Call Highlights: Record Revenue and Strategic Growth ...",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pbc-pl-q1-050022532.html",
-          "publisher": "GuruFocus.com",
-          "published": "2026-06-05T05:00:22Z"
         }
       ]
     }
@@ -14126,21 +14126,21 @@
     "yfinance": {
       "ticker": "KTOS",
       "info": {
+        "longBusinessSummary": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the United States, other North America, the Asia Pacific, the Middle East, Europe, and Internationally. The company operates through Kratos Government Solutions and Unmanned Systems segments. It offers virtualized ground systems for satellites and space vehicles, including software for command and control, telemetry, and tracking and control; jet powered unmanned aerial drone systems and hypersonic vehicles and rocket systems; propulsion systems for drones, missiles, loitering munitions, supersonic systems, spacecraft and launch systems, command, control, communication, computing, combat, and intelligence surveillance and reconnaissance; and microwave electronic products for missile, radar, missile defense, space, and satellite; and counter unmanned aircraft systems, directed energy, communication and other systems, and virtual and augmented reality training systems for the warfighter. The company primarily serves national security-related agencies, the U.S. Department of Defense, intelligence and classified agencies, international government agencies, and domestic and international commercial customers. Kratos Defense & Security Solutions, Inc. was formerly known as Wireless Facilities, Inc. and changed its name to Kratos Defense & Security Solutions, Inc. in August 1999. Kratos Defense & Security Solutions, Inc. was incorporated in 1994 and is headquartered in San Diego, California.",
+        "shortName": "Kratos Defense & Security Solut",
+        "longName": "Kratos Defense & Security Solutions, Inc.",
+        "totalRevenue": 1415200000,
         "enterpriseValue": 9694769152,
         "industry": "Aerospace & Defense",
-        "country": "United States",
-        "totalRevenue": 1415200000,
-        "shortName": "Kratos Defense & Security Solut",
-        "freeCashflow": -106725000,
-        "grossProfits": 323900000,
-        "ebitda": 81200000,
-        "symbol": "KTOS",
-        "longName": "Kratos Defense & Security Solutions, Inc.",
-        "longBusinessSummary": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the United States, other North America, the Asia Pacific, the Middle East, Europe, and Internationally. The company operates through Kratos Government Solutions and Unmanned Systems segments. It offers virtualized ground systems for satellites and space vehicles, including software for command and control, telemetry, and tracking and control; jet powered unmanned aerial drone systems and hypersonic vehicles and rocket systems; propulsion systems for drones, missiles, loitering munitions, supersonic systems, spacecraft and launch systems, command, control, communication, computing, combat, and intelligence surveillance and reconnaissance; and microwave electronic products for missile, radar, missile defense, space, and satellite; and counter unmanned aircraft systems, directed energy, communication and other systems, and virtual and augmented reality training systems for the warfighter. The company primarily serves national security-related agencies, the U.S. Department of Defense, intelligence and classified agencies, international government agencies, and domestic and international commercial customers. Kratos Defense & Security Solutions, Inc. was formerly known as Wireless Facilities, Inc. and changed its name to Kratos Defense & Security Solutions, Inc. in August 1999. Kratos Defense & Security Solutions, Inc. was incorporated in 1994 and is headquartered in San Diego, California.",
-        "marketCap": 10973669376,
-        "website": "https://www.kratosdefense.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 4300
+        "fullTimeEmployees": 4300,
+        "freeCashflow": -106725000,
+        "website": "https://www.kratosdefense.com",
+        "grossProfits": 323900000,
+        "symbol": "KTOS",
+        "ebitda": 81200000,
+        "country": "United States",
+        "marketCap": 10973669376
       },
       "history": [
         {
@@ -16000,7 +16000,6 @@
           "Net Debt": null,
           "Total Debt": 145800000.0,
           "Tangible Book Value": 1346700000.0,
-          "Invested Capital": 1996300000.0,
           "Working Capital": 951900000.0,
           "Net Tangible Assets": 1346700000.0,
           "Capital Lease Obligations": 145800000.0,
@@ -16077,7 +16076,6 @@
           "Net Debt": null,
           "Total Debt": 282000000.0,
           "Tangible Book Value": 730500000.0,
-          "Invested Capital": 1527800000.0,
           "Working Capital": 575400000.0,
           "Net Tangible Assets": 730500000.0,
           "Capital Lease Obligations": 107400000.0,
@@ -16154,7 +16152,6 @@
           "Net Debt": 146500000.0,
           "Total Debt": 321400000.0,
           "Tangible Book Value": 344500000.0,
-          "Invested Capital": 1195300000.0,
           "Working Capital": 301700000.0,
           "Net Tangible Assets": 344500000.0,
           "Capital Lease Obligations": 102100000.0,
@@ -16231,7 +16228,6 @@
           "Net Debt": 168900000.0,
           "Total Debt": 301800000.0,
           "Tangible Book Value": 322900000.0,
-          "Invested Capital": 1186500000.0,
           "Working Capital": 348400000.0,
           "Net Tangible Assets": 322900000.0,
           "Capital Lease Obligations": 51600000.0,
@@ -16308,7 +16304,6 @@
           "Net Debt": null,
           "Total Debt": null,
           "Tangible Book Value": null,
-          "Invested Capital": null,
           "Working Capital": null,
           "Net Tangible Assets": null,
           "Capital Lease Obligations": null,
@@ -16410,7 +16405,7 @@
           "Sale Of Business": null,
           "Purchase Of Business": -5000000.0,
           "Capital Expenditure Reported": -95300000.0,
-          "Operating Cash Flow": -42100000.0,
+          "Operating Cash Flow": null,
           "Cash From Discontinued Operating Activities": null,
           "Cash Flow From Continuing Operating Activities": -42100000.0,
           "Change In Working Capital": -168000000.0,
@@ -16470,7 +16465,7 @@
           "Sale Of Business": null,
           "Purchase Of Business": -11500000.0,
           "Capital Expenditure Reported": -58200000.0,
-          "Operating Cash Flow": 49700000.0,
+          "Operating Cash Flow": null,
           "Cash From Discontinued Operating Activities": null,
           "Cash Flow From Continuing Operating Activities": 49700000.0,
           "Change In Working Capital": -53400000.0,
@@ -16530,7 +16525,7 @@
           "Sale Of Business": 300000.0,
           "Purchase Of Business": 0.0,
           "Capital Expenditure Reported": -52400000.0,
-          "Operating Cash Flow": 65200000.0,
+          "Operating Cash Flow": null,
           "Cash From Discontinued Operating Activities": null,
           "Cash Flow From Continuing Operating Activities": 65200000.0,
           "Change In Working Capital": -11400000.0,
@@ -16590,7 +16585,7 @@
           "Sale Of Business": null,
           "Purchase Of Business": -132200000.0,
           "Capital Expenditure Reported": -45400000.0,
-          "Operating Cash Flow": -25700000.0,
+          "Operating Cash Flow": null,
           "Cash From Discontinued Operating Activities": -100000.0,
           "Cash Flow From Continuing Operating Activities": -25700000.0,
           "Change In Working Capital": -75900000.0,
@@ -16650,7 +16645,7 @@
           "Sale Of Business": null,
           "Purchase Of Business": null,
           "Capital Expenditure Reported": null,
-          "Operating Cash Flow": null,
+          "Operating Cash Flow": 35300000.0,
           "Cash From Discontinued Operating Activities": -4500000.0,
           "Cash Flow From Continuing Operating Activities": null,
           "Change In Working Capital": null,
@@ -17431,21 +17426,21 @@
     "yfinance": {
       "ticker": "AVAV",
       "info": {
+        "longBusinessSummary": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internationally. It operates in two segments, Autonomous Systems; and Space, Cyber and Directed Energy. The company provides uncrewed aircraft systems (UAS), which include small and medium UAS, and kinesis command and control software; and counter-UAS and precision strike, a loitering munitions solution that deliver actionable intelligence and precision firepower modern warfighters, including precision strike, radio frequency and kinetic C-UAS, and electronic warfare systems. It also offers autonomy, AI, and platform technologies; unmanned maritime; uncrewed ground systems; and high-altitude pseudo-satellites. The company provides digital beamforming technology, a multi-band/beam software defined antenna tile that allows simultaneous communication with multiple satellites; laser communications, a data transmission systems for space operations; space-qualified hardware for line of sight stabilization and control electronics in low, medium, and geostationary earth orbit, as well as cislunar orbits; phased array antenna technology to supports hypersonic telemetry and tracking, and other missile testing; and directed energy solution. It also offers cyber solution for national security and defense operations; and HaloCortex OSINT, an AI-powered OSINT analysis platform to provide insights and solve department of defense and commercial challenges. AeroVironment, Inc. was incorporated in 1971 and is headquartered in Arlington, Virginia.",
+        "shortName": "AeroVironment, Inc.",
+        "longName": "AeroVironment, Inc.",
+        "totalRevenue": 1610279040,
         "enterpriseValue": 9481433088,
         "industry": "Aerospace & Defense",
-        "country": "United States",
-        "totalRevenue": 1610279040,
-        "shortName": "AeroVironment, Inc.",
-        "freeCashflow": -304053504,
-        "grossProfits": 402648992,
-        "ebitda": 151164992,
-        "symbol": "AVAV",
-        "longName": "AeroVironment, Inc.",
-        "longBusinessSummary": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internationally. It operates in two segments, Autonomous Systems; and Space, Cyber and Directed Energy. The company provides uncrewed aircraft systems (UAS), which include small and medium UAS, and kinesis command and control software; and counter-UAS and precision strike, a loitering munitions solution that deliver actionable intelligence and precision firepower modern warfighters, including precision strike, radio frequency and kinetic C-UAS, and electronic warfare systems. It also offers autonomy, AI, and platform technologies; unmanned maritime; uncrewed ground systems; and high-altitude pseudo-satellites. The company provides digital beamforming technology, a multi-band/beam software defined antenna tile that allows simultaneous communication with multiple satellites; laser communications, a data transmission systems for space operations; space-qualified hardware for line of sight stabilization and control electronics in low, medium, and geostationary earth orbit, as well as cislunar orbits; phased array antenna technology to supports hypersonic telemetry and tracking, and other missile testing; and directed energy solution. It also offers cyber solution for national security and defense operations; and HaloCortex OSINT, an AI-powered OSINT analysis platform to provide insights and solve department of defense and commercial challenges. AeroVironment, Inc. was incorporated in 1971 and is headquartered in Arlington, Virginia.",
-        "marketCap": 9408494592,
-        "website": "https://www.avinc.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 1456
+        "fullTimeEmployees": 1456,
+        "freeCashflow": -304053504,
+        "website": "https://www.avinc.com",
+        "grossProfits": 402648992,
+        "symbol": "AVAV",
+        "ebitda": 151164992,
+        "country": "United States",
+        "marketCap": 9408494592
       },
       "history": [
         {
@@ -19934,21 +19929,21 @@
     "yfinance": {
       "ticker": "BE",
       "info": {
+        "longBusinessSummary": "Bloom Energy Corporation designs, manufactures, sells, and installs solid oxide fuel cell systems for on-site power generation in the United States and internationally. It offers Bloom Energy Server, an energy server platform to convert fuel, such as natural gas, biogas, hydrogen, or a blend of these fuels, into electricity through a non-combustion electrochemical process. The company also provides Bloom Electrolyzer for producing hydrogen. It sells its products through direct and indirect sales channels to utilities, data centers, retail, healthcare, education, telecom, manufacturing, and other industries. The company was formerly known as Ion America Corp. and changed its name to Bloom Energy Corporation in 2006. Bloom Energy Corporation was incorporated in 2001 and is headquartered in San Jose, California.",
+        "shortName": "Bloom Energy Corporation",
+        "longName": "Bloom Energy Corporation",
+        "totalRevenue": 2449027072,
         "enterpriseValue": 75470168064,
         "industry": "Electrical Equipment & Parts",
-        "country": "United States",
-        "totalRevenue": 2449027072,
-        "shortName": "Bloom Energy Corporation",
-        "freeCashflow": 265521248,
-        "grossProfits": 736905984,
-        "ebitda": 231590000,
-        "symbol": "BE",
-        "longName": "Bloom Energy Corporation",
-        "longBusinessSummary": "Bloom Energy Corporation designs, manufactures, sells, and installs solid oxide fuel cell systems for on-site power generation in the United States and internationally. It offers Bloom Energy Server, an energy server platform to convert fuel, such as natural gas, biogas, hydrogen, or a blend of these fuels, into electricity through a non-combustion electrochemical process. The company also provides Bloom Electrolyzer for producing hydrogen. It sells its products through direct and indirect sales channels to utilities, data centers, retail, healthcare, education, telecom, manufacturing, and other industries. The company was formerly known as Ion America Corp. and changed its name to Bloom Energy Corporation in 2006. Bloom Energy Corporation was incorporated in 2001 and is headquartered in San Jose, California.",
-        "marketCap": 74982244352,
-        "website": "https://www.bloomenergy.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 2000
+        "fullTimeEmployees": 2000,
+        "freeCashflow": 265521248,
+        "website": "https://www.bloomenergy.com",
+        "grossProfits": 736905984,
+        "symbol": "BE",
+        "ebitda": 231590000,
+        "country": "United States",
+        "marketCap": 74982244352
       },
       "history": [
         {
@@ -21881,6 +21876,24 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Bloom Energy Stock Is Surging. Its CEO Said These Magic Words.",
+          "url": "https://www.barchart.com/story/news/2339830/bloom-energy-stock-is-surging-its-ceo-said-these-magic-words",
+          "publisher": "Barchart",
+          "published": "2026-06-06T14:00:02Z"
+        },
+        {
+          "title": "Bloom Energy (BE) Valuation Check As AI Data Center Deals And Funding Support Growth Outlook",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-valuation-check-ai-100811836.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T10:08:11Z"
+        },
+        {
+          "title": "I Want to Buy Bloom Energy Stock, Just Not at the Current Price. Here's My Income Trade to Potentially Buy it Cheaper.",
+          "url": "https://www.fool.com/investing/2026/06/06/i-want-to-buy-bloom-energy-stock-just-not-at-the-c/",
+          "publisher": "Motley Fool",
+          "published": "2026-06-06T09:20:00Z"
+        },
+        {
           "title": "Here's Why Bloom Energy (BE) Fell More Than Broader Market",
           "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-bloom-energy-fell-220002444.html",
           "publisher": "Zacks",
@@ -21921,24 +21934,6 @@
           "url": "https://finance.yahoo.com/sectors/energy/articles/bloom-energy-one-best-renewable-032853504.html",
           "publisher": "Insider Monkey",
           "published": "2026-06-05T03:28:53Z"
-        },
-        {
-          "title": "3 Momentum Industrials Stocks to Target This Week",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-momentum-industrials-stocks-target-184530782.html",
-          "publisher": "StockStory",
-          "published": "2026-06-04T18:45:30Z"
-        },
-        {
-          "title": "The Bull Case For Bloom Energy (BE) Could Change Following New AI Data Center Contracts And Governance Shift",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/bull-case-bloom-energy-could-180951427.html",
-          "publisher": "Simply Wall St.",
-          "published": "2026-06-04T18:09:51Z"
-        },
-        {
-          "title": "Buy These Renewable Energy & Battery Stocks Amid Global Energy Crisis",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/buy-renewable-energy-battery-stocks-155400103.html",
-          "publisher": "Zacks",
-          "published": "2026-06-04T15:54:00Z"
         }
       ]
     }
@@ -21947,21 +21942,21 @@
     "yfinance": {
       "ticker": "OKLO",
       "info": {
+        "longBusinessSummary": "Oklo Inc. develops fission power plants to provide energy at scale to customers in the United States. The company offers Aurora Powerhouse, which is designed to produce between 15 and up to 75 megawatts of electricity. It is also commercializing nuclear fuel recycling and fuel fabrication technology that can convert used nuclear fuel into usable fuel for its reactors. The company was formerly known as AltC Acquisition Corp. and changed its name to Oklo Inc. in May 2024. Oklo Inc. was founded in 2013 and is headquartered in Santa Clara, California.",
+        "shortName": "Oklo Inc.",
+        "longName": "Oklo Inc.",
+        "totalRevenue": null,
         "enterpriseValue": 7901147648,
         "industry": "Utilities - Independent Power Producers",
-        "country": "United States",
-        "totalRevenue": null,
-        "shortName": "Oklo Inc.",
-        "freeCashflow": -100000128,
-        "grossProfits": null,
-        "ebitda": -172108000,
-        "symbol": "OKLO",
-        "longName": "Oklo Inc.",
-        "longBusinessSummary": "Oklo Inc. develops fission power plants to provide energy at scale to customers in the United States. The company offers Aurora Powerhouse, which is designed to produce between 15 and up to 75 megawatts of electricity. It is also commercializing nuclear fuel recycling and fuel fabrication technology that can convert used nuclear fuel into usable fuel for its reactors. The company was formerly known as AltC Acquisition Corp. and changed its name to Oklo Inc. in May 2024. Oklo Inc. was founded in 2013 and is headquartered in Santa Clara, California.",
-        "marketCap": 10107137024,
-        "website": "https://www.oklo.com",
         "sector": "Utilities",
-        "fullTimeEmployees": 215
+        "fullTimeEmployees": 215,
+        "freeCashflow": -100000128,
+        "website": "https://www.oklo.com",
+        "grossProfits": null,
+        "symbol": "OKLO",
+        "ebitda": -172108000,
+        "country": "United States",
+        "marketCap": 10107137024
       },
       "history": [
         {
@@ -23293,6 +23288,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Forget Oklo: Buy This Entrenched High-Yield Utility Giant on the Dip Instead",
+          "url": "https://247wallst.com/investing/2026/06/06/forget-oklo-buy-this-entrenched-high-yield-utility-giant-on-the-dip-instead/",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-06-06T14:40:06Z"
+        },
+        {
           "title": "Oklo\u2019s Reactor Progress And Deals Reframe Risks And Opportunity For Investors",
           "url": "https://finance.yahoo.com/markets/stocks/articles/oklo-reactor-progress-deals-reframe-042436816.html",
           "publisher": "Simply Wall St.",
@@ -23345,12 +23346,6 @@
           "url": "https://www.fool.com/investing/2026/06/01/better-nuclear-energy-stock-nano-vs-oklo/",
           "publisher": "Motley Fool",
           "published": "2026-06-01T18:20:00Z"
-        },
-        {
-          "title": "Assessing Oklo (OKLO) Valuation After Recent Share Price Pullback And Long Term Gains",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-oklo-oklo-valuation-recent-181202253.html",
-          "publisher": "Simply Wall St.",
-          "published": "2026-06-01T18:12:02Z"
         }
       ]
     }
@@ -23359,21 +23354,21 @@
     "yfinance": {
       "ticker": "SMR",
       "info": {
+        "longBusinessSummary": "NuScale Power Corporation provides small modular reactor technology solutions. It offers NuScale Power Module (NPM), a light water nuclear reactor that can generate 77 megawatts of electricity (MWe). The company also provides design and nuclear regulatory licensing basis information to construct and operate the power plant; and licensing, design, development, construction, operation, and maintenance of the power plant. In addition, it offers regulatory licensing support services; start-up testing and commissioning support; accredited training programs to support initial and ongoing power plant operations; management of all aspects of the U.S. Nuclear Regulatory Commission required inspections, tests, analysis, and acceptance criteria process; NuScale Power Module mechanical handling; initial and ongoing fuel bundle loading and movement; design engineering management during commercial operation; operations and maintenance program management; procurement and spare parts management; nuclear fuel management, including reload analysis; and outage planning and execution support services. The company has a strategic partnership with Ebara Elliott Energy for the development, demonstration, and testing of industrial scale compressors using power modules. NuScale Power Corporation was founded in 2007 and is headquartered in Corvallis, Oregon.",
+        "shortName": "NuScale Power Corporation",
+        "longName": "NuScale Power Corporation",
+        "totalRevenue": 18669000,
         "enterpriseValue": 2692687616,
         "industry": "Specialty Industrial Machinery",
-        "country": "United States",
-        "totalRevenue": 18669000,
-        "shortName": "NuScale Power Corporation",
-        "freeCashflow": -161970368,
-        "grossProfits": 4450000,
-        "ebitda": -203198000,
-        "symbol": "SMR",
-        "longName": "NuScale Power Corporation",
-        "longBusinessSummary": "NuScale Power Corporation provides small modular reactor technology solutions. It offers NuScale Power Module (NPM), a light water nuclear reactor that can generate 77 megawatts of electricity (MWe). The company also provides design and nuclear regulatory licensing basis information to construct and operate the power plant; and licensing, design, development, construction, operation, and maintenance of the power plant. In addition, it offers regulatory licensing support services; start-up testing and commissioning support; accredited training programs to support initial and ongoing power plant operations; management of all aspects of the U.S. Nuclear Regulatory Commission required inspections, tests, analysis, and acceptance criteria process; NuScale Power Module mechanical handling; initial and ongoing fuel bundle loading and movement; design engineering management during commercial operation; operations and maintenance program management; procurement and spare parts management; nuclear fuel management, including reload analysis; and outage planning and execution support services. The company has a strategic partnership with Ebara Elliott Energy for the development, demonstration, and testing of industrial scale compressors using power modules. NuScale Power Corporation was founded in 2007 and is headquartered in Corvallis, Oregon.",
-        "marketCap": 3634110720,
-        "website": "https://www.nuscalepower.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 428
+        "fullTimeEmployees": 428,
+        "freeCashflow": -161970368,
+        "website": "https://www.nuscalepower.com",
+        "grossProfits": 4450000,
+        "symbol": "SMR",
+        "ebitda": -203198000,
+        "country": "United States",
+        "marketCap": 3634110720
       },
       "history": [
         {
@@ -24910,26 +24905,26 @@
     "yfinance": {
       "ticker": "LEU",
       "info": {
+        "longBusinessSummary": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally. The company operates in two segments, Low-Enriched Uranium (LEU) and Technical Solutions. The LEU segment sells separative work units (SWU) components of LEU; natural uranium hexafluoride, uranium concentrates, and uranium conversion; and enriched uranium products to utilities that operate nuclear power plants. The Technical Solutions segment offers technical, manufacturing, engineering, and operations services to public and private sector customers. The company was formerly known as USEC Inc. and changed its name to Centrus Energy Corp. in September 2014. Centrus Energy Corp. was incorporated in 1998 and is headquartered in Bethesda, Maryland.",
+        "shortName": "Centrus Energy Corp.",
+        "longName": "Centrus Energy Corp.",
+        "totalRevenue": 452300000,
         "enterpriseValue": 2493064704,
         "industry": "Uranium",
-        "country": "United States",
-        "totalRevenue": 452300000,
-        "shortName": "Centrus Energy Corp.",
-        "freeCashflow": -10875000,
-        "grossProfits": 116100000,
-        "ebitda": 34200000,
-        "symbol": "LEU",
-        "longName": "Centrus Energy Corp.",
-        "longBusinessSummary": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally. The company operates in two segments, Low-Enriched Uranium (LEU) and Technical Solutions. The LEU segment sells separative work units (SWU) components of LEU; natural uranium hexafluoride, uranium concentrates, and uranium conversion; and enriched uranium products to utilities that operate nuclear power plants. The Technical Solutions segment offers technical, manufacturing, engineering, and operations services to public and private sector customers. The company was formerly known as USEC Inc. and changed its name to Centrus Energy Corp. in September 2014. Centrus Energy Corp. was incorporated in 1998 and is headquartered in Bethesda, Maryland.",
-        "marketCap": 3182664704,
-        "website": "https://www.centrusenergy.com",
         "sector": "Energy",
-        "fullTimeEmployees": 467
+        "fullTimeEmployees": 467,
+        "freeCashflow": -10875000,
+        "website": "https://www.centrusenergy.com",
+        "grossProfits": 116100000,
+        "symbol": "LEU",
+        "ebitda": 34200000,
+        "country": "United States",
+        "marketCap": 3182664704
       },
       "history": [
         {
           "date": "1998-07-01 00:00:00-04:00",
-          "close": 2175.154541015625,
+          "close": 2175.154296875,
           "volume": 88340.0
         },
         {
@@ -24939,17 +24934,17 @@
         },
         {
           "date": "1998-09-01 00:00:00-04:00",
-          "close": 2356.417236328125,
+          "close": 2356.4169921875,
           "volume": 49921.0
         },
         {
           "date": "1998-10-01 00:00:00-04:00",
-          "close": 2232.395751953125,
+          "close": 2232.396240234375,
           "volume": 46546.0
         },
         {
           "date": "1998-11-01 00:00:00-05:00",
-          "close": 2070.213623046875,
+          "close": 2070.21240234375,
           "volume": 47974.0
         },
         {
@@ -24964,52 +24959,52 @@
         },
         {
           "date": "1999-02-01 00:00:00-05:00",
-          "close": 2208.808837890625,
+          "close": 2208.809326171875,
           "volume": 27848.0
         },
         {
           "date": "1999-03-01 00:00:00-05:00",
-          "close": 2163.1640625,
+          "close": 2163.163818359375,
           "volume": 25460.0
         },
         {
           "date": "1999-04-01 00:00:00-05:00",
-          "close": 1974.63134765625,
+          "close": 1974.6317138671875,
           "volume": 20388.0
         },
         {
           "date": "1999-05-01 00:00:00-04:00",
-          "close": 1746.407958984375,
+          "close": 1746.4078369140625,
           "volume": 43957.0
         },
         {
           "date": "1999-06-01 00:00:00-04:00",
-          "close": 2420.12841796875,
+          "close": 2420.128173828125,
           "volume": 30417.0
         },
         {
           "date": "1999-07-01 00:00:00-04:00",
-          "close": 1962.540771484375,
+          "close": 1962.541259765625,
           "volume": 32475.0
         },
         {
           "date": "1999-08-01 00:00:00-04:00",
-          "close": 1759.1689453125,
+          "close": 1759.1685791015625,
           "volume": 34610.0
         },
         {
           "date": "1999-09-01 00:00:00-04:00",
-          "close": 1707.6168212890625,
+          "close": 1707.6165771484375,
           "volume": 47394.0
         },
         {
           "date": "1999-10-01 00:00:00-04:00",
-          "close": 1541.019775390625,
+          "close": 1541.0201416015625,
           "volume": 30194.0
         },
         {
           "date": "1999-11-01 00:00:00-05:00",
-          "close": 1374.4232177734375,
+          "close": 1374.423095703125,
           "volume": 49321.0
         },
         {
@@ -25019,27 +25014,27 @@
         },
         {
           "date": "2000-01-01 00:00:00-05:00",
-          "close": 935.0487060546875,
+          "close": 935.048828125,
           "volume": 45898.0
         },
         {
           "date": "2000-02-01 00:00:00-05:00",
-          "close": 623.3659057617188,
+          "close": 623.3657836914062,
           "volume": 151687.0
         },
         {
           "date": "2000-03-01 00:00:00-05:00",
-          "close": 845.5466918945312,
+          "close": 845.546630859375,
           "volume": 56780.0
         },
         {
           "date": "2000-04-01 00:00:00-05:00",
-          "close": 834.4209594726562,
+          "close": 834.4210205078125,
           "volume": 25587.0
         },
         {
           "date": "2000-05-01 00:00:00-04:00",
-          "close": 823.29541015625,
+          "close": 823.2954711914062,
           "volume": 40719.0
         },
         {
@@ -25049,62 +25044,62 @@
         },
         {
           "date": "2000-07-01 00:00:00-04:00",
-          "close": 804.9293212890625,
+          "close": 804.9296875,
           "volume": 16492.0
         },
         {
           "date": "2000-08-01 00:00:00-04:00",
-          "close": 804.9293212890625,
+          "close": 804.9296875,
           "volume": 39200.0
         },
         {
           "date": "2000-09-01 00:00:00-04:00",
-          "close": 807.02880859375,
+          "close": 807.0289916992188,
           "volume": 14056.0
         },
         {
           "date": "2000-10-01 00:00:00-04:00",
-          "close": 973.1820678710938,
+          "close": 973.18212890625,
           "volume": 16722.0
         },
         {
           "date": "2000-11-01 00:00:00-05:00",
-          "close": 866.3692626953125,
+          "close": 866.3695068359375,
           "volume": 27127.0
         },
         {
           "date": "2000-12-01 00:00:00-05:00",
-          "close": 842.7537231445312,
+          "close": 842.7532958984375,
           "volume": 18694.0
         },
         {
           "date": "2001-01-01 00:00:00-05:00",
-          "close": 1115.8543701171875,
+          "close": 1115.854248046875,
           "volume": 13482.0
         },
         {
           "date": "2001-02-01 00:00:00-05:00",
-          "close": 1231.153076171875,
+          "close": 1231.15283203125,
           "volume": 21331.0
         },
         {
           "date": "2001-03-01 00:00:00-05:00",
-          "close": 1720.0511474609375,
+          "close": 1720.0513916015625,
           "volume": 21523.0
         },
         {
           "date": "2001-04-01 00:00:00-05:00",
-          "close": 1666.049560546875,
+          "close": 1666.04931640625,
           "volume": 22304.0
         },
         {
           "date": "2001-05-01 00:00:00-04:00",
-          "close": 1874.0555419921875,
+          "close": 1874.0556640625,
           "volume": 46270.0
         },
         {
           "date": "2001-06-01 00:00:00-04:00",
-          "close": 1707.6702880859375,
+          "close": 1707.6700439453125,
           "volume": 19837.0
         },
         {
@@ -25114,22 +25109,22 @@
         },
         {
           "date": "2001-08-01 00:00:00-04:00",
-          "close": 1478.7652587890625,
+          "close": 1478.765625,
           "volume": 37722.0
         },
         {
           "date": "2001-09-01 00:00:00-04:00",
-          "close": 1327.9818115234375,
+          "close": 1327.9820556640625,
           "volume": 10026.0
         },
         {
           "date": "2001-10-01 00:00:00-04:00",
-          "close": 1352.765380859375,
+          "close": 1352.7655029296875,
           "volume": 17433.0
         },
         {
           "date": "2001-11-01 00:00:00-05:00",
-          "close": 1617.12255859375,
+          "close": 1617.1229248046875,
           "volume": 34198.0
         },
         {
@@ -25144,12 +25139,12 @@
         },
         {
           "date": "2002-02-01 00:00:00-05:00",
-          "close": 1445.5478515625,
+          "close": 1445.5479736328125,
           "volume": 26575.0
         },
         {
           "date": "2002-03-01 00:00:00-05:00",
-          "close": 1376.3515625,
+          "close": 1376.351806640625,
           "volume": 9242.0
         },
         {
@@ -25164,42 +25159,42 @@
         },
         {
           "date": "2002-06-01 00:00:00-04:00",
-          "close": 1920.2611083984375,
+          "close": 1920.26123046875,
           "volume": 36966.0
         },
         {
           "date": "2002-07-01 00:00:00-04:00",
-          "close": 1547.1195068359375,
+          "close": 1547.119384765625,
           "volume": 25020.0
         },
         {
           "date": "2002-08-01 00:00:00-04:00",
-          "close": 1647.496826171875,
+          "close": 1647.4967041015625,
           "volume": 32578.0
         },
         {
           "date": "2002-09-01 00:00:00-04:00",
-          "close": 1391.098388671875,
+          "close": 1391.0982666015625,
           "volume": 19648.0
         },
         {
           "date": "2002-10-01 00:00:00-04:00",
-          "close": 1488.875,
+          "close": 1488.8751220703125,
           "volume": 14864.0
         },
         {
           "date": "2002-11-01 00:00:00-05:00",
-          "close": 1488.875,
+          "close": 1488.8751220703125,
           "volume": 22795.0
         },
         {
           "date": "2002-12-01 00:00:00-05:00",
-          "close": 1365.941650390625,
+          "close": 1365.9417724609375,
           "volume": 14098.0
         },
         {
           "date": "2003-01-01 00:00:00-05:00",
-          "close": 1420.3980712890625,
+          "close": 1420.39794921875,
           "volume": 12798.0
         },
         {
@@ -25214,22 +25209,22 @@
         },
         {
           "date": "2003-04-01 00:00:00-05:00",
-          "close": 1300.10400390625,
+          "close": 1300.1038818359375,
           "volume": 18831.0
         },
         {
           "date": "2003-05-01 00:00:00-04:00",
-          "close": 1453.3306884765625,
+          "close": 1453.33056640625,
           "volume": 31382.0
         },
         {
           "date": "2003-06-01 00:00:00-04:00",
-          "close": 1666.5709228515625,
+          "close": 1666.5711669921875,
           "volume": 22061.0
         },
         {
           "date": "2003-07-01 00:00:00-04:00",
-          "close": 1725.922119140625,
+          "close": 1725.921875,
           "volume": 12278.0
         },
         {
@@ -25239,7 +25234,7 @@
         },
         {
           "date": "2003-09-01 00:00:00-04:00",
-          "close": 1579.9482421875,
+          "close": 1579.9481201171875,
           "volume": 18825.0
         },
         {
@@ -25249,12 +25244,12 @@
         },
         {
           "date": "2003-11-01 00:00:00-05:00",
-          "close": 1821.900390625,
+          "close": 1821.900634765625,
           "volume": 28091.0
         },
         {
           "date": "2003-12-01 00:00:00-05:00",
-          "close": 2070.496337890625,
+          "close": 2070.49609375,
           "volume": 29716.0
         },
         {
@@ -25264,7 +25259,7 @@
         },
         {
           "date": "2004-02-01 00:00:00-05:00",
-          "close": 2065.56640625,
+          "close": 2065.566162109375,
           "volume": 22829.0
         },
         {
@@ -25274,17 +25269,17 @@
         },
         {
           "date": "2004-04-01 00:00:00-05:00",
-          "close": 1725.376220703125,
+          "close": 1725.3760986328125,
           "volume": 25260.0
         },
         {
           "date": "2004-05-01 00:00:00-04:00",
-          "close": 1963.618408203125,
+          "close": 1963.6185302734375,
           "volume": 25892.0
         },
         {
           "date": "2004-06-01 00:00:00-04:00",
-          "close": 2237.665283203125,
+          "close": 2237.66552734375,
           "volume": 29343.0
         },
         {
@@ -25294,22 +25289,22 @@
         },
         {
           "date": "2004-08-01 00:00:00-04:00",
-          "close": 2173.8779296875,
+          "close": 2173.878173828125,
           "volume": 15770.0
         },
         {
           "date": "2004-09-01 00:00:00-04:00",
-          "close": 2689.260498046875,
+          "close": 2689.26025390625,
           "volume": 35339.0
         },
         {
           "date": "2004-10-01 00:00:00-04:00",
-          "close": 2505.135498046875,
+          "close": 2505.1357421875,
           "volume": 37323.0
         },
         {
           "date": "2004-11-01 00:00:00-05:00",
-          "close": 2730.753173828125,
+          "close": 2730.75341796875,
           "volume": 31919.0
         },
         {
@@ -25329,7 +25324,7 @@
         },
         {
           "date": "2005-03-01 00:00:00-05:00",
-          "close": 4319.09423828125,
+          "close": 4319.09375,
           "volume": 133111.0
         },
         {
@@ -26626,7 +26621,6 @@
           "Normalized Income": 26950000.0,
           "Net Income From Continuing And Discontinued Operation": 77800000.0,
           "Total Expenses": 398500000.0,
-          "Total Operating Income As Reported": 50200000.0,
           "Diluted Average Shares": 19925000.0,
           "Basic Average Shares": 17967000.0,
           "Diluted EPS": 3.9,
@@ -26681,7 +26675,6 @@
           "Normalized Income": 63009000.0,
           "Net Income From Continuing And Discontinued Operation": 73200000.0,
           "Total Expenses": 394000000.0,
-          "Total Operating Income As Reported": 48000000.0,
           "Diluted Average Shares": 16373000.0,
           "Basic Average Shares": 16309000.0,
           "Diluted EPS": 4.47,
@@ -26736,7 +26729,6 @@
           "Normalized Income": 75710295.857988,
           "Net Income From Continuing And Discontinued Operation": 84400000.0,
           "Total Expenses": 267800000.0,
-          "Total Operating Income As Reported": 52400000.0,
           "Diluted Average Shares": 15501000.0,
           "Basic Average Shares": 15212000.0,
           "Diluted EPS": 5.44,
@@ -26791,7 +26783,6 @@
           "Normalized Income": 51045000.0,
           "Net Income From Continuing And Discontinued Operation": 52200000.0,
           "Total Expenses": 233600000.0,
-          "Total Operating Income As Reported": 59700000.0,
           "Diluted Average Shares": 14988000.0,
           "Basic Average Shares": 14601000.0,
           "Diluted EPS": 3.38,
@@ -26846,7 +26837,6 @@
           "Normalized Income": null,
           "Net Income From Continuing And Discontinued Operation": null,
           "Total Expenses": null,
-          "Total Operating Income As Reported": null,
           "Diluted Average Shares": null,
           "Basic Average Shares": null,
           "Diluted EPS": null,
@@ -26933,7 +26923,6 @@
           "Other Payable": 18500000.0,
           "Accounts Payable": 10000000.0,
           "Total Assets": 2445900000.0,
-          "Total Non Current Assets": 82300000.0,
           "Other Non Current Assets": 7000000.0,
           "Non Current Prepaid Assets": 2700000.0,
           "Non Current Deferred Assets": 21900000.0,
@@ -27007,7 +26996,6 @@
           "Other Payable": 29500000.0,
           "Accounts Payable": 5800000.0,
           "Total Assets": 1093400000.0,
-          "Total Non Current Assets": 78200000.0,
           "Other Non Current Assets": 7300000.0,
           "Non Current Prepaid Assets": 2600000.0,
           "Non Current Deferred Assets": 29300000.0,
@@ -27081,7 +27069,6 @@
           "Other Payable": 41900000.0,
           "Accounts Payable": 6100000.0,
           "Total Assets": 796200000.0,
-          "Total Non Current Assets": 110800000.0,
           "Other Non Current Assets": 3500000.0,
           "Non Current Prepaid Assets": 32400000.0,
           "Non Current Deferred Assets": 28500000.0,
@@ -27155,7 +27142,6 @@
           "Other Payable": 43600000.0,
           "Accounts Payable": 5900000.0,
           "Total Assets": 705500000.0,
-          "Total Non Current Assets": 118400000.0,
           "Other Non Current Assets": 8100000.0,
           "Non Current Prepaid Assets": 32300000.0,
           "Non Current Deferred Assets": 26800000.0,
@@ -27229,7 +27215,6 @@
           "Other Payable": null,
           "Accounts Payable": null,
           "Total Assets": null,
-          "Total Non Current Assets": null,
           "Other Non Current Assets": null,
           "Non Current Prepaid Assets": null,
           "Non Current Deferred Assets": null,
@@ -28014,6 +27999,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Why Centrus Energy (LEU) Is Down 11.3% After Higher 2026 Guidance And A Deeper Backlog Update - And What's Next",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-centrus-energy-leu-down-231215001.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T23:12:15Z"
+        },
+        {
           "title": "ProFrac, ProPetro, and Centrus Energy Shares Plummet, What You Need To Know",
           "url": "https://finance.yahoo.com/markets/stocks/articles/profrac-propetro-centrus-energy-shares-042414633.html",
           "publisher": "StockStory",
@@ -28066,12 +28057,6 @@
           "url": "https://www.fool.com/coverage/filings/2026/05/26/rpg-investment-advisory-opens-centrus-energy-stake-valued-at-usd9-million-according-to-recent-sec-filing/",
           "publisher": "Motley Fool",
           "published": "2026-05-26T20:19:37Z"
-        },
-        {
-          "title": "Can CCJ's Uranium Segment Power Another Year of EBITDA Growth?",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/ccjs-uranium-segment-power-another-163700295.html",
-          "publisher": "Zacks",
-          "published": "2026-05-26T16:37:00Z"
         }
       ]
     }
@@ -28080,21 +28065,21 @@
     "yfinance": {
       "ticker": "SNDK",
       "info": {
+        "longBusinessSummary": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the United States, Europe, the Middle East, Africa, Asia, and internationally. The company offers solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California.",
+        "shortName": "Sandisk Corporation",
+        "longName": "Sandisk Corporation",
+        "totalRevenue": 13184000000,
         "enterpriseValue": 227391324160,
         "industry": "Computer Hardware",
-        "country": "United States",
-        "totalRevenue": 13184000000,
-        "shortName": "Sandisk Corporation",
-        "freeCashflow": 2259500032,
-        "grossProfits": 7388000256,
-        "ebitda": 5632000000,
-        "symbol": "SNDK",
-        "longName": "Sandisk Corporation",
-        "longBusinessSummary": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the United States, Europe, the Middle East, Africa, Asia, and internationally. The company offers solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California.",
-        "marketCap": 230919323648,
-        "website": "https://www.sandisk.com",
         "sector": "Technology",
-        "fullTimeEmployees": 11000
+        "fullTimeEmployees": 11000,
+        "freeCashflow": 2259500032,
+        "website": "https://www.sandisk.com",
+        "grossProfits": 7388000256,
+        "symbol": "SNDK",
+        "ebitda": 5632000000,
+        "country": "United States",
+        "marketCap": 230919323648
       },
       "history": [
         {
@@ -28828,10 +28813,10 @@
       "article_count": 10,
       "articles": [
         {
-          "title": "Nasdaq plunges 1,100 points over renewed rate hike concerns",
-          "url": "https://finance.yahoo.com/video/nasdaq-plunges-1100-points-over-renewed-rate-hike-concerns-201137413.html",
-          "publisher": "Yahoo Finance Video",
-          "published": "2026-06-05T20:11:37Z"
+          "title": "Assessing Sandisk (SNDK) Valuation After A Sharp Three Month Share Price Surge",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-sandisk-sndk-valuation-sharp-231156302.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T23:11:56Z"
         },
         {
           "title": "Jensen Huang Just Said This AI Chip Stock Could Be the Next $1 Trillion Company (Hint: It's Not AMD or Sandisk)",
@@ -28876,16 +28861,16 @@
           "published": "2026-06-05T20:20:00Z"
         },
         {
+          "title": "Nasdaq plunges 1,100 points over renewed rate hike concerns",
+          "url": "https://finance.yahoo.com/video/nasdaq-plunges-1100-points-over-renewed-rate-hike-concerns-201137413.html",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-06-05T20:11:37Z"
+        },
+        {
           "title": "Prediction: Sandisk Stock Will Hit $3,000 Next Year",
           "url": "https://www.fool.com/investing/2026/06/05/prediction-sandisk-stock-will-hit-3000-next-year/",
           "publisher": "Motley Fool",
           "published": "2026-06-05T19:20:00Z"
-        },
-        {
-          "title": "Tech Stocks Fall. Why Broadcom, Google, AI IPOs May Have Triggered Sell-Off.",
-          "url": "https://www.investors.com/news/technology/nasdaq-tech-stocks-nvidia-ai-ipos-broadcom/?src=A00220&yptr=yahoo",
-          "publisher": "Investor's Business Daily",
-          "published": "2026-06-05T18:25:39Z"
         }
       ]
     }
@@ -28894,21 +28879,21 @@
     "yfinance": {
       "ticker": "CRDO",
       "info": {
+        "longBusinessSummary": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong Kong, and internationally. It provides HiWire active electrical cables solutions, including HiWire CLOS, SPAN, SHIFT, and SWITCH; optical PAM4 digital signal processors; low-power line card PHY; serializer/deserializer (SerDes) chiplets; and SerDes IP, as well as integrated circuits. The company also offers intellectual property solutions consist of SerDes IP licensing. In addition, it offers predictive integrity link optimization and telemetry; PCIe retimer solutions; and support and maintenance, engineering, and royalties services. The company sells its products to hyperscalers, original equipment manufacturers, original design manufacturers, and optical module manufacturers, as well as into the enterprise and HPC markets. Credo Technology Group Holding Ltd was founded in 2008 and is based in Grand Cayman, the Cayman Islands.",
+        "shortName": "Credo Technology Group Holding ",
+        "longName": "Credo Technology Group Holding Ltd",
+        "totalRevenue": 1335116032,
         "enterpriseValue": 36786397184,
         "industry": "Semiconductors",
-        "country": "Cayman Islands",
-        "totalRevenue": 1335116032,
-        "shortName": "Credo Technology Group Holding ",
-        "freeCashflow": null,
-        "grossProfits": 908348992,
-        "ebitda": 470048992,
-        "symbol": "CRDO",
-        "longName": "Credo Technology Group Holding Ltd",
-        "longBusinessSummary": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong Kong, and internationally. It provides HiWire active electrical cables solutions, including HiWire CLOS, SPAN, SHIFT, and SWITCH; optical PAM4 digital signal processors; low-power line card PHY; serializer/deserializer (SerDes) chiplets; and SerDes IP, as well as integrated circuits. The company also offers intellectual property solutions consist of SerDes IP licensing. In addition, it offers predictive integrity link optimization and telemetry; PCIe retimer solutions; and support and maintenance, engineering, and royalties services. The company sells its products to hyperscalers, original equipment manufacturers, original design manufacturers, and optical module manufacturers, as well as into the enterprise and HPC markets. Credo Technology Group Holding Ltd was founded in 2008 and is based in Grand Cayman, the Cayman Islands.",
-        "marketCap": 38160846848,
-        "website": "https://credosemi.com",
         "sector": "Technology",
-        "fullTimeEmployees": null
+        "fullTimeEmployees": null,
+        "freeCashflow": null,
+        "website": "https://credosemi.com",
+        "grossProfits": 908348992,
+        "symbol": "CRDO",
+        "ebitda": 470048992,
+        "country": "Cayman Islands",
+        "marketCap": 38160846848
       },
       "history": [
         {
@@ -30166,21 +30151,21 @@
     "yfinance": {
       "ticker": "ALAB",
       "info": {
+        "longBusinessSummary": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure in Taiwan and the United States. It offers an intelligent connectivity platform, comprised of semiconductor-based, high-speed, mixed-signal connectivity products that integrate a matrix of microcontrollers and sensors, and COSMOS. The company provides COSMOS software suite, a connectivity system management and optimization software that enables management and optimization of resources for large fleets at cloud-scale via link, fleet, and RAS management capabilities. In addition, it offers PCIe/CXL smart DSP retimers and cable modules; ethernet smart cable modules for cloud and AI infrastructure; CXL memory connectivity controllers; and smart fabric switches. The company serves hyperscalers and system original equipment manufacturers. Astera Labs, Inc. was incorporated in 2017 and is based in San Jose, California.",
+        "shortName": "Astera Labs, Inc.",
+        "longName": "Astera Labs, Inc.",
+        "totalRevenue": 1001443968,
         "enterpriseValue": 53203976192,
         "industry": "Semiconductors",
-        "country": "United States",
-        "totalRevenue": 1001443968,
-        "shortName": "Astera Labs, Inc.",
-        "freeCashflow": 240004880,
-        "grossProfits": 760990976,
-        "ebitda": 233384992,
-        "symbol": "ALAB",
-        "longName": "Astera Labs, Inc.",
-        "longBusinessSummary": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure in Taiwan and the United States. It offers an intelligent connectivity platform, comprised of semiconductor-based, high-speed, mixed-signal connectivity products that integrate a matrix of microcontrollers and sensors, and COSMOS. The company provides COSMOS software suite, a connectivity system management and optimization software that enables management and optimization of resources for large fleets at cloud-scale via link, fleet, and RAS management capabilities. In addition, it offers PCIe/CXL smart DSP retimers and cable modules; ethernet smart cable modules for cloud and AI infrastructure; CXL memory connectivity controllers; and smart fabric switches. The company serves hyperscalers and system original equipment manufacturers. Astera Labs, Inc. was incorporated in 2017 and is based in San Jose, California.",
-        "marketCap": 54346600448,
-        "website": "https://www.asteralabs.com",
         "sector": "Technology",
-        "fullTimeEmployees": 756
+        "fullTimeEmployees": 756,
+        "freeCashflow": 240004880,
+        "website": "https://www.asteralabs.com",
+        "grossProfits": 760990976,
+        "symbol": "ALAB",
+        "ebitda": 233384992,
+        "country": "United States",
+        "marketCap": 54346600448
       },
       "history": [
         {
@@ -31144,6 +31129,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Why Astera Labs Rocketed Higher in May",
+          "url": "https://www.fool.com/investing/2026/06/06/why-astera-labs-rocketed-higher-in-may/",
+          "publisher": "Motley Fool",
+          "published": "2026-06-06T17:05:00Z"
+        },
+        {
           "title": "Top Growth Companies With Insider Ownership In June 2026",
           "url": "https://finance.yahoo.com/markets/stocks/articles/top-growth-companies-insider-ownership-173551079.html",
           "publisher": "Simply Wall St.",
@@ -31196,12 +31187,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/spotlight-applovin-2-more-growth-113549603.html",
           "publisher": "Simply Wall St.",
           "published": "2026-06-03T11:35:49Z"
-        },
-        {
-          "title": "3 Growth Companies With High Insider Ownership And Up To 114% Earnings Growth",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-growth-companies-high-insider-173558214.html",
-          "publisher": "Simply Wall St.",
-          "published": "2026-06-02T17:35:58Z"
         }
       ]
     }
@@ -31210,21 +31195,21 @@
     "yfinance": {
       "ticker": "SYM",
       "info": {
+        "longBusinessSummary": "Symbotic Inc., an automation technology company, develops technologies to enhance operating efficiencies in modern warehouses. The company automates the processing of pallets, cases, and individual items in warehouses. Its systems enhance operations at the front end of the supply chain. The company is headquartered in Wilmington, Massachusetts.",
+        "shortName": "Symbotic Inc.",
+        "longName": "Symbotic Inc.",
+        "totalRevenue": 2517042944,
         "enterpriseValue": 3960033280,
         "industry": "Specialty Industrial Machinery",
-        "country": "United States",
-        "totalRevenue": 2517042944,
-        "shortName": "Symbotic Inc.",
-        "freeCashflow": 331211488,
-        "grossProfits": 513719008,
-        "ebitda": 22643000,
-        "symbol": "SYM",
-        "longName": "Symbotic Inc.",
-        "longBusinessSummary": "Symbotic Inc., an automation technology company, develops technologies to enhance operating efficiencies in modern warehouses. The company automates the processing of pallets, cases, and individual items in warehouses. Its systems enhance operations at the front end of the supply chain. The company is headquartered in Wilmington, Massachusetts.",
-        "marketCap": 26571960320,
-        "website": "https://www.symbotic.com",
         "sector": "Industrials",
-        "fullTimeEmployees": 2000
+        "fullTimeEmployees": 2000,
+        "freeCashflow": 331211488,
+        "website": "https://www.symbotic.com",
+        "grossProfits": 513719008,
+        "symbol": "SYM",
+        "ebitda": 22643000,
+        "country": "United States",
+        "marketCap": 26571960320
       },
       "history": [
         {
@@ -32680,6 +32665,18 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Is Symbotic (SYM) Fairly Priced After Recent Share Price Volatility?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/symbotic-sym-fairly-priced-recent-010748871.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-07T01:07:48Z"
+        },
+        {
+          "title": "Symbotic\u2019s Q2 Profitability Highlights Broader Automation Push With Fox And Nyobolt",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/symbotic-q2-profitability-highlights-broader-191054426.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-06T19:10:54Z"
+        },
+        {
           "title": "SYMBOTIC INC (SYM) Down 16% Since Last Earnings Report: Can It Rebound?",
           "url": "https://finance.yahoo.com/markets/stocks/articles/symbotic-inc-sym-down-16-153021582.html",
           "publisher": "Zacks",
@@ -32726,18 +32723,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/serve-robotics-vs-symbotic-robotics-141700294.html",
           "publisher": "Zacks",
           "published": "2026-05-28T14:17:00Z"
-        },
-        {
-          "title": "Stocks Pressured as Oil Prices Climb on US-Iran Clashes",
-          "url": "https://www.barchart.com/story/news/2178581/stocks-pressured-as-oil-prices-climb-on-us-iran-clashes",
-          "publisher": "Barchart",
-          "published": "2026-05-28T14:07:04Z"
-        },
-        {
-          "title": "Jensen Huang Just Said $40 Trillion. Here Are 5 Physical AI Stocks Wall Street Is Quietly Loading Up On Before the Rest of the Market Catches On",
-          "url": "https://247wallst.com/investing/2026/05/28/jensen-huang-just-said-40-trillion-here-are-5-physical-ai-stocks-wall-street-is-quietly-loading-up-on-before-the-rest-of-the-market-catches-on/",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-05-28T12:39:12Z"
         }
       ]
     }
@@ -32746,21 +32731,21 @@
     "yfinance": {
       "ticker": "RXRX",
       "info": {
+        "longBusinessSummary": "Recursion Pharmaceuticals, Inc., a clinical-stage biotechnology company, engages in the decoding biology and chemistry by integrating technological innovations across biology, chemistry, automation, data science, and engineering to industrialize drug discovery in the United States and the United Kingdom. The company develops REC-4881, which is in Phase 1b/2 clinical trial to treat familial adenomatous polyposis; REC-617, which is in Phase 1/2 clinical trial to treat advanced solid tumors; REC-1245, which is in Phase 1/2 clinical trial to treat biomarker-enriched solid tumors and lymphoma; REC-3565 that is in Phase 1/2 for the treatment of relapsed or refractory B-cell malignancies; and REC-4539, a reversible, CNS penetrant, orally bioavailable, and potential best-in-class inhibitor of LSD1 for the treatment of solid tumors and hematology oncology. Its preclinical stage product includes REC-7735 for the treatment of HR+ breast cancer; and REC-102 for the treatment of hypophosphatasia. The company has collaboration and agreement with Roche & Genentech; Sanofi; Bayer AG; Tempus; and Takeda Pharmaceutical Company Limited. Recursion Pharmaceuticals, Inc. was incorporated in 2013 and is headquartered in Salt Lake City, Utah.",
+        "shortName": "Recursion Pharmaceuticals, Inc.",
+        "longName": "Recursion Pharmaceuticals, Inc.",
+        "totalRevenue": 66408000,
         "enterpriseValue": 1174537728,
         "industry": "Biotechnology",
-        "country": "United States",
-        "totalRevenue": 66408000,
-        "shortName": "Recursion Pharmaceuticals, Inc.",
-        "freeCashflow": -177795632,
-        "grossProfits": -428739008,
-        "ebitda": -501225984,
-        "symbol": "RXRX",
-        "longName": "Recursion Pharmaceuticals, Inc.",
-        "longBusinessSummary": "Recursion Pharmaceuticals, Inc., a clinical-stage biotechnology company, engages in the decoding biology and chemistry by integrating technological innovations across biology, chemistry, automation, data science, and engineering to industrialize drug discovery in the United States and the United Kingdom. The company develops REC-4881, which is in Phase 1b/2 clinical trial to treat familial adenomatous polyposis; REC-617, which is in Phase 1/2 clinical trial to treat advanced solid tumors; REC-1245, which is in Phase 1/2 clinical trial to treat biomarker-enriched solid tumors and lymphoma; REC-3565 that is in Phase 1/2 for the treatment of relapsed or refractory B-cell malignancies; and REC-4539, a reversible, CNS penetrant, orally bioavailable, and potential best-in-class inhibitor of LSD1 for the treatment of solid tumors and hematology oncology. Its preclinical stage product includes REC-7735 for the treatment of HR+ breast cancer; and REC-102 for the treatment of hypophosphatasia. The company has collaboration and agreement with Roche & Genentech; Sanofi; Bayer AG; Tempus; and Takeda Pharmaceutical Company Limited. Recursion Pharmaceuticals, Inc. was incorporated in 2013 and is headquartered in Salt Lake City, Utah.",
-        "marketCap": 1759476736,
-        "website": "https://www.recursion.com",
         "sector": "Healthcare",
-        "fullTimeEmployees": 600
+        "fullTimeEmployees": 600,
+        "freeCashflow": -177795632,
+        "website": "https://www.recursion.com",
+        "grossProfits": -428739008,
+        "symbol": "RXRX",
+        "ebitda": -501225984,
+        "country": "United States",
+        "marketCap": 1759476736
       },
       "history": [
         {
@@ -34305,21 +34290,21 @@
     "yfinance": {
       "ticker": "SDGR",
       "info": {
+        "longBusinessSummary": "Schr\u00f6dinger, Inc., together with its subsidiaries, develops physics-based computational platform that enables discovery of novel molecules for drug development and materials applications in the United States, the Asia-Pacific, Europe, Middle East, Africa, and internationally. The company operates in two segments, Software and Drug Discovery. The Software segment sells its software to transform molecular discovery for life sciences and materials science industries. The Drug Discovery segment focuses on building a portfolio of preclinical and clinical programs, internally and through collaborations. It has a research collaboration and license agreement with Novartis Pharma AG to advance multiple development candidates. Schr\u00f6dinger, Inc. was incorporated in 1990 and is based in New York, New York.",
+        "shortName": "Schrodinger, Inc.",
+        "longName": "Schr\u00f6dinger, Inc.",
+        "totalRevenue": 254904992,
         "enterpriseValue": 782532992,
         "industry": "Health Information Services",
-        "country": "United States",
-        "totalRevenue": 254904992,
-        "shortName": "Schrodinger, Inc.",
-        "freeCashflow": -49420624,
-        "grossProfits": 141036992,
-        "ebitda": -158892000,
-        "symbol": "SDGR",
-        "longName": "Schr\u00f6dinger, Inc.",
-        "longBusinessSummary": "Schr\u00f6dinger, Inc., together with its subsidiaries, develops physics-based computational platform that enables discovery of novel molecules for drug development and materials applications in the United States, the Asia-Pacific, Europe, Middle East, Africa, and internationally. The company operates in two segments, Software and Drug Discovery. The Software segment sells its software to transform molecular discovery for life sciences and materials science industries. The Drug Discovery segment focuses on building a portfolio of preclinical and clinical programs, internally and through collaborations. It has a research collaboration and license agreement with Novartis Pharma AG to advance multiple development candidates. Schr\u00f6dinger, Inc. was incorporated in 1990 and is based in New York, New York.",
-        "marketCap": 1074483968,
-        "website": "https://www.schrodinger.com",
         "sector": "Healthcare",
-        "fullTimeEmployees": 850
+        "fullTimeEmployees": 850,
+        "freeCashflow": -49420624,
+        "website": "https://www.schrodinger.com",
+        "grossProfits": 141036992,
+        "symbol": "SDGR",
+        "ebitda": -158892000,
+        "country": "United States",
+        "marketCap": 1074483968
       },
       "history": [
         {
@@ -35983,21 +35968,21 @@
     "yfinance": {
       "ticker": "CRSP",
       "info": {
+        "longBusinessSummary": "CRISPR Therapeutics AG, a gene editing company, focuses on developing gene-based medicines for serious human diseases using its Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)/CRISPR-associated protein 9 (Cas9) platform. The company's CRISPR/Cas9 is a technology for gene editing which is the process of precisely altering specific sequences of genomic DNA. It has a portfolio of therapeutic programs across a range of disease areas, including hemoglobinopathies, CAR T cell therapies, in vivo, and type 1 diabetes, as well as develops investigational CAR T programs, including an autologous, gene-edited CAR T program targeting allogeneic chimeric antigen receptor T cell for autoimmune indications and oncology. The company's lead product candidate is CASGEVY, an ex vivo CRISPR/Cas9 gene-edited cell therapy for treating patients suffering from transfusion-dependent beta-thalassemia, severe sickle cell disease (SCD), and hemoglobinopathies in which a patient's hematopoietic stem and progenitor cells are edited to produce high levels of fetal hemoglobin in red blood cells. It also develops CAR T cell therapies, including CTX112 targeting cluster of differentiation 19 (CD19) and CTX131 targeting CD70 for oncology and autoimmune indications; CTX310 and CTX320, in vivo gene editing to address the cardiovascular disease by disrupting the validated targets angiopoietin-like protein 3 and lipoprotein; and CTX211, an allogeneic, gene-edited, hypoimmune stem cell-derived product candidate for the treatment of T1D. It has strategic partnerships with Vertex Pharmaceuticals Incorporated. CRISPR Therapeutics AG was incorporated in 2013 and is headquartered in Zug, Switzerland.",
+        "shortName": "CRISPR Therapeutics AG",
+        "longName": "CRISPR Therapeutics AG",
+        "totalRevenue": 4103000,
         "enterpriseValue": 3345762304,
         "industry": "Biotechnology",
-        "country": "Switzerland",
-        "totalRevenue": 4103000,
-        "shortName": "CRISPR Therapeutics AG",
-        "freeCashflow": -260895744,
-        "grossProfits": -478712992,
-        "ebitda": -531080000,
-        "symbol": "CRSP",
-        "longName": "CRISPR Therapeutics AG",
-        "longBusinessSummary": "CRISPR Therapeutics AG, a gene editing company, focuses on developing gene-based medicines for serious human diseases using its Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)/CRISPR-associated protein 9 (Cas9) platform. The company's CRISPR/Cas9 is a technology for gene editing which is the process of precisely altering specific sequences of genomic DNA. It has a portfolio of therapeutic programs across a range of disease areas, including hemoglobinopathies, CAR T cell therapies, in vivo, and type 1 diabetes, as well as develops investigational CAR T programs, including an autologous, gene-edited CAR T program targeting allogeneic chimeric antigen receptor T cell for autoimmune indications and oncology. The company's lead product candidate is CASGEVY, an ex vivo CRISPR/Cas9 gene-edited cell therapy for treating patients suffering from transfusion-dependent beta-thalassemia, severe sickle cell disease (SCD), and hemoglobinopathies in which a patient's hematopoietic stem and progenitor cells are edited to produce high levels of fetal hemoglobin in red blood cells. It also develops CAR T cell therapies, including CTX112 targeting cluster of differentiation 19 (CD19) and CTX131 targeting CD70 for oncology and autoimmune indications; CTX310 and CTX320, in vivo gene editing to address the cardiovascular disease by disrupting the validated targets angiopoietin-like protein 3 and lipoprotein; and CTX211, an allogeneic, gene-edited, hypoimmune stem cell-derived product candidate for the treatment of T1D. It has strategic partnerships with Vertex Pharmaceuticals Incorporated. CRISPR Therapeutics AG was incorporated in 2013 and is headquartered in Zug, Switzerland.",
-        "marketCap": 5105417216,
-        "website": "https://www.crisprtx.com",
         "sector": "Healthcare",
-        "fullTimeEmployees": null
+        "fullTimeEmployees": null,
+        "freeCashflow": -260895744,
+        "website": "https://www.crisprtx.com",
+        "grossProfits": -478712992,
+        "symbol": "CRSP",
+        "ebitda": -531080000,
+        "country": "Switzerland",
+        "marketCap": 5105417216
       },
       "history": [
         {
@@ -37780,21 +37765,21 @@
     "yfinance": {
       "ticker": "CRWD",
       "info": {
+        "longBusinessSummary": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally. Its unified platform provides cloud-delivered protection of endpoints, cloud workloads, identity, and data through a software as a service (SaaS) subscription-based model. The company offers corporate endpoint and cloud workload security, managed security, security and vulnerability management, IT operations management, identity protection, threat intelligence, data protection, SaaS security posture management, and AI powered workflow automation, and securing generative AI workload services, as well as security orchestration, automation, and response; and security information and event management, and log management services. It primarily sells subscriptions to its Falcon platform and cloud modules. The company has a strategic alliance with Cognizant Technology Solutions Corporation to help enterprises secure artificial intelligence across its lifecycle, from the AI agents and models to the foundational infrastructure that supports the entire AI ecosystem. The company was incorporated in 2011 and is headquartered in Austin, Texas.",
+        "shortName": "CrowdStrike Holdings, Inc.",
+        "longName": "CrowdStrike Holdings, Inc.",
+        "totalRevenue": 5094199808,
         "enterpriseValue": 167128088576,
         "industry": "Software - Infrastructure",
-        "country": "United States",
-        "totalRevenue": 5094199808,
-        "shortName": "CrowdStrike Holdings, Inc.",
-        "freeCashflow": 1926365056,
-        "grossProfits": 3827581952,
-        "ebitda": 59319000,
-        "symbol": "CRWD",
-        "longName": "CrowdStrike Holdings, Inc.",
-        "longBusinessSummary": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally. Its unified platform provides cloud-delivered protection of endpoints, cloud workloads, identity, and data through a software as a service (SaaS) subscription-based model. The company offers corporate endpoint and cloud workload security, managed security, security and vulnerability management, IT operations management, identity protection, threat intelligence, data protection, SaaS security posture management, and AI powered workflow automation, and securing generative AI workload services, as well as security orchestration, automation, and response; and security information and event management, and log management services. It primarily sells subscriptions to its Falcon platform and cloud modules. The company has a strategic alliance with Cognizant Technology Solutions Corporation to help enterprises secure artificial intelligence across its lifecycle, from the AI agents and models to the foundational infrastructure that supports the entire AI ecosystem. The company was incorporated in 2011 and is headquartered in Austin, Texas.",
-        "marketCap": 170818093056,
-        "website": "https://www.crowdstrike.com",
         "sector": "Technology",
-        "fullTimeEmployees": 11157
+        "fullTimeEmployees": 11157,
+        "freeCashflow": 1926365056,
+        "website": "https://www.crowdstrike.com",
+        "grossProfits": 3827581952,
+        "symbol": "CRWD",
+        "ebitda": 59319000,
+        "country": "United States",
+        "marketCap": 170818093056
       },
       "history": [
         {
@@ -39159,7 +39144,7 @@
         "enterprise_value": 167128088576,
         "short_ratio": 2.63,
         "short_percent_of_float": 0.119899996,
-        "held_percent_institutions": 0.74724,
+        "held_percent_institutions": 0.74716,
         "held_percent_insiders": 0.0154,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
@@ -39475,6 +39460,18 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Goldman Sachs aggressively resets CrowdStrike stock price target",
+          "url": "https://www.thestreet.com/investing/stocks/goldman-sachs-aggressively-resets-crowdstrike-stock-price-target-after-earnings",
+          "publisher": "TheStreet",
+          "published": "2026-06-06T20:07:00Z"
+        },
+        {
+          "title": "CrowdStrike Holdings (CRWD) Reports FQ1 2027 Earnings, Here\u2019s What\u2019s Important to Note",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-holdings-crwd-reports-fq1-171454636.html",
+          "publisher": "Insider Monkey",
+          "published": "2026-06-06T17:14:54Z"
+        },
+        {
           "title": "Why CrowdStrike (CRWD) Stock Is Falling Today",
           "url": "https://finance.yahoo.com/markets/stocks/articles/why-crowdstrike-crwd-stock-falling-023214385.html",
           "publisher": "StockStory",
@@ -39521,18 +39518,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-upgraded-applovin-initiated-wall-135331262.html",
           "publisher": "The Fly",
           "published": "2026-06-05T13:36:13Z"
-        },
-        {
-          "title": "Zscaler Bets on AI Agents: Can It Become a Major Growth Catalyst?",
-          "url": "https://finance.yahoo.com/sectors/technology/articles/zscaler-bets-ai-agents-become-124300514.html",
-          "publisher": "Zacks",
-          "published": "2026-06-05T12:43:00Z"
-        },
-        {
-          "title": "1 Cash-Heavy Stock for Long-Term Investors and 2 We Find Risky",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-cash-heavy-stock-long-123214736.html",
-          "publisher": "StockStory",
-          "published": "2026-06-05T12:32:14Z"
         }
       ]
     }
@@ -39541,21 +39526,21 @@
     "yfinance": {
       "ticker": "S",
       "info": {
+        "longBusinessSummary": "SentinelOne, Inc. operates as a cybersecurity provider in the United States and internationally. The company's Singularity Platform delivers an artificial intelligence-powered autonomous threat prevention, detection, and response capabilities across an organization's endpoints, cloud workloads, and identify credentials, which enables seamless and autonomous protection against a spectrum of cyber threats. It also offers generative AI-security agent (Purple AI), security information and event management, endpoint security, cloud security, identity security, exposure and vulnerability management, and threat services. The company was formerly known as Sentinel Labs, Inc. and changed its name to SentinelOne, Inc. in March 2021. SentinelOne, Inc. was incorporated in 2013 and is headquartered in Mountain View, California.",
+        "shortName": "SentinelOne, Inc.",
+        "longName": "SentinelOne, Inc.",
+        "totalRevenue": 1048905984,
         "enterpriseValue": 4810932224,
         "industry": "Software - Infrastructure",
-        "country": "United States",
-        "totalRevenue": 1048905984,
-        "shortName": "SentinelOne, Inc.",
-        "freeCashflow": 268394256,
-        "grossProfits": 768296000,
-        "ebitda": -259490000,
-        "symbol": "S",
-        "longName": "SentinelOne, Inc.",
-        "longBusinessSummary": "SentinelOne, Inc. operates as a cybersecurity provider in the United States and internationally. The company's Singularity Platform delivers an artificial intelligence-powered autonomous threat prevention, detection, and response capabilities across an organization's endpoints, cloud workloads, and identify credentials, which enables seamless and autonomous protection against a spectrum of cyber threats. It also offers generative AI-security agent (Purple AI), security information and event management, endpoint security, cloud security, identity security, exposure and vulnerability management, and threat services. The company was formerly known as Sentinel Labs, Inc. and changed its name to SentinelOne, Inc. in March 2021. SentinelOne, Inc. was incorporated in 2013 and is headquartered in Mountain View, California.",
-        "marketCap": 5446639616,
-        "website": "https://www.sentinelone.com",
         "sector": "Technology",
-        "fullTimeEmployees": 3000
+        "fullTimeEmployees": 3000,
+        "freeCashflow": 268394256,
+        "website": "https://www.sentinelone.com",
+        "grossProfits": 768296000,
+        "symbol": "S",
+        "ebitda": -259490000,
+        "country": "United States",
+        "marketCap": 5467719168
       },
       "history": [
         {
@@ -40791,7 +40776,7 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 5446639616,
+        "market_cap": 5467719168,
         "enterprise_value": 4810932224,
         "short_ratio": 3.34,
         "short_percent_of_float": 0.069,

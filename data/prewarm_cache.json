@@ -3,21 +3,21 @@
     "yfinance": {
       "ticker": "XNET",
       "info": {
-        "country": "China",
-        "shortName": "Xunlei Limited",
-        "ebitda": 23394750,
-        "longName": "Xunlei Limited",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "marketCap": 314449696,
-        "freeCashflow": null,
-        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
-        "fullTimeEmployees": 1306,
-        "symbol": "XNET",
         "totalRevenue": 494806016,
+        "ebitda": 23394750,
+        "enterpriseValue": 95582064,
         "website": "https://www.xunlei.com",
-        "enterpriseValue": 80941696,
-        "grossProfits": 238176000
+        "fullTimeEmployees": 1306,
+        "sector": "Technology",
+        "symbol": "XNET",
+        "grossProfits": 238176000,
+        "freeCashflow": null,
+        "marketCap": 329090080,
+        "industry": "Software - Infrastructure",
+        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
+        "longName": "Xunlei Limited",
+        "shortName": "Xunlei Limited",
+        "country": "China"
       },
       "history": [
         {
@@ -742,8 +742,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 4.940000057220459,
-          "volume": 3226292.0
+          "close": 5.170000076293945,
+          "volume": 3962756.0
         }
       ],
       "income_statement": [
@@ -1838,16 +1838,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 314449696,
-        "enterprise_value": 80941696,
+        "market_cap": 329090080,
+        "enterprise_value": 95582064,
         "short_ratio": 6.03,
         "short_percent_of_float": 0.0377,
         "held_percent_institutions": 0.12312,
         "held_percent_insiders": 0.19653,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 0.36565506,
-        "price_to_book": 0.22606628,
+        "trailing_pe": 0.3826795,
+        "price_to_book": 0.23659162,
         "gross_margins": 0.48134997,
         "profit_margins": 1.7672099,
         "revenue_growth": 0.539
@@ -2371,21 +2371,21 @@
     "yfinance": {
       "ticker": "ENVX",
       "info": {
-        "country": "United States",
-        "shortName": "Enovix Corporation",
-        "ebitda": -141855008,
-        "longName": "Enovix Corporation",
-        "sector": "Industrials",
-        "industry": "Electrical Equipment & Parts",
-        "marketCap": 1370003712,
-        "freeCashflow": -72119248,
-        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
-        "fullTimeEmployees": 664,
-        "symbol": "ENVX",
         "totalRevenue": 34323000,
+        "ebitda": -141855008,
+        "enterpriseValue": 1442307456,
         "website": "https://www.enovix.com",
-        "enterpriseValue": 1352966784,
-        "grossProfits": 7396000
+        "fullTimeEmployees": 664,
+        "sector": "Industrials",
+        "symbol": "ENVX",
+        "grossProfits": 7396000,
+        "freeCashflow": -72119248,
+        "marketCap": 1461628032,
+        "industry": "Electrical Equipment & Parts",
+        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
+        "longName": "Enovix Corporation",
+        "shortName": "Enovix Corporation",
+        "country": "United States"
       },
       "history": [
         {
@@ -2715,8 +2715,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 6.28000020980835,
-          "volume": 63602373.0
+          "close": 6.699999809265137,
+          "volume": 72863911.0
         }
       ],
       "income_statement": [
@@ -3631,8 +3631,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1370003712,
-        "enterprise_value": 1352966784,
+        "market_cap": 1461628032,
+        "enterprise_value": 1442307456,
         "short_ratio": 6.48,
         "short_percent_of_float": 0.2606,
         "held_percent_institutions": 0.50794,
@@ -3640,7 +3640,7 @@
         "sector": "Industrials",
         "industry": "Electrical Equipment & Parts",
         "trailing_pe": null,
-        "price_to_book": 5.5379195,
+        "price_to_book": 5.9082894,
         "gross_margins": 0.21548,
         "profit_margins": 0.0,
         "revenue_growth": 0.491
@@ -4014,21 +4014,21 @@
     "yfinance": {
       "ticker": "CGEN",
       "info": {
-        "country": "Israel",
-        "shortName": "Compugen Ltd.",
-        "ebitda": 31176250,
-        "longName": "Compugen Ltd.",
-        "sector": "Healthcare",
-        "industry": "Biotechnology",
-        "marketCap": 185385904,
-        "freeCashflow": null,
-        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
-        "fullTimeEmployees": 75,
-        "symbol": "CGEN",
         "totalRevenue": 72656000,
+        "ebitda": 31176250,
+        "enterpriseValue": 60880708,
         "website": "https://cgen.com",
-        "enterpriseValue": 53316212,
-        "grossProfits": 63981000
+        "fullTimeEmployees": 75,
+        "sector": "Healthcare",
+        "symbol": "CGEN",
+        "grossProfits": 63981000,
+        "freeCashflow": null,
+        "marketCap": 192952656,
+        "industry": "Biotechnology",
+        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
+        "longName": "Compugen Ltd.",
+        "shortName": "Compugen Ltd.",
+        "country": "Israel"
       },
       "history": [
         {
@@ -5583,8 +5583,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 1.9600000381469727,
-          "volume": 4752142.0
+          "close": 2.0399999618530273,
+          "volume": 5473543.0
         }
       ],
       "income_statement": [
@@ -6399,16 +6399,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 185385904,
-        "enterprise_value": 53316212,
+        "market_cap": 192952656,
+        "enterprise_value": 60880708,
         "short_ratio": 4.55,
         "short_percent_of_float": 0.025899999,
         "held_percent_institutions": 0.1522,
         "held_percent_insiders": 0.02081,
         "sector": "Healthcare",
         "industry": "Biotechnology",
-        "trailing_pe": 5.157895,
-        "price_to_book": 1.9444444,
+        "trailing_pe": 5.368421,
+        "price_to_book": 2.0238094,
         "gross_margins": 0.8806,
         "profit_margins": 0.47973,
         "revenue_growth": -0.047
@@ -7036,31 +7036,31 @@
     "yfinance": {
       "ticker": "ABXL",
       "info": {
-        "country": null,
-        "shortName": "Abacus Global Management, Inc. ",
-        "ebitda": null,
-        "longName": null,
-        "sector": null,
-        "industry": null,
-        "marketCap": null,
-        "freeCashflow": null,
-        "longBusinessSummary": null,
-        "fullTimeEmployees": null,
-        "symbol": "ABXL",
         "totalRevenue": null,
-        "website": null,
+        "ebitda": null,
         "enterpriseValue": null,
-        "grossProfits": null
+        "website": null,
+        "fullTimeEmployees": null,
+        "sector": null,
+        "symbol": "ABXL",
+        "grossProfits": null,
+        "freeCashflow": null,
+        "marketCap": null,
+        "industry": null,
+        "longBusinessSummary": null,
+        "longName": null,
+        "shortName": "Abacus Global Management, Inc. ",
+        "country": null
       },
       "history": [
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 20.361839294433594,
+          "close": 20.361841201782227,
           "volume": 10500.0
         },
         {
           "date": "2023-12-01 00:00:00-05:00",
-          "close": 20.84880828857422,
+          "close": 20.84881019592285,
           "volume": 73000.0
         },
         {
@@ -7070,37 +7070,37 @@
         },
         {
           "date": "2024-02-01 00:00:00-05:00",
-          "close": 20.67548370361328,
+          "close": 20.675485610961914,
           "volume": 178200.0
         },
         {
           "date": "2024-03-01 00:00:00-05:00",
-          "close": 20.865314483642578,
+          "close": 20.86531639099121,
           "volume": 114000.0
         },
         {
           "date": "2024-04-01 00:00:00-04:00",
-          "close": 21.030391693115234,
+          "close": 21.030393600463867,
           "volume": 64700.0
         },
         {
           "date": "2024-05-01 00:00:00-04:00",
-          "close": 21.079914093017578,
+          "close": 21.079912185668945,
           "volume": 119100.0
         },
         {
           "date": "2024-06-01 00:00:00-04:00",
-          "close": 21.57681655883789,
+          "close": 21.576818466186523,
           "volume": 79000.0
         },
         {
           "date": "2024-07-01 00:00:00-04:00",
-          "close": 21.788270950317383,
+          "close": 21.78827476501465,
           "volume": 45600.0
         },
         {
           "date": "2024-08-01 00:00:00-04:00",
-          "close": 21.923603057861328,
+          "close": 21.923601150512695,
           "volume": 152600.0
         },
         {
@@ -7110,27 +7110,27 @@
         },
         {
           "date": "2024-10-01 00:00:00-04:00",
-          "close": 22.882612228393555,
+          "close": 22.88261604309082,
           "volume": 59900.0
         },
         {
           "date": "2024-11-01 00:00:00-04:00",
-          "close": 22.882612228393555,
+          "close": 22.88261604309082,
           "volume": 53300.0
         },
         {
           "date": "2024-12-01 00:00:00-05:00",
-          "close": 29.857118606567383,
+          "close": 29.857120513916016,
           "volume": 1017300.0
         },
         {
           "date": "2025-01-01 00:00:00-05:00",
-          "close": 24.19792938232422,
+          "close": 24.197925567626953,
           "volume": 349900.0
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 23.346385955810547,
+          "close": 23.34638786315918,
           "volume": 72200.0
         },
         {
@@ -7140,12 +7140,12 @@
         },
         {
           "date": "2025-04-01 00:00:00-04:00",
-          "close": 23.435651779174805,
+          "close": 23.435653686523438,
           "volume": 546100.0
         },
         {
           "date": "2025-05-01 00:00:00-04:00",
-          "close": 23.099950790405273,
+          "close": 23.09994888305664,
           "volume": 162900.0
         },
         {
@@ -7210,8 +7210,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 25.510000228881836,
-          "volume": 69184.0
+          "close": 25.56999969482422,
+          "volume": 83809.0
         }
       ],
       "income_statement": [],
@@ -7498,21 +7498,21 @@
     "yfinance": {
       "ticker": "CGEH",
       "info": {
-        "country": "United States",
-        "shortName": "Capstone Energy+, Inc.",
-        "ebitda": 9378000,
-        "longName": "Capstone Energy+, Inc.",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "marketCap": 317725344,
-        "freeCashflow": 7081500,
-        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
-        "fullTimeEmployees": 100,
-        "symbol": "CGEH",
         "totalRevenue": 110069000,
+        "ebitda": 9378000,
+        "enterpriseValue": 357224480,
         "website": "https://www.capstonegreenenergy.com",
-        "enterpriseValue": 331045760,
-        "grossProfits": 35304000
+        "fullTimeEmployees": 100,
+        "sector": "Industrials",
+        "symbol": "CGEH",
+        "grossProfits": 35304000,
+        "freeCashflow": 7081500,
+        "marketCap": 352094656,
+        "industry": "Specialty Industrial Machinery",
+        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
+        "longName": "Capstone Energy+, Inc.",
+        "shortName": "Capstone Energy+, Inc.",
+        "country": "United States"
       },
       "history": [
         {
@@ -7602,8 +7602,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 10.399999618530273,
-          "volume": 2909054.0
+          "close": 11.524999618530273,
+          "volume": 3174674.0
         }
       ],
       "income_statement": [
@@ -8114,8 +8114,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 317725344,
-        "enterprise_value": 331045760,
+        "market_cap": 352094656,
+        "enterprise_value": 357224480,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.19052,
@@ -8123,7 +8123,7 @@
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
         "trailing_pe": null,
-        "price_to_book": -3.8165138,
+        "price_to_book": -4.2293577,
         "gross_margins": 0.32074,
         "profit_margins": 0.01086,
         "revenue_growth": 0.328
@@ -8774,21 +8774,21 @@
     "yfinance": {
       "ticker": "TUYA",
       "info": {
-        "country": "China",
-        "shortName": "Tuya Inc.",
-        "ebitda": 21525250,
-        "longName": "Tuya Inc.",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "marketCap": 1177172480,
-        "freeCashflow": 21208876,
-        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
-        "fullTimeEmployees": 1441,
-        "symbol": "TUYA",
         "totalRevenue": 327985984,
+        "ebitda": 21525250,
+        "enterpriseValue": 413054816,
         "website": "https://www.tuya.com",
-        "enterpriseValue": 240708352,
-        "grossProfits": 156688000
+        "fullTimeEmployees": 1441,
+        "sector": "Technology",
+        "symbol": "TUYA",
+        "grossProfits": 156688000,
+        "freeCashflow": 21208876,
+        "marketCap": 1348843520,
+        "industry": "Software - Infrastructure",
+        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
+        "longName": "Tuya Inc.",
+        "shortName": "Tuya Inc.",
+        "country": "China"
       },
       "history": [
         {
@@ -9108,8 +9108,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 1.9199999570846558,
-          "volume": 7076069.0
+          "close": 2.200000047683716,
+          "volume": 22296814.0
         }
       ],
       "income_statement": [
@@ -10094,16 +10094,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1177172480,
-        "enterprise_value": 240708352,
+        "market_cap": 1348843520,
+        "enterprise_value": 413054816,
         "short_ratio": 4.41,
         "short_percent_of_float": 0.0123000005,
         "held_percent_institutions": 0.27789,
         "held_percent_insiders": 0.17985001,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 19.199999,
-        "price_to_book": 1.1750306,
+        "trailing_pe": 22.0,
+        "price_to_book": 1.3463893,
         "gross_margins": 0.47772998,
         "profit_margins": 0.19101,
         "revenue_growth": 0.083
@@ -10378,21 +10378,21 @@
     "yfinance": {
       "ticker": "WK",
       "info": {
-        "country": "United States",
-        "shortName": "Workiva Inc.",
-        "ebitda": 8243000,
-        "longName": "Workiva Inc.",
-        "sector": "Technology",
-        "industry": "Software - Application",
-        "marketCap": 2766683136,
-        "freeCashflow": 154916752,
-        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
-        "fullTimeEmployees": 2880,
-        "symbol": "WK",
         "totalRevenue": 925593984,
+        "ebitda": 8243000,
+        "enterpriseValue": 2687236864,
         "website": "https://www.workiva.com",
-        "enterpriseValue": 2696777216,
-        "grossProfits": 734961024
+        "fullTimeEmployees": 2880,
+        "sector": "Technology",
+        "symbol": "WK",
+        "grossProfits": 734961024,
+        "freeCashflow": 154916752,
+        "marketCap": 2757143040,
+        "industry": "Software - Application",
+        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
+        "longName": "Workiva Inc.",
+        "shortName": "Workiva Inc.",
+        "country": "United States"
       },
       "history": [
         {
@@ -11087,8 +11087,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 49.29999923706055,
-          "volume": 7601202.0
+          "close": 49.130001068115234,
+          "volume": 10757656.0
         }
       ],
       "income_statement": [
@@ -11938,16 +11938,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 2766683136,
-        "enterprise_value": 2696777216,
+        "market_cap": 2757143040,
+        "enterprise_value": 2687236864,
         "short_ratio": 3.33,
         "short_percent_of_float": 0.0838,
         "held_percent_institutions": 0.97593004,
         "held_percent_insiders": 0.03898,
         "sector": "Technology",
         "industry": "Software - Application",
-        "trailing_pe": 205.41667,
-        "price_to_book": -508.2474,
+        "trailing_pe": 204.70834,
+        "price_to_book": -506.49484,
         "gross_margins": 0.79403996,
         "profit_margins": 0.01534,
         "revenue_growth": 0.199
@@ -12411,6 +12411,12 @@
       "article_count": 10,
       "articles": [
         {
+          "title": "Zacks Upgrade on Rising Earnings Estimates Might Change The Case For Investing In Workiva (WK)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-upgrade-rising-earnings-estimates-161605174.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-11T16:16:05Z"
+        },
+        {
           "title": "What Makes Workiva (WK) a New Strong Buy Stock",
           "url": "https://finance.yahoo.com/markets/stocks/articles/makes-workiva-wk-strong-buy-160004862.html",
           "publisher": "Zacks",
@@ -12463,12 +12469,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/gitlab-hubspot-workiva-shares-skyrocket-134055071.html",
           "publisher": "StockStory",
           "published": "2026-05-20T13:40:55Z"
-        },
-        {
-          "title": "4 Top-Ranked Liquid Stocks to Add to Portfolio for Solid Returns",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/4-top-ranked-liquid-stocks-125600020.html",
-          "publisher": "Zacks",
-          "published": "2026-05-20T12:56:00Z"
         }
       ]
     }
@@ -12477,21 +12477,21 @@
     "yfinance": {
       "ticker": "LEAT",
       "info": {
-        "country": "South Africa",
-        "shortName": "Leatt Corp.",
-        "ebitda": 6646879,
-        "longName": "Leatt Corporation",
-        "sector": "Consumer Cyclical",
-        "industry": "Leisure",
-        "marketCap": 79783120,
-        "freeCashflow": 3162047,
-        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
-        "fullTimeEmployees": 88,
-        "symbol": "LEAT",
         "totalRevenue": 66047536,
-        "website": "https://www.int.leatt.com/",
+        "ebitda": 6646879,
         "enterpriseValue": 63575228,
-        "grossProfits": 29075358
+        "website": "https://www.int.leatt.com/",
+        "fullTimeEmployees": 88,
+        "sector": "Consumer Cyclical",
+        "symbol": "LEAT",
+        "grossProfits": 29075358,
+        "freeCashflow": 3162047,
+        "marketCap": 79783120,
+        "industry": "Leisure",
+        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
+        "longName": "Leatt Corporation",
+        "shortName": "Leatt Corp.",
+        "country": "South Africa"
       },
       "history": [
         {
@@ -13642,7 +13642,7 @@
         {
           "date": "2026-06-01 00:00:00-04:00",
           "close": 12.800000190734863,
-          "volume": 34100.0
+          "volume": 36261.0
         }
       ],
       "income_statement": [
@@ -15183,21 +15183,21 @@
     "yfinance": {
       "ticker": "WKSP",
       "info": {
-        "country": "United States",
-        "shortName": "Worksport, Ltd.",
-        "ebitda": -18490900,
-        "longName": "Worksport Ltd.",
-        "sector": "Consumer Cyclical",
-        "industry": "Auto Parts",
-        "marketCap": 7977818,
-        "freeCashflow": -14403200,
-        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
-        "fullTimeEmployees": 116,
-        "symbol": "WKSP",
         "totalRevenue": 17174532,
+        "ebitda": -18490900,
+        "enterpriseValue": 11346155,
         "website": "https://www.worksport.com",
-        "enterpriseValue": 11021588,
-        "grossProfits": 4932632
+        "fullTimeEmployees": 116,
+        "sector": "Consumer Cyclical",
+        "symbol": "WKSP",
+        "grossProfits": 4932632,
+        "freeCashflow": -14403200,
+        "marketCap": 8304447,
+        "industry": "Auto Parts",
+        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
+        "longName": "Worksport Ltd.",
+        "shortName": "Worksport, Ltd.",
+        "country": "United States"
       },
       "history": [
         {
@@ -16702,8 +16702,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.6326000094413757,
-          "volume": 4799734.0
+          "close": 0.6585000157356262,
+          "volume": 5619790.0
         }
       ],
       "income_statement": [
@@ -17598,8 +17598,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 7977818,
-        "enterprise_value": 11021588,
+        "market_cap": 8304447,
+        "enterprise_value": 11346155,
         "short_ratio": 1.79,
         "short_percent_of_float": 0.0791,
         "held_percent_institutions": 0.07487,
@@ -17607,7 +17607,7 @@
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
         "trailing_pe": null,
-        "price_to_book": 0.27138567,
+        "price_to_book": 0.28249678,
         "gross_margins": 0.28721002,
         "profit_margins": -1.20646,
         "revenue_growth": 0.479
@@ -18253,21 +18253,21 @@
     "yfinance": {
       "ticker": "AIOS",
       "info": {
-        "country": "Hong Kong",
-        "shortName": "AIOS Tech Inc.",
-        "ebitda": 3091202,
-        "longName": "AIOS Tech Inc.",
-        "sector": "Technology",
-        "industry": "Information Technology Services",
-        "marketCap": 47952000,
-        "freeCashflow": 186623328,
-        "longBusinessSummary": "AIOS Tech Inc., an investment holding company, operates as a technology-driven professional service provider in Hong Kong. It offers information technology services, such as digital transformation and support for enterprises; IT services for commercial clients across various industries; customized software development, system integration, and cloud technology solutions; customized IT solutions for the financial industry; data-driven full-stack solutions, including data assetization, enterprise-level data middle platform construction, and AI integration application services; and AI-driven full-scenario services, such as AI model development, platform construction, and infrastructure deployment, as well as is involved in the design, issuance, distribution, and management of financial products to small and medium-sized financial institutions, financial conglomerates, and cross-border enterprises. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is headquartered in Hung Hom, Hong Kong.",
-        "fullTimeEmployees": 20,
-        "symbol": "AIOS",
         "totalRevenue": 5067754,
+        "ebitda": 3091202,
+        "enterpriseValue": 40469292,
         "website": "https://ir.nisun-international.com",
-        "enterpriseValue": 46675368,
-        "grossProfits": 3646386
+        "fullTimeEmployees": 20,
+        "sector": "Technology",
+        "symbol": "AIOS",
+        "grossProfits": 3646386,
+        "freeCashflow": 186623328,
+        "marketCap": 41763600,
+        "industry": "Information Technology Services",
+        "longBusinessSummary": "AIOS Tech Inc., an investment holding company, operates as a technology-driven professional service provider in Hong Kong. It offers information technology services, such as digital transformation and support for enterprises; IT services for commercial clients across various industries; customized software development, system integration, and cloud technology solutions; customized IT solutions for the financial industry; data-driven full-stack solutions, including data assetization, enterprise-level data middle platform construction, and AI integration application services; and AI-driven full-scenario services, such as AI model development, platform construction, and infrastructure deployment, as well as is involved in the design, issuance, distribution, and management of financial products to small and medium-sized financial institutions, financial conglomerates, and cross-border enterprises. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is headquartered in Hung Hom, Hong Kong.",
+        "longName": "AIOS Tech Inc.",
+        "shortName": "AIOS Tech Inc.",
+        "country": "Hong Kong"
       },
       "history": [
         {
@@ -18842,8 +18842,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 14.800000190734863,
-          "volume": 189597.0
+          "close": 12.890000343322754,
+          "volume": 254184.0
         }
       ],
       "income_statement": [
@@ -19783,8 +19783,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 47952000,
-        "enterprise_value": 46675368,
+        "market_cap": 41763600,
+        "enterprise_value": 40469292,
         "short_ratio": 0.03,
         "short_percent_of_float": 0.008,
         "held_percent_institutions": 0.00184,
@@ -19792,7 +19792,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.7576921,
+        "price_to_book": 0.65990883,
         "gross_margins": 0.71953005,
         "profit_margins": 0.0,
         "revenue_growth": null
@@ -20176,26 +20176,26 @@
     "yfinance": {
       "ticker": "CLPS",
       "info": {
-        "country": "Hong Kong",
-        "shortName": "CLPS Incorporation",
-        "ebitda": -2580648,
-        "longName": "CLPS Incorporation",
-        "sector": "Technology",
-        "industry": "Information Technology Services",
-        "marketCap": 30140246,
-        "freeCashflow": null,
-        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
-        "fullTimeEmployees": 3534,
-        "symbol": "CLPS",
         "totalRevenue": 166788912,
+        "ebitda": -2580648,
+        "enterpriseValue": 32272288,
         "website": "https://www.clpsglobal.com",
-        "enterpriseValue": 31973870,
-        "grossProfits": 36698684
+        "fullTimeEmployees": 3534,
+        "sector": "Technology",
+        "symbol": "CLPS",
+        "grossProfits": 36698684,
+        "freeCashflow": null,
+        "marketCap": 30438664,
+        "industry": "Information Technology Services",
+        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
+        "longName": "CLPS Incorporation",
+        "shortName": "CLPS Incorporation",
+        "country": "Hong Kong"
       },
       "history": [
         {
           "date": "2018-05-01 00:00:00-04:00",
-          "close": 4.157122611999512,
+          "close": 4.1571221351623535,
           "volume": 398800.0
         },
         {
@@ -20210,17 +20210,17 @@
         },
         {
           "date": "2018-08-01 00:00:00-04:00",
-          "close": 11.193498611450195,
+          "close": 11.193497657775879,
           "volume": 2762500.0
         },
         {
           "date": "2018-09-01 00:00:00-04:00",
-          "close": 8.775250434875488,
+          "close": 8.775249481201172,
           "volume": 1578600.0
         },
         {
           "date": "2018-10-01 00:00:00-04:00",
-          "close": 5.5506486892700195,
+          "close": 5.550648212432861,
           "volume": 1419400.0
         },
         {
@@ -20250,7 +20250,7 @@
         },
         {
           "date": "2019-04-01 00:00:00-04:00",
-          "close": 7.311359882354736,
+          "close": 7.311359405517578,
           "volume": 296600.0
         },
         {
@@ -20280,7 +20280,7 @@
         },
         {
           "date": "2019-10-01 00:00:00-04:00",
-          "close": 3.5748021602630615,
+          "close": 3.5748019218444824,
           "volume": 331100.0
         },
         {
@@ -20295,7 +20295,7 @@
         },
         {
           "date": "2020-01-01 00:00:00-05:00",
-          "close": 2.4910383224487305,
+          "close": 2.4910385608673096,
           "volume": 744100.0
         },
         {
@@ -20315,7 +20315,7 @@
         },
         {
           "date": "2020-05-01 00:00:00-04:00",
-          "close": 1.5124162435531616,
+          "close": 1.5124163627624512,
           "volume": 357200.0
         },
         {
@@ -20340,7 +20340,7 @@
         },
         {
           "date": "2020-10-01 00:00:00-04:00",
-          "close": 2.4910383224487305,
+          "close": 2.4910385608673096,
           "volume": 20412100.0
         },
         {
@@ -20390,7 +20390,7 @@
         },
         {
           "date": "2021-08-01 00:00:00-04:00",
-          "close": 2.6770577430725098,
+          "close": 2.6770575046539307,
           "volume": 3166000.0
         },
         {
@@ -20400,12 +20400,12 @@
         },
         {
           "date": "2021-10-01 00:00:00-04:00",
-          "close": 2.4910383224487305,
+          "close": 2.4910385608673096,
           "volume": 8915100.0
         },
         {
           "date": "2021-11-01 00:00:00-04:00",
-          "close": 2.0623857975006104,
+          "close": 2.0623855590820312,
           "volume": 2162400.0
         },
         {
@@ -20415,17 +20415,17 @@
         },
         {
           "date": "2022-01-01 00:00:00-05:00",
-          "close": 1.552855134010315,
+          "close": 1.5528552532196045,
           "volume": 924500.0
         },
         {
           "date": "2022-02-01 00:00:00-05:00",
-          "close": 1.7550499439239502,
+          "close": 1.7550500631332397,
           "volume": 922000.0
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 1.7793134450912476,
+          "close": 1.779313325881958,
           "volume": 1894700.0
         },
         {
@@ -20435,12 +20435,12 @@
         },
         {
           "date": "2022-05-01 00:00:00-04:00",
-          "close": 1.4800652265548706,
+          "close": 1.480065107345581,
           "volume": 446400.0
         },
         {
           "date": "2022-06-01 00:00:00-04:00",
-          "close": 1.2455191612243652,
+          "close": 1.2455192804336548,
           "volume": 438000.0
         },
         {
@@ -20455,7 +20455,7 @@
         },
         {
           "date": "2022-09-01 00:00:00-04:00",
-          "close": 1.0675880908966064,
+          "close": 1.067587971687317,
           "volume": 550100.0
         },
         {
@@ -20485,12 +20485,12 @@
         },
         {
           "date": "2023-03-01 00:00:00-05:00",
-          "close": 0.9470064043998718,
+          "close": 0.947006344795227,
           "volume": 358800.0
         },
         {
           "date": "2023-04-01 00:00:00-04:00",
-          "close": 0.9639172554016113,
+          "close": 0.9639171957969666,
           "volume": 297400.0
         },
         {
@@ -20520,12 +20520,12 @@
         },
         {
           "date": "2023-10-01 00:00:00-04:00",
-          "close": 0.7711337208747864,
+          "close": 0.7711337804794312,
           "volume": 301400.0
         },
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 1.082292914390564,
+          "close": 1.0822930335998535,
           "volume": 1194800.0
         },
         {
@@ -20680,8 +20680,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 1.0099999904632568,
-          "volume": 295229.0
+          "close": 1.0199999809265137,
+          "volume": 649306.0
         }
       ],
       "income_statement": [
@@ -21471,8 +21471,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 30140246,
-        "enterprise_value": 31973870,
+        "market_cap": 30438664,
+        "enterprise_value": 32272288,
         "short_ratio": 0.38,
         "short_percent_of_float": 0.0005,
         "held_percent_institutions": 0.00113,
@@ -21480,7 +21480,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.5208871,
+        "price_to_book": 0.52604437,
         "gross_margins": 0.22003001,
         "profit_margins": -0.03943,
         "revenue_growth": 0.028
@@ -21794,21 +21794,21 @@
     "yfinance": {
       "ticker": "NSYS",
       "info": {
-        "country": "United States",
-        "shortName": "Nortech Systems Incorporated",
-        "ebitda": 3879000,
-        "longName": "Nortech Systems Incorporated",
-        "sector": "Healthcare",
-        "industry": "Medical Devices",
-        "marketCap": 47562968,
-        "freeCashflow": 3701125,
-        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
-        "fullTimeEmployees": 685,
-        "symbol": "NSYS",
         "totalRevenue": 121786000,
+        "ebitda": 3879000,
+        "enterpriseValue": 62667264,
         "website": "https://www.nortechsys.com",
-        "enterpriseValue": 63840968,
-        "grossProfits": 19630000
+        "fullTimeEmployees": 685,
+        "sector": "Healthcare",
+        "symbol": "NSYS",
+        "grossProfits": 19630000,
+        "freeCashflow": 3701125,
+        "marketCap": 46389264,
+        "industry": "Medical Devices",
+        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
+        "longName": "Nortech Systems Incorporated",
+        "shortName": "Nortech Systems Incorporated",
+        "country": "United States"
       },
       "history": [
         {
@@ -23793,8 +23793,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 17.020000457763672,
-          "volume": 306825.0
+          "close": 16.600000381469727,
+          "volume": 355347.0
         }
       ],
       "income_statement": [
@@ -24704,16 +24704,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 47562968,
-        "enterprise_value": 63840968,
+        "market_cap": 46389264,
+        "enterprise_value": 62667264,
         "short_ratio": 0.57,
         "short_percent_of_float": 0.0125,
         "held_percent_institutions": 0.03516,
         "held_percent_insiders": 0.65388,
         "sector": "Healthcare",
         "industry": "Medical Devices",
-        "trailing_pe": 44.789474,
-        "price_to_book": 1.376132,
+        "trailing_pe": 43.68421,
+        "price_to_book": 1.3421733,
         "gross_margins": 0.16118,
         "profit_margins": 0.00846,
         "revenue_growth": 0.127
@@ -25353,21 +25353,21 @@
     "yfinance": {
       "ticker": "CAMT",
       "info": {
-        "country": "Israel",
-        "shortName": "Camtek Ltd.",
-        "ebitda": 138529248,
-        "longName": "Camtek Ltd.",
-        "sector": "Technology",
-        "industry": "Semiconductor Equipment & Materials",
-        "marketCap": 7675153920,
-        "freeCashflow": null,
-        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
-        "fullTimeEmployees": 709,
-        "symbol": "CAMT",
         "totalRevenue": 499092992,
+        "ebitda": 138529248,
+        "enterpriseValue": 8296640512,
         "website": "https://www.camtek.com",
-        "enterpriseValue": 7492703744,
-        "grossProfits": 254384992
+        "fullTimeEmployees": 709,
+        "sector": "Technology",
+        "symbol": "CAMT",
+        "grossProfits": 254384992,
+        "freeCashflow": null,
+        "marketCap": 8479090176,
+        "industry": "Semiconductor Equipment & Materials",
+        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
+        "longName": "Camtek Ltd.",
+        "shortName": "Camtek Ltd.",
+        "country": "Israel"
       },
       "history": [
         {
@@ -25382,7 +25382,7 @@
         },
         {
           "date": "2000-09-01 00:00:00-04:00",
-          "close": 7.8194756507873535,
+          "close": 7.81947660446167,
           "volume": 3637200.0
         },
         {
@@ -25392,12 +25392,12 @@
         },
         {
           "date": "2000-11-01 00:00:00-05:00",
-          "close": 6.081814289093018,
+          "close": 6.081813812255859,
           "volume": 2049500.0
         },
         {
           "date": "2000-12-01 00:00:00-05:00",
-          "close": 6.8348002433776855,
+          "close": 6.834801197052002,
           "volume": 1464100.0
         },
         {
@@ -25407,7 +25407,7 @@
         },
         {
           "date": "2001-02-01 00:00:00-05:00",
-          "close": 6.139736175537109,
+          "close": 6.139735698699951,
           "volume": 835700.0
         },
         {
@@ -25427,7 +25427,7 @@
         },
         {
           "date": "2001-06-01 00:00:00-04:00",
-          "close": 4.7171711921691895,
+          "close": 4.717170715332031,
           "volume": 1660800.0
         },
         {
@@ -25437,7 +25437,7 @@
         },
         {
           "date": "2001-08-01 00:00:00-04:00",
-          "close": 3.7533485889434814,
+          "close": 3.7533483505249023,
           "volume": 1206800.0
         },
         {
@@ -25457,7 +25457,7 @@
         },
         {
           "date": "2001-12-01 00:00:00-05:00",
-          "close": 3.3363094329833984,
+          "close": 3.3363096714019775,
           "volume": 885300.0
         },
         {
@@ -25477,12 +25477,12 @@
         },
         {
           "date": "2002-04-01 00:00:00-05:00",
-          "close": 1.5198744535446167,
+          "close": 1.5198743343353271,
           "volume": 303200.0
         },
         {
           "date": "2002-05-01 00:00:00-04:00",
-          "close": 1.5106070041656494,
+          "close": 1.5106068849563599,
           "volume": 344900.0
         },
         {
@@ -25497,7 +25497,7 @@
         },
         {
           "date": "2002-08-01 00:00:00-04:00",
-          "close": 0.7784721851348877,
+          "close": 0.7784722447395325,
           "volume": 852000.0
         },
         {
@@ -25507,7 +25507,7 @@
         },
         {
           "date": "2002-10-01 00:00:00-04:00",
-          "close": 0.38923609256744385,
+          "close": 0.38923612236976624,
           "volume": 1527200.0
         },
         {
@@ -25542,7 +25542,7 @@
         },
         {
           "date": "2003-05-01 00:00:00-04:00",
-          "close": 0.7877397537231445,
+          "close": 0.7877398729324341,
           "volume": 473900.0
         },
         {
@@ -25552,7 +25552,7 @@
         },
         {
           "date": "2003-07-01 00:00:00-04:00",
-          "close": 1.2418485879898071,
+          "close": 1.2418487071990967,
           "volume": 468400.0
         },
         {
@@ -25572,12 +25572,12 @@
         },
         {
           "date": "2003-11-01 00:00:00-05:00",
-          "close": 3.2899718284606934,
+          "close": 3.2899720668792725,
           "volume": 967800.0
         },
         {
           "date": "2003-12-01 00:00:00-05:00",
-          "close": 2.6875827312469482,
+          "close": 2.687582492828369,
           "volume": 880800.0
         },
         {
@@ -25587,7 +25587,7 @@
         },
         {
           "date": "2004-02-01 00:00:00-05:00",
-          "close": 5.3751654624938965,
+          "close": 5.375164985656738,
           "volume": 2880000.0
         },
         {
@@ -25627,12 +25627,12 @@
         },
         {
           "date": "2004-10-01 00:00:00-04:00",
-          "close": 3.150959014892578,
+          "close": 3.1509594917297363,
           "volume": 1044800.0
         },
         {
           "date": "2004-11-01 00:00:00-05:00",
-          "close": 3.9016289710998535,
+          "close": 3.9016284942626953,
           "volume": 2499700.0
         },
         {
@@ -25652,7 +25652,7 @@
         },
         {
           "date": "2005-03-01 00:00:00-05:00",
-          "close": 3.104621171951294,
+          "close": 3.104621410369873,
           "volume": 631200.0
         },
         {
@@ -25682,12 +25682,12 @@
         },
         {
           "date": "2005-09-01 00:00:00-04:00",
-          "close": 2.7709903717041016,
+          "close": 2.7709906101226807,
           "volume": 725500.0
         },
         {
           "date": "2005-10-01 00:00:00-04:00",
-          "close": 2.6875827312469482,
+          "close": 2.687582492828369,
           "volume": 296900.0
         },
         {
@@ -25712,17 +25712,17 @@
         },
         {
           "date": "2006-03-01 00:00:00-05:00",
-          "close": 4.531820297241211,
+          "close": 4.531819820404053,
           "volume": 1110400.0
         },
         {
           "date": "2006-04-01 00:00:00-05:00",
-          "close": 5.4307708740234375,
+          "close": 5.430770397186279,
           "volume": 1911600.0
         },
         {
           "date": "2006-05-01 00:00:00-04:00",
-          "close": 6.162905216217041,
+          "close": 6.162904739379883,
           "volume": 4470300.0
         },
         {
@@ -25742,12 +25742,12 @@
         },
         {
           "date": "2006-09-01 00:00:00-04:00",
-          "close": 5.745866298675537,
+          "close": 5.745865821838379,
           "volume": 630800.0
         },
         {
           "date": "2006-10-01 00:00:00-04:00",
-          "close": 5.986822605133057,
+          "close": 5.986822128295898,
           "volume": 2054100.0
         },
         {
@@ -25777,22 +25777,22 @@
         },
         {
           "date": "2007-04-01 00:00:00-04:00",
-          "close": 3.679208278656006,
+          "close": 3.6792080402374268,
           "volume": 577300.0
         },
         {
           "date": "2007-05-01 00:00:00-04:00",
-          "close": 3.113888740539551,
+          "close": 3.11388897895813,
           "volume": 743400.0
         },
         {
           "date": "2007-06-01 00:00:00-04:00",
-          "close": 2.752455472946167,
+          "close": 2.752455234527588,
           "volume": 477800.0
         },
         {
           "date": "2007-07-01 00:00:00-04:00",
-          "close": 3.1416914463043213,
+          "close": 3.1416916847229004,
           "volume": 913000.0
         },
         {
@@ -25802,7 +25802,7 @@
         },
         {
           "date": "2007-09-01 00:00:00-04:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 146100.0
         },
         {
@@ -25812,12 +25812,12 @@
         },
         {
           "date": "2007-11-01 00:00:00-04:00",
-          "close": 2.085193395614624,
+          "close": 2.085193634033203,
           "volume": 372900.0
         },
         {
           "date": "2007-12-01 00:00:00-05:00",
-          "close": 1.5940145254135132,
+          "close": 1.5940146446228027,
           "volume": 613300.0
         },
         {
@@ -25847,7 +25847,7 @@
         },
         {
           "date": "2008-06-01 00:00:00-04:00",
-          "close": 0.9452877044677734,
+          "close": 0.9452877640724182,
           "volume": 419200.0
         },
         {
@@ -25857,12 +25857,12 @@
         },
         {
           "date": "2008-08-01 00:00:00-04:00",
-          "close": 0.8340773582458496,
+          "close": 0.8340774178504944,
           "volume": 302800.0
         },
         {
           "date": "2008-09-01 00:00:00-04:00",
-          "close": 0.7784721851348877,
+          "close": 0.7784722447395325,
           "volume": 1324400.0
         },
         {
@@ -25882,7 +25882,7 @@
         },
         {
           "date": "2009-01-01 00:00:00-05:00",
-          "close": 0.3521660268306732,
+          "close": 0.35216599702835083,
           "volume": 92400.0
         },
         {
@@ -25912,7 +25912,7 @@
         },
         {
           "date": "2009-07-01 00:00:00-04:00",
-          "close": 0.7043320536613464,
+          "close": 0.7043319940567017,
           "volume": 354100.0
         },
         {
@@ -25922,7 +25922,7 @@
         },
         {
           "date": "2009-09-01 00:00:00-04:00",
-          "close": 0.9545551538467407,
+          "close": 0.9545552134513855,
           "volume": 400000.0
         },
         {
@@ -25947,22 +25947,22 @@
         },
         {
           "date": "2010-02-01 00:00:00-05:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 1128300.0
         },
         {
           "date": "2010-03-01 00:00:00-05:00",
-          "close": 2.8173282146453857,
+          "close": 2.8173279762268066,
           "volume": 2029100.0
         },
         {
           "date": "2010-04-01 00:00:00-04:00",
-          "close": 2.8173282146453857,
+          "close": 2.8173279762268066,
           "volume": 874800.0
         },
         {
           "date": "2010-05-01 00:00:00-04:00",
-          "close": 2.4188241958618164,
+          "close": 2.4188244342803955,
           "volume": 1152500.0
         },
         {
@@ -25992,7 +25992,7 @@
         },
         {
           "date": "2010-11-01 00:00:00-04:00",
-          "close": 2.307614326477051,
+          "close": 2.3076140880584717,
           "volume": 712600.0
         },
         {
@@ -26002,7 +26002,7 @@
         },
         {
           "date": "2011-01-01 00:00:00-05:00",
-          "close": 3.20656418800354,
+          "close": 3.206564426422119,
           "volume": 1862100.0
         },
         {
@@ -26012,7 +26012,7 @@
         },
         {
           "date": "2011-03-01 00:00:00-05:00",
-          "close": 3.6977431774139404,
+          "close": 3.6977429389953613,
           "volume": 2012200.0
         },
         {
@@ -26022,17 +26022,17 @@
         },
         {
           "date": "2011-05-01 00:00:00-04:00",
-          "close": 2.752455472946167,
+          "close": 2.752455234527588,
           "volume": 953200.0
         },
         {
           "date": "2011-06-01 00:00:00-04:00",
-          "close": 3.058284044265747,
+          "close": 3.058283805847168,
           "volume": 1268100.0
         },
         {
           "date": "2011-07-01 00:00:00-04:00",
-          "close": 2.7802579402923584,
+          "close": 2.7802577018737793,
           "volume": 500900.0
         },
         {
@@ -26042,7 +26042,7 @@
         },
         {
           "date": "2011-09-01 00:00:00-04:00",
-          "close": 1.6681547164916992,
+          "close": 1.6681548357009888,
           "volume": 826100.0
         },
         {
@@ -26057,7 +26057,7 @@
         },
         {
           "date": "2011-12-01 00:00:00-05:00",
-          "close": 1.6218171119689941,
+          "close": 1.6218172311782837,
           "volume": 530200.0
         },
         {
@@ -26067,7 +26067,7 @@
         },
         {
           "date": "2012-02-01 00:00:00-05:00",
-          "close": 2.094460964202881,
+          "close": 2.0944607257843018,
           "volume": 1264800.0
         },
         {
@@ -26082,7 +26082,7 @@
         },
         {
           "date": "2012-05-01 00:00:00-04:00",
-          "close": 2.0203206539154053,
+          "close": 2.0203208923339844,
           "volume": 273800.0
         },
         {
@@ -26107,7 +26107,7 @@
         },
         {
           "date": "2012-10-01 00:00:00-04:00",
-          "close": 1.5569443702697754,
+          "close": 1.556944489479065,
           "volume": 158400.0
         },
         {
@@ -26157,12 +26157,12 @@
         },
         {
           "date": "2013-08-01 00:00:00-04:00",
-          "close": 1.5662119388580322,
+          "close": 1.5662120580673218,
           "volume": 1368700.0
         },
         {
           "date": "2013-09-01 00:00:00-04:00",
-          "close": 1.575479507446289,
+          "close": 1.5754797458648682,
           "volume": 370500.0
         },
         {
@@ -26177,7 +26177,7 @@
         },
         {
           "date": "2013-12-01 00:00:00-05:00",
-          "close": 3.7533485889434814,
+          "close": 3.7533483505249023,
           "volume": 58826400.0
         },
         {
@@ -26202,12 +26202,12 @@
         },
         {
           "date": "2014-05-01 00:00:00-04:00",
-          "close": 3.011946439743042,
+          "close": 3.011945962905884,
           "volume": 2431400.0
         },
         {
           "date": "2014-06-01 00:00:00-04:00",
-          "close": 2.95634126663208,
+          "close": 2.956341028213501,
           "volume": 1780600.0
         },
         {
@@ -26227,7 +26227,7 @@
         },
         {
           "date": "2014-10-01 00:00:00-04:00",
-          "close": 3.067551374435425,
+          "close": 3.0675511360168457,
           "volume": 4142600.0
         },
         {
@@ -26242,7 +26242,7 @@
         },
         {
           "date": "2015-01-01 00:00:00-05:00",
-          "close": 2.910003662109375,
+          "close": 2.910003423690796,
           "volume": 1757300.0
         },
         {
@@ -26252,17 +26252,17 @@
         },
         {
           "date": "2015-03-01 00:00:00-05:00",
-          "close": 2.95634126663208,
+          "close": 2.956341028213501,
           "volume": 974100.0
         },
         {
           "date": "2015-04-01 00:00:00-04:00",
-          "close": 3.1324238777160645,
+          "close": 3.1324241161346436,
           "volume": 1684500.0
         },
         {
           "date": "2015-05-01 00:00:00-04:00",
-          "close": 2.6597800254821777,
+          "close": 2.6597797870635986,
           "volume": 1975400.0
         },
         {
@@ -26272,12 +26272,12 @@
         },
         {
           "date": "2015-07-01 00:00:00-04:00",
-          "close": 2.6597800254821777,
+          "close": 2.6597797870635986,
           "volume": 2186400.0
         },
         {
           "date": "2015-08-01 00:00:00-04:00",
-          "close": 2.4836971759796143,
+          "close": 2.4836974143981934,
           "volume": 1003100.0
         },
         {
@@ -26297,7 +26297,7 @@
         },
         {
           "date": "2015-12-01 00:00:00-05:00",
-          "close": 2.0110530853271484,
+          "close": 2.0110533237457275,
           "volume": 1551800.0
         },
         {
@@ -26347,17 +26347,17 @@
         },
         {
           "date": "2016-10-01 00:00:00-04:00",
-          "close": 2.6875827312469482,
+          "close": 2.687582492828369,
           "volume": 1216000.0
         },
         {
           "date": "2016-11-01 00:00:00-04:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 1476000.0
         },
         {
           "date": "2016-12-01 00:00:00-05:00",
-          "close": 3.0490164756774902,
+          "close": 3.049016237258911,
           "volume": 2115200.0
         },
         {
@@ -26367,7 +26367,7 @@
         },
         {
           "date": "2017-02-01 00:00:00-05:00",
-          "close": 3.2899718284606934,
+          "close": 3.2899720668792725,
           "volume": 3329000.0
         },
         {
@@ -26412,7 +26412,7 @@
         },
         {
           "date": "2017-11-01 00:00:00-04:00",
-          "close": 5.588318347930908,
+          "close": 5.588318824768066,
           "volume": 4493700.0
         },
         {
@@ -26437,7 +26437,7 @@
         },
         {
           "date": "2018-04-01 00:00:00-04:00",
-          "close": 6.522634029388428,
+          "close": 6.522634506225586,
           "volume": 2523200.0
         },
         {
@@ -26452,7 +26452,7 @@
         },
         {
           "date": "2018-07-01 00:00:00-04:00",
-          "close": 7.9372029304504395,
+          "close": 7.937203407287598,
           "volume": 1536200.0
         },
         {
@@ -26487,7 +26487,7 @@
         },
         {
           "date": "2019-02-01 00:00:00-05:00",
-          "close": 8.380838394165039,
+          "close": 8.380837440490723,
           "volume": 4484000.0
         },
         {
@@ -26517,7 +26517,7 @@
         },
         {
           "date": "2019-08-01 00:00:00-04:00",
-          "close": 8.71838665008545,
+          "close": 8.718385696411133,
           "volume": 3762100.0
         },
         {
@@ -26927,8 +26927,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 166.69000244140625,
-          "volume": 4426433.0
+          "close": 184.14999389648438,
+          "volume": 5173947.0
         }
       ],
       "income_statement": [
@@ -27933,16 +27933,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 7675153920,
-        "enterprise_value": 7492703744,
+        "market_cap": 8479090176,
+        "enterprise_value": 8296640512,
         "short_ratio": 6.05,
         "short_percent_of_float": 0.10569999,
-        "held_percent_institutions": 0.50875,
+        "held_percent_institutions": 0.50876,
         "held_percent_insiders": 0.37966,
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
-        "trailing_pe": 171.84535,
-        "price_to_book": 11.245362,
+        "trailing_pe": 187.90816,
+        "price_to_book": 12.423261,
         "gross_margins": 0.50969005,
         "profit_margins": 0.09629,
         "revenue_growth": 0.025
@@ -28577,21 +28577,21 @@
     "yfinance": {
       "ticker": "EMMA",
       "info": {
-        "country": "United States",
-        "shortName": "Emmaus Life Sciences, Inc.",
-        "ebitda": null,
-        "longName": "Emmaus Life Sciences, Inc.",
-        "sector": "Healthcare",
-        "industry": "Biotechnology",
-        "marketCap": 772070,
-        "freeCashflow": null,
-        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
-        "fullTimeEmployees": 32,
-        "symbol": "EMMA",
         "totalRevenue": null,
-        "website": "https://www.emmausmedical.com",
+        "ebitda": null,
         "enterpriseValue": null,
-        "grossProfits": null
+        "website": "https://www.emmausmedical.com",
+        "fullTimeEmployees": 32,
+        "sector": "Healthcare",
+        "symbol": "EMMA",
+        "grossProfits": null,
+        "freeCashflow": null,
+        "marketCap": 772070,
+        "industry": "Biotechnology",
+        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
+        "longName": "Emmaus Life Sciences, Inc.",
+        "shortName": "Emmaus Life Sciences, Inc.",
+        "country": "United States"
       },
       "history": [
         {
@@ -31891,21 +31891,21 @@
     "yfinance": {
       "ticker": "FTK",
       "info": {
-        "country": "United States",
-        "shortName": "Flotek Industries, Inc.",
-        "ebitda": 32373000,
-        "longName": "Flotek Industries, Inc.",
-        "sector": "Energy",
-        "industry": "Oil & Gas Equipment & Services",
-        "marketCap": 855235712,
-        "freeCashflow": 8777750,
-        "longBusinessSummary": "Flotek Industries, Inc. operates as a chemical and data analytics company in the United States, the United Arab Emirates, and internationally. It operates in two segments, Chemistry Technologies (CT) and Data Analytics (DA). The CT segment offers chemistry solutions, such as proprietary chemistries, specialty chemistries, logistics, and technology services for desired chemical applications program to integrated oil and gas companies, oilfield services companies, independent oil and gas companies, national and state-owned oil companies, geothermal energy companies, solar energy companies, and advanced alternative energy companies. This segment also designs, develops, manufactures, packages, distributes, and markets chemistry solutions designed for existing sustainability practices to reduce the environmental impact of energy on the air, water, land, and people. The DA segment is also involved in the provision of analytical measurement and digital solutions, including measure-and-control services for near real-time insights for process control in the oil and gas value chain, and emerging applications in power and digital valuation; and solutions to optimize performance, improve decision-making, and reduce emissions and carbon intensity; and short and long-term equipment rental. It sells its products directly through in-house sales professionals and contractual agency agreements. Flotek Industries, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
-        "fullTimeEmployees": 162,
-        "symbol": "FTK",
         "totalRevenue": 251951008,
+        "ebitda": 32373000,
+        "enterpriseValue": 920994560,
         "website": "https://www.flotekind.com",
-        "enterpriseValue": 901458688,
-        "grossProfits": 62925000
+        "fullTimeEmployees": 162,
+        "sector": "Energy",
+        "symbol": "FTK",
+        "grossProfits": 62925000,
+        "freeCashflow": 8777750,
+        "marketCap": 874771584,
+        "industry": "Oil & Gas Equipment & Services",
+        "longBusinessSummary": "Flotek Industries, Inc. operates as a chemical and data analytics company in the United States, the United Arab Emirates, and internationally. It operates in two segments, Chemistry Technologies (CT) and Data Analytics (DA). The CT segment offers chemistry solutions, such as proprietary chemistries, specialty chemistries, logistics, and technology services for desired chemical applications program to integrated oil and gas companies, oilfield services companies, independent oil and gas companies, national and state-owned oil companies, geothermal energy companies, solar energy companies, and advanced alternative energy companies. This segment also designs, develops, manufactures, packages, distributes, and markets chemistry solutions designed for existing sustainability practices to reduce the environmental impact of energy on the air, water, land, and people. The DA segment is also involved in the provision of analytical measurement and digital solutions, including measure-and-control services for near real-time insights for process control in the oil and gas value chain, and emerging applications in power and digital valuation; and solutions to optimize performance, improve decision-making, and reduce emissions and carbon intensity; and short and long-term equipment rental. It sells its products directly through in-house sales professionals and contractual agency agreements. Flotek Industries, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
+        "longName": "Flotek Industries, Inc.",
+        "shortName": "Flotek Industries, Inc.",
+        "country": "United States"
       },
       "history": [
         {
@@ -33165,8 +33165,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 23.639999389648438,
-          "volume": 3606372.0
+          "close": 24.18000030517578,
+          "volume": 4416089.0
         }
       ],
       "income_statement": [
@@ -34161,16 +34161,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 855235712,
-        "enterprise_value": 901458688,
+        "market_cap": 874771584,
+        "enterprise_value": 920994560,
         "short_ratio": 7.67,
         "short_percent_of_float": 0.1513,
         "held_percent_institutions": 0.31777,
         "held_percent_insiders": 0.6079,
         "sector": "Energy",
         "industry": "Oil & Gas Equipment & Services",
-        "trailing_pe": 29.92405,
-        "price_to_book": 7.2359962,
+        "trailing_pe": 30.607595,
+        "price_to_book": 7.4012856,
         "gross_margins": 0.24975,
         "profit_margins": 0.118319996,
         "revenue_growth": 0.265

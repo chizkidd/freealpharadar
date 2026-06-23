@@ -3,21 +3,21 @@
     "yfinance": {
       "ticker": "XNET",
       "info": {
-        "industry": "Software - Infrastructure",
-        "website": "https://www.xunlei.com",
-        "marketCap": 315722784,
-        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
-        "grossProfits": 238176000,
-        "sector": "Technology",
-        "shortName": "Xunlei Limited",
-        "symbol": "XNET",
-        "fullTimeEmployees": 1306,
-        "enterpriseValue": 82214768,
-        "country": "China",
-        "longName": "Xunlei Limited",
-        "freeCashflow": null,
         "totalRevenue": 494806016,
-        "ebitda": 23394750
+        "grossProfits": 238176000,
+        "industry": "Software - Infrastructure",
+        "freeCashflow": null,
+        "shortName": "Xunlei Limited",
+        "enterpriseValue": 89853224,
+        "marketCap": 323361216,
+        "ebitda": 23394750,
+        "longName": "Xunlei Limited",
+        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
+        "fullTimeEmployees": 1306,
+        "country": "China",
+        "website": "https://www.xunlei.com",
+        "symbol": "XNET",
+        "sector": "Technology"
       },
       "history": [
         {
@@ -742,8 +742,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 4.960000038146973,
-          "volume": 13445673.0
+          "close": 5.079999923706055,
+          "volume": 10201469.0
         }
       ],
       "income_statement": [
@@ -1838,16 +1838,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 315722784,
-        "enterprise_value": 82214768,
+        "market_cap": 323361216,
+        "enterprise_value": 89853224,
         "short_ratio": 6.03,
         "short_percent_of_float": 0.0377,
         "held_percent_institutions": 0.122770004,
         "held_percent_insiders": 0.19653,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 0.36713547,
-        "price_to_book": 0.22698152,
+        "trailing_pe": 0.37601775,
+        "price_to_book": 0.232473,
         "gross_margins": 0.48134997,
         "profit_margins": 1.7672099,
         "revenue_growth": 0.539
@@ -2299,27 +2299,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Xunlei Limited",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Rise Sharply in Wednesday Trading",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-equities-traded-us-american-144510574.html",
+          "publisher": "MT Newswires",
+          "published": "2026-06-17T14:45:10Z"
+        },
+        {
+          "title": "Xunlei Ltd (XNET) Q1 2026 Earnings Call Highlights: Surging Revenues Amid Strategic Expansion",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/xunlei-ltd-xnet-q1-2026-230211717.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-28T23:02:11Z"
+        },
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Decline in Thursday Trading",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-equities-traded-us-american-144615336.html",
+          "publisher": "MT Newswires",
+          "published": "2026-05-28T14:46:15Z"
+        },
+        {
+          "title": "Xunlei Q1 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/xunlei-q1-earnings-call-highlights-2026-05-28/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-05-28T14:10:37Z"
+        },
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Fall Sharply in Tuesday Trading",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-equities-traded-us-american-143454174.html",
+          "publisher": "MT Newswires",
+          "published": "2026-05-12T14:34:54Z"
+        },
+        {
+          "title": "Xunlei (NASDAQ:XNET) Is Posting Healthy Earnings, But It Is Not All Good News",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/xunlei-nasdaq-xnet-posting-healthy-103809103.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-07T10:38:09Z"
+        },
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Open Week Higher in Monday Trading",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-equities-traded-us-american-143753409.html",
+          "publisher": "MT Newswires",
+          "published": "2026-05-04T14:37:53Z"
+        },
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Rise in Thursday Trading",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-equities-traded-us-american-144231090.html",
+          "publisher": "MT Newswires",
+          "published": "2026-04-30T14:42:31Z"
+        },
+        {
+          "title": "Undiscovered Gems In The US Market For April 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/undiscovered-gems-us-market-april-113312352.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-04-15T11:33:12Z"
+        },
+        {
+          "title": "Asian Equities Traded in the US as American Depositary Receipts Rise in Friday Trading",
+          "url": "https://finance.yahoo.com/news/asian-equities-traded-us-american-145546478.html",
+          "publisher": "MT Newswires",
+          "published": "2026-03-13T14:55:46Z"
+        }
+      ]
     }
   },
   "CGEN": {
     "yfinance": {
       "ticker": "CGEN",
       "info": {
-        "industry": "Biotechnology",
-        "website": "https://cgen.com",
-        "marketCap": 190115120,
-        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
-        "grossProfits": 63981000,
-        "sector": "Healthcare",
-        "shortName": "Compugen Ltd.",
-        "symbol": "CGEN",
-        "fullTimeEmployees": 75,
-        "enterpriseValue": 58044024,
-        "country": "Israel",
-        "longName": "Compugen Ltd.",
-        "freeCashflow": null,
         "totalRevenue": 72656000,
-        "ebitda": 31176250
+        "grossProfits": 63981000,
+        "industry": "Biotechnology",
+        "freeCashflow": null,
+        "shortName": "Compugen Ltd.",
+        "enterpriseValue": 63717396,
+        "marketCap": 195790192,
+        "ebitda": 31176250,
+        "longName": "Compugen Ltd.",
+        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
+        "fullTimeEmployees": 75,
+        "country": "Israel",
+        "website": "https://cgen.com",
+        "symbol": "CGEN",
+        "sector": "Healthcare"
       },
       "history": [
         {
@@ -3874,8 +3940,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 2.009999990463257,
-          "volume": 7239134.0
+          "close": 2.069999933242798,
+          "volume": 7204895.0
         }
       ],
       "income_statement": [
@@ -4690,16 +4756,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 190115120,
-        "enterprise_value": 58044024,
+        "market_cap": 195790192,
+        "enterprise_value": 63717396,
         "short_ratio": 4.55,
         "short_percent_of_float": 0.025899999,
         "held_percent_institutions": 0.15213999,
         "held_percent_insiders": 0.02081,
         "sector": "Healthcare",
         "industry": "Biotechnology",
-        "trailing_pe": 5.2894735,
-        "price_to_book": 1.9940475,
+        "trailing_pe": 5.447368,
+        "price_to_book": 2.0535712,
         "gross_margins": 0.8806,
         "profit_margins": 0.47973,
         "revenue_growth": -0.047
@@ -5255,27 +5321,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Compugen Ltd.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "Compugen (CGEN) Stock Faces Mixed Analyst Target Changes After Cautious Valuation Revisions",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/compugen-cgen-stock-faces-mixed-043936924.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-18T04:39:36Z"
+        },
+        {
+          "title": "Why The Narrative Around Compugen (NasdaqCM:CGEN) Is Shifting After Analyst Resets And New Views",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-narrative-around-compugen-nasdaqcm-201045781.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-03T20:10:45Z"
+        },
+        {
+          "title": "Compugen Ltd (CGEN) Q1 2026 Earnings Call Highlights: Strategic Advances Amid Financial Challenges",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/compugen-ltd-cgen-q1-2026-010116573.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-26T01:01:16Z"
+        },
+        {
+          "title": "Compugen Q1 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/compugen-q1-earnings-call-highlights-2026-05-18/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-05-18T14:08:24Z"
+        },
+        {
+          "title": "Compugen (CGEN) Reports Q1 Loss, Lags Revenue Estimates",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/compugen-cgen-reports-q1-loss-130001362.html",
+          "publisher": "Zacks",
+          "published": "2026-05-18T13:00:01Z"
+        },
+        {
+          "title": "Compugen surges after revenue tops forecasts despite quarterly loss miss (CGEN)",
+          "url": "https://investorshub.advfn.com/market-news/article/28528/compugen-surges-after-revenue-tops-forecasts-despite-quarterly-loss-miss-cgen",
+          "publisher": "InvestorsHub",
+          "published": "2026-05-18T12:35:18Z"
+        },
+        {
+          "title": "BioXcel Therapeutics, Inc. (BTAI) Reports Q1 Loss, Lags Revenue Estimates",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/bioxcel-therapeutics-inc-btai-reports-121501584.html",
+          "publisher": "Zacks",
+          "published": "2026-05-15T12:15:01Z"
+        },
+        {
+          "title": "Adherex Technologies Inc. (FENC) Beats Q1 Earnings and Revenue Estimates",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/adherex-technologies-inc-fenc-beats-114001011.html",
+          "publisher": "Zacks",
+          "published": "2026-05-14T11:40:01Z"
+        },
+        {
+          "title": "Janux Therapeutics, Inc. (JANX) Reports Q1 Loss, Lags Revenue Estimates",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/janux-therapeutics-inc-janx-reports-230522533.html",
+          "publisher": "Zacks",
+          "published": "2026-05-07T23:05:22Z"
+        },
+        {
+          "title": "BioMarin Pharmaceutical (BMRN) Q1 Earnings Lag Estimates",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/biomarin-pharmaceutical-bmrn-q1-earnings-212003415.html",
+          "publisher": "Zacks",
+          "published": "2026-05-04T21:20:03Z"
+        }
+      ]
     }
   },
   "ENVX": {
     "yfinance": {
       "ticker": "ENVX",
       "info": {
-        "industry": "Electrical Equipment & Parts",
-        "website": "https://www.enovix.com",
-        "marketCap": 1544526336,
-        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
-        "grossProfits": 7396000,
-        "sector": "Industrials",
-        "shortName": "Enovix Corporation",
-        "symbol": "ENVX",
-        "fullTimeEmployees": 664,
-        "enterpriseValue": 1523139456,
-        "country": "United States",
-        "longName": "Enovix Corporation",
-        "freeCashflow": -72119248,
         "totalRevenue": 34323000,
-        "ebitda": -141855008
+        "grossProfits": 7396000,
+        "industry": "Electrical Equipment & Parts",
+        "freeCashflow": -72119248,
+        "shortName": "Enovix Corporation",
+        "enterpriseValue": 1516758016,
+        "marketCap": 1537981824,
+        "ebitda": -141855008,
+        "longName": "Enovix Corporation",
+        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
+        "fullTimeEmployees": 664,
+        "country": "United States",
+        "website": "https://www.enovix.com",
+        "symbol": "ENVX",
+        "sector": "Industrials"
       },
       "history": [
         {
@@ -5605,8 +5737,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 7.079999923706055,
-          "volume": 95155972.0
+          "close": 7.050000190734863,
+          "volume": 97614736.0
         }
       ],
       "income_statement": [
@@ -6521,16 +6653,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1544526336,
-        "enterprise_value": 1523139456,
+        "market_cap": 1537981824,
+        "enterprise_value": 1516758016,
         "short_ratio": 6.48,
         "short_percent_of_float": 0.2606,
-        "held_percent_institutions": 0.50853,
+        "held_percent_institutions": 0.50855,
         "held_percent_insiders": 0.11422,
         "sector": "Industrials",
         "industry": "Electrical Equipment & Parts",
         "trailing_pe": null,
-        "price_to_book": 6.2433863,
+        "price_to_book": 6.216932,
         "gross_margins": 0.21548,
         "profit_margins": 0.0,
         "revenue_growth": 0.491
@@ -6832,27 +6964,93 @@
         "customer_concentration": true,
         "regulatory_risk_count": 4
       }
+    },
+    "news": {
+      "company_name": "Enovix Corporation",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "The Story Behind QuantumScape Stock's Surge Wasn't About Cars",
+          "url": "https://www.trefis.com/articles/603955/the-story-behind-quantumscape-stocks-surge-wasnt-about-cars/2026-06-22",
+          "publisher": "Trefis",
+          "published": "2026-06-22T13:36:29Z"
+        },
+        {
+          "title": "Spotlight On AppLovin And 2 More Growth Stocks With Significant Insider Stakes",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spotlight-applovin-2-more-growth-113549603.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-03T11:35:49Z"
+        },
+        {
+          "title": "Assessing Enovix (ENVX) Valuation After Its Recent Share Price Rebound",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-enovix-envx-valuation-recent-230918934.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-01T23:09:18Z"
+        },
+        {
+          "title": "Amprius (AMPX) Soars as Battery Market Poised for 51% Growth",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amprius-ampx-soars-battery-market-033339745.html",
+          "publisher": "Insider Monkey",
+          "published": "2026-05-29T03:33:39Z"
+        },
+        {
+          "title": "Enovix Rides on Secular Growth Drivers, Battery Innovations",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/enovix-rides-secular-growth-drivers-141500964.html",
+          "publisher": "Zacks",
+          "published": "2026-05-18T14:15:00Z"
+        },
+        {
+          "title": "Analysts Have Been Trimming Their Enovix Corporation (NASDAQ:ENVX) Price Target After Its Latest Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-trimming-enovix-corporation-nasdaq-130250903.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-16T13:02:50Z"
+        },
+        {
+          "title": "A Look At Enovix (ENVX) Valuation After Smartphone Qualification Progress And New Sales Leadership",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/look-enovix-envx-valuation-smartphone-091122401.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-14T09:11:22Z"
+        },
+        {
+          "title": "Enovix Corp (ENVX) Q1 2026 Earnings Call Highlights: Strong Revenue Growth and Strategic Alignments",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/enovix-corp-envx-q1-2026-050045916.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-14T05:00:45Z"
+        },
+        {
+          "title": "Enovix Q1 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/enovix-q1-earnings-call-highlights-2026-05-13/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-05-14T00:13:27Z"
+        },
+        {
+          "title": "Enovix (ENVX) Q1 2026 Earnings Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/13/enovix-envx-q1-2026-earnings-transcript/",
+          "publisher": "Motley Fool",
+          "published": "2026-05-13T22:36:16Z"
+        }
+      ]
     }
   },
   "CGEH": {
     "yfinance": {
       "ticker": "CGEH",
       "info": {
-        "industry": "Specialty Industrial Machinery",
-        "website": "https://www.capstonegreenenergy.com",
-        "marketCap": 345220800,
-        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
-        "grossProfits": 35304000,
-        "sector": "Industrials",
-        "shortName": "Capstone Energy+, Inc.",
-        "symbol": "CGEH",
-        "fullTimeEmployees": 100,
-        "enterpriseValue": 351988736,
-        "country": "United States",
-        "longName": "Capstone Energy+, Inc.",
-        "freeCashflow": 7081500,
         "totalRevenue": 110069000,
-        "ebitda": 9378000
+        "grossProfits": 35304000,
+        "industry": "Specialty Industrial Machinery",
+        "freeCashflow": 7081500,
+        "shortName": "Capstone Energy+, Inc.",
+        "enterpriseValue": 345240448,
+        "marketCap": 336361152,
+        "ebitda": 9378000,
+        "longName": "Capstone Energy+, Inc.",
+        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
+        "fullTimeEmployees": 100,
+        "country": "United States",
+        "website": "https://www.capstonegreenenergy.com",
+        "symbol": "CGEH",
+        "sector": "Industrials"
       },
       "history": [
         {
@@ -6942,8 +7140,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 11.300000190734863,
-          "volume": 3612495.0
+          "close": 11.010000228881836,
+          "volume": 3695459.0
         }
       ],
       "income_statement": [
@@ -7454,8 +7652,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 345220800,
-        "enterprise_value": 351988736,
+        "market_cap": 336361152,
+        "enterprise_value": 345240448,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.19052,
@@ -7463,7 +7661,7 @@
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
         "trailing_pe": null,
-        "price_to_book": -4.146789,
+        "price_to_book": -4.040367,
         "gross_margins": 0.32074,
         "profit_margins": 0.01086,
         "revenue_growth": 0.328
@@ -8042,42 +8240,108 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Capstone Energy+, Inc.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "The Zacks Analyst Blog Highlights Intel, CrowdStrike, Honeywell International , Capstone Energy+ and Lulu's Fashion Lounge",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-intel-133300922.html",
+          "publisher": "Zacks",
+          "published": "2026-06-10T13:33:00Z"
+        },
+        {
+          "title": "Top Analyst Reports for Intel, CrowdStrike & Honeywell",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-intel-crowdstrike-204700715.html",
+          "publisher": "Zacks",
+          "published": "2026-06-09T20:47:00Z"
+        },
+        {
+          "title": "Capstone Climbs 109% Year to Date: Should You Buy the Stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/capstone-climbs-109-date-buy-173800741.html",
+          "publisher": "Zacks",
+          "published": "2026-06-04T17:38:00Z"
+        },
+        {
+          "title": "Investors riding the high as Capstone Green Energy Holdings (OTCPK:CGEH) jumps 27% this past week",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/capstone-green-energy-holdings-otcpk-061211869.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-06T06:12:11Z"
+        },
+        {
+          "title": "Capstone Rises 28% Year to Date: Should You Buy the Stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/capstone-rises-28-date-buy-173700575.html",
+          "publisher": "Zacks",
+          "published": "2026-04-16T17:37:00Z"
+        },
+        {
+          "title": "Zacks Market Edge Highlights: AERT, CGEH and OCC",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-market-edge-highlights-aert-090400439.html",
+          "publisher": "Zacks",
+          "published": "2026-03-23T09:04:00Z"
+        },
+        {
+          "title": "3 Small Cap AI Stocks You Should Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-small-cap-ai-stocks-231300398.html",
+          "publisher": "Zacks",
+          "published": "2026-03-19T23:13:00Z"
+        },
+        {
+          "title": "Zacks Initiates Coverage of Capstone With Outperform Recommendation",
+          "url": "https://finance.yahoo.com/news/zacks-initiates-coverage-capstone-outperform-152200234.html",
+          "publisher": "Zacks",
+          "published": "2026-03-13T15:22:00Z"
+        },
+        {
+          "title": "Capstone Green: Fiscal Q3 Earnings Snapshot",
+          "url": "https://finance.yahoo.com/news/capstone-green-fiscal-q3-earnings-214705275.html",
+          "publisher": "Associated Press Finance",
+          "published": "2026-02-12T21:47:05Z"
+        },
+        {
+          "title": "Capstone Green: Fiscal Q2 Earnings Snapshot",
+          "url": "https://finance.yahoo.com/news/capstone-green-fiscal-q2-earnings-221735743.html",
+          "publisher": "Associated Press Finance",
+          "published": "2025-11-13T22:17:35Z"
+        }
+      ]
     }
   },
   "ABXL": {
     "yfinance": {
       "ticker": "ABXL",
       "info": {
-        "industry": null,
-        "website": null,
-        "marketCap": null,
-        "longBusinessSummary": null,
-        "grossProfits": null,
-        "sector": null,
-        "shortName": "Abacus Global Management, Inc. ",
-        "symbol": "ABXL",
-        "fullTimeEmployees": null,
-        "enterpriseValue": null,
-        "country": null,
-        "longName": null,
-        "freeCashflow": null,
         "totalRevenue": null,
-        "ebitda": null
+        "grossProfits": null,
+        "industry": null,
+        "freeCashflow": null,
+        "shortName": "Abacus Global Management, Inc. ",
+        "enterpriseValue": null,
+        "marketCap": null,
+        "ebitda": null,
+        "longName": null,
+        "longBusinessSummary": null,
+        "fullTimeEmployees": null,
+        "country": null,
+        "website": null,
+        "symbol": "ABXL",
+        "sector": null
       },
       "history": [
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 20.361845016479492,
+          "close": 20.36184310913086,
           "volume": 10500.0
         },
         {
           "date": "2023-12-01 00:00:00-05:00",
-          "close": 20.84881019592285,
+          "close": 20.848812103271484,
           "volume": 73000.0
         },
         {
           "date": "2024-01-01 00:00:00-05:00",
-          "close": 21.08651351928711,
+          "close": 21.086515426635742,
           "volume": 48300.0
         },
         {
@@ -8092,7 +8356,7 @@
         },
         {
           "date": "2024-04-01 00:00:00-04:00",
-          "close": 21.030391693115234,
+          "close": 21.03038787841797,
           "volume": 64700.0
         },
         {
@@ -8117,32 +8381,32 @@
         },
         {
           "date": "2024-09-01 00:00:00-04:00",
-          "close": 23.012624740600586,
+          "close": 23.01262855529785,
           "volume": 72400.0
         },
         {
           "date": "2024-10-01 00:00:00-04:00",
-          "close": 22.882614135742188,
+          "close": 22.882612228393555,
           "volume": 59900.0
         },
         {
           "date": "2024-11-01 00:00:00-04:00",
-          "close": 22.882614135742188,
+          "close": 22.882612228393555,
           "volume": 53300.0
         },
         {
           "date": "2024-12-01 00:00:00-05:00",
-          "close": 29.85712242126465,
+          "close": 29.85711669921875,
           "volume": 1017300.0
         },
         {
           "date": "2025-01-01 00:00:00-05:00",
-          "close": 24.19792938232422,
+          "close": 24.197927474975586,
           "volume": 349900.0
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 23.346385955810547,
+          "close": 23.346384048461914,
           "volume": 72200.0
         },
         {
@@ -8152,7 +8416,7 @@
         },
         {
           "date": "2025-04-01 00:00:00-04:00",
-          "close": 23.435653686523438,
+          "close": 23.435651779174805,
           "volume": 546100.0
         },
         {
@@ -8172,7 +8436,7 @@
         },
         {
           "date": "2025-08-01 00:00:00-04:00",
-          "close": 23.233856201171875,
+          "close": 23.233858108520508,
           "volume": 186800.0
         },
         {
@@ -8187,7 +8451,7 @@
         },
         {
           "date": "2025-11-01 00:00:00-04:00",
-          "close": 24.1021728515625,
+          "close": 24.102170944213867,
           "volume": 218800.0
         },
         {
@@ -8222,8 +8486,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 25.450000762939453,
-          "volume": 109401.0
+          "close": 25.499900817871094,
+          "volume": 107957.0
         }
       ],
       "income_statement": [],
@@ -8499,37 +8763,42 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Abacus Global Management, Inc. ",
+      "article_count": 0,
+      "articles": []
     }
   },
   "TUYA": {
     "yfinance": {
       "ticker": "TUYA",
       "info": {
-        "industry": "Software - Infrastructure",
-        "website": "https://www.tuya.com",
-        "marketCap": 1146516992,
-        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
-        "grossProfits": 156688000,
-        "sector": "Technology",
-        "shortName": "Tuya Inc.",
-        "symbol": "TUYA",
-        "fullTimeEmployees": 1441,
-        "enterpriseValue": 209932192,
-        "country": "China",
-        "longName": "Tuya Inc.",
-        "freeCashflow": 21208876,
         "totalRevenue": 327985984,
-        "ebitda": 21525250
+        "grossProfits": 156688000,
+        "industry": "Software - Infrastructure",
+        "freeCashflow": 21208876,
+        "shortName": "Tuya Inc.",
+        "enterpriseValue": 191466496,
+        "marketCap": 1128123648,
+        "ebitda": 21525250,
+        "longName": "Tuya Inc.",
+        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
+        "fullTimeEmployees": 1441,
+        "country": "China",
+        "website": "https://www.tuya.com",
+        "symbol": "TUYA",
+        "sector": "Technology"
       },
       "history": [
         {
           "date": "2021-03-01 00:00:00-05:00",
-          "close": 19.42319107055664,
+          "close": 19.423192977905273,
           "volume": 35519500.0
         },
         {
           "date": "2021-04-01 00:00:00-04:00",
-          "close": 17.8153133392334,
+          "close": 17.815311431884766,
           "volume": 20720800.0
         },
         {
@@ -8539,7 +8808,7 @@
         },
         {
           "date": "2021-06-01 00:00:00-04:00",
-          "close": 22.51032257080078,
+          "close": 22.510324478149414,
           "volume": 18748900.0
         },
         {
@@ -8559,7 +8828,7 @@
         },
         {
           "date": "2021-10-01 00:00:00-04:00",
-          "close": 5.953751087188721,
+          "close": 5.953751564025879,
           "volume": 49615100.0
         },
         {
@@ -8574,7 +8843,7 @@
         },
         {
           "date": "2022-01-01 00:00:00-05:00",
-          "close": 5.099277973175049,
+          "close": 5.099277496337891,
           "volume": 39219800.0
         },
         {
@@ -8584,7 +8853,7 @@
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 2.7196147441864014,
+          "close": 2.7196149826049805,
           "volume": 71354900.0
         },
         {
@@ -8594,12 +8863,12 @@
         },
         {
           "date": "2022-05-01 00:00:00-04:00",
-          "close": 2.3520991802215576,
+          "close": 2.3520989418029785,
           "volume": 36403200.0
         },
         {
           "date": "2022-06-01 00:00:00-04:00",
-          "close": 2.407226324081421,
+          "close": 2.4072265625,
           "volume": 42444800.0
         },
         {
@@ -8609,7 +8878,7 @@
         },
         {
           "date": "2022-08-01 00:00:00-04:00",
-          "close": 1.2128013372421265,
+          "close": 1.212801218032837,
           "volume": 21699100.0
         },
         {
@@ -8674,17 +8943,17 @@
         },
         {
           "date": "2023-09-01 00:00:00-04:00",
-          "close": 1.4241224527359009,
+          "close": 1.4241225719451904,
           "volume": 5365100.0
         },
         {
           "date": "2023-10-01 00:00:00-04:00",
-          "close": 1.5711288452148438,
+          "close": 1.5711287260055542,
           "volume": 2877100.0
         },
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 2.0397112369537354,
+          "close": 2.0397109985351562,
           "volume": 6188800.0
         },
         {
@@ -8694,7 +8963,7 @@
         },
         {
           "date": "2024-01-01 00:00:00-05:00",
-          "close": 1.6813833713531494,
+          "close": 1.681383490562439,
           "volume": 6732400.0
         },
         {
@@ -8704,42 +8973,42 @@
         },
         {
           "date": "2024-03-01 00:00:00-05:00",
-          "close": 1.6078803539276123,
+          "close": 1.6078802347183228,
           "volume": 5661000.0
         },
         {
           "date": "2024-04-01 00:00:00-04:00",
-          "close": 1.6078803539276123,
+          "close": 1.6078802347183228,
           "volume": 3451000.0
         },
         {
           "date": "2024-05-01 00:00:00-04:00",
-          "close": 1.855953335762024,
+          "close": 1.8559532165527344,
           "volume": 7594800.0
         },
         {
           "date": "2024-06-01 00:00:00-04:00",
-          "close": 1.5711288452148438,
+          "close": 1.5711287260055542,
           "volume": 4834800.0
         },
         {
           "date": "2024-07-01 00:00:00-04:00",
-          "close": 1.378183126449585,
+          "close": 1.3781832456588745,
           "volume": 5481700.0
         },
         {
           "date": "2024-08-01 00:00:00-04:00",
-          "close": 1.4241224527359009,
+          "close": 1.4241225719451904,
           "volume": 14765400.0
         },
         {
           "date": "2024-09-01 00:00:00-04:00",
-          "close": 1.5160014629364014,
+          "close": 1.5160013437271118,
           "volume": 32091700.0
         },
         {
           "date": "2024-10-01 00:00:00-04:00",
-          "close": 1.4589335918426514,
+          "close": 1.4589334726333618,
           "volume": 19909000.0
         },
         {
@@ -8759,7 +9028,7 @@
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 3.263404130935669,
+          "close": 3.263404369354248,
           "volume": 145496700.0
         },
         {
@@ -8839,8 +9108,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 1.8700000047683716,
-          "volume": 27302643.0
+          "close": 1.840000033378601,
+          "volume": 25883016.0
         }
       ],
       "income_statement": [
@@ -9825,16 +10094,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1146516992,
-        "enterprise_value": 209932192,
+        "market_cap": 1128123648,
+        "enterprise_value": 191466496,
         "short_ratio": 4.41,
         "short_percent_of_float": 0.0123000005,
-        "held_percent_institutions": 0.27793,
+        "held_percent_institutions": 0.278,
         "held_percent_insiders": 0.17985001,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 18.699999,
-        "price_to_book": 1.1444309,
+        "trailing_pe": 18.4,
+        "price_to_book": 1.1260711,
         "gross_margins": 0.47772998,
         "profit_margins": 0.19101,
         "revenue_growth": 0.083
@@ -10037,27 +10306,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Tuya Inc.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "Undervalued Opportunities: Penny Stocks To Watch In June 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/undervalued-opportunities-penny-stocks-watch-120524781.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-12T12:05:24Z"
+        },
+        {
+          "title": "Here is Why Tuya (TUYA) is One of the Most Promising Penny Stocks According to Wall Street Analysts",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-tuya-tuya-one-most-215545763.html",
+          "publisher": "Insider Monkey",
+          "published": "2026-06-05T21:55:45Z"
+        },
+        {
+          "title": "3 Promising Penny Stocks With Market Caps Over $70M",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-promising-penny-stocks-market-180504252.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-15T18:05:04Z"
+        },
+        {
+          "title": "Tuya Q1 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/tuya-q1-earnings-call-highlights-2026-05-15/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-05-15T13:10:38Z"
+        },
+        {
+          "title": "Promising Penny Stocks To Consider In May 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/promising-penny-stocks-consider-may-120513657.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-15T12:05:13Z"
+        },
+        {
+          "title": "Spotlight On Penny Stocks To Consider In May 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spotlight-penny-stocks-consider-may-180504780.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-14T18:05:04Z"
+        },
+        {
+          "title": "May 2026's Promising Penny Stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/may-2026s-promising-penny-stocks-120454604.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-14T12:04:54Z"
+        },
+        {
+          "title": "Tuya Inc (TUYA) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amidst Challenges",
+          "url": "https://finance.yahoo.com/news/tuya-inc-tuya-q1-2026-010101962.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-13T01:01:01Z"
+        },
+        {
+          "title": "Tuya (TUYA) Q1 2026 Earnings Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/12/tuya-tuya-q1-2026-earnings-transcript/",
+          "publisher": "Motley Fool",
+          "published": "2026-05-12T14:48:58Z"
+        },
+        {
+          "title": "ThredUp Leads These 3 Promising Penny Stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/thredup-leads-3-promising-penny-180534178.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-05T18:05:34Z"
+        }
+      ]
     }
   },
   "WKSP": {
     "yfinance": {
       "ticker": "WKSP",
       "info": {
-        "industry": "Auto Parts",
-        "website": "https://www.worksport.com",
-        "marketCap": 10357903,
-        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
-        "grossProfits": 4932632,
-        "sector": "Consumer Cyclical",
-        "shortName": "Worksport, Ltd.",
-        "symbol": "WKSP",
-        "fullTimeEmployees": 116,
-        "enterpriseValue": 12201426,
-        "country": "United States",
-        "longName": "Worksport Ltd.",
-        "freeCashflow": -14124130,
         "totalRevenue": 17174532,
-        "ebitda": -18490900
+        "grossProfits": 4932632,
+        "industry": "Auto Parts",
+        "freeCashflow": -14124130,
+        "shortName": "Worksport, Ltd.",
+        "enterpriseValue": 13459593,
+        "marketCap": 11767217,
+        "ebitda": -18490900,
+        "longName": "Worksport Ltd.",
+        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
+        "fullTimeEmployees": 116,
+        "country": "United States",
+        "website": "https://www.worksport.com",
+        "symbol": "WKSP",
+        "sector": "Consumer Cyclical"
       },
       "history": [
         {
@@ -11562,8 +11897,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.7379000186920166,
-          "volume": 421243075.0
+          "close": 0.8382999897003174,
+          "volume": 330873333.0
         }
       ],
       "income_statement": [
@@ -12220,6 +12555,7 @@
           "Change In Working Capital": -3069494.0,
           "Change In Other Current Liabilities": null,
           "Change In Payables And Accrued Expense": 2179473.0,
+          "Change In Payable": null,
           "Change In Account Payable": null,
           "Change In Tax Payable": null,
           "Change In Income Tax Payable": null,
@@ -12275,6 +12611,7 @@
           "Change In Working Capital": 1298027.0,
           "Change In Other Current Liabilities": null,
           "Change In Payables And Accrued Expense": 1167834.0,
+          "Change In Payable": null,
           "Change In Account Payable": null,
           "Change In Tax Payable": null,
           "Change In Income Tax Payable": null,
@@ -12330,6 +12667,7 @@
           "Change In Working Capital": -3852297.0,
           "Change In Other Current Liabilities": 0.0,
           "Change In Payables And Accrued Expense": -492114.0,
+          "Change In Payable": -492114.0,
           "Change In Account Payable": -577124.0,
           "Change In Tax Payable": 85010.0,
           "Change In Income Tax Payable": 85010.0,
@@ -12385,6 +12723,7 @@
           "Change In Working Capital": -565377.0,
           "Change In Other Current Liabilities": 8738.0,
           "Change In Payables And Accrued Expense": 883151.0,
+          "Change In Payable": 883151.0,
           "Change In Account Payable": 995340.0,
           "Change In Tax Payable": -112189.0,
           "Change In Income Tax Payable": -112189.0,
@@ -12440,6 +12779,7 @@
           "Change In Working Capital": null,
           "Change In Other Current Liabilities": -2111.0,
           "Change In Payables And Accrued Expense": null,
+          "Change In Payable": 251483.0,
           "Change In Account Payable": 187510.0,
           "Change In Tax Payable": 63973.0,
           "Change In Income Tax Payable": 63973.0,
@@ -12458,8 +12798,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 10357903,
-        "enterprise_value": 12201426,
+        "market_cap": 11767217,
+        "enterprise_value": 13459593,
         "short_ratio": 1.79,
         "short_percent_of_float": 0.0791,
         "held_percent_institutions": 0.06418,
@@ -12467,7 +12807,7 @@
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
         "trailing_pe": null,
-        "price_to_book": 0.44053733,
+        "price_to_book": 0.35963103,
         "gross_margins": 0.28721002,
         "profit_margins": -1.20646,
         "revenue_growth": 0.479
@@ -13041,27 +13381,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Worksport Ltd.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "WKSP Stock Records Best Day In 2 Years \u2013 A Look At Some Key Figures From The Latest Investment",
+          "url": "https://stocktwits.com/news-articles/markets/equity/why-is-wksp-stock-gaining-today/cZKkanNR77n",
+          "publisher": "Stocktwits",
+          "published": "2026-06-18T17:45:03Z"
+        },
+        {
+          "title": "EXCLUSIVE: Worksport Chooses Equity Compensation Over Cash",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-worksport-chooses-equity-compensation-124651029.html",
+          "publisher": "Benzinga",
+          "published": "2026-06-09T12:46:51Z"
+        },
+        {
+          "title": "Worksport Ltd. Q1 2026 Earnings Call Summary",
+          "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-worksport-ltd-q1-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+          "publisher": "Moby",
+          "published": "2026-05-15T12:30:00Z"
+        },
+        {
+          "title": "Worksport Ltd. (WKSP) Reports Q1 Loss, Lags Revenue Estimates",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/worksport-ltd-wksp-reports-q1-221004420.html",
+          "publisher": "Zacks",
+          "published": "2026-05-13T22:10:04Z"
+        },
+        {
+          "title": "Worksport (WKSP) Q1 2026 Earnings Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/13/worksport-wksp-q1-2026-earnings-transcript/",
+          "publisher": "Motley Fool",
+          "published": "2026-05-13T21:49:09Z"
+        },
+        {
+          "title": "Insight Enterprises (NSIT) Beats Q1 Earnings Estimates",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/insight-enterprises-nsit-beats-q1-151507403.html",
+          "publisher": "Zacks",
+          "published": "2026-05-07T15:15:07Z"
+        },
+        {
+          "title": "How The Worksport (WKSP) Narrative Is Shifting As The US$7.00 Target Takes Shape",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/worksport-wksp-narrative-shifting-us-130504499.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-04-17T13:05:04Z"
+        },
+        {
+          "title": "Worksport Ltd. Q4 2025 Earnings Call Summary",
+          "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-worksport-ltd-q4-2025-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+          "publisher": "Moby",
+          "published": "2026-03-27T00:19:14Z"
+        },
+        {
+          "title": "Worksport (WKSP) Q4 2025 Earnings Call Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/03/26/worksport-wksp-q4-2025-earnings-call-transcript/",
+          "publisher": "Motley Fool",
+          "published": "2026-03-26T21:49:15Z"
+        },
+        {
+          "title": "How The Worksport WKSP Story Is Shifting After The Price Target Reset",
+          "url": "https://finance.yahoo.com/news/worksport-wksp-story-shifting-price-170922127.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-02-18T17:09:22Z"
+        }
+      ]
     }
   },
   "LEAT": {
     "yfinance": {
       "ticker": "LEAT",
       "info": {
-        "industry": "Leisure",
-        "website": "https://www.int.leatt.com/",
-        "marketCap": 75108328,
-        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
-        "grossProfits": 29075358,
-        "sector": "Consumer Cyclical",
-        "shortName": "Leatt Corp.",
-        "symbol": "LEAT",
-        "fullTimeEmployees": 88,
-        "enterpriseValue": 58900436,
-        "country": "South Africa",
-        "longName": "Leatt Corporation",
-        "freeCashflow": 3162047,
         "totalRevenue": 66047536,
-        "ebitda": 6646879
+        "grossProfits": 29075358,
+        "industry": "Leisure",
+        "freeCashflow": 3162047,
+        "shortName": "Leatt Corp.",
+        "enterpriseValue": 59087428,
+        "marketCap": 75295320,
+        "ebitda": 6646879,
+        "longName": "Leatt Corporation",
+        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
+        "fullTimeEmployees": 88,
+        "country": "South Africa",
+        "website": "https://www.int.leatt.com/",
+        "symbol": "LEAT",
+        "sector": "Consumer Cyclical"
       },
       "history": [
         {
@@ -14211,8 +14617,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 12.050000190734863,
-          "volume": 41800.0
+          "close": 12.079999923706055,
+          "volume": 44300.0
         }
       ],
       "income_statement": [
@@ -15172,16 +15578,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 75108328,
-        "enterprise_value": 58900436,
+        "market_cap": 75295320,
+        "enterprise_value": 59087428,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.048060004,
         "held_percent_insiders": 0.4463,
         "sector": "Consumer Cyclical",
         "industry": "Leisure",
-        "trailing_pe": 19.754099,
-        "price_to_book": 1.7070407,
+        "trailing_pe": 19.803278,
+        "price_to_book": 1.7112905,
         "gross_margins": 0.44022,
         "profit_margins": 0.05925,
         "revenue_growth": 0.269
@@ -15723,32 +16129,56 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Leatt Corporation",
+      "article_count": 3,
+      "articles": [
+        {
+          "title": "Leatt Corp (LEAT) Q1 2026 Earnings Call Highlights: Strong Revenue Growth and Profitability Surge",
+          "url": "https://finance.yahoo.com/news/leatt-corp-leat-q1-2026-230130314.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-12T23:01:30Z"
+        },
+        {
+          "title": "Leatt Corp (LEAT) Q4 2025 Earnings Call Highlights: Record Revenue Growth and Strategic Expansion",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leatt-corp-leat-q4-2025-210032570.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-03-24T21:00:32Z"
+        },
+        {
+          "title": "Leatt Q4 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/leatt-q4-earnings-call-highlights-2026-03-24/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-03-24T15:36:49Z"
+        }
+      ]
     }
   },
   "CLPS": {
     "yfinance": {
       "ticker": "CLPS",
       "info": {
-        "industry": "Information Technology Services",
-        "website": "https://www.clpsglobal.com",
-        "marketCap": 29638904,
-        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
-        "grossProfits": 36698684,
-        "sector": "Technology",
-        "shortName": "CLPS Incorporation",
-        "symbol": "CLPS",
-        "fullTimeEmployees": 3534,
-        "enterpriseValue": 31472528,
-        "country": "Hong Kong",
-        "longName": "CLPS Incorporation",
-        "freeCashflow": null,
         "totalRevenue": 166788912,
-        "ebitda": -2580648
+        "grossProfits": 36698684,
+        "industry": "Information Technology Services",
+        "freeCashflow": null,
+        "shortName": "CLPS Incorporation",
+        "enterpriseValue": 30780198,
+        "marketCap": 28946574,
+        "ebitda": -2580648,
+        "longName": "CLPS Incorporation",
+        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
+        "fullTimeEmployees": 3534,
+        "country": "Hong Kong",
+        "website": "https://www.clpsglobal.com",
+        "symbol": "CLPS",
+        "sector": "Technology"
       },
       "history": [
         {
           "date": "2018-05-01 00:00:00-04:00",
-          "close": 4.1571221351623535,
+          "close": 4.157122611999512,
           "volume": 398800.0
         },
         {
@@ -15763,7 +16193,7 @@
         },
         {
           "date": "2018-08-01 00:00:00-04:00",
-          "close": 11.193497657775879,
+          "close": 11.193498611450195,
           "volume": 2762500.0
         },
         {
@@ -15778,12 +16208,12 @@
         },
         {
           "date": "2018-11-01 00:00:00-04:00",
-          "close": 4.46445894241333,
+          "close": 4.464458465576172,
           "volume": 370300.0
         },
         {
           "date": "2018-12-01 00:00:00-05:00",
-          "close": 1.9572445154190063,
+          "close": 1.957244634628296,
           "volume": 837700.0
         },
         {
@@ -15803,7 +16233,7 @@
         },
         {
           "date": "2019-04-01 00:00:00-04:00",
-          "close": 7.311359405517578,
+          "close": 7.311359882354736,
           "volume": 296600.0
         },
         {
@@ -15823,17 +16253,17 @@
         },
         {
           "date": "2019-08-01 00:00:00-04:00",
-          "close": 4.100508213043213,
+          "close": 4.100508689880371,
           "volume": 280500.0
         },
         {
           "date": "2019-09-01 00:00:00-04:00",
-          "close": 4.108595848083496,
+          "close": 4.108596324920654,
           "volume": 602700.0
         },
         {
           "date": "2019-10-01 00:00:00-04:00",
-          "close": 3.5748019218444824,
+          "close": 3.5748021602630615,
           "volume": 331100.0
         },
         {
@@ -15868,17 +16298,17 @@
         },
         {
           "date": "2020-05-01 00:00:00-04:00",
-          "close": 1.5124163627624512,
+          "close": 1.5124162435531616,
           "volume": 357200.0
         },
         {
           "date": "2020-06-01 00:00:00-04:00",
-          "close": 1.746962070465088,
+          "close": 1.7469621896743774,
           "volume": 3464900.0
         },
         {
           "date": "2020-07-01 00:00:00-04:00",
-          "close": 2.054297924041748,
+          "close": 2.054298162460327,
           "volume": 1828200.0
         },
         {
@@ -15888,7 +16318,7 @@
         },
         {
           "date": "2020-09-01 00:00:00-04:00",
-          "close": 2.232229471206665,
+          "close": 2.232229232788086,
           "volume": 979700.0
         },
         {
@@ -15918,7 +16348,7 @@
         },
         {
           "date": "2021-03-01 00:00:00-05:00",
-          "close": 4.100508213043213,
+          "close": 4.100508689880371,
           "volume": 75509700.0
         },
         {
@@ -15943,7 +16373,7 @@
         },
         {
           "date": "2021-08-01 00:00:00-04:00",
-          "close": 2.6770575046539307,
+          "close": 2.6770577430725098,
           "volume": 3166000.0
         },
         {
@@ -15958,12 +16388,12 @@
         },
         {
           "date": "2021-11-01 00:00:00-04:00",
-          "close": 2.0623855590820312,
+          "close": 2.0623857975006104,
           "volume": 2162400.0
         },
         {
           "date": "2021-12-01 00:00:00-05:00",
-          "close": 1.585206389427185,
+          "close": 1.5852062702178955,
           "volume": 2487200.0
         },
         {
@@ -15973,12 +16403,12 @@
         },
         {
           "date": "2022-02-01 00:00:00-05:00",
-          "close": 1.7550500631332397,
+          "close": 1.7550498247146606,
           "volume": 922000.0
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 1.779313325881958,
+          "close": 1.7793132066726685,
           "volume": 1894700.0
         },
         {
@@ -15998,7 +16428,7 @@
         },
         {
           "date": "2022-07-01 00:00:00-04:00",
-          "close": 1.188904881477356,
+          "close": 1.1889047622680664,
           "volume": 339100.0
         },
         {
@@ -16018,12 +16448,12 @@
         },
         {
           "date": "2022-11-01 00:00:00-04:00",
-          "close": 0.8573054671287537,
+          "close": 0.8573054075241089,
           "volume": 644500.0
         },
         {
           "date": "2022-12-01 00:00:00-05:00",
-          "close": 0.9058321714401245,
+          "close": 0.9058322310447693,
           "volume": 453100.0
         },
         {
@@ -16038,12 +16468,12 @@
         },
         {
           "date": "2023-03-01 00:00:00-05:00",
-          "close": 0.947006344795227,
+          "close": 0.9470064043998718,
           "volume": 358800.0
         },
         {
           "date": "2023-04-01 00:00:00-04:00",
-          "close": 0.9639171957969666,
+          "close": 0.9639172554016113,
           "volume": 297400.0
         },
         {
@@ -16073,12 +16503,12 @@
         },
         {
           "date": "2023-10-01 00:00:00-04:00",
-          "close": 0.7711337804794312,
+          "close": 0.7711337208747864,
           "volume": 301400.0
         },
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 1.0822930335998535,
+          "close": 1.082292914390564,
           "volume": 1194800.0
         },
         {
@@ -16233,8 +16663,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.9932000041007996,
-          "volume": 809624.0
+          "close": 0.9700000286102295,
+          "volume": 814971.0
         }
       ],
       "income_statement": [
@@ -17024,8 +17454,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 29638904,
-        "enterprise_value": 31472528,
+        "market_cap": 28946574,
+        "enterprise_value": 30780198,
         "short_ratio": 0.38,
         "short_percent_of_float": 0.0005,
         "held_percent_institutions": 0.00113,
@@ -17033,7 +17463,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.51222277,
+        "price_to_book": 0.50025785,
         "gross_margins": 0.22003001,
         "profit_margins": -0.03943,
         "revenue_growth": 0.028
@@ -17336,27 +17766,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "CLPS Incorporation",
+      "article_count": 0,
+      "articles": []
     }
   },
   "AIOS": {
     "yfinance": {
       "ticker": "AIOS",
       "info": {
-        "industry": "Information Technology Services",
-        "website": "https://ir.aiosinc.com",
-        "marketCap": 43578000,
-        "longBusinessSummary": "AIOS Tech Inc. operates as an artificial intelligence and technology-driven professional service provider in Hong Kong. It offers information technology solutions, data services, and artificial intelligence-powered offerings to commercial client base. Its core businesses include digital transformation services, tailored IT solutions for the financial sector, enterprise data solutions, and the development of AI platforms and infrastructure to drive efficiency and growth for clients across multiple industries. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is based in Kowloon, Hong Kong.",
-        "grossProfits": 3646386,
-        "sector": "Technology",
-        "shortName": "AIOS Tech Inc.",
-        "symbol": "AIOS",
-        "fullTimeEmployees": 20,
-        "enterpriseValue": 42288876,
-        "country": "Hong Kong",
-        "longName": "AIOS Tech Inc.",
-        "freeCashflow": 186623328,
         "totalRevenue": 5067754,
-        "ebitda": 3091202
+        "grossProfits": 3646386,
+        "industry": "Information Technology Services",
+        "freeCashflow": 186623328,
+        "shortName": "AIOS Tech Inc.",
+        "enterpriseValue": 36472708,
+        "marketCap": 37778400,
+        "ebitda": 3091202,
+        "longName": "AIOS Tech Inc.",
+        "longBusinessSummary": "AIOS Tech Inc. operates as an artificial intelligence and technology-driven professional service provider in Hong Kong. It offers information technology solutions, data services, and artificial intelligence-powered offerings to commercial client base. Its core businesses include digital transformation services, tailored IT solutions for the financial sector, enterprise data solutions, and the development of AI platforms and infrastructure to drive efficiency and growth for clients across multiple industries. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is based in Kowloon, Hong Kong.",
+        "fullTimeEmployees": 20,
+        "country": "Hong Kong",
+        "website": "https://ir.aiosinc.com",
+        "symbol": "AIOS",
+        "sector": "Technology"
       },
       "history": [
         {
@@ -17931,8 +18366,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 13.449999809265137,
-          "volume": 629157.0
+          "close": 11.65999984741211,
+          "volume": 850594.0
         }
       ],
       "income_statement": [
@@ -18872,8 +19307,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 43578000,
-        "enterprise_value": 42288876,
+        "market_cap": 37778400,
+        "enterprise_value": 36472708,
         "short_ratio": 0.03,
         "short_percent_of_float": 0.008,
         "held_percent_institutions": 0.00184,
@@ -18881,7 +19316,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.68857825,
+        "price_to_book": 0.5969385,
         "gross_margins": 0.71953005,
         "profit_margins": 0.0,
         "revenue_growth": null
@@ -19254,27 +19689,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "AIOS Tech Inc.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "NSYS": {
     "yfinance": {
       "ticker": "NSYS",
       "info": {
-        "industry": "Medical Devices",
-        "website": "https://www.nortechsys.com",
-        "marketCap": 48876400,
-        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
-        "grossProfits": 19630000,
-        "sector": "Healthcare",
-        "shortName": "Nortech Systems Incorporated",
-        "symbol": "NSYS",
-        "fullTimeEmployees": 685,
-        "enterpriseValue": 65154400,
-        "country": "United States",
-        "longName": "Nortech Systems Incorporated",
-        "freeCashflow": 3709125,
         "totalRevenue": 121786000,
-        "ebitda": 3879000
+        "grossProfits": 19630000,
+        "industry": "Medical Devices",
+        "freeCashflow": 3709125,
+        "shortName": "Nortech Systems Incorporated",
+        "enterpriseValue": 65405908,
+        "marketCap": 49127908,
+        "ebitda": 3879000,
+        "longName": "Nortech Systems Incorporated",
+        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
+        "fullTimeEmployees": 685,
+        "country": "United States",
+        "website": "https://www.nortechsys.com",
+        "symbol": "NSYS",
+        "sector": "Healthcare"
       },
       "history": [
         {
@@ -21259,8 +21699,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 17.489999771118164,
-          "volume": 473770.0
+          "close": 17.579999923706055,
+          "volume": 457702.0
         }
       ],
       "income_statement": [
@@ -22170,16 +22610,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 48876400,
-        "enterprise_value": 65154400,
+        "market_cap": 49127908,
+        "enterprise_value": 65405908,
         "short_ratio": 0.57,
         "short_percent_of_float": 0.0125,
         "held_percent_institutions": 0.03516,
         "held_percent_insiders": 0.65388,
         "sector": "Healthcare",
         "industry": "Medical Devices",
-        "trailing_pe": 46.026318,
-        "price_to_book": 1.4141332,
+        "trailing_pe": 46.263157,
+        "price_to_book": 1.4214101,
         "gross_margins": 0.16118,
         "profit_margins": 0.00846,
         "revenue_growth": 0.127
@@ -22783,27 +23223,57 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Nortech Systems Incorporated",
+      "article_count": 4,
+      "articles": [
+        {
+          "title": "Nortech Systems Inc (NSYS) Q1 2026 Earnings Call Highlights: Strategic Restructuring Drives ...",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nortech-systems-inc-nsys-q1-050317007.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-15T05:03:17Z"
+        },
+        {
+          "title": "Nortech Systems appoints Andrew Walko as SVP, global operations",
+          "url": "https://finance.yahoo.com/news/nortech-systems-appoints-andrew-walko-132212708.html",
+          "publisher": "TipRanks",
+          "published": "2026-01-07T13:22:12Z"
+        },
+        {
+          "title": "Nortech Systems Inc (NSYS) Q3 2025 Earnings Call Highlights: Restructuring Boosts Efficiency ...",
+          "url": "https://finance.yahoo.com/news/nortech-systems-inc-nsys-q3-050120542.html",
+          "publisher": "GuruFocus.com",
+          "published": "2025-11-14T05:01:20Z"
+        },
+        {
+          "title": "Nortech Systems Second Quarter 2025 Earnings: EPS: US$0.11 (vs US$0.057 in 2Q 2024)",
+          "url": "https://finance.yahoo.com/news/nortech-systems-second-quarter-2025-122522046.html",
+          "publisher": "Simply Wall St.",
+          "published": "2025-08-09T12:25:22Z"
+        }
+      ]
     }
   },
   "CAMT": {
     "yfinance": {
       "ticker": "CAMT",
       "info": {
-        "industry": "Semiconductor Equipment & Materials",
-        "website": "https://www.camtek.com",
-        "marketCap": 8986040320,
-        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
-        "grossProfits": 254384992,
-        "sector": "Technology",
-        "shortName": "Camtek Ltd.",
-        "symbol": "CAMT",
-        "fullTimeEmployees": 709,
-        "enterpriseValue": 8803590144,
-        "country": "Israel",
-        "longName": "Camtek Ltd.",
-        "freeCashflow": null,
         "totalRevenue": 499092992,
-        "ebitda": 138529248
+        "grossProfits": 254384992,
+        "industry": "Semiconductor Equipment & Materials",
+        "freeCashflow": null,
+        "shortName": "Camtek Ltd.",
+        "enterpriseValue": 8829375488,
+        "marketCap": 9011824640,
+        "ebitda": 138529248,
+        "longName": "Camtek Ltd.",
+        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
+        "fullTimeEmployees": 709,
+        "country": "Israel",
+        "website": "https://www.camtek.com",
+        "symbol": "CAMT",
+        "sector": "Technology"
       },
       "history": [
         {
@@ -22813,7 +23283,7 @@
         },
         {
           "date": "2000-08-01 00:00:00-04:00",
-          "close": 8.804150581359863,
+          "close": 8.80415153503418,
           "volume": 5695700.0
         },
         {
@@ -22823,7 +23293,7 @@
         },
         {
           "date": "2000-10-01 00:00:00-04:00",
-          "close": 7.4140214920043945,
+          "close": 7.414021015167236,
           "volume": 3087800.0
         },
         {
@@ -22833,12 +23303,12 @@
         },
         {
           "date": "2000-12-01 00:00:00-05:00",
-          "close": 6.834801197052002,
+          "close": 6.834800720214844,
           "volume": 1464100.0
         },
         {
           "date": "2001-01-01 00:00:00-05:00",
-          "close": 7.8773980140686035,
+          "close": 7.877397537231445,
           "volume": 1396100.0
         },
         {
@@ -22853,7 +23323,7 @@
         },
         {
           "date": "2001-04-01 00:00:00-05:00",
-          "close": 4.235260486602783,
+          "close": 4.235260009765625,
           "volume": 822200.0
         },
         {
@@ -22863,17 +23333,17 @@
         },
         {
           "date": "2001-06-01 00:00:00-04:00",
-          "close": 4.717171669006348,
+          "close": 4.7171711921691895,
           "volume": 1660800.0
         },
         {
           "date": "2001-07-01 00:00:00-04:00",
-          "close": 4.819113731384277,
+          "close": 4.8191142082214355,
           "volume": 750700.0
         },
         {
           "date": "2001-08-01 00:00:00-04:00",
-          "close": 3.7533485889434814,
+          "close": 3.7533483505249023,
           "volume": 1206800.0
         },
         {
@@ -22883,7 +23353,7 @@
         },
         {
           "date": "2001-10-01 00:00:00-04:00",
-          "close": 1.6866897344589233,
+          "close": 1.686689853668213,
           "volume": 1561100.0
         },
         {
@@ -22893,7 +23363,7 @@
         },
         {
           "date": "2001-12-01 00:00:00-05:00",
-          "close": 3.3363094329833984,
+          "close": 3.3363096714019775,
           "volume": 885300.0
         },
         {
@@ -22908,22 +23378,22 @@
         },
         {
           "date": "2002-03-01 00:00:00-05:00",
-          "close": 1.834970235824585,
+          "close": 1.8349703550338745,
           "volume": 673800.0
         },
         {
           "date": "2002-04-01 00:00:00-05:00",
-          "close": 1.5198744535446167,
+          "close": 1.5198743343353271,
           "volume": 303200.0
         },
         {
           "date": "2002-05-01 00:00:00-04:00",
-          "close": 1.5106068849563599,
+          "close": 1.5106067657470703,
           "volume": 344900.0
         },
         {
           "date": "2002-06-01 00:00:00-04:00",
-          "close": 0.9267526865005493,
+          "close": 0.9267526268959045,
           "volume": 209300.0
         },
         {
@@ -22938,7 +23408,7 @@
         },
         {
           "date": "2002-09-01 00:00:00-04:00",
-          "close": 0.5838541388511658,
+          "close": 0.5838541984558105,
           "volume": 686900.0
         },
         {
@@ -22948,7 +23418,7 @@
         },
         {
           "date": "2002-11-01 00:00:00-05:00",
-          "close": 0.46337634325027466,
+          "close": 0.46337631344795227,
           "volume": 209500.0
         },
         {
@@ -22958,22 +23428,22 @@
         },
         {
           "date": "2003-01-01 00:00:00-05:00",
-          "close": 0.3336309790611267,
+          "close": 0.3336309492588043,
           "volume": 126500.0
         },
         {
           "date": "2003-02-01 00:00:00-05:00",
-          "close": 0.34289848804473877,
+          "close": 0.3428984582424164,
           "volume": 144100.0
         },
         {
           "date": "2003-03-01 00:00:00-05:00",
-          "close": 0.34289848804473877,
+          "close": 0.3428984582424164,
           "volume": 64200.0
         },
         {
           "date": "2003-04-01 00:00:00-05:00",
-          "close": 0.46337634325027466,
+          "close": 0.46337631344795227,
           "volume": 110800.0
         },
         {
@@ -22993,7 +23463,7 @@
         },
         {
           "date": "2003-08-01 00:00:00-04:00",
-          "close": 1.2511160373687744,
+          "close": 1.251116156578064,
           "volume": 107000.0
         },
         {
@@ -23003,7 +23473,7 @@
         },
         {
           "date": "2003-10-01 00:00:00-04:00",
-          "close": 2.2242064476013184,
+          "close": 2.2242062091827393,
           "volume": 435400.0
         },
         {
@@ -23018,7 +23488,7 @@
         },
         {
           "date": "2004-01-01 00:00:00-05:00",
-          "close": 5.106407642364502,
+          "close": 5.106407165527344,
           "volume": 4344300.0
         },
         {
@@ -23028,7 +23498,7 @@
         },
         {
           "date": "2004-03-01 00:00:00-05:00",
-          "close": 4.633763790130615,
+          "close": 4.633763313293457,
           "volume": 1309600.0
         },
         {
@@ -23038,12 +23508,12 @@
         },
         {
           "date": "2004-05-01 00:00:00-04:00",
-          "close": 4.068443775177002,
+          "close": 4.06844425201416,
           "volume": 1224000.0
         },
         {
           "date": "2004-06-01 00:00:00-04:00",
-          "close": 4.911789417266846,
+          "close": 4.911789894104004,
           "volume": 597100.0
         },
         {
@@ -23058,7 +23528,7 @@
         },
         {
           "date": "2004-09-01 00:00:00-04:00",
-          "close": 3.66994047164917,
+          "close": 3.669940710067749,
           "volume": 870600.0
         },
         {
@@ -23068,12 +23538,12 @@
         },
         {
           "date": "2004-11-01 00:00:00-05:00",
-          "close": 3.9016284942626953,
+          "close": 3.9016287326812744,
           "volume": 2499700.0
         },
         {
           "date": "2004-12-01 00:00:00-05:00",
-          "close": 4.142583847045898,
+          "close": 4.142584323883057,
           "volume": 926400.0
         },
         {
@@ -23083,7 +23553,7 @@
         },
         {
           "date": "2005-02-01 00:00:00-05:00",
-          "close": 3.3733794689178467,
+          "close": 3.373379707336426,
           "volume": 806900.0
         },
         {
@@ -23093,7 +23563,7 @@
         },
         {
           "date": "2005-04-01 00:00:00-05:00",
-          "close": 2.6690478324890137,
+          "close": 2.6690475940704346,
           "volume": 1194800.0
         },
         {
@@ -23108,7 +23578,7 @@
         },
         {
           "date": "2005-07-01 00:00:00-04:00",
-          "close": 2.808060646057129,
+          "close": 2.80806040763855,
           "volume": 307500.0
         },
         {
@@ -23118,7 +23588,7 @@
         },
         {
           "date": "2005-09-01 00:00:00-04:00",
-          "close": 2.7709906101226807,
+          "close": 2.7709903717041016,
           "volume": 725500.0
         },
         {
@@ -23128,17 +23598,17 @@
         },
         {
           "date": "2005-11-01 00:00:00-05:00",
-          "close": 3.466055154800415,
+          "close": 3.466054916381836,
           "volume": 1234000.0
         },
         {
           "date": "2005-12-01 00:00:00-05:00",
-          "close": 3.975768804550171,
+          "close": 3.97576904296875,
           "volume": 1084400.0
         },
         {
           "date": "2006-01-01 00:00:00-05:00",
-          "close": 4.735706329345703,
+          "close": 4.735705852508545,
           "volume": 1459100.0
         },
         {
@@ -23158,12 +23628,12 @@
         },
         {
           "date": "2006-05-01 00:00:00-04:00",
-          "close": 6.162905216217041,
+          "close": 6.162904739379883,
           "volume": 4470300.0
         },
         {
           "date": "2006-06-01 00:00:00-04:00",
-          "close": 5.477107524871826,
+          "close": 5.477108001708984,
           "volume": 1797100.0
         },
         {
@@ -23178,7 +23648,7 @@
         },
         {
           "date": "2006-09-01 00:00:00-04:00",
-          "close": 5.745866775512695,
+          "close": 5.745866298675537,
           "volume": 630800.0
         },
         {
@@ -23193,12 +23663,12 @@
         },
         {
           "date": "2006-12-01 00:00:00-05:00",
-          "close": 3.9479665756225586,
+          "close": 3.9479663372039795,
           "volume": 2856800.0
         },
         {
           "date": "2007-01-01 00:00:00-05:00",
-          "close": 4.068443775177002,
+          "close": 4.06844425201416,
           "volume": 1247300.0
         },
         {
@@ -23208,12 +23678,12 @@
         },
         {
           "date": "2007-03-01 00:00:00-05:00",
-          "close": 3.5401952266693115,
+          "close": 3.5401949882507324,
           "volume": 2056400.0
         },
         {
           "date": "2007-04-01 00:00:00-04:00",
-          "close": 3.679208278656006,
+          "close": 3.6792080402374268,
           "volume": 577300.0
         },
         {
@@ -23223,7 +23693,7 @@
         },
         {
           "date": "2007-06-01 00:00:00-04:00",
-          "close": 2.752455711364746,
+          "close": 2.752455472946167,
           "volume": 477800.0
         },
         {
@@ -23238,7 +23708,7 @@
         },
         {
           "date": "2007-09-01 00:00:00-04:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 146100.0
         },
         {
@@ -23248,7 +23718,7 @@
         },
         {
           "date": "2007-11-01 00:00:00-04:00",
-          "close": 2.085193395614624,
+          "close": 2.085193157196045,
           "volume": 372900.0
         },
         {
@@ -23258,7 +23728,7 @@
         },
         {
           "date": "2008-01-01 00:00:00-05:00",
-          "close": 1.297453761100769,
+          "close": 1.2974538803100586,
           "volume": 623400.0
         },
         {
@@ -23273,7 +23743,7 @@
         },
         {
           "date": "2008-04-01 00:00:00-04:00",
-          "close": 1.1677082777023315,
+          "close": 1.167708396911621,
           "volume": 383400.0
         },
         {
@@ -23288,12 +23758,12 @@
         },
         {
           "date": "2008-07-01 00:00:00-04:00",
-          "close": 0.7692046761512756,
+          "close": 0.7692047357559204,
           "volume": 398900.0
         },
         {
           "date": "2008-08-01 00:00:00-04:00",
-          "close": 0.8340773582458496,
+          "close": 0.8340774178504944,
           "volume": 302800.0
         },
         {
@@ -23313,7 +23783,7 @@
         },
         {
           "date": "2008-12-01 00:00:00-05:00",
-          "close": 0.32436344027519226,
+          "close": 0.32436347007751465,
           "volume": 459800.0
         },
         {
@@ -23323,12 +23793,12 @@
         },
         {
           "date": "2009-02-01 00:00:00-05:00",
-          "close": 0.34289848804473877,
+          "close": 0.3428984582424164,
           "volume": 276000.0
         },
         {
           "date": "2009-03-01 00:00:00-05:00",
-          "close": 0.32436344027519226,
+          "close": 0.32436347007751465,
           "volume": 337700.0
         },
         {
@@ -23358,12 +23828,12 @@
         },
         {
           "date": "2009-09-01 00:00:00-04:00",
-          "close": 0.9545552730560303,
+          "close": 0.9545552134513855,
           "volume": 400000.0
         },
         {
           "date": "2009-10-01 00:00:00-04:00",
-          "close": 1.1584409475326538,
+          "close": 1.1584408283233643,
           "volume": 583300.0
         },
         {
@@ -23373,17 +23843,17 @@
         },
         {
           "date": "2009-12-01 00:00:00-05:00",
-          "close": 2.3168818950653076,
+          "close": 2.3168816566467285,
           "volume": 2050200.0
         },
         {
           "date": "2010-01-01 00:00:00-05:00",
-          "close": 2.2334742546081543,
+          "close": 2.233474016189575,
           "volume": 2019100.0
         },
         {
           "date": "2010-02-01 00:00:00-05:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 1128300.0
         },
         {
@@ -23398,7 +23868,7 @@
         },
         {
           "date": "2010-05-01 00:00:00-04:00",
-          "close": 2.4188241958618164,
+          "close": 2.4188244342803955,
           "volume": 1152500.0
         },
         {
@@ -23418,12 +23888,12 @@
         },
         {
           "date": "2010-09-01 00:00:00-04:00",
-          "close": 2.3261489868164062,
+          "close": 2.3261492252349854,
           "volume": 256000.0
         },
         {
           "date": "2010-10-01 00:00:00-04:00",
-          "close": 2.4095568656921387,
+          "close": 2.4095571041107178,
           "volume": 335200.0
         },
         {
@@ -23443,12 +23913,12 @@
         },
         {
           "date": "2011-02-01 00:00:00-05:00",
-          "close": 3.6514053344726562,
+          "close": 3.6514055728912354,
           "volume": 2154500.0
         },
         {
           "date": "2011-03-01 00:00:00-05:00",
-          "close": 3.6977434158325195,
+          "close": 3.6977431774139404,
           "volume": 2012200.0
         },
         {
@@ -23458,12 +23928,12 @@
         },
         {
           "date": "2011-05-01 00:00:00-04:00",
-          "close": 2.752455711364746,
+          "close": 2.752455472946167,
           "volume": 953200.0
         },
         {
           "date": "2011-06-01 00:00:00-04:00",
-          "close": 3.058283567428589,
+          "close": 3.058283805847168,
           "volume": 1268100.0
         },
         {
@@ -23473,12 +23943,12 @@
         },
         {
           "date": "2011-08-01 00:00:00-04:00",
-          "close": 2.242741584777832,
+          "close": 2.242741346359253,
           "volume": 1414000.0
         },
         {
           "date": "2011-09-01 00:00:00-04:00",
-          "close": 1.6681547164916992,
+          "close": 1.6681548357009888,
           "volume": 826100.0
         },
         {
@@ -23488,7 +23958,7 @@
         },
         {
           "date": "2011-11-01 00:00:00-04:00",
-          "close": 1.7700976133346558,
+          "close": 1.7700974941253662,
           "volume": 393200.0
         },
         {
@@ -23508,7 +23978,7 @@
         },
         {
           "date": "2012-03-01 00:00:00-05:00",
-          "close": 2.3168818950653076,
+          "close": 2.3168816566467285,
           "volume": 707500.0
         },
         {
@@ -23518,7 +23988,7 @@
         },
         {
           "date": "2012-05-01 00:00:00-04:00",
-          "close": 2.0203208923339844,
+          "close": 2.0203206539154053,
           "volume": 273800.0
         },
         {
@@ -23533,7 +24003,7 @@
         },
         {
           "date": "2012-08-01 00:00:00-04:00",
-          "close": 1.6866897344589233,
+          "close": 1.686689853668213,
           "volume": 184100.0
         },
         {
@@ -23548,12 +24018,12 @@
         },
         {
           "date": "2012-11-01 00:00:00-04:00",
-          "close": 1.297453761100769,
+          "close": 1.2974538803100586,
           "volume": 340400.0
         },
         {
           "date": "2012-12-01 00:00:00-05:00",
-          "close": 1.297453761100769,
+          "close": 1.2974538803100586,
           "volume": 871000.0
         },
         {
@@ -23563,12 +24033,12 @@
         },
         {
           "date": "2013-02-01 00:00:00-05:00",
-          "close": 1.297453761100769,
+          "close": 1.2974538803100586,
           "volume": 731400.0
         },
         {
           "date": "2013-03-01 00:00:00-05:00",
-          "close": 1.3345239162445068,
+          "close": 1.3345237970352173,
           "volume": 461900.0
         },
         {
@@ -23583,7 +24053,7 @@
         },
         {
           "date": "2013-06-01 00:00:00-04:00",
-          "close": 2.2242064476013184,
+          "close": 2.2242062091827393,
           "volume": 1439300.0
         },
         {
@@ -23593,7 +24063,7 @@
         },
         {
           "date": "2013-08-01 00:00:00-04:00",
-          "close": 1.5662119388580322,
+          "close": 1.5662120580673218,
           "volume": 1368700.0
         },
         {
@@ -23608,17 +24078,17 @@
         },
         {
           "date": "2013-11-01 00:00:00-04:00",
-          "close": 3.808953285217285,
+          "close": 3.8089535236358643,
           "volume": 60227800.0
         },
         {
           "date": "2013-12-01 00:00:00-05:00",
-          "close": 3.7533485889434814,
+          "close": 3.7533483505249023,
           "volume": 58826400.0
         },
         {
           "date": "2014-01-01 00:00:00-05:00",
-          "close": 4.735706329345703,
+          "close": 4.735705852508545,
           "volume": 36575500.0
         },
         {
@@ -23628,12 +24098,12 @@
         },
         {
           "date": "2014-03-01 00:00:00-05:00",
-          "close": 3.41971755027771,
+          "close": 3.419717311859131,
           "volume": 10135800.0
         },
         {
           "date": "2014-04-01 00:00:00-04:00",
-          "close": 2.8822007179260254,
+          "close": 2.8822004795074463,
           "volume": 4103700.0
         },
         {
@@ -23643,7 +24113,7 @@
         },
         {
           "date": "2014-06-01 00:00:00-04:00",
-          "close": 2.95634126663208,
+          "close": 2.956341028213501,
           "volume": 1780600.0
         },
         {
@@ -23673,32 +24143,32 @@
         },
         {
           "date": "2014-12-01 00:00:00-05:00",
-          "close": 2.7895255088806152,
+          "close": 2.789525270462036,
           "volume": 2799600.0
         },
         {
           "date": "2015-01-01 00:00:00-05:00",
-          "close": 2.910003423690796,
+          "close": 2.910003185272217,
           "volume": 1757300.0
         },
         {
           "date": "2015-02-01 00:00:00-05:00",
-          "close": 2.845130443572998,
+          "close": 2.845130681991577,
           "volume": 4429300.0
         },
         {
           "date": "2015-03-01 00:00:00-05:00",
-          "close": 2.95634126663208,
+          "close": 2.956341028213501,
           "volume": 974100.0
         },
         {
           "date": "2015-04-01 00:00:00-04:00",
-          "close": 3.1324238777160645,
+          "close": 3.1324241161346436,
           "volume": 1684500.0
         },
         {
           "date": "2015-05-01 00:00:00-04:00",
-          "close": 2.6597800254821777,
+          "close": 2.6597797870635986,
           "volume": 1975400.0
         },
         {
@@ -23708,7 +24178,7 @@
         },
         {
           "date": "2015-07-01 00:00:00-04:00",
-          "close": 2.6597800254821777,
+          "close": 2.6597797870635986,
           "volume": 2186400.0
         },
         {
@@ -23733,7 +24203,7 @@
         },
         {
           "date": "2015-12-01 00:00:00-05:00",
-          "close": 2.0110535621643066,
+          "close": 2.0110533237457275,
           "volume": 1551800.0
         },
         {
@@ -23743,12 +24213,12 @@
         },
         {
           "date": "2016-02-01 00:00:00-05:00",
-          "close": 1.7700976133346558,
+          "close": 1.7700974941253662,
           "volume": 429800.0
         },
         {
           "date": "2016-03-01 00:00:00-05:00",
-          "close": 1.834970235824585,
+          "close": 1.8349703550338745,
           "volume": 660500.0
         },
         {
@@ -23758,7 +24228,7 @@
         },
         {
           "date": "2016-05-01 00:00:00-04:00",
-          "close": 1.7700976133346558,
+          "close": 1.7700974941253662,
           "volume": 808300.0
         },
         {
@@ -23778,7 +24248,7 @@
         },
         {
           "date": "2016-09-01 00:00:00-04:00",
-          "close": 2.7895255088806152,
+          "close": 2.789525270462036,
           "volume": 1592600.0
         },
         {
@@ -23788,7 +24258,7 @@
         },
         {
           "date": "2016-11-01 00:00:00-04:00",
-          "close": 2.761723041534424,
+          "close": 2.7617228031158447,
           "volume": 1476000.0
         },
         {
@@ -23798,7 +24268,7 @@
         },
         {
           "date": "2017-01-01 00:00:00-05:00",
-          "close": 3.0768187046051025,
+          "close": 3.0768189430236816,
           "volume": 946200.0
         },
         {
@@ -23818,12 +24288,12 @@
         },
         {
           "date": "2017-05-01 00:00:00-04:00",
-          "close": 5.866343975067139,
+          "close": 5.866344451904297,
           "volume": 13222300.0
         },
         {
           "date": "2017-06-01 00:00:00-04:00",
-          "close": 4.476215362548828,
+          "close": 4.476215839385986,
           "volume": 28162100.0
         },
         {
@@ -23858,7 +24328,7 @@
         },
         {
           "date": "2018-01-01 00:00:00-05:00",
-          "close": 6.408867835998535,
+          "close": 6.408867359161377,
           "volume": 3635900.0
         },
         {
@@ -23873,12 +24343,12 @@
         },
         {
           "date": "2018-04-01 00:00:00-04:00",
-          "close": 6.522634506225586,
+          "close": 6.522634029388428,
           "volume": 2523200.0
         },
         {
           "date": "2018-05-01 00:00:00-04:00",
-          "close": 7.650822639465332,
+          "close": 7.650822162628174,
           "volume": 3512400.0
         },
         {
@@ -24363,8 +24833,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 195.16000366210938,
-          "volume": 7352377.0
+          "close": 195.72000122070312,
+          "volume": 7908262.0
         }
       ],
       "income_statement": [
@@ -24383,7 +24853,7 @@
           "Net Interest Income": 25064000.0,
           "Interest Expense": 1656000.0,
           "Interest Income": 29037000.0,
-          "Normalized Income": null,
+          "Normalized Income": 50722000.0,
           "Net Income From Continuing And Discontinued Operation": 50722000.0,
           "Total Expenses": 367869000.0,
           "Total Operating Income As Reported": 128203000.0,
@@ -24539,7 +25009,7 @@
           "Net Interest Income": 7041000.0,
           "Interest Expense": 1094000.0,
           "Interest Income": 8648000.0,
-          "Normalized Income": null,
+          "Normalized Income": 80267207.681317,
           "Net Income From Continuing And Discontinued Operation": 79949000.0,
           "Total Expenses": 239411000.0,
           "Total Operating Income As Reported": 81498000.0,
@@ -24591,7 +25061,7 @@
           "Net Interest Income": null,
           "Interest Expense": null,
           "Interest Income": null,
-          "Normalized Income": 60228394.9227,
+          "Normalized Income": null,
           "Net Income From Continuing And Discontinued Operation": null,
           "Total Expenses": null,
           "Total Operating Income As Reported": null,
@@ -24705,6 +25175,7 @@
           "Work In Process": null,
           "Raw Materials": null,
           "Receivables": 112234000.0,
+          "Other Receivables": null,
           "Taxes Receivable": 11677000.0,
           "Accrued Interest Receivable": 9728000.0,
           "Accounts Receivable": 90829000.0,
@@ -24790,6 +25261,7 @@
           "Work In Process": 21445000.0,
           "Raw Materials": 53966000.0,
           "Receivables": 114197000.0,
+          "Other Receivables": null,
           "Taxes Receivable": 5457000.0,
           "Accrued Interest Receivable": 9269000.0,
           "Accounts Receivable": 99471000.0,
@@ -24875,6 +25347,7 @@
           "Work In Process": 20038000.0,
           "Raw Materials": 46575000.0,
           "Receivables": 99376000.0,
+          "Other Receivables": 3690000.0,
           "Taxes Receivable": 3690000.0,
           "Accrued Interest Receivable": 8386000.0,
           "Accounts Receivable": 87300000.0,
@@ -24960,6 +25433,7 @@
           "Work In Process": 13951000.0,
           "Raw Materials": 37660000.0,
           "Receivables": 87188000.0,
+          "Other Receivables": 2598000.0,
           "Taxes Receivable": null,
           "Accrued Interest Receivable": 3979000.0,
           "Accounts Receivable": 80611000.0,
@@ -25045,6 +25519,7 @@
           "Work In Process": null,
           "Raw Materials": null,
           "Receivables": null,
+          "Other Receivables": 2623000.0,
           "Taxes Receivable": null,
           "Accrued Interest Receivable": null,
           "Accounts Receivable": null,
@@ -25369,16 +25844,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 8986040320,
-        "enterprise_value": 8803590144,
+        "market_cap": 9011824640,
+        "enterprise_value": 8829375488,
         "short_ratio": 6.05,
         "short_percent_of_float": 0.10569999,
-        "held_percent_institutions": 0.51008,
+        "held_percent_institutions": 0.51256,
         "held_percent_insiders": 0.37966,
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
-        "trailing_pe": 199.14285,
-        "price_to_book": 13.166026,
+        "trailing_pe": 199.71428,
+        "price_to_book": 13.203805,
         "gross_margins": 0.50969005,
         "profit_margins": 0.09629,
         "revenue_growth": 0.025
@@ -25941,27 +26416,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Camtek Ltd.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "Semiconductor Demand Powered Camtek Ltd.\u2019s (CAMT) Strength",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductor-demand-powered-camtek-ltd-123540875.html",
+          "publisher": "Insider Monkey",
+          "published": "2026-06-19T12:35:40Z"
+        },
+        {
+          "title": "Camtek (CAMT) Is Considered a Good Investment by Brokers: Is That True?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/camtek-camt-considered-good-investment-133006395.html",
+          "publisher": "Zacks",
+          "published": "2026-06-17T13:30:06Z"
+        },
+        {
+          "title": "Camtek (CAMT) Outperforms Broader Market: What You Need to Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/camtek-camt-outperforms-broader-market-220003193.html",
+          "publisher": "Zacks",
+          "published": "2026-06-15T22:00:03Z"
+        },
+        {
+          "title": "ONTO Stock Grows 174% in a Year: Does it Have More Room to Run?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/onto-stock-grows-174-does-140500869.html",
+          "publisher": "Zacks",
+          "published": "2026-06-10T14:05:00Z"
+        },
+        {
+          "title": "Should You Buy, Sell or Hold AMAT Stock After a 167% Rise in a Year?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-amat-stock-142600867.html",
+          "publisher": "Zacks",
+          "published": "2026-06-08T14:26:00Z"
+        },
+        {
+          "title": "Camtek (CAMT) Is Up 8.2% After Securing US$105 Million In AI-Focused Inspection Orders \u2013 Has The Bull Case Changed?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/camtek-camt-8-2-securing-091121157.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-04T09:11:21Z"
+        },
+        {
+          "title": "Why Camtek Stock Surged Nearly 15% Higher on Tuesday",
+          "url": "https://www.fool.com/investing/2026/06/02/why-camtek-stock-surged-nearly-15-higher-on-tuesda/",
+          "publisher": "Motley Fool",
+          "published": "2026-06-03T00:04:39Z"
+        },
+        {
+          "title": "CAMT Rides on Holistic Growth Focus: Should You Bet on the Stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/camt-rides-holistic-growth-focus-160000873.html",
+          "publisher": "Zacks",
+          "published": "2026-05-26T16:00:00Z"
+        },
+        {
+          "title": "Camtek Ltd (CAMT) Q1 2026 Earnings Call Highlights: Strong Start with Record Orders and New ...",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/camtek-ltd-camt-q1-2026-010038109.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-20T01:00:38Z"
+        },
+        {
+          "title": "Wall Street Analysts See Camtek (CAMT) as a Buy: Should You Invest?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-see-camtek-133004491.html",
+          "publisher": "Zacks",
+          "published": "2026-05-15T13:30:04Z"
+        }
+      ]
     }
   },
   "WK": {
     "yfinance": {
       "ticker": "WK",
       "info": {
-        "industry": "Software - Application",
-        "website": "https://www.workiva.com",
-        "marketCap": 2658372864,
-        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
-        "grossProfits": 734961024,
-        "sector": "Technology",
-        "shortName": "Workiva Inc.",
-        "symbol": "WK",
-        "fullTimeEmployees": 2880,
-        "enterpriseValue": 2588466944,
-        "country": "United States",
-        "longName": "Workiva Inc.",
-        "freeCashflow": 154916752,
         "totalRevenue": 925593984,
-        "ebitda": 8243000
+        "grossProfits": 734961024,
+        "industry": "Software - Application",
+        "freeCashflow": 154916752,
+        "shortName": "Workiva Inc.",
+        "enterpriseValue": 2510461184,
+        "marketCap": 2580367104,
+        "ebitda": 8243000,
+        "longName": "Workiva Inc.",
+        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
+        "fullTimeEmployees": 2880,
+        "country": "United States",
+        "website": "https://www.workiva.com",
+        "symbol": "WK",
+        "sector": "Technology"
       },
       "history": [
         {
@@ -26656,8 +27197,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 47.369998931884766,
-          "volume": 16096241.0
+          "close": 45.97999954223633,
+          "volume": 17180040.0
         }
       ],
       "income_statement": [
@@ -27507,16 +28048,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 2658372864,
-        "enterprise_value": 2588466944,
+        "market_cap": 2580367104,
+        "enterprise_value": 2510461184,
         "short_ratio": 3.33,
         "short_percent_of_float": 0.0838,
-        "held_percent_institutions": 0.97727996,
+        "held_percent_institutions": 0.97726995,
         "held_percent_insiders": 0.03898,
         "sector": "Technology",
         "industry": "Software - Application",
-        "trailing_pe": 197.375,
-        "price_to_book": -488.3505,
+        "trailing_pe": 191.58333,
+        "price_to_book": -474.0206,
         "gross_margins": 0.79403996,
         "profit_margins": 0.01534,
         "revenue_growth": 0.199
@@ -27974,27 +28515,93 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Workiva Inc.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "Commvault, Workiva, and 8x8 Stocks Trade Down, What You Need To Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/commvault-workiva-8x8-stocks-trade-020319740.html",
+          "publisher": "StockStory",
+          "published": "2026-06-23T02:03:19Z"
+        },
+        {
+          "title": "1 of Wall Street\u2019s Favorite Stocks with Promising Prospects and 2 We Turn Down",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stocks-143607920.html",
+          "publisher": "StockStory",
+          "published": "2026-06-15T14:36:07Z"
+        },
+        {
+          "title": "Workiva (WK) Holds Resilience Over Market Fears",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/workiva-wk-holds-resilience-over-151048470.html",
+          "publisher": "Insider Monkey",
+          "published": "2026-06-12T15:10:48Z"
+        },
+        {
+          "title": "Zacks Upgrade on Rising Earnings Estimates Might Change The Case For Investing In Workiva (WK)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-upgrade-rising-earnings-estimates-161605174.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-06-11T16:16:05Z"
+        },
+        {
+          "title": "What Makes Workiva (WK) a New Strong Buy Stock",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/makes-workiva-wk-strong-buy-160004862.html",
+          "publisher": "Zacks",
+          "published": "2026-06-10T16:00:04Z"
+        },
+        {
+          "title": "Boost Your Portfolio Returns With These 4 Top-Performing Liquid Stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/boost-portfolio-returns-4-top-124100068.html",
+          "publisher": "Zacks",
+          "published": "2026-06-05T12:41:00Z"
+        },
+        {
+          "title": "1 Small-Cap Stock to Target This Week and 2 Facing Challenges",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/1-small-cap-stock-target-230130322.html",
+          "publisher": "StockStory",
+          "published": "2026-06-04T23:01:30Z"
+        },
+        {
+          "title": "3 Cash-Producing Stocks with Exciting Potential",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-cash-producing-stocks-exciting-145533155.html",
+          "publisher": "StockStory",
+          "published": "2026-06-03T14:55:33Z"
+        },
+        {
+          "title": "Pegasystems, Unity, and Workiva Stocks Trade Up, What You Need To Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pegasystems-unity-workiva-stocks-trade-041651966.html",
+          "publisher": "StockStory",
+          "published": "2026-06-02T04:16:51Z"
+        },
+        {
+          "title": "Assessing Workiva (WK) Valuation After Recent Share Price Weakness",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-workiva-wk-valuation-recent-161050193.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-26T16:10:50Z"
+        }
+      ]
     }
   },
   "EMMA": {
     "yfinance": {
       "ticker": "EMMA",
       "info": {
-        "industry": "Biotechnology",
-        "website": "https://www.emmausmedical.com",
-        "marketCap": 673807,
-        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
-        "grossProfits": null,
-        "sector": "Healthcare",
-        "shortName": "Emmaus Life Sciences, Inc.",
-        "symbol": "EMMA",
-        "fullTimeEmployees": 32,
-        "enterpriseValue": null,
-        "country": "United States",
-        "longName": "Emmaus Life Sciences, Inc.",
-        "freeCashflow": null,
         "totalRevenue": null,
-        "ebitda": null
+        "grossProfits": null,
+        "industry": "Biotechnology",
+        "freeCashflow": null,
+        "shortName": "Emmaus Life Sciences, Inc.",
+        "enterpriseValue": null,
+        "marketCap": 791723,
+        "ebitda": null,
+        "longName": "Emmaus Life Sciences, Inc.",
+        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
+        "fullTimeEmployees": 32,
+        "country": "United States",
+        "website": "https://www.emmausmedical.com",
+        "symbol": "EMMA",
+        "sector": "Healthcare"
       },
       "history": [
         {
@@ -29789,8 +30396,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.009600000455975533,
-          "volume": 1157797.0
+          "close": 0.01128000020980835,
+          "volume": 1283808.0
         }
       ],
       "income_statement": [
@@ -30730,7 +31337,7 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 673807,
+        "market_cap": 791723,
         "enterprise_value": null,
         "short_ratio": 0.48,
         "short_percent_of_float": 0.00090000004,
@@ -30739,7 +31346,7 @@
         "sector": "Healthcare",
         "industry": "Biotechnology",
         "trailing_pe": null,
-        "price_to_book": -0.010596027,
+        "price_to_book": -0.012450331,
         "gross_margins": 0.0,
         "profit_margins": 0.0,
         "revenue_growth": null
@@ -31276,27 +31883,39 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Emmaus Life Sciences, Inc.",
+      "article_count": 1,
+      "articles": [
+        {
+          "title": "Emmaus, NIT sign Endari distribution agreement",
+          "url": "https://www.pharmaceutical-technology.com/news/emmaus-nit-endari-agreement/",
+          "publisher": "Pharmaceutical Technology",
+          "published": "2025-12-31T09:57:16Z"
+        }
+      ]
     }
   },
   "SPCB": {
     "yfinance": {
       "ticker": "SPCB",
       "info": {
-        "industry": "Security & Protection Services",
-        "website": "https://www.supercom.com",
-        "marketCap": 64905976,
-        "longBusinessSummary": "SuperCom Ltd. provides traditional and digital identity, Internet of Things (IoT) and connectivity, and cyber security products and solutions in Africa, Europe, South and center America, the United States, Israel, and Asia Pacific. The company operates in three segments: e-Gov, IoT and Connectivity, and Cyber Security. It offers national ID registries, e-passports, biometric visas, automated fingerprint identification systems, digitized driver's licenses, and electronic voter registration and election management using MAGNA platform. The company also provides PureRF suite, a solution based on RFID tag technology to identify, locate, track, monitor, count, and protect people and objects. Its PureRF suite includes PureRF Tags, Hands-Free Long-Range RFID Asset and Vehicle Tags, PureRF Readers, PureRF Activators, PureRF Initializer, House Arrest Monitoring System, PureTag RF Bracelet, PureCom RF Base Station, GPS Offender Tracking System, PureTrack, PureBeacon, PureMonitor Offender Electronic Monitoring Software, Inmate Monitoring System, DoorGuard, and Personnel Tag, as well as domestic violence victim protection systems and PureProtect smartphone app. In addition, it provides connectivity products and solutions comprising AVIDITY WBSac, BOLSTER WBSn, and BreezeNET B; and cyber security strategic business unit products and solutions, including Safend Encryptor, Safend Protector, Safend Inspector, and Safend Discoverer; and connectivity products, such as solutions for carrier Wi-Fi, enterprise connectivity, smart city, smart hospitality, connected campuses, and connected events. It sells its systems and products through local representatives, subsidiaries, and distribution channels, as well as independent representatives, resellers, and distributors. The company was formerly known as Vuance Ltd. and changed its name to SuperCom Ltd. in January 2013. SuperCom Ltd. was incorporated in 1988 and is based in Tel Aviv-Yafo, Israel.",
-        "grossProfits": 15735000,
-        "sector": "Industrials",
-        "shortName": "SuperCom, Ltd.",
-        "symbol": "SPCB",
-        "fullTimeEmployees": 133,
-        "enterpriseValue": 74907576,
-        "country": "Israel",
-        "longName": "SuperCom Ltd.",
-        "freeCashflow": null,
         "totalRevenue": 28460000,
-        "ebitda": 3626000
+        "grossProfits": 15735000,
+        "industry": "Security & Protection Services",
+        "freeCashflow": null,
+        "shortName": "SuperCom, Ltd.",
+        "enterpriseValue": 70408104,
+        "marketCap": 60400152,
+        "ebitda": 3626000,
+        "longName": "SuperCom Ltd.",
+        "longBusinessSummary": "SuperCom Ltd. provides traditional and digital identity, Internet of Things (IoT) and connectivity, and cyber security products and solutions in Africa, Europe, South and center America, the United States, Israel, and Asia Pacific. The company operates in three segments: e-Gov, IoT and Connectivity, and Cyber Security. It offers national ID registries, e-passports, biometric visas, automated fingerprint identification systems, digitized driver's licenses, and electronic voter registration and election management using MAGNA platform. The company also provides PureRF suite, a solution based on RFID tag technology to identify, locate, track, monitor, count, and protect people and objects. Its PureRF suite includes PureRF Tags, Hands-Free Long-Range RFID Asset and Vehicle Tags, PureRF Readers, PureRF Activators, PureRF Initializer, House Arrest Monitoring System, PureTag RF Bracelet, PureCom RF Base Station, GPS Offender Tracking System, PureTrack, PureBeacon, PureMonitor Offender Electronic Monitoring Software, Inmate Monitoring System, DoorGuard, and Personnel Tag, as well as domestic violence victim protection systems and PureProtect smartphone app. In addition, it provides connectivity products and solutions comprising AVIDITY WBSac, BOLSTER WBSn, and BreezeNET B; and cyber security strategic business unit products and solutions, including Safend Encryptor, Safend Protector, Safend Inspector, and Safend Discoverer; and connectivity products, such as solutions for carrier Wi-Fi, enterprise connectivity, smart city, smart hospitality, connected campuses, and connected events. It sells its systems and products through local representatives, subsidiaries, and distribution channels, as well as independent representatives, resellers, and distributors. The company was formerly known as Vuance Ltd. and changed its name to SuperCom Ltd. in January 2013. SuperCom Ltd. was incorporated in 1988 and is based in Tel Aviv-Yafo, Israel.",
+        "fullTimeEmployees": 133,
+        "country": "Israel",
+        "website": "https://www.supercom.com",
+        "symbol": "SPCB",
+        "sector": "Industrials"
       },
       "history": [
         {
@@ -32581,8 +33200,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 11.739999771118164,
-          "volume": 1302704.0
+          "close": 10.925000190734863,
+          "volume": 1423382.0
         }
       ],
       "income_statement": [
@@ -33537,16 +34156,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 64905976,
-        "enterprise_value": 74907576,
+        "market_cap": 60400152,
+        "enterprise_value": 70408104,
         "short_ratio": 1.01,
         "short_percent_of_float": 0.0178,
         "held_percent_institutions": 0.17076999,
         "held_percent_insiders": 0.13217,
         "sector": "Industrials",
         "industry": "Security & Protection Services",
-        "trailing_pe": 15.864864,
-        "price_to_book": 1.4223408,
+        "trailing_pe": 14.566667,
+        "price_to_book": 1.3236008,
         "gross_margins": 0.55288,
         "profit_margins": 0.0298,
         "revenue_growth": 0.08
@@ -34134,6 +34753,72 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "SuperCom Ltd.",
+      "article_count": 10,
+      "articles": [
+        {
+          "title": "SuperCom Ltd (SPCB) Q1 2026 Earnings Call Highlights: Record Profits and Strategic Growth in U. ...",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/supercom-ltd-spcb-q1-2026-230633845.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-05-14T23:06:33Z"
+        },
+        {
+          "title": "SuperCom Q1 Earnings Call Highlights",
+          "url": "https://www.marketbeat.com/instant-alerts/supercom-q1-earnings-call-highlights-2026-05-14/?utm_source=yahoofinance&utm_medium=yahoofinance",
+          "publisher": "MarketBeat",
+          "published": "2026-05-14T19:05:30Z"
+        },
+        {
+          "title": "Should You Think About Buying SuperCom Ltd. (NASDAQ:SPCB) Now?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/think-buying-supercom-ltd-nasdaq-114038030.html",
+          "publisher": "Simply Wall St.",
+          "published": "2026-05-04T11:40:38Z"
+        },
+        {
+          "title": "SuperCom Ltd (SPCB) Q4 2025 Earnings Call Highlights: Record Growth and Strategic Expansion",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/supercom-ltd-spcb-q4-2025-070717822.html",
+          "publisher": "GuruFocus.com",
+          "published": "2026-04-29T07:07:17Z"
+        },
+        {
+          "title": "SuperCom (SPCB) Q4 2024 Earnings Call Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/04/09/supercom-spcb-q4-2024-earnings-call-transcript/",
+          "publisher": "Motley Fool",
+          "published": "2026-04-09T13:14:25Z"
+        },
+        {
+          "title": "SuperCom wins new electronic monitoring contract in Texas",
+          "url": "https://finance.yahoo.com/news/supercom-wins-electronic-monitoring-contract-140538025.html",
+          "publisher": "TipRanks",
+          "published": "2026-01-10T14:05:38Z"
+        },
+        {
+          "title": "Is There Now An Opportunity In SuperCom Ltd. (NASDAQ:SPCB)?",
+          "url": "https://finance.yahoo.com/news/now-opportunity-supercom-ltd-nasdaq-133926854.html",
+          "publisher": "Simply Wall St.",
+          "published": "2025-11-24T13:39:26Z"
+        },
+        {
+          "title": "SuperCom Ltd (SPCB) Q3 2025 Earnings Call Highlights: Strategic Wins and Profitability Gains ...",
+          "url": "https://finance.yahoo.com/news/supercom-ltd-spcb-q3-2025-210620966.html",
+          "publisher": "GuruFocus.com",
+          "published": "2025-11-13T21:06:20Z"
+        },
+        {
+          "title": "SuperCom Ltd.'s (NASDAQ:SPCB) Stock Is Going Strong: Have Financials A Role To Play?",
+          "url": "https://finance.yahoo.com/news/supercom-ltd-nasdaq-spcb-stock-122907753.html",
+          "publisher": "Simply Wall St.",
+          "published": "2025-10-28T12:29:07Z"
+        },
+        {
+          "title": "Pulling back 11% this week, SuperCom's NASDAQ:SPCB) one-year decline in earnings may be coming into investors focus",
+          "url": "https://finance.yahoo.com/news/pulling-back-11-week-supercoms-183819846.html",
+          "publisher": "Simply Wall St.",
+          "published": "2025-10-03T18:38:19Z"
+        }
+      ]
     }
   }
 }

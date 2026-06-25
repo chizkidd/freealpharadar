@@ -3,21 +3,21 @@
     "yfinance": {
       "ticker": "XNET",
       "info": {
-        "website": "https://www.xunlei.com",
-        "ebitda": 23394750,
-        "symbol": "XNET",
-        "grossProfits": 238176000,
         "industry": "Software - Infrastructure",
-        "fullTimeEmployees": 1306,
-        "marketCap": 311267008,
+        "ebitda": 23394750,
+        "enterpriseValue": 75849392,
+        "website": "https://www.xunlei.com",
         "freeCashflow": null,
-        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
-        "enterpriseValue": 77759000,
         "longName": "Xunlei Limited",
-        "shortName": "Xunlei Limited",
+        "fullTimeEmployees": 1306,
+        "longBusinessSummary": "Xunlei Limited, together with its subsidiaries, operates an internet platform for digital media content in the People's Republic of China. The company's platform is based on cloud technology that enables users to access, store, manage, and consume digital media content. It offers Xunlei Accelerator, which enables users to accelerate digital transmission over the internet; mobile acceleration plug-in, which provides mobile device users with benefits of download speed acceleration and download success rate improvements; and subscription services that offer premium acceleration products through Green Channel and Fast Bird products. The company also provides Mobile Xunlei, a mobile application that allows users to search, download, consume, and store digital media content; and StellarCloud, a distributed cloud computing platform. In addition, the company offers Wefun, an audio live-streaming product that offers users to join various chat rooms based on their favorite topics; and Xunlei Media Player, which supports online and offline play of digital media content, as well as simultaneous play of digital media content while it is being transmitted by Xunlei Accelerator. Further, it provides online games operated through mobile and online game businesses; advertising services; Xunlei Browser that provides video streaming, web browsing, and novel reading; cloud-based implementation for subscription services; cloud computing services; accelerated data transmission services; indexing technology, and distributed file locating system. The company was formerly known as Giganology Limited and changed its name to Xunlei Limited in January 2011. Xunlei Limited was founded in 2003 and is headquartered in Shenzhen, the People's Republic of China.",
         "country": "China",
         "sector": "Technology",
-        "totalRevenue": 494806016
+        "grossProfits": 238176000,
+        "marketCap": 309357408,
+        "totalRevenue": 494806016,
+        "symbol": "XNET",
+        "shortName": "Xunlei Limited"
       },
       "history": [
         {
@@ -742,8 +742,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 4.889999866485596,
-          "volume": 10550794.0
+          "close": 4.860000133514404,
+          "volume": 10875701.0
         }
       ],
       "income_statement": [
@@ -1838,16 +1838,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 311267008,
-        "enterprise_value": 77759000,
+        "market_cap": 309357408,
+        "enterprise_value": 75849392,
         "short_ratio": 6.03,
         "short_percent_of_float": 0.0377,
         "held_percent_institutions": 0.122770004,
         "held_percent_insiders": 0.19653,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 0.3619541,
-        "price_to_book": 0.22377814,
+        "trailing_pe": 0.35973352,
+        "price_to_book": 0.22240528,
         "gross_margins": 0.48134997,
         "profit_margins": 1.7672099,
         "revenue_growth": 0.539
@@ -2371,21 +2371,21 @@
     "yfinance": {
       "ticker": "CGEN",
       "info": {
-        "website": "https://cgen.com",
-        "ebitda": 31176250,
-        "symbol": "CGEN",
-        "grossProfits": 63981000,
         "industry": "Biotechnology",
-        "fullTimeEmployees": 75,
-        "marketCap": 191060976,
+        "ebitda": 31176250,
+        "enterpriseValue": 58044024,
+        "website": "https://cgen.com",
         "freeCashflow": null,
-        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
-        "enterpriseValue": 58989584,
         "longName": "Compugen Ltd.",
-        "shortName": "Compugen Ltd.",
+        "fullTimeEmployees": 75,
+        "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
         "country": "Israel",
         "sector": "Healthcare",
-        "totalRevenue": 72656000
+        "grossProfits": 63981000,
+        "marketCap": 190115120,
+        "totalRevenue": 72656000,
+        "symbol": "CGEN",
+        "shortName": "Compugen Ltd."
       },
       "history": [
         {
@@ -3940,8 +3940,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 2.0199999809265137,
-          "volume": 7507851.0
+          "close": 2.009999990463257,
+          "volume": 7560747.0
         }
       ],
       "income_statement": [
@@ -4756,16 +4756,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 191060976,
-        "enterprise_value": 58989584,
+        "market_cap": 190115120,
+        "enterprise_value": 58044024,
         "short_ratio": 4.55,
         "short_percent_of_float": 0.025899999,
         "held_percent_institutions": 0.15213999,
         "held_percent_insiders": 0.02081,
         "sector": "Healthcare",
         "industry": "Biotechnology",
-        "trailing_pe": 5.3157897,
-        "price_to_book": 2.0039682,
+        "trailing_pe": 5.2894735,
+        "price_to_book": 1.9940475,
         "gross_margins": 0.8806,
         "profit_margins": 0.47973,
         "revenue_growth": -0.047
@@ -5393,21 +5393,21 @@
     "yfinance": {
       "ticker": "ENVX",
       "info": {
-        "website": "https://www.enovix.com",
-        "ebitda": -141855008,
-        "symbol": "ENVX",
-        "grossProfits": 7396000,
         "industry": "Electrical Equipment & Parts",
-        "fullTimeEmployees": 664,
-        "marketCap": 1380911232,
+        "ebitda": -141855008,
+        "enterpriseValue": 1280643328,
+        "website": "https://www.enovix.com",
         "freeCashflow": -72119248,
-        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
-        "enterpriseValue": 1363602560,
         "longName": "Enovix Corporation",
-        "shortName": "Enovix Corporation",
+        "fullTimeEmployees": 664,
+        "longBusinessSummary": "Enovix Corporation designs, develops, and manufactures lithium-ion battery cells in the United States and internationally. It serves wearables and IoT, smartphone, computing, electrical vehicles, and original equipment manufacturers. The company was founded in 2006 and is headquartered in Fremont, California.",
         "country": "United States",
         "sector": "Industrials",
-        "totalRevenue": 34323000
+        "grossProfits": 7396000,
+        "marketCap": 1295831424,
+        "totalRevenue": 34323000,
+        "symbol": "ENVX",
+        "shortName": "Enovix Corporation"
       },
       "history": [
         {
@@ -5737,8 +5737,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 6.329999923706055,
-          "volume": 104372338.0
+          "close": 5.940000057220459,
+          "volume": 111894165.0
         }
       ],
       "income_statement": [
@@ -6653,8 +6653,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1380911232,
-        "enterprise_value": 1363602560,
+        "market_cap": 1295831424,
+        "enterprise_value": 1280643328,
         "short_ratio": 6.48,
         "short_percent_of_float": 0.2606,
         "held_percent_institutions": 0.50855,
@@ -6662,7 +6662,7 @@
         "sector": "Industrials",
         "industry": "Electrical Equipment & Parts",
         "trailing_pe": null,
-        "price_to_book": 5.5820107,
+        "price_to_book": 5.2380958,
         "gross_margins": 0.21548,
         "profit_margins": 0.0,
         "revenue_growth": 0.491
@@ -7036,21 +7036,21 @@
     "yfinance": {
       "ticker": "CGEH",
       "info": {
-        "website": "https://www.capstonegreenenergy.com",
-        "ebitda": 9378000,
-        "symbol": "CGEH",
-        "grossProfits": 35304000,
         "industry": "Specialty Industrial Machinery",
-        "fullTimeEmployees": 100,
-        "marketCap": 317725344,
+        "ebitda": 9378000,
+        "enterpriseValue": 307775776,
+        "website": "https://www.capstonegreenenergy.com",
         "freeCashflow": 7081500,
-        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
-        "enterpriseValue": 331045760,
         "longName": "Capstone Energy+, Inc.",
-        "shortName": "Capstone Energy+, Inc.",
+        "fullTimeEmployees": 100,
+        "longBusinessSummary": "Capstone Energy+, Inc. provides customized microgrid solutions, on-site resilient energy-as-a-service (EaaS) solutions, and on-site energy technology systems. The company's solutions include stationary distributed power generation applications and distribution networks, including cogeneration, integrated combined heat and power, renewable energy, natural resources, and critical power supply, as well as combined cooling, heat, and power. Its inverter-based technologies solve resiliency by connecting to the electric grid or be the backbone of a localized microgrid; energy conversion products include microturbine energy systems offering solutions to a range of customer-tailored solutions; and provides energy rental solutions utilizing microturbine energy systems. The company also provides factory protection plan service contracts, as well as aftermarket spare parts. In addition, it offers customers the ability to run on hydrogen blended fuel source. Capstone Energy+, Inc. was formerly known as Capstone Green Energy Holdings, Inc. and changed its name to Capstone Energy+, Inc. in April 2026. The company was founded in 1988 and is headquartered in Van Nuys, California.",
         "country": "United States",
         "sector": "Industrials",
-        "totalRevenue": 110069000
+        "grossProfits": 35304000,
+        "marketCap": 287174816,
+        "totalRevenue": 110069000,
+        "symbol": "CGEH",
+        "shortName": "Capstone Energy+, Inc."
       },
       "history": [
         {
@@ -7140,8 +7140,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 10.399999618530273,
-          "volume": 3929950.0
+          "close": 9.399999618530273,
+          "volume": 4449597.0
         }
       ],
       "income_statement": [
@@ -7652,8 +7652,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 317725344,
-        "enterprise_value": 331045760,
+        "market_cap": 287174816,
+        "enterprise_value": 307775776,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.19052,
@@ -7661,7 +7661,7 @@
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
         "trailing_pe": null,
-        "price_to_book": -3.8165138,
+        "price_to_book": -3.4495413,
         "gross_margins": 0.32074,
         "profit_margins": 0.01086,
         "revenue_growth": 0.328
@@ -8312,26 +8312,26 @@
     "yfinance": {
       "ticker": "ABXL",
       "info": {
-        "website": null,
-        "ebitda": null,
-        "symbol": "ABXL",
-        "grossProfits": null,
         "industry": null,
-        "fullTimeEmployees": null,
-        "marketCap": null,
-        "freeCashflow": null,
-        "longBusinessSummary": null,
+        "ebitda": null,
         "enterpriseValue": null,
+        "website": null,
+        "freeCashflow": null,
         "longName": null,
-        "shortName": "Abacus Global Management, Inc. ",
+        "fullTimeEmployees": null,
+        "longBusinessSummary": null,
         "country": null,
         "sector": null,
-        "totalRevenue": null
+        "grossProfits": null,
+        "marketCap": null,
+        "totalRevenue": null,
+        "symbol": "ABXL",
+        "shortName": "Abacus Global Management, Inc. "
       },
       "history": [
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 20.361839294433594,
+          "close": 20.361841201782227,
           "volume": 10500.0
         },
         {
@@ -8346,12 +8346,12 @@
         },
         {
           "date": "2024-02-01 00:00:00-05:00",
-          "close": 20.67548370361328,
+          "close": 20.67548179626465,
           "volume": 178200.0
         },
         {
           "date": "2024-03-01 00:00:00-05:00",
-          "close": 20.86531639099121,
+          "close": 20.865314483642578,
           "volume": 114000.0
         },
         {
@@ -8361,7 +8361,7 @@
         },
         {
           "date": "2024-05-01 00:00:00-04:00",
-          "close": 21.079912185668945,
+          "close": 21.079914093017578,
           "volume": 119100.0
         },
         {
@@ -8371,7 +8371,7 @@
         },
         {
           "date": "2024-07-01 00:00:00-04:00",
-          "close": 21.788270950317383,
+          "close": 21.788272857666016,
           "volume": 45600.0
         },
         {
@@ -8381,7 +8381,7 @@
         },
         {
           "date": "2024-09-01 00:00:00-04:00",
-          "close": 23.01262855529785,
+          "close": 23.012630462646484,
           "volume": 72400.0
         },
         {
@@ -8401,7 +8401,7 @@
         },
         {
           "date": "2025-01-01 00:00:00-05:00",
-          "close": 24.197925567626953,
+          "close": 24.197927474975586,
           "volume": 349900.0
         },
         {
@@ -8486,8 +8486,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 25.489999771118164,
-          "volume": 126959.0
+          "close": 25.475000381469727,
+          "volume": 135588.0
         }
       ],
       "income_statement": [],
@@ -8774,21 +8774,21 @@
     "yfinance": {
       "ticker": "TUYA",
       "info": {
-        "website": "https://www.tuya.com",
-        "ebitda": 21525250,
-        "symbol": "TUYA",
-        "grossProfits": 156688000,
         "industry": "Software - Infrastructure",
-        "fullTimeEmployees": 1441,
-        "marketCap": 1128123648,
+        "ebitda": 21525250,
+        "enterpriseValue": 154535120,
+        "website": "https://www.tuya.com",
         "freeCashflow": 21208876,
-        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
-        "enterpriseValue": 191466496,
         "longName": "Tuya Inc.",
-        "shortName": "Tuya Inc.",
+        "fullTimeEmployees": 1441,
+        "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
         "country": "China",
         "sector": "Technology",
-        "totalRevenue": 327985984
+        "grossProfits": 156688000,
+        "marketCap": 1091336960,
+        "totalRevenue": 327985984,
+        "symbol": "TUYA",
+        "shortName": "Tuya Inc."
       },
       "history": [
         {
@@ -8813,7 +8813,7 @@
         },
         {
           "date": "2021-07-01 00:00:00-04:00",
-          "close": 18.265520095825195,
+          "close": 18.265518188476562,
           "volume": 25994600.0
         },
         {
@@ -8828,7 +8828,7 @@
         },
         {
           "date": "2021-10-01 00:00:00-04:00",
-          "close": 5.953751087188721,
+          "close": 5.9537506103515625,
           "volume": 49615100.0
         },
         {
@@ -8853,7 +8853,7 @@
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 2.7196149826049805,
+          "close": 2.7196147441864014,
           "volume": 71354900.0
         },
         {
@@ -8863,12 +8863,12 @@
         },
         {
           "date": "2022-05-01 00:00:00-04:00",
-          "close": 2.3520991802215576,
+          "close": 2.3520989418029785,
           "volume": 36403200.0
         },
         {
           "date": "2022-06-01 00:00:00-04:00",
-          "close": 2.4072265625,
+          "close": 2.407226324081421,
           "volume": 42444800.0
         },
         {
@@ -8883,7 +8883,7 @@
         },
         {
           "date": "2022-09-01 00:00:00-04:00",
-          "close": 0.8544735908508301,
+          "close": 0.8544735312461853,
           "volume": 13956300.0
         },
         {
@@ -8893,7 +8893,7 @@
         },
         {
           "date": "2022-11-01 00:00:00-04:00",
-          "close": 1.0933586359024048,
+          "close": 1.0933585166931152,
           "volume": 13574100.0
         },
         {
@@ -8908,7 +8908,7 @@
         },
         {
           "date": "2023-02-01 00:00:00-05:00",
-          "close": 1.9018927812576294,
+          "close": 1.9018926620483398,
           "volume": 11154200.0
         },
         {
@@ -8918,7 +8918,7 @@
         },
         {
           "date": "2023-04-01 00:00:00-04:00",
-          "close": 1.810013771057129,
+          "close": 1.8100138902664185,
           "volume": 6401400.0
         },
         {
@@ -8958,17 +8958,17 @@
         },
         {
           "date": "2023-12-01 00:00:00-05:00",
-          "close": 2.1132140159606934,
+          "close": 2.1132142543792725,
           "volume": 9562600.0
         },
         {
           "date": "2024-01-01 00:00:00-05:00",
-          "close": 1.681383490562439,
+          "close": 1.6813833713531494,
           "volume": 6732400.0
         },
         {
           "date": "2024-02-01 00:00:00-05:00",
-          "close": 1.810013771057129,
+          "close": 1.8100138902664185,
           "volume": 5682600.0
         },
         {
@@ -9008,7 +9008,7 @@
         },
         {
           "date": "2024-10-01 00:00:00-04:00",
-          "close": 1.4589334726333618,
+          "close": 1.4589335918426514,
           "volume": 19909000.0
         },
         {
@@ -9028,7 +9028,7 @@
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 3.263404369354248,
+          "close": 3.263404130935669,
           "volume": 145496700.0
         },
         {
@@ -9108,8 +9108,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 1.840000033378601,
-          "volume": 26808942.0
+          "close": 1.7799999713897705,
+          "volume": 27801521.0
         }
       ],
       "income_statement": [
@@ -10094,16 +10094,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1128123648,
-        "enterprise_value": 191466496,
+        "market_cap": 1091336960,
+        "enterprise_value": 154535120,
         "short_ratio": 4.41,
         "short_percent_of_float": 0.0123000005,
         "held_percent_institutions": 0.278,
         "held_percent_insiders": 0.17985001,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 18.4,
-        "price_to_book": 1.1260711,
+        "trailing_pe": 17.8,
+        "price_to_book": 1.0893513,
         "gross_margins": 0.47772998,
         "profit_margins": 0.19101,
         "revenue_growth": 0.083
@@ -10378,21 +10378,21 @@
     "yfinance": {
       "ticker": "WKSP",
       "info": {
-        "website": "https://www.worksport.com",
-        "ebitda": -18490900,
-        "symbol": "WKSP",
-        "grossProfits": 4932632,
         "industry": "Auto Parts",
-        "fullTimeEmployees": 116,
-        "marketCap": 11791080,
+        "ebitda": -18490900,
+        "enterpriseValue": 15861889,
+        "website": "https://www.worksport.com",
         "freeCashflow": -14124130,
-        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
-        "enterpriseValue": 13480897,
         "longName": "Worksport Ltd.",
-        "shortName": "Worksport, Ltd.",
+        "fullTimeEmployees": 116,
+        "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
         "country": "United States",
         "sector": "Consumer Cyclical",
-        "totalRevenue": 17174532
+        "grossProfits": 4932632,
+        "marketCap": 14458110,
+        "totalRevenue": 17174532,
+        "symbol": "WKSP",
+        "shortName": "Worksport, Ltd."
       },
       "history": [
         {
@@ -11897,8 +11897,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.8399999737739563,
-          "volume": 280968574.0
+          "close": 1.0299999713897705,
+          "volume": 353531392.0
         }
       ],
       "income_statement": [
@@ -12793,8 +12793,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 11791080,
-        "enterprise_value": 13480897,
+        "market_cap": 14458110,
+        "enterprise_value": 15861889,
         "short_ratio": 1.79,
         "short_percent_of_float": 0.0791,
         "held_percent_institutions": 0.06418,
@@ -12802,7 +12802,7 @@
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
         "trailing_pe": null,
-        "price_to_book": 0.50149256,
+        "price_to_book": 0.6149254,
         "gross_margins": 0.28721002,
         "profit_margins": -1.20646,
         "revenue_growth": 0.479
@@ -13448,21 +13448,21 @@
     "yfinance": {
       "ticker": "LEAT",
       "info": {
-        "website": "https://www.int.leatt.com/",
-        "ebitda": 6646879,
-        "symbol": "LEAT",
-        "grossProfits": 29075358,
         "industry": "Leisure",
-        "fullTimeEmployees": 88,
-        "marketCap": 75295320,
+        "ebitda": 6646879,
+        "enterpriseValue": 58900436,
+        "website": "https://www.int.leatt.com/",
         "freeCashflow": 3162047,
-        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
-        "enterpriseValue": 59087428,
         "longName": "Leatt Corporation",
-        "shortName": "Leatt Corp.",
+        "fullTimeEmployees": 88,
+        "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
         "country": "South Africa",
         "sector": "Consumer Cyclical",
-        "totalRevenue": 66047536
+        "grossProfits": 29075358,
+        "marketCap": 75108328,
+        "totalRevenue": 66047536,
+        "symbol": "LEAT",
+        "shortName": "Leatt Corp."
       },
       "history": [
         {
@@ -14612,7 +14612,7 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 12.079999923706055,
+          "close": 12.050000190734863,
           "volume": 44300.0
         }
       ],
@@ -15573,16 +15573,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 75295320,
-        "enterprise_value": 59087428,
+        "market_cap": 75108328,
+        "enterprise_value": 58900436,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.048060004,
         "held_percent_insiders": 0.4463,
         "sector": "Consumer Cyclical",
         "industry": "Leisure",
-        "trailing_pe": 19.803278,
-        "price_to_book": 1.7112905,
+        "trailing_pe": 19.754099,
+        "price_to_book": 1.7070407,
         "gross_margins": 0.44022,
         "profit_margins": 0.05925,
         "revenue_growth": 0.269
@@ -16154,21 +16154,21 @@
     "yfinance": {
       "ticker": "CLPS",
       "info": {
-        "website": "https://www.clpsglobal.com",
-        "ebitda": -2580648,
-        "symbol": "CLPS",
-        "grossProfits": 36698684,
         "industry": "Information Technology Services",
-        "fullTimeEmployees": 3534,
-        "marketCap": 28949556,
+        "ebitda": -2580648,
+        "enterpriseValue": 30183360,
+        "website": "https://www.clpsglobal.com",
         "freeCashflow": null,
-        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
-        "enterpriseValue": 30783182,
         "longName": "CLPS Incorporation",
-        "shortName": "CLPS Incorporation",
+        "fullTimeEmployees": 3534,
+        "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, provides information technology services and solutions in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and decision engines, quantitative investment, mobile cloud testing, unified operation and maintenance platforms, and enterprise digital management. In addition, the company provides e-commerce platform; e-commerce solutions, such as planning, design, development, and customer service through digital marketing platforms; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of fixed tuition fees for formal educational, recruitment and headhunting, and fee-for-service training services; IT-related courses such as DevOps, ChatGPT, Python, SAFe Scrum Master, and more; software development and sale; and operates CLPS virtual banking platform, a training platform for IT talents. It serves the banking, wealth management, e-commerce, automotive, and technology industries. CLPS Incorporation has an collaboration with The Bank of East Asia, Limited to conduct a Proof-of-Concept of Nibot, an advanced AI agent that integrates robotic process automation and generative artificial intelligence. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
         "country": "Hong Kong",
         "sector": "Technology",
-        "totalRevenue": 166788912
+        "grossProfits": 36698684,
+        "marketCap": 28051318,
+        "totalRevenue": 166788912,
+        "symbol": "CLPS",
+        "shortName": "CLPS Incorporation"
       },
       "history": [
         {
@@ -16658,8 +16658,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 0.9700999855995178,
-          "volume": 829053.0
+          "close": 0.9399999976158142,
+          "volume": 926669.0
         }
       ],
       "income_statement": [
@@ -17449,8 +17449,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 28949556,
-        "enterprise_value": 30783182,
+        "market_cap": 28051318,
+        "enterprise_value": 30183360,
         "short_ratio": 0.38,
         "short_percent_of_float": 0.0005,
         "held_percent_institutions": 0.00113,
@@ -17458,7 +17458,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.5003094,
+        "price_to_book": 0.48478597,
         "gross_margins": 0.22003001,
         "profit_margins": -0.03943,
         "revenue_growth": 0.028
@@ -17772,21 +17772,21 @@
     "yfinance": {
       "ticker": "AIOS",
       "info": {
-        "website": "https://ir.aiosinc.com",
-        "ebitda": 3091202,
-        "symbol": "AIOS",
-        "grossProfits": 3646386,
         "industry": "Information Technology Services",
-        "fullTimeEmployees": 20,
-        "marketCap": 46202400,
+        "ebitda": 3091202,
+        "enterpriseValue": 38877160,
+        "website": "https://ir.aiosinc.com",
         "freeCashflow": 186623328,
-        "longBusinessSummary": "AIOS Tech Inc. operates as an artificial intelligence and technology-driven professional service provider in Hong Kong. It offers information technology solutions, data services, and artificial intelligence-powered offerings to commercial client base. Its core businesses include digital transformation services, tailored IT solutions for the financial sector, enterprise data solutions, and the development of AI platforms and infrastructure to drive efficiency and growth for clients across multiple industries. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is based in Kowloon, Hong Kong.",
-        "enterpriseValue": 44920772,
         "longName": "AIOS Tech Inc.",
-        "shortName": "AIOS Tech Inc.",
+        "fullTimeEmployees": 20,
+        "longBusinessSummary": "AIOS Tech Inc. operates as an artificial intelligence and technology-driven professional service provider in Hong Kong. It offers information technology solutions, data services, and artificial intelligence-powered offerings to commercial client base. Its core businesses include digital transformation services, tailored IT solutions for the financial sector, enterprise data solutions, and the development of AI platforms and infrastructure to drive efficiency and growth for clients across multiple industries. The company was formerly known as Nisun International Enterprise Development Group Co., Ltd and changed its name to AIOS Tech Inc. in February 2026. The company was founded in 2005 and is based in Kowloon, Hong Kong.",
         "country": "Hong Kong",
         "sector": "Technology",
-        "totalRevenue": 5067754
+        "grossProfits": 3646386,
+        "marketCap": 40176000,
+        "totalRevenue": 5067754,
+        "symbol": "AIOS",
+        "shortName": "AIOS Tech Inc."
       },
       "history": [
         {
@@ -18361,8 +18361,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 14.260000228881836,
-          "volume": 1238074.0
+          "close": 12.399999618530273,
+          "volume": 1369358.0
         }
       ],
       "income_statement": [
@@ -19302,8 +19302,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 46202400,
-        "enterprise_value": 44920772,
+        "market_cap": 40176000,
+        "enterprise_value": 38877160,
         "short_ratio": 0.03,
         "short_percent_of_float": 0.008,
         "held_percent_institutions": 0.00184,
@@ -19311,7 +19311,7 @@
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.7300466,
+        "price_to_book": 0.6348231,
         "gross_margins": 0.71953005,
         "profit_margins": 0.0,
         "revenue_growth": null
@@ -19695,21 +19695,21 @@
     "yfinance": {
       "ticker": "NSYS",
       "info": {
-        "website": "https://www.nortechsys.com",
-        "ebitda": 3879000,
-        "symbol": "NSYS",
-        "grossProfits": 19630000,
         "industry": "Medical Devices",
-        "fullTimeEmployees": 685,
-        "marketCap": 46948168,
+        "ebitda": 3879000,
+        "enterpriseValue": 61381780,
+        "website": "https://www.nortechsys.com",
         "freeCashflow": 3709125,
-        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
-        "enterpriseValue": 63226172,
         "longName": "Nortech Systems Incorporated",
-        "shortName": "Nortech Systems Incorporated",
+        "fullTimeEmployees": 685,
+        "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
         "country": "United States",
         "sector": "Healthcare",
-        "totalRevenue": 121786000
+        "grossProfits": 19630000,
+        "marketCap": 45103776,
+        "totalRevenue": 121786000,
+        "symbol": "NSYS",
+        "shortName": "Nortech Systems Incorporated"
       },
       "history": [
         {
@@ -21694,8 +21694,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 16.799999237060547,
-          "volume": 463232.0
+          "close": 16.139999389648438,
+          "volume": 512995.0
         }
       ],
       "income_statement": [
@@ -22605,16 +22605,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 46948168,
-        "enterprise_value": 63226172,
+        "market_cap": 45103776,
+        "enterprise_value": 61381780,
         "short_ratio": 0.57,
         "short_percent_of_float": 0.0125,
         "held_percent_institutions": 0.03516,
         "held_percent_insiders": 0.65388,
         "sector": "Healthcare",
         "industry": "Medical Devices",
-        "trailing_pe": 44.210526,
-        "price_to_book": 1.3583441,
+        "trailing_pe": 42.473682,
+        "price_to_book": 1.3049805,
         "gross_margins": 0.16118,
         "profit_margins": 0.00846,
         "revenue_growth": 0.127
@@ -23254,21 +23254,21 @@
     "yfinance": {
       "ticker": "CAMT",
       "info": {
-        "website": "https://www.camtek.com",
-        "ebitda": 138529248,
-        "symbol": "CAMT",
-        "grossProfits": 254384992,
         "industry": "Semiconductor Equipment & Materials",
-        "fullTimeEmployees": 709,
-        "marketCap": 7799473664,
+        "ebitda": 138529248,
+        "enterpriseValue": 7502373376,
+        "website": "https://www.camtek.com",
         "freeCashflow": null,
-        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
-        "enterpriseValue": 7617024000,
         "longName": "Camtek Ltd.",
-        "shortName": "Camtek Ltd.",
+        "fullTimeEmployees": 709,
+        "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
         "country": "Israel",
         "sector": "Technology",
-        "totalRevenue": 499092992
+        "grossProfits": 254384992,
+        "marketCap": 7684822528,
+        "totalRevenue": 499092992,
+        "symbol": "CAMT",
+        "shortName": "Camtek Ltd."
       },
       "history": [
         {
@@ -24828,8 +24828,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 169.38999938964844,
-          "volume": 8679164.0
+          "close": 166.89999389648438,
+          "volume": 9242812.0
         }
       ],
       "income_statement": [
@@ -25834,16 +25834,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 7799473664,
-        "enterprise_value": 7617024000,
+        "market_cap": 7684822528,
+        "enterprise_value": 7502373376,
         "short_ratio": 6.05,
         "short_percent_of_float": 0.10569999,
         "held_percent_institutions": 0.51256,
         "held_percent_insiders": 0.37966,
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
-        "trailing_pe": 174.62886,
-        "price_to_book": 11.427511,
+        "trailing_pe": 172.06184,
+        "price_to_book": 11.259529,
         "gross_margins": 0.50969005,
         "profit_margins": 0.09629,
         "revenue_growth": 0.025
@@ -26478,21 +26478,21 @@
     "yfinance": {
       "ticker": "WK",
       "info": {
-        "website": "https://www.workiva.com",
-        "ebitda": 8243000,
-        "symbol": "WK",
-        "grossProfits": 734961024,
         "industry": "Software - Application",
-        "fullTimeEmployees": 2880,
-        "marketCap": 2636486400,
+        "ebitda": 8243000,
+        "enterpriseValue": 2614281728,
+        "website": "https://www.workiva.com",
         "freeCashflow": 154916752,
-        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
-        "enterpriseValue": 2566580480,
         "longName": "Workiva Inc.",
-        "shortName": "Workiva Inc.",
+        "fullTimeEmployees": 2880,
+        "longBusinessSummary": "Workiva Inc., together with its subsidiaries, provides cloud-based reporting solutions in the United States and internationally. The company provides Workiva platform, a multi-tenant cloud software that provides data-linking capabilities; audit trail services; administrators access management; and connects and transforms data from various enterprise resource planning, human capital management, and customer relationship management systems, as well as other third-party cloud and on-premise applications. It serves public and private companies, government agencies, and higher-education institutions. Workiva Inc. was founded in 2008 and is headquartered in Ames, Iowa.",
         "country": "United States",
         "sector": "Technology",
-        "totalRevenue": 925593984
+        "grossProfits": 734961024,
+        "marketCap": 2684187904,
+        "totalRevenue": 925593984,
+        "symbol": "WK",
+        "shortName": "Workiva Inc."
       },
       "history": [
         {
@@ -27187,8 +27187,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 46.97999954223633,
-          "volume": 18024896.0
+          "close": 47.83000183105469,
+          "volume": 18985077.0
         }
       ],
       "income_statement": [
@@ -28038,16 +28038,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 2636486400,
-        "enterprise_value": 2566580480,
+        "market_cap": 2684187904,
+        "enterprise_value": 2614281728,
         "short_ratio": 3.33,
         "short_percent_of_float": 0.0838,
-        "held_percent_institutions": 0.97726995,
+        "held_percent_institutions": 0.97731,
         "held_percent_insiders": 0.03898,
         "sector": "Technology",
         "industry": "Software - Application",
-        "trailing_pe": 195.75,
-        "price_to_book": -484.32986,
+        "trailing_pe": 199.29167,
+        "price_to_book": -493.09277,
         "gross_margins": 0.79403996,
         "profit_margins": 0.01534,
         "revenue_growth": 0.199
@@ -28577,21 +28577,21 @@
     "yfinance": {
       "ticker": "EMMA",
       "info": {
-        "website": "https://www.emmausmedical.com",
-        "ebitda": null,
-        "symbol": "EMMA",
-        "grossProfits": null,
         "industry": "Biotechnology",
-        "fullTimeEmployees": 32,
-        "marketCap": 842259,
-        "freeCashflow": null,
-        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
+        "ebitda": null,
         "enterpriseValue": null,
+        "website": "https://www.emmausmedical.com",
+        "freeCashflow": null,
         "longName": "Emmaus Life Sciences, Inc.",
-        "shortName": "Emmaus Life Sciences, Inc.",
+        "fullTimeEmployees": 32,
+        "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
         "country": "United States",
         "sector": "Healthcare",
-        "totalRevenue": null
+        "grossProfits": null,
+        "marketCap": 842259,
+        "totalRevenue": null,
+        "symbol": "EMMA",
+        "shortName": "Emmaus Life Sciences, Inc."
       },
       "history": [
         {
@@ -31891,21 +31891,21 @@
     "yfinance": {
       "ticker": "SPCB",
       "info": {
-        "website": "https://www.supercom.com",
-        "ebitda": 3626000,
-        "symbol": "SPCB",
-        "grossProfits": 15735000,
         "industry": "Security & Protection Services",
-        "fullTimeEmployees": 133,
-        "marketCap": 60096076,
+        "ebitda": 3626000,
+        "enterpriseValue": 69221120,
+        "website": "https://www.supercom.com",
         "freeCashflow": null,
-        "longBusinessSummary": "SuperCom Ltd. provides traditional and digital identity, Internet of Things (IoT) and connectivity, and cyber security products and solutions in Africa, Europe, South and center America, the United States, Israel, and Asia Pacific. The company operates in three segments: e-Gov, IoT and Connectivity, and Cyber Security. It offers national ID registries, e-passports, biometric visas, automated fingerprint identification systems, digitized driver's licenses, and electronic voter registration and election management using MAGNA platform. The company also provides PureRF suite, a solution based on RFID tag technology to identify, locate, track, monitor, count, and protect people and objects. Its PureRF suite includes PureRF Tags, Hands-Free Long-Range RFID Asset and Vehicle Tags, PureRF Readers, PureRF Activators, PureRF Initializer, House Arrest Monitoring System, PureTag RF Bracelet, PureCom RF Base Station, GPS Offender Tracking System, PureTrack, PureBeacon, PureMonitor Offender Electronic Monitoring Software, Inmate Monitoring System, DoorGuard, and Personnel Tag, as well as domestic violence victim protection systems and PureProtect smartphone app. In addition, it provides connectivity products and solutions comprising AVIDITY WBSac, BOLSTER WBSn, and BreezeNET B; and cyber security strategic business unit products and solutions, including Safend Encryptor, Safend Protector, Safend Inspector, and Safend Discoverer; and connectivity products, such as solutions for carrier Wi-Fi, enterprise connectivity, smart city, smart hospitality, connected campuses, and connected events. It sells its systems and products through local representatives, subsidiaries, and distribution channels, as well as independent representatives, resellers, and distributors. The company was formerly known as Vuance Ltd. and changed its name to SuperCom Ltd. in January 2013. SuperCom Ltd. was incorporated in 1988 and is based in Tel Aviv-Yafo, Israel.",
-        "enterpriseValue": 70104456,
         "longName": "SuperCom Ltd.",
-        "shortName": "SuperCom, Ltd.",
+        "fullTimeEmployees": 133,
+        "longBusinessSummary": "SuperCom Ltd. provides traditional and digital identity, Internet of Things (IoT) and connectivity, and cyber security products and solutions in Africa, Europe, South and center America, the United States, Israel, and Asia Pacific. The company operates in three segments: e-Gov, IoT and Connectivity, and Cyber Security. It offers national ID registries, e-passports, biometric visas, automated fingerprint identification systems, digitized driver's licenses, and electronic voter registration and election management using MAGNA platform. The company also provides PureRF suite, a solution based on RFID tag technology to identify, locate, track, monitor, count, and protect people and objects. Its PureRF suite includes PureRF Tags, Hands-Free Long-Range RFID Asset and Vehicle Tags, PureRF Readers, PureRF Activators, PureRF Initializer, House Arrest Monitoring System, PureTag RF Bracelet, PureCom RF Base Station, GPS Offender Tracking System, PureTrack, PureBeacon, PureMonitor Offender Electronic Monitoring Software, Inmate Monitoring System, DoorGuard, and Personnel Tag, as well as domestic violence victim protection systems and PureProtect smartphone app. In addition, it provides connectivity products and solutions comprising AVIDITY WBSac, BOLSTER WBSn, and BreezeNET B; and cyber security strategic business unit products and solutions, including Safend Encryptor, Safend Protector, Safend Inspector, and Safend Discoverer; and connectivity products, such as solutions for carrier Wi-Fi, enterprise connectivity, smart city, smart hospitality, connected campuses, and connected events. It sells its systems and products through local representatives, subsidiaries, and distribution channels, as well as independent representatives, resellers, and distributors. The company was formerly known as Vuance Ltd. and changed its name to SuperCom Ltd. in January 2013. SuperCom Ltd. was incorporated in 1988 and is based in Tel Aviv-Yafo, Israel.",
         "country": "Israel",
         "sector": "Industrials",
-        "totalRevenue": 28460000
+        "grossProfits": 15735000,
+        "marketCap": 59211500,
+        "totalRevenue": 28460000,
+        "symbol": "SPCB",
+        "shortName": "SuperCom, Ltd."
       },
       "history": [
         {
@@ -33190,8 +33190,8 @@
         },
         {
           "date": "2026-06-01 00:00:00-04:00",
-          "close": 10.869999885559082,
-          "volume": 1454187.0
+          "close": 10.710000038146973,
+          "volume": 1485992.0
         }
       ],
       "income_statement": [
@@ -34146,16 +34146,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 60096076,
-        "enterprise_value": 70104456,
+        "market_cap": 59211500,
+        "enterprise_value": 69221120,
         "short_ratio": 1.01,
         "short_percent_of_float": 0.0178,
         "held_percent_institutions": 0.17076999,
         "held_percent_insiders": 0.13217,
         "sector": "Industrials",
         "industry": "Security & Protection Services",
-        "trailing_pe": 14.493333,
-        "price_to_book": 1.3169373,
+        "trailing_pe": 14.28,
+        "price_to_book": 1.2975527,
         "gross_margins": 0.55288,
         "profit_margins": 0.0298,
         "revenue_growth": 0.08

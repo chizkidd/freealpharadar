@@ -3,21 +3,21 @@
     "yfinance": {
       "ticker": "ABAT",
       "info": {
-        "marketCap": 205483072,
-        "industry": "Waste Management",
-        "shortName": "American Battery Technology Com",
-        "sector": "Industrials",
-        "enterpriseValue": 161685776,
-        "longName": "American Battery Technology Company",
         "freeCashflow": 2538259,
-        "fullTimeEmployees": 191,
-        "totalRevenue": 21741726,
-        "grossProfits": -3089240,
+        "longName": "American Battery Technology Company",
         "website": "https://americanbatterytechnology.com",
-        "country": "United States",
-        "ebitda": -69701864,
+        "fullTimeEmployees": 191,
+        "sector": "Industrials",
+        "grossProfits": -3089240,
+        "totalRevenue": 21741726,
         "longBusinessSummary": "American Battery Technology Company operates as a battery materials company in the United States. It explores critical minerals, such as lithium, nickel, cobalt, manganese, copper, aluminum, and graphite. The company also involved in the the development and commercialization of new technologies for the extraction of these critical minerals; and commercialization of an internally developed integrated process for the recycling of lithium-ion batteries. The company was formerly known as American Battery Metals Corporation and changed its name to American Battery Technology Company in August 2021. American Battery Technology Company was incorporated in 2011 and is headquartered in Reno, Nevada.",
-        "symbol": "ABAT"
+        "enterpriseValue": 157408432,
+        "country": "United States",
+        "symbol": "ABAT",
+        "marketCap": 206737760,
+        "ebitda": -69701864,
+        "shortName": "American Battery Technology Com",
+        "industry": "Waste Management"
       },
       "history": [
         {
@@ -662,8 +662,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 1.4412000179290771,
-          "volume": 53920688.0
+          "close": 1.4500000476837158,
+          "volume": 56064158.0
         }
       ],
       "income_statement": [
@@ -1543,16 +1543,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 205483072,
-        "enterprise_value": 161685776,
+        "market_cap": 206737760,
+        "enterprise_value": 157408432,
         "short_ratio": 6.82,
         "short_percent_of_float": 0.16389999,
-        "held_percent_institutions": 0.36946,
+        "held_percent_institutions": 0.36958,
         "held_percent_insiders": 0.0809,
         "sector": "Industrials",
         "industry": "Waste Management",
         "trailing_pe": null,
-        "price_to_book": 1.6138858,
+        "price_to_book": 1.6237402,
         "gross_margins": -0.14209,
         "profit_margins": 0.0,
         "revenue_growth": 1.966
@@ -1979,27 +1979,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 6
       }
+    },
+    "news": {
+      "company_name": "American Battery Technology Company",
+      "article_count": 0,
+      "articles": []
     }
   },
   "EMMA": {
     "yfinance": {
       "ticker": "EMMA",
       "info": {
-        "marketCap": 4098994,
-        "industry": "Biotechnology",
-        "shortName": "Emmaus Life Sciences, Inc.",
-        "sector": "Healthcare",
-        "enterpriseValue": 31806994,
-        "longName": "Emmaus Life Sciences, Inc.",
         "freeCashflow": 5131875,
-        "fullTimeEmployees": 32,
-        "totalRevenue": 15530000,
-        "grossProfits": 14536000,
+        "longName": "Emmaus Life Sciences, Inc.",
         "website": "https://www.emmausmedical.com",
-        "country": "United States",
-        "ebitda": 4608000,
+        "fullTimeEmployees": 32,
+        "sector": "Healthcare",
+        "grossProfits": 14536000,
+        "totalRevenue": 15530000,
         "longBusinessSummary": "Emmaus Life Sciences, Inc., a commercial-stage biopharmaceutical company, discovers, develops, markets, and sells treatments and therapies primarily for rare and orphan diseases in the United States and internationally. The company's lead candidate is Endari, an L-glutamine oral powder to reduce the acute complications of sickle cell disease (SCD) in adult and pediatric patients five years of age and older. It has a license agreement with Kainos Medicine, Inc., which includes the patent rights of IRAK4 inhibitor, referred to as KM10544, for the treatment of cancers, such as leukemia, lymphoma, and solid tumor cancers. Emmaus Life Sciences, Inc. was founded in 2000 and is headquartered in Torrance, California.",
-        "symbol": "EMMA"
+        "enterpriseValue": 31217414,
+        "country": "United States",
+        "symbol": "EMMA",
+        "marketCap": 4098994,
+        "ebitda": 4608000,
+        "shortName": "Emmaus Life Sciences, Inc.",
+        "industry": "Biotechnology"
       },
       "history": [
         {
@@ -3815,7 +3820,7 @@
         {
           "date": "2026-10-01 00:00:00-04:00",
           "close": 0.058400001376867294,
-          "volume": 162010.0
+          "volume": 151310.0
         }
       ],
       "income_statement": [
@@ -4756,7 +4761,7 @@
       ],
       "key_metrics": {
         "market_cap": 4098994,
-        "enterprise_value": 31806994,
+        "enterprise_value": 31217414,
         "short_ratio": 0.21,
         "short_percent_of_float": 0.00059999997,
         "held_percent_institutions": 0.0,
@@ -5301,27 +5306,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Emmaus Life Sciences, Inc.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "CGEN": {
     "yfinance": {
       "ticker": "CGEN",
       "info": {
-        "marketCap": 187080192,
-        "industry": "Biotechnology",
-        "shortName": "Compugen Ltd.",
-        "sector": "Healthcare",
-        "enterpriseValue": 63382328,
-        "longName": "Compugen Ltd.",
         "freeCashflow": 22217000,
-        "fullTimeEmployees": 75,
-        "totalRevenue": 74001000,
-        "grossProfits": 64297000,
+        "longName": "Compugen Ltd.",
         "website": "https://cgen.com",
-        "country": "Israel",
-        "ebitda": 30676000,
+        "fullTimeEmployees": 75,
+        "sector": "Healthcare",
+        "grossProfits": 64297000,
+        "totalRevenue": 74001000,
         "longBusinessSummary": "Compugen Ltd., a clinical-stage therapeutic discovery and development company, engages in the research, development, and commercialization of therapeutics and product candidates in Israel, the United States, and Europe. The company's pipeline consists of COM701, an immuno-oncology pipeline program with an anti-PVRIG antibody; COM902, a therapeutic anti-TIGIT antibody, are in Phase 1 clinical trials and have been evaluated for the treatment of solid tumors as a monotherapy and in combination of PVRIG/PD-1 and PVRIG/TIGIT, as well as PVRIG/PD-1/TIGIT blockade; Bapotulimab, a therapeutic antibody targeting ILDR2 that is evaluated in Phase I clinical trials in patients with na\u00efve head and neck squamous cell carcinoma; and Rilvegostomig, a novel anti- PD-1/TIGIT bispecific antibody, which is in Phase III clinical study in patients with advanced or metastatic non-small cell lung cancer. Its preclinical therapeutic pipeline also includes early-stage immuno-oncology programs focused to address various mechanisms of immune resistance; and COM503, high affinity antibody, which blocks the interaction between IL-18 binding protein and IL-18. The company has collaboration agreement with Bristol-Myers Squibb to evaluate the safety and tolerability of COM701 in combination with Bristol-Myers Squibb's PD-1 immune checkpoint inhibitor Opdivo in patients with advanced solid tumors. It has license agreement with AstraZeneca for the development of bi-specific and multi-specific immuno-oncology antibody products; and Gilead Sciences, Inc. for the research, development, manufacturing, and commercialization of COM503 and other products. The company was incorporated in 1993 and is headquartered in Holon, Israel.",
-        "symbol": "CGEN"
+        "enterpriseValue": 64329568,
+        "country": "Israel",
+        "symbol": "CGEN",
+        "marketCap": 186606560,
+        "ebitda": 30676000,
+        "shortName": "Compugen Ltd.",
+        "industry": "Biotechnology"
       },
       "history": [
         {
@@ -6896,8 +6906,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 1.975000023841858,
-          "volume": 2420338.0
+          "close": 1.9700000286102295,
+          "volume": 2536050.0
         }
       ],
       "income_statement": [
@@ -7712,16 +7722,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 187080192,
-        "enterprise_value": 63382328,
+        "market_cap": 186606560,
+        "enterprise_value": 64329568,
         "short_ratio": 13.67,
         "short_percent_of_float": 0.0249,
         "held_percent_institutions": 0.15172,
-        "held_percent_insiders": 0.0037599998,
+        "held_percent_insiders": 0.0039399997,
         "sector": "Healthcare",
         "industry": "Biotechnology",
-        "trailing_pe": 5.1973686,
-        "price_to_book": 2.107791,
+        "trailing_pe": 5.184211,
+        "price_to_book": 2.1024547,
         "gross_margins": 0.86887,
         "profit_margins": 0.47555,
         "revenue_growth": 1.07
@@ -8316,37 +8326,42 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Compugen Ltd.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "ABXL": {
     "yfinance": {
       "ticker": "ABXL",
       "info": {
-        "marketCap": null,
-        "industry": null,
-        "shortName": "Abacus Global Management, Inc. ",
-        "sector": null,
-        "enterpriseValue": null,
-        "longName": null,
         "freeCashflow": null,
-        "fullTimeEmployees": null,
-        "totalRevenue": null,
-        "grossProfits": null,
+        "longName": null,
         "website": null,
-        "country": null,
-        "ebitda": null,
+        "fullTimeEmployees": null,
+        "sector": null,
+        "grossProfits": null,
+        "totalRevenue": null,
         "longBusinessSummary": null,
-        "symbol": "ABXL"
+        "enterpriseValue": null,
+        "country": null,
+        "symbol": "ABXL",
+        "marketCap": null,
+        "ebitda": null,
+        "shortName": "Abacus Global Management, Inc. ",
+        "industry": null
       },
       "history": [
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 19.880123138427734,
+          "close": 19.88011932373047,
           "volume": 10500.0
         },
         {
           "date": "2023-12-01 00:00:00-05:00",
-          "close": 20.35556983947754,
+          "close": 20.355567932128906,
           "volume": 73000.0
         },
         {
@@ -8356,12 +8371,12 @@
         },
         {
           "date": "2024-02-01 00:00:00-05:00",
-          "close": 20.186342239379883,
+          "close": 20.18634033203125,
           "volume": 178200.0
         },
         {
           "date": "2024-03-01 00:00:00-05:00",
-          "close": 20.371686935424805,
+          "close": 20.371685028076172,
           "volume": 114000.0
         },
         {
@@ -8371,7 +8386,7 @@
         },
         {
           "date": "2024-05-01 00:00:00-04:00",
-          "close": 21.09112548828125,
+          "close": 21.091127395629883,
           "volume": 119100.0
         },
         {
@@ -8416,12 +8431,12 @@
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 23.31527328491211,
+          "close": 23.315271377563477,
           "volume": 72200.0
         },
         {
           "date": "2025-03-01 00:00:00-05:00",
-          "close": 21.641040802001953,
+          "close": 21.641036987304688,
           "volume": 836500.0
         },
         {
@@ -8441,7 +8456,7 @@
         },
         {
           "date": "2025-07-01 00:00:00-04:00",
-          "close": 22.65333366394043,
+          "close": 22.653331756591797,
           "volume": 181400.0
         },
         {
@@ -8516,8 +8531,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 25.23740005493164,
-          "volume": 168804.0
+          "close": 25.249900817871094,
+          "volume": 182425.0
         }
       ],
       "income_statement": [],
@@ -8793,27 +8808,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Abacus Global Management, Inc. ",
+      "article_count": 0,
+      "articles": []
     }
   },
   "WKSP": {
     "yfinance": {
       "ticker": "WKSP",
       "info": {
-        "marketCap": 6967795,
-        "industry": "Auto Parts",
-        "shortName": "Worksport, Ltd.",
-        "sector": "Consumer Cyclical",
-        "enterpriseValue": 9594752,
-        "longName": "Worksport Ltd.",
         "freeCashflow": -15357457,
-        "fullTimeEmployees": 116,
-        "totalRevenue": 18299236,
-        "grossProfits": 5500457,
+        "longName": "Worksport Ltd.",
         "website": "https://www.worksport.com",
-        "country": "United States",
-        "ebitda": -18715964,
+        "fullTimeEmployees": 116,
+        "sector": "Consumer Cyclical",
+        "grossProfits": 5500457,
+        "totalRevenue": 18299236,
         "longBusinessSummary": "Worksport Ltd., together with its subsidiary, designs and distributes truck tonneau covers in the United States and internationally. It operates through Hard Tonneau Covers and Soft Tonneau Covers segments. The company offers soft tonneau covers, such as vinyl wrapped tri- and quad-fold tonneau covers; and hard tonneau covers, including tri- and quad-fold aluminum covers. It also provides SOLIS, a solar-integrated tonneau cover designed to combine cargo protection with on-vehicle renewable power generation; COR, a portable energy storage system designed to store and deliver electrical power for mobile, off-grid, and backup power applications; and the AetherLux Pro designed as a combined cooling, heating, and power (CCHP) system that redefines energy efficiency in cold climates. The company serves its products to automotive accessories, consumer electronics, and residential and commercial HVAC system markets. Worksport Ltd. is based in West Seneca, New York.",
-        "symbol": "WKSP"
+        "enterpriseValue": 9371397,
+        "country": "United States",
+        "symbol": "WKSP",
+        "marketCap": 6769857,
+        "ebitda": -18715964,
+        "shortName": "Worksport, Ltd.",
+        "industry": "Auto Parts"
       },
       "history": [
         {
@@ -10338,8 +10358,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 0.34850001335144043,
-          "volume": 2971264.0
+          "close": 0.3386000096797943,
+          "volume": 3254830.0
         }
       ],
       "income_statement": [
@@ -11234,8 +11254,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 6967795,
-        "enterprise_value": 9594752,
+        "market_cap": 6769857,
+        "enterprise_value": 9371397,
         "short_ratio": 0.52,
         "short_percent_of_float": 0.0117999995,
         "held_percent_institutions": 0.06236,
@@ -11243,7 +11263,7 @@
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
         "trailing_pe": null,
-        "price_to_book": 0.2792468,
+        "price_to_book": 0.2713141,
         "gross_margins": 0.30058,
         "profit_margins": -1.14492,
         "revenue_growth": 0.274
@@ -11817,37 +11837,42 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Worksport Ltd.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "TUYA": {
     "yfinance": {
       "ticker": "TUYA",
       "info": {
-        "marketCap": 1011686336,
-        "industry": "Software - Infrastructure",
-        "shortName": "Tuya Inc.",
-        "sector": "Technology",
-        "enterpriseValue": 45064596,
-        "longName": "Tuya Inc.",
         "freeCashflow": 436375,
-        "fullTimeEmployees": 1453,
-        "totalRevenue": 340791008,
-        "grossProfits": 160990000,
+        "longName": "Tuya Inc.",
         "website": "https://www.tuya.com",
-        "country": "China",
-        "ebitda": 29650500,
+        "fullTimeEmployees": 1453,
+        "sector": "Technology",
+        "grossProfits": 160990000,
+        "totalRevenue": 340791008,
         "longBusinessSummary": "Tuya Inc. provides artificial intelligence (AI) cloud platform services in the People's Republic of China. Its AI cloud developer platform delivers a suite of offerings, including platform-as-a-service (PaaS), software-as-a-service (SaaS), and smart solutions to developers of smart device, commercial applications, and industries. The company's PaaS offering enables original equipment manufacturers and brands, and developers to develop, launch, manage, and monetize software-enabled smart devices and services. Its SaaS offering enables businesses to deploy, connect, and manage smart devices in various vertical scenarios for spatial intelligence and cloud-based software value-added services to build their own autonomous and controllable smart business platforms. Its solutions include cube private cloud, smart hospitality, smart residential, commercial lighting, and smart house and real estate. The company also offers a range of other cloud-based value-added services to enhance their ability to develop and manage IoT experiences for businesses, developers, and end users. In addition, it provides smart solutions for smart devices integrated with AI and intelligent software capabilities. The company serves brands, original equipment manufacturers, industry operators, and system integrators across a range of industry verticals, such as smart home and business, renewable energy, education, agriculture, outdoors and sport, and entertainment. Tuya Inc. was founded in 2014 and is based in Hangzhou, the People's Republic of China.",
-        "symbol": "TUYA"
+        "enterpriseValue": 51219904,
+        "country": "China",
+        "symbol": "TUYA",
+        "marketCap": 1017817728,
+        "ebitda": 29650500,
+        "shortName": "Tuya Inc.",
+        "industry": "Software - Infrastructure"
       },
       "history": [
         {
           "date": "2021-03-01 00:00:00-05:00",
-          "close": 19.42319107055664,
+          "close": 19.423192977905273,
           "volume": 35519500.0
         },
         {
           "date": "2021-04-01 00:00:00-04:00",
-          "close": 17.8153133392334,
+          "close": 17.815311431884766,
           "volume": 20720800.0
         },
         {
@@ -11857,7 +11882,7 @@
         },
         {
           "date": "2021-06-01 00:00:00-04:00",
-          "close": 22.51032257080078,
+          "close": 22.510324478149414,
           "volume": 18748900.0
         },
         {
@@ -11877,7 +11902,7 @@
         },
         {
           "date": "2021-10-01 00:00:00-04:00",
-          "close": 5.953751087188721,
+          "close": 5.953751564025879,
           "volume": 49615100.0
         },
         {
@@ -11892,7 +11917,7 @@
         },
         {
           "date": "2022-01-01 00:00:00-05:00",
-          "close": 5.099277973175049,
+          "close": 5.099277496337891,
           "volume": 39219800.0
         },
         {
@@ -11902,7 +11927,7 @@
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 2.7196147441864014,
+          "close": 2.7196149826049805,
           "volume": 71354900.0
         },
         {
@@ -11912,12 +11937,12 @@
         },
         {
           "date": "2022-05-01 00:00:00-04:00",
-          "close": 2.3520991802215576,
+          "close": 2.3520989418029785,
           "volume": 36403200.0
         },
         {
           "date": "2022-06-01 00:00:00-04:00",
-          "close": 2.407226324081421,
+          "close": 2.4072265625,
           "volume": 42444800.0
         },
         {
@@ -11927,7 +11952,7 @@
         },
         {
           "date": "2022-08-01 00:00:00-04:00",
-          "close": 1.2128013372421265,
+          "close": 1.212801218032837,
           "volume": 21699100.0
         },
         {
@@ -11992,17 +12017,17 @@
         },
         {
           "date": "2023-09-01 00:00:00-04:00",
-          "close": 1.4241224527359009,
+          "close": 1.4241225719451904,
           "volume": 5365100.0
         },
         {
           "date": "2023-10-01 00:00:00-04:00",
-          "close": 1.5711288452148438,
+          "close": 1.5711287260055542,
           "volume": 2877100.0
         },
         {
           "date": "2023-11-01 00:00:00-04:00",
-          "close": 2.0397112369537354,
+          "close": 2.0397109985351562,
           "volume": 6188800.0
         },
         {
@@ -12012,7 +12037,7 @@
         },
         {
           "date": "2024-01-01 00:00:00-05:00",
-          "close": 1.6813833713531494,
+          "close": 1.681383490562439,
           "volume": 6732400.0
         },
         {
@@ -12022,32 +12047,32 @@
         },
         {
           "date": "2024-03-01 00:00:00-05:00",
-          "close": 1.6078803539276123,
+          "close": 1.6078802347183228,
           "volume": 5661000.0
         },
         {
           "date": "2024-04-01 00:00:00-04:00",
-          "close": 1.6078803539276123,
+          "close": 1.6078802347183228,
           "volume": 3451000.0
         },
         {
           "date": "2024-05-01 00:00:00-04:00",
-          "close": 1.855953335762024,
+          "close": 1.8559532165527344,
           "volume": 7594800.0
         },
         {
           "date": "2024-06-01 00:00:00-04:00",
-          "close": 1.5711288452148438,
+          "close": 1.5711287260055542,
           "volume": 4834800.0
         },
         {
           "date": "2024-07-01 00:00:00-04:00",
-          "close": 1.378183126449585,
+          "close": 1.3781832456588745,
           "volume": 5481700.0
         },
         {
           "date": "2024-08-01 00:00:00-04:00",
-          "close": 1.4241224527359009,
+          "close": 1.4241225719451904,
           "volume": 14765400.0
         },
         {
@@ -12057,7 +12082,7 @@
         },
         {
           "date": "2024-10-01 00:00:00-04:00",
-          "close": 1.4589335918426514,
+          "close": 1.4589334726333618,
           "volume": 19909000.0
         },
         {
@@ -12077,7 +12102,7 @@
         },
         {
           "date": "2025-02-01 00:00:00-05:00",
-          "close": 3.263404130935669,
+          "close": 3.263404369354248,
           "volume": 145496700.0
         },
         {
@@ -12177,8 +12202,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 1.649999976158142,
-          "volume": 3577144.0
+          "close": 1.659999966621399,
+          "volume": 3862512.0
         }
       ],
       "income_statement": [
@@ -13163,16 +13188,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 1011686336,
-        "enterprise_value": 45064596,
+        "market_cap": 1017817728,
+        "enterprise_value": 51219904,
         "short_ratio": 2.15,
         "short_percent_of_float": 0.005,
         "held_percent_institutions": 0.27963,
         "held_percent_insiders": 0.17998,
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "trailing_pe": 15.0,
-        "price_to_book": 0.98802394,
+        "trailing_pe": 15.090909,
+        "price_to_book": 0.994012,
         "gross_margins": 0.4724,
         "profit_margins": 0.20158,
         "revenue_growth": 0.16
@@ -13378,52 +13403,57 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Tuya Inc.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "MNDO": {
     "yfinance": {
       "ticker": "MNDO",
       "info": {
-        "marketCap": 18499704,
-        "industry": "Software - Application",
-        "shortName": "MIND C.T.I. Ltd.",
-        "sector": "Technology",
-        "enterpriseValue": 6066765,
-        "longName": "MIND C.T.I. Ltd",
         "freeCashflow": 1703125,
-        "fullTimeEmployees": 139,
-        "totalRevenue": 19405000,
-        "grossProfits": 10556000,
+        "longName": "MIND C.T.I. Ltd",
         "website": "https://mindcti.com",
-        "country": "Israel",
-        "ebitda": 3309000,
+        "fullTimeEmployees": 139,
+        "sector": "Technology",
+        "grossProfits": 10556000,
+        "totalRevenue": 19405000,
         "longBusinessSummary": "MIND C.T.I. Ltd., together with its subsidiaries, develops, manufactures, markets, sells, and implements billing and customer care software solutions in the Americas, Europe, Israel, the Asia Pacific, and Africa. It operates in two segments, Billing and Related Services, and Messaging. The company offers billing and customer care solutions that support various services, such as voice, data, and content services, as well as prepaid, postpaid, and pay-in-advance payment models in a single platform. Its solutions also include a workflow engine to support the implementation of business processes, including subscriber registration, order management, trouble ticket, and debt collection; and a point-of-sale solution that covers dealer, store and cashier management, and sales cycle related activities, as well as UC analytics solutions and call accounting systems. In addition, the company offers professional services comprising turnkey project delivery, customer support and maintenance, integration, customizations, and project management; and managed services, including day to day billing operational tasks. Further, it provides PhonEX ONE, a call management system that collects, records, and stores call information, which is used by organizations for telecom expense management, call accounting, traffic analysis, and fraud detection; and a mobile messaging platform. The company offers its products directly, as well as through distributors and resellers primarily to communication service providers, such as traditional wireline and wireless, voice over IP, broadband IP network operators, wireless internet service providers, LTE operators and 5G carriers, and mobile virtual network operators. MIND C.T.I. Ltd. was incorporated in 1995 and is headquartered in Yokneam Illit, Israel.",
-        "symbol": "MNDO"
+        "enterpriseValue": 5663845,
+        "country": "Israel",
+        "symbol": "MNDO",
+        "marketCap": 18366482,
+        "ebitda": 3309000,
+        "shortName": "MIND C.T.I. Ltd.",
+        "industry": "Software - Application"
       },
       "history": [
         {
           "date": "2000-08-01 00:00:00-04:00",
-          "close": 0.6302327513694763,
+          "close": 0.6302328109741211,
           "volume": 6384200.0
         },
         {
           "date": "2000-09-01 00:00:00-04:00",
-          "close": 0.7531083822250366,
+          "close": 0.7531085014343262,
           "volume": 3713700.0
         },
         {
           "date": "2000-10-01 00:00:00-04:00",
-          "close": 0.7213983535766602,
+          "close": 0.721398651599884,
           "volume": 1471700.0
         },
         {
           "date": "2000-11-01 00:00:00-05:00",
-          "close": 0.48357483744621277,
+          "close": 0.48357489705085754,
           "volume": 649900.0
         },
         {
           "date": "2000-12-01 00:00:00-05:00",
-          "close": 0.42411893606185913,
+          "close": 0.4241189956665039,
           "volume": 557100.0
         },
         {
@@ -13433,37 +13463,37 @@
         },
         {
           "date": "2001-02-01 00:00:00-05:00",
-          "close": 0.4122278094291687,
+          "close": 0.4122277796268463,
           "volume": 350900.0
         },
         {
           "date": "2001-03-01 00:00:00-05:00",
-          "close": 0.10900252312421799,
+          "close": 0.10900256782770157,
           "volume": 3274500.0
         },
         {
           "date": "2001-04-01 00:00:00-05:00",
-          "close": 0.12366832047700882,
+          "close": 0.12366832792758942,
           "volume": 1822200.0
         },
         {
           "date": "2001-05-01 00:00:00-04:00",
-          "close": 0.16235433518886566,
+          "close": 0.16235432028770447,
           "volume": 1625100.0
         },
         {
           "date": "2001-06-01 00:00:00-04:00",
-          "close": 0.15791495144367218,
+          "close": 0.1579149216413498,
           "volume": 272900.0
         },
         {
           "date": "2001-07-01 00:00:00-04:00",
-          "close": 0.18708795309066772,
+          "close": 0.18708796799182892,
           "volume": 321700.0
         },
         {
           "date": "2001-08-01 00:00:00-04:00",
-          "close": 0.13762065768241882,
+          "close": 0.13762064278125763,
           "volume": 1455300.0
         },
         {
@@ -13473,37 +13503,37 @@
         },
         {
           "date": "2001-10-01 00:00:00-04:00",
-          "close": 0.0773719921708107,
+          "close": 0.0773719847202301,
           "volume": 352800.0
         },
         {
           "date": "2001-11-01 00:00:00-05:00",
-          "close": 0.10083725303411484,
+          "close": 0.10083724558353424,
           "volume": 1920600.0
         },
         {
           "date": "2001-12-01 00:00:00-05:00",
-          "close": 0.10591082274913788,
+          "close": 0.10591084510087967,
           "volume": 614100.0
         },
         {
           "date": "2002-01-01 00:00:00-05:00",
-          "close": 0.08815331757068634,
+          "close": 0.08815333992242813,
           "volume": 308900.0
         },
         {
           "date": "2002-02-01 00:00:00-05:00",
-          "close": 0.08498235046863556,
+          "close": 0.08498233556747437,
           "volume": 558400.0
         },
         {
           "date": "2002-03-01 00:00:00-05:00",
-          "close": 0.08244553208351135,
+          "close": 0.08244555443525314,
           "volume": 231200.0
         },
         {
           "date": "2002-04-01 00:00:00-05:00",
-          "close": 0.07927457988262177,
+          "close": 0.07927458733320236,
           "volume": 241900.0
         },
         {
@@ -13513,47 +13543,47 @@
         },
         {
           "date": "2002-06-01 00:00:00-04:00",
-          "close": 0.07673778384923935,
+          "close": 0.07673779875040054,
           "volume": 265000.0
         },
         {
           "date": "2002-07-01 00:00:00-04:00",
-          "close": 0.07927457988262177,
+          "close": 0.07927458733320236,
           "volume": 145800.0
         },
         {
           "date": "2002-08-01 00:00:00-04:00",
-          "close": 0.0703958049416542,
+          "close": 0.0703958198428154,
           "volume": 173500.0
         },
         {
           "date": "2002-09-01 00:00:00-04:00",
-          "close": 0.057077690958976746,
+          "close": 0.057077694684267044,
           "volume": 109900.0
         },
         {
           "date": "2002-10-01 00:00:00-04:00",
-          "close": 0.07103002071380615,
+          "close": 0.07103001326322556,
           "volume": 462400.0
         },
         {
           "date": "2002-11-01 00:00:00-05:00",
-          "close": 0.08434814214706421,
+          "close": 0.0843481570482254,
           "volume": 174700.0
         },
         {
           "date": "2002-12-01 00:00:00-05:00",
-          "close": 0.07927457988262177,
+          "close": 0.07927458733320236,
           "volume": 146400.0
         },
         {
           "date": "2003-01-01 00:00:00-05:00",
-          "close": 0.08751913905143738,
+          "close": 0.08751910924911499,
           "volume": 81100.0
         },
         {
           "date": "2003-02-01 00:00:00-05:00",
-          "close": 0.08815331757068634,
+          "close": 0.08815333992242813,
           "volume": 121600.0
         },
         {
@@ -13563,12 +13593,12 @@
         },
         {
           "date": "2003-04-01 00:00:00-05:00",
-          "close": 0.12874191999435425,
+          "close": 0.12874190509319305,
           "volume": 298600.0
         },
         {
           "date": "2003-05-01 00:00:00-04:00",
-          "close": 0.18391701579093933,
+          "close": 0.1839170902967453,
           "volume": 1172100.0
         },
         {
@@ -13578,12 +13608,12 @@
         },
         {
           "date": "2003-07-01 00:00:00-04:00",
-          "close": 0.2378236949443817,
+          "close": 0.2378237396478653,
           "volume": 1330600.0
         },
         {
           "date": "2003-08-01 00:00:00-04:00",
-          "close": 0.21879784762859344,
+          "close": 0.21879775822162628,
           "volume": 676100.0
         },
         {
@@ -13593,7 +13623,7 @@
         },
         {
           "date": "2003-10-01 00:00:00-04:00",
-          "close": 0.24416571855545044,
+          "close": 0.24416561424732208,
           "volume": 1230400.0
         },
         {
@@ -13603,7 +13633,7 @@
         },
         {
           "date": "2003-12-01 00:00:00-05:00",
-          "close": 0.3950732350349426,
+          "close": 0.3950732946395874,
           "volume": 11927300.0
         },
         {
@@ -13613,17 +13643,17 @@
         },
         {
           "date": "2004-02-01 00:00:00-05:00",
-          "close": 0.3423132598400116,
+          "close": 0.342313289642334,
           "volume": 5556500.0
         },
         {
           "date": "2004-03-01 00:00:00-05:00",
-          "close": 0.28964969515800476,
+          "close": 0.28964963555336,
           "volume": 4933300.0
         },
         {
           "date": "2004-04-01 00:00:00-05:00",
-          "close": 0.30382829904556274,
+          "close": 0.3038283884525299,
           "volume": 3823900.0
         },
         {
@@ -13633,62 +13663,62 @@
         },
         {
           "date": "2004-06-01 00:00:00-04:00",
-          "close": 0.3159814476966858,
+          "close": 0.31598150730133057,
           "volume": 906700.0
         },
         {
           "date": "2004-07-01 00:00:00-04:00",
-          "close": 0.28492340445518494,
+          "close": 0.2849234342575073,
           "volume": 1944800.0
         },
         {
           "date": "2004-08-01 00:00:00-04:00",
-          "close": 0.3112553358078003,
+          "close": 0.3112553060054779,
           "volume": 1237200.0
         },
         {
           "date": "2004-09-01 00:00:00-04:00",
-          "close": 0.30247801542282104,
+          "close": 0.30247795581817627,
           "volume": 796600.0
         },
         {
           "date": "2004-10-01 00:00:00-04:00",
-          "close": 0.3031531274318695,
+          "close": 0.3031531572341919,
           "volume": 950800.0
         },
         {
           "date": "2004-11-01 00:00:00-05:00",
-          "close": 0.3436635732650757,
+          "close": 0.34366366267204285,
           "volume": 3942900.0
         },
         {
           "date": "2004-12-01 00:00:00-05:00",
-          "close": 0.39295125007629395,
+          "close": 0.3929513394832611,
           "volume": 5213800.0
         },
         {
           "date": "2005-01-01 00:00:00-05:00",
-          "close": 0.3294849395751953,
+          "close": 0.32948487997055054,
           "volume": 2889900.0
         },
         {
           "date": "2005-02-01 00:00:00-05:00",
-          "close": 0.3466338515281677,
+          "close": 0.34663376212120056,
           "volume": 2184600.0
         },
         {
           "date": "2005-03-01 00:00:00-05:00",
-          "close": 0.27574747800827026,
+          "close": 0.27574753761291504,
           "volume": 3262900.0
         },
         {
           "date": "2005-04-01 00:00:00-05:00",
-          "close": 0.2644056975841522,
+          "close": 0.2644057273864746,
           "volume": 3681900.0
         },
         {
           "date": "2005-05-01 00:00:00-04:00",
-          "close": 0.23463350534439087,
+          "close": 0.23463349044322968,
           "volume": 969800.0
         },
         {
@@ -13698,22 +13728,22 @@
         },
         {
           "date": "2005-07-01 00:00:00-04:00",
-          "close": 0.1963549107313156,
+          "close": 0.1963549554347992,
           "volume": 1334200.0
         },
         {
           "date": "2005-08-01 00:00:00-04:00",
-          "close": 0.21124102175235748,
+          "close": 0.21124103665351868,
           "volume": 1796000.0
         },
         {
           "date": "2005-09-01 00:00:00-04:00",
-          "close": 0.2062789797782898,
+          "close": 0.20627902448177338,
           "volume": 2208200.0
         },
         {
           "date": "2005-10-01 00:00:00-04:00",
-          "close": 0.1885574460029602,
+          "close": 0.1885574758052826,
           "volume": 866300.0
         },
         {
@@ -13723,32 +13753,32 @@
         },
         {
           "date": "2005-12-01 00:00:00-05:00",
-          "close": 0.18572203814983368,
+          "close": 0.1857219785451889,
           "volume": 1544000.0
         },
         {
           "date": "2006-01-01 00:00:00-05:00",
-          "close": 0.23392464220523834,
+          "close": 0.23392465710639954,
           "volume": 2556300.0
         },
         {
           "date": "2006-02-01 00:00:00-05:00",
-          "close": 0.22612720727920532,
+          "close": 0.22612714767456055,
           "volume": 1162900.0
         },
         {
           "date": "2006-03-01 00:00:00-05:00",
-          "close": 0.23077863454818726,
+          "close": 0.23077861964702606,
           "volume": 2884200.0
         },
         {
           "date": "2006-04-01 00:00:00-05:00",
-          "close": 0.23374687135219574,
+          "close": 0.23374684154987335,
           "volume": 1349700.0
         },
         {
           "date": "2006-05-01 00:00:00-04:00",
-          "close": 0.21222734451293945,
+          "close": 0.2122272551059723,
           "volume": 972000.0
         },
         {
@@ -13758,67 +13788,67 @@
         },
         {
           "date": "2006-07-01 00:00:00-04:00",
-          "close": 0.18180309236049652,
+          "close": 0.1818031221628189,
           "volume": 746100.0
         },
         {
           "date": "2006-08-01 00:00:00-04:00",
-          "close": 0.18996566534042358,
+          "close": 0.18996569514274597,
           "volume": 616600.0
         },
         {
           "date": "2006-09-01 00:00:00-04:00",
-          "close": 0.1944180130958557,
+          "close": 0.19441799819469452,
           "volume": 899900.0
         },
         {
           "date": "2006-10-01 00:00:00-04:00",
-          "close": 0.19887036085128784,
+          "close": 0.19887034595012665,
           "volume": 1058300.0
         },
         {
           "date": "2006-11-01 00:00:00-05:00",
-          "close": 0.1936759352684021,
+          "close": 0.19367597997188568,
           "volume": 761300.0
         },
         {
           "date": "2006-12-01 00:00:00-05:00",
-          "close": 0.19961236417293549,
+          "close": 0.19961237907409668,
           "volume": 1085100.0
         },
         {
           "date": "2007-01-01 00:00:00-05:00",
-          "close": 0.1973862200975418,
+          "close": 0.1973862498998642,
           "volume": 598800.0
         },
         {
           "date": "2007-02-01 00:00:00-05:00",
-          "close": 0.21742169559001923,
+          "close": 0.21742166578769684,
           "volume": 2050300.0
         },
         {
           "date": "2007-03-01 00:00:00-05:00",
-          "close": 0.22214479744434357,
+          "close": 0.22214478254318237,
           "volume": 918100.0
         },
         {
           "date": "2007-04-01 00:00:00-04:00",
-          "close": 0.23568052053451538,
+          "close": 0.2356805056333542,
           "volume": 1047000.0
         },
         {
           "date": "2007-05-01 00:00:00-04:00",
-          "close": 0.2213486135005951,
+          "close": 0.2213485687971115,
           "volume": 1221200.0
         },
         {
           "date": "2007-06-01 00:00:00-04:00",
-          "close": 0.22294104099273682,
+          "close": 0.22294102609157562,
           "volume": 562400.0
         },
         {
           "date": "2007-07-01 00:00:00-04:00",
-          "close": 0.20860911905765533,
+          "close": 0.20860907435417175,
           "volume": 444000.0
         },
         {
@@ -13833,62 +13863,62 @@
         },
         {
           "date": "2007-10-01 00:00:00-04:00",
-          "close": 0.1910923421382904,
+          "close": 0.19109231233596802,
           "volume": 1001300.0
         },
         {
           "date": "2007-11-01 00:00:00-04:00",
-          "close": 0.18472255766391754,
+          "close": 0.18472257256507874,
           "volume": 1171100.0
         },
         {
           "date": "2007-12-01 00:00:00-05:00",
-          "close": 0.17676040530204773,
+          "close": 0.17676039040088654,
           "volume": 1160700.0
         },
         {
           "date": "2008-01-01 00:00:00-05:00",
-          "close": 0.1799452304840088,
+          "close": 0.17994527518749237,
           "volume": 1318300.0
         },
         {
           "date": "2008-02-01 00:00:00-05:00",
-          "close": 0.13217221200466156,
+          "close": 0.13217215240001678,
           "volume": 1256100.0
         },
         {
           "date": "2008-03-01 00:00:00-05:00",
-          "close": 0.11127917468547821,
+          "close": 0.1112791895866394,
           "volume": 1355800.0
         },
         {
           "date": "2008-04-01 00:00:00-04:00",
-          "close": 0.1121988445520401,
+          "close": 0.1121988520026207,
           "volume": 1321700.0
         },
         {
           "date": "2008-05-01 00:00:00-04:00",
-          "close": 0.11127917468547821,
+          "close": 0.1112791895866394,
           "volume": 1116200.0
         },
         {
           "date": "2008-06-01 00:00:00-04:00",
-          "close": 0.09564491361379623,
+          "close": 0.09564490616321564,
           "volume": 1899900.0
         },
         {
           "date": "2008-07-01 00:00:00-04:00",
-          "close": 0.09748422354459763,
+          "close": 0.09748423844575882,
           "volume": 265900.0
         },
         {
           "date": "2008-08-01 00:00:00-04:00",
-          "close": 0.09656456112861633,
+          "close": 0.09656458348035812,
           "volume": 1857600.0
         },
         {
           "date": "2008-09-01 00:00:00-04:00",
-          "close": 0.10024324059486389,
+          "close": 0.1002432107925415,
           "volume": 655800.0
         },
         {
@@ -13898,62 +13928,62 @@
         },
         {
           "date": "2008-11-01 00:00:00-04:00",
-          "close": 0.08644827455282211,
+          "close": 0.0864482894539833,
           "volume": 687000.0
         },
         {
           "date": "2008-12-01 00:00:00-05:00",
-          "close": 0.07725164294242859,
+          "close": 0.07725165039300919,
           "volume": 1972900.0
         },
         {
           "date": "2009-01-01 00:00:00-05:00",
-          "close": 0.06621570885181427,
+          "close": 0.06621571630239487,
           "volume": 367400.0
         },
         {
           "date": "2009-02-01 00:00:00-05:00",
-          "close": 0.05609942227602005,
+          "close": 0.05609942600131035,
           "volume": 747800.0
         },
         {
           "date": "2009-03-01 00:00:00-05:00",
-          "close": 0.07357299327850342,
+          "close": 0.07357300817966461,
           "volume": 517300.0
         },
         {
           "date": "2009-04-01 00:00:00-04:00",
-          "close": 0.08920727670192719,
+          "close": 0.08920728415250778,
           "volume": 141900.0
         },
         {
           "date": "2009-05-01 00:00:00-04:00",
-          "close": 0.09932355582714081,
+          "close": 0.099323570728302,
           "volume": 457200.0
         },
         {
           "date": "2009-06-01 00:00:00-04:00",
-          "close": 0.09012695401906967,
+          "close": 0.09012692421674728,
           "volume": 623300.0
         },
         {
           "date": "2009-07-01 00:00:00-04:00",
-          "close": 0.09288591146469116,
+          "close": 0.09288593381643295,
           "volume": 401500.0
         },
         {
           "date": "2009-08-01 00:00:00-04:00",
-          "close": 0.09104658663272858,
+          "close": 0.09104660153388977,
           "volume": 223300.0
         },
         {
           "date": "2009-09-01 00:00:00-04:00",
-          "close": 0.13427075743675232,
+          "close": 0.13427074253559113,
           "volume": 2240900.0
         },
         {
           "date": "2009-10-01 00:00:00-04:00",
-          "close": 0.13151174783706665,
+          "close": 0.13151173293590546,
           "volume": 419600.0
         },
         {
@@ -13968,7 +13998,7 @@
         },
         {
           "date": "2010-01-01 00:00:00-05:00",
-          "close": 0.19994549453258514,
+          "close": 0.19994544982910156,
           "volume": 1931800.0
         },
         {
@@ -13978,7 +14008,7 @@
         },
         {
           "date": "2010-03-01 00:00:00-05:00",
-          "close": 0.35028332471847534,
+          "close": 0.35028329491615295,
           "volume": 3838300.0
         },
         {
@@ -13988,72 +14018,72 @@
         },
         {
           "date": "2010-05-01 00:00:00-04:00",
-          "close": 0.45636898279190063,
+          "close": 0.4563691020011902,
           "volume": 2922600.0
         },
         {
           "date": "2010-06-01 00:00:00-04:00",
-          "close": 0.4003237187862396,
+          "close": 0.400323748588562,
           "volume": 1676600.0
         },
         {
           "date": "2010-07-01 00:00:00-04:00",
-          "close": 0.38631242513656616,
+          "close": 0.38631245493888855,
           "volume": 821400.0
         },
         {
           "date": "2010-08-01 00:00:00-04:00",
-          "close": 0.3642946183681488,
+          "close": 0.3642945885658264,
           "volume": 931300.0
         },
         {
           "date": "2010-09-01 00:00:00-04:00",
-          "close": 0.384310781955719,
+          "close": 0.3843107223510742,
           "volume": 430100.0
         },
         {
           "date": "2010-10-01 00:00:00-04:00",
-          "close": 0.4503641426563263,
+          "close": 0.45036420226097107,
           "volume": 815300.0
         },
         {
           "date": "2010-11-01 00:00:00-04:00",
-          "close": 0.45837071537971497,
+          "close": 0.4583706855773926,
           "volume": 1263800.0
         },
         {
           "date": "2010-12-01 00:00:00-05:00",
-          "close": 0.5004045963287354,
+          "close": 0.5004045367240906,
           "volume": 887700.0
         },
         {
           "date": "2011-01-01 00:00:00-05:00",
-          "close": 0.5444401502609253,
+          "close": 0.5444402098655701,
           "volume": 1159500.0
         },
         {
           "date": "2011-02-01 00:00:00-05:00",
-          "close": 0.6915984153747559,
+          "close": 0.6915981769561768,
           "volume": 4518600.0
         },
         {
           "date": "2011-03-01 00:00:00-05:00",
-          "close": 0.7335802316665649,
+          "close": 0.7335801720619202,
           "volume": 2764200.0
         },
         {
           "date": "2011-04-01 00:00:00-04:00",
-          "close": 0.7645142674446106,
+          "close": 0.7645142078399658,
           "volume": 3077400.0
         },
         {
           "date": "2011-05-01 00:00:00-04:00",
-          "close": 0.7379993796348572,
+          "close": 0.7379993200302124,
           "volume": 2645600.0
         },
         {
           "date": "2011-06-01 00:00:00-04:00",
-          "close": 0.601005494594574,
+          "close": 0.6010054349899292,
           "volume": 2089200.0
         },
         {
@@ -14063,7 +14093,7 @@
         },
         {
           "date": "2011-08-01 00:00:00-04:00",
-          "close": 0.4706403911113739,
+          "close": 0.47064030170440674,
           "volume": 1580700.0
         },
         {
@@ -14073,17 +14103,17 @@
         },
         {
           "date": "2011-10-01 00:00:00-04:00",
-          "close": 0.43307748436927795,
+          "close": 0.43307754397392273,
           "volume": 741300.0
         },
         {
           "date": "2011-11-01 00:00:00-04:00",
-          "close": 0.41540083289146423,
+          "close": 0.4154008626937866,
           "volume": 687200.0
         },
         {
           "date": "2011-12-01 00:00:00-05:00",
-          "close": 0.40877214074134827,
+          "close": 0.4087721109390259,
           "volume": 649300.0
         },
         {
@@ -14093,7 +14123,7 @@
         },
         {
           "date": "2012-02-01 00:00:00-05:00",
-          "close": 0.5126222968101501,
+          "close": 0.5126222372055054,
           "volume": 1681300.0
         },
         {
@@ -14108,22 +14138,22 @@
         },
         {
           "date": "2012-05-01 00:00:00-04:00",
-          "close": 0.40889155864715576,
+          "close": 0.4088915288448334,
           "volume": 656300.0
         },
         {
           "date": "2012-06-01 00:00:00-04:00",
-          "close": 0.448066771030426,
+          "close": 0.4480668306350708,
           "volume": 518900.0
         },
         {
           "date": "2012-07-01 00:00:00-04:00",
-          "close": 0.41378840804100037,
+          "close": 0.41378843784332275,
           "volume": 390500.0
         },
         {
           "date": "2012-08-01 00:00:00-04:00",
-          "close": 0.4235822260379791,
+          "close": 0.4235822558403015,
           "volume": 587300.0
         },
         {
@@ -14133,32 +14163,32 @@
         },
         {
           "date": "2012-10-01 00:00:00-04:00",
-          "close": 0.48969051241874695,
+          "close": 0.48969054222106934,
           "volume": 478700.0
         },
         {
           "date": "2012-11-01 00:00:00-04:00",
-          "close": 0.4749998152256012,
+          "close": 0.47499972581863403,
           "volume": 570100.0
         },
         {
           "date": "2012-12-01 00:00:00-05:00",
-          "close": 0.48969051241874695,
+          "close": 0.48969054222106934,
           "volume": 414800.0
         },
         {
           "date": "2013-01-01 00:00:00-05:00",
-          "close": 0.5215204358100891,
+          "close": 0.5215203166007996,
           "volume": 621500.0
         },
         {
           "date": "2013-02-01 00:00:00-05:00",
-          "close": 0.5313141942024231,
+          "close": 0.5313142538070679,
           "volume": 356900.0
         },
         {
           "date": "2013-03-01 00:00:00-05:00",
-          "close": 0.5120436549186707,
+          "close": 0.5120437145233154,
           "volume": 1487100.0
         },
         {
@@ -14168,7 +14198,7 @@
         },
         {
           "date": "2013-05-01 00:00:00-04:00",
-          "close": 0.506537914276123,
+          "close": 0.5065379738807678,
           "volume": 901100.0
         },
         {
@@ -14178,42 +14208,42 @@
         },
         {
           "date": "2013-07-01 00:00:00-04:00",
-          "close": 0.49552616477012634,
+          "close": 0.4955262243747711,
           "volume": 310100.0
         },
         {
           "date": "2013-08-01 00:00:00-04:00",
-          "close": 0.46524396538734436,
+          "close": 0.465243935585022,
           "volume": 827300.0
         },
         {
           "date": "2013-09-01 00:00:00-04:00",
-          "close": 0.4597381055355072,
+          "close": 0.4597381353378296,
           "volume": 629400.0
         },
         {
           "date": "2013-10-01 00:00:00-04:00",
-          "close": 0.4597381055355072,
+          "close": 0.4597381353378296,
           "volume": 622700.0
         },
         {
           "date": "2013-11-01 00:00:00-04:00",
-          "close": 0.5230554342269897,
+          "close": 0.523055374622345,
           "volume": 1309300.0
         },
         {
           "date": "2013-12-01 00:00:00-05:00",
-          "close": 0.5533375144004822,
+          "close": 0.553337574005127,
           "volume": 1107500.0
         },
         {
           "date": "2014-01-01 00:00:00-05:00",
-          "close": 0.580866813659668,
+          "close": 0.5808667540550232,
           "volume": 1945400.0
         },
         {
           "date": "2014-02-01 00:00:00-05:00",
-          "close": 0.6028902530670166,
+          "close": 0.602890133857727,
           "volume": 859100.0
         },
         {
@@ -14233,7 +14263,7 @@
         },
         {
           "date": "2014-06-01 00:00:00-04:00",
-          "close": 0.7246540784835815,
+          "close": 0.7246540188789368,
           "volume": 1170700.0
         },
         {
@@ -14243,17 +14273,17 @@
         },
         {
           "date": "2014-08-01 00:00:00-04:00",
-          "close": 0.9672291278839111,
+          "close": 0.9672290682792664,
           "volume": 6270500.0
         },
         {
           "date": "2014-09-01 00:00:00-04:00",
-          "close": 0.945734977722168,
+          "close": 0.9457348585128784,
           "volume": 2653500.0
         },
         {
           "date": "2014-10-01 00:00:00-04:00",
-          "close": 0.9180999398231506,
+          "close": 0.9180998802185059,
           "volume": 1358800.0
         },
         {
@@ -14273,7 +14303,7 @@
         },
         {
           "date": "2015-02-01 00:00:00-05:00",
-          "close": 1.1207575798034668,
+          "close": 1.1207573413848877,
           "volume": 2966800.0
         },
         {
@@ -14298,27 +14328,27 @@
         },
         {
           "date": "2015-07-01 00:00:00-04:00",
-          "close": 0.9763534665107727,
+          "close": 0.9763534069061279,
           "volume": 1535000.0
         },
         {
           "date": "2015-08-01 00:00:00-04:00",
-          "close": 0.8930469155311584,
+          "close": 0.8930468559265137,
           "volume": 1266000.0
         },
         {
           "date": "2015-09-01 00:00:00-04:00",
-          "close": 0.9163728356361389,
+          "close": 0.9163725972175598,
           "volume": 635000.0
         },
         {
           "date": "2015-10-01 00:00:00-04:00",
-          "close": 0.8597239851951599,
+          "close": 0.859724223613739,
           "volume": 926500.0
         },
         {
           "date": "2015-11-01 00:00:00-04:00",
-          "close": 0.9097080230712891,
+          "close": 0.9097080826759338,
           "volume": 654200.0
         },
         {
@@ -14328,7 +14358,7 @@
         },
         {
           "date": "2016-01-01 00:00:00-05:00",
-          "close": 0.786414384841919,
+          "close": 0.7864142060279846,
           "volume": 914900.0
         },
         {
@@ -14338,7 +14368,7 @@
         },
         {
           "date": "2016-03-01 00:00:00-05:00",
-          "close": 0.7572571039199829,
+          "close": 0.7572569847106934,
           "volume": 1542900.0
         },
         {
@@ -14348,12 +14378,12 @@
         },
         {
           "date": "2016-05-01 00:00:00-04:00",
-          "close": 0.764754593372345,
+          "close": 0.7647545337677002,
           "volume": 645800.0
         },
         {
           "date": "2016-06-01 00:00:00-04:00",
-          "close": 0.7984938025474548,
+          "close": 0.7984937429428101,
           "volume": 560100.0
         },
         {
@@ -14363,17 +14393,17 @@
         },
         {
           "date": "2016-08-01 00:00:00-04:00",
-          "close": 0.8097402453422546,
+          "close": 0.8097401857376099,
           "volume": 745500.0
         },
         {
           "date": "2016-09-01 00:00:00-04:00",
-          "close": 0.8134889602661133,
+          "close": 0.8134891390800476,
           "volume": 761200.0
         },
         {
           "date": "2016-10-01 00:00:00-04:00",
-          "close": 0.8547257781028748,
+          "close": 0.85472571849823,
           "volume": 673800.0
         },
         {
@@ -14383,12 +14413,12 @@
         },
         {
           "date": "2016-12-01 00:00:00-05:00",
-          "close": 0.9222041964530945,
+          "close": 0.9222041368484497,
           "volume": 595100.0
         },
         {
           "date": "2017-01-01 00:00:00-05:00",
-          "close": 0.9709383845329285,
+          "close": 0.9709384441375732,
           "volume": 517600.0
         },
         {
@@ -14398,22 +14428,22 @@
         },
         {
           "date": "2017-03-01 00:00:00-05:00",
-          "close": 1.0243842601776123,
+          "close": 1.0243843793869019,
           "volume": 2976400.0
         },
         {
           "date": "2017-04-01 00:00:00-04:00",
-          "close": 1.0370310544967651,
+          "close": 1.0370311737060547,
           "volume": 584000.0
         },
         {
           "date": "2017-05-01 00:00:00-04:00",
-          "close": 1.0496779680252075,
+          "close": 1.049677848815918,
           "volume": 642600.0
         },
         {
           "date": "2017-06-01 00:00:00-04:00",
-          "close": 1.0581090450286865,
+          "close": 1.058108925819397,
           "volume": 414300.0
         },
         {
@@ -14423,7 +14453,7 @@
         },
         {
           "date": "2017-08-01 00:00:00-04:00",
-          "close": 1.0243842601776123,
+          "close": 1.0243843793869019,
           "volume": 536500.0
         },
         {
@@ -14433,7 +14463,7 @@
         },
         {
           "date": "2017-10-01 00:00:00-04:00",
-          "close": 1.1339892148971558,
+          "close": 1.1339893341064453,
           "volume": 969000.0
         },
         {
@@ -14458,22 +14488,22 @@
         },
         {
           "date": "2018-03-01 00:00:00-05:00",
-          "close": 1.0471343994140625,
+          "close": 1.0471346378326416,
           "volume": 1580100.0
         },
         {
           "date": "2018-04-01 00:00:00-04:00",
-          "close": 1.0471343994140625,
+          "close": 1.0471346378326416,
           "volume": 872000.0
         },
         {
           "date": "2018-05-01 00:00:00-04:00",
-          "close": 1.0660871267318726,
+          "close": 1.066087245941162,
           "volume": 935100.0
         },
         {
           "date": "2018-06-01 00:00:00-04:00",
-          "close": 1.0281819105148315,
+          "close": 1.028182029724121,
           "volume": 983800.0
         },
         {
@@ -14483,12 +14513,12 @@
         },
         {
           "date": "2018-08-01 00:00:00-04:00",
-          "close": 1.1182068586349487,
+          "close": 1.1182069778442383,
           "volume": 538400.0
         },
         {
           "date": "2018-09-01 00:00:00-04:00",
-          "close": 1.0992541313171387,
+          "close": 1.0992542505264282,
           "volume": 413600.0
         },
         {
@@ -14498,12 +14528,12 @@
         },
         {
           "date": "2018-11-01 00:00:00-04:00",
-          "close": 1.0803016424179077,
+          "close": 1.0803017616271973,
           "volume": 385800.0
         },
         {
           "date": "2018-12-01 00:00:00-05:00",
-          "close": 1.0803016424179077,
+          "close": 1.0803017616271973,
           "volume": 506100.0
         },
         {
@@ -14533,7 +14563,7 @@
         },
         {
           "date": "2019-06-01 00:00:00-04:00",
-          "close": 1.1849843263626099,
+          "close": 1.1849842071533203,
           "volume": 428800.0
         },
         {
@@ -14548,12 +14578,12 @@
         },
         {
           "date": "2019-09-01 00:00:00-04:00",
-          "close": 1.2593777179718018,
+          "close": 1.2593775987625122,
           "volume": 340100.0
         },
         {
           "date": "2019-10-01 00:00:00-04:00",
-          "close": 1.243436336517334,
+          "close": 1.2434362173080444,
           "volume": 242300.0
         },
         {
@@ -14563,17 +14593,17 @@
         },
         {
           "date": "2019-12-01 00:00:00-05:00",
-          "close": 1.2806332111358643,
+          "close": 1.2806329727172852,
           "volume": 589900.0
         },
         {
           "date": "2020-01-01 00:00:00-05:00",
-          "close": 1.3815958499908447,
+          "close": 1.3815959692001343,
           "volume": 826400.0
         },
         {
           "date": "2020-02-01 00:00:00-05:00",
-          "close": 1.2274948358535767,
+          "close": 1.2274945974349976,
           "volume": 1150000.0
         },
         {
@@ -14588,7 +14618,7 @@
         },
         {
           "date": "2020-05-01 00:00:00-04:00",
-          "close": 1.132200002670288,
+          "close": 1.1322001218795776,
           "volume": 671900.0
         },
         {
@@ -14598,7 +14628,7 @@
         },
         {
           "date": "2020-07-01 00:00:00-04:00",
-          "close": 1.2345798015594482,
+          "close": 1.2345796823501587,
           "volume": 506500.0
         },
         {
@@ -14613,7 +14643,7 @@
         },
         {
           "date": "2020-10-01 00:00:00-04:00",
-          "close": 1.3249150514602661,
+          "close": 1.3249149322509766,
           "volume": 570000.0
         },
         {
@@ -14623,12 +14653,12 @@
         },
         {
           "date": "2020-12-01 00:00:00-05:00",
-          "close": 1.559786319732666,
+          "close": 1.5597862005233765,
           "volume": 1121000.0
         },
         {
           "date": "2021-01-01 00:00:00-05:00",
-          "close": 1.4754736423492432,
+          "close": 1.4754735231399536,
           "volume": 1216400.0
         },
         {
@@ -14638,7 +14668,7 @@
         },
         {
           "date": "2021-03-01 00:00:00-05:00",
-          "close": 1.7390028238296509,
+          "close": 1.7390029430389404,
           "volume": 2626900.0
         },
         {
@@ -14648,7 +14678,7 @@
         },
         {
           "date": "2021-05-01 00:00:00-04:00",
-          "close": 2.0343048572540283,
+          "close": 2.0343050956726074,
           "volume": 1008600.0
         },
         {
@@ -14658,17 +14688,17 @@
         },
         {
           "date": "2021-07-01 00:00:00-04:00",
-          "close": 2.1721129417419434,
+          "close": 2.1721127033233643,
           "volume": 1838500.0
         },
         {
           "date": "2021-08-01 00:00:00-04:00",
-          "close": 2.1130526065826416,
+          "close": 2.1130523681640625,
           "volume": 793600.0
         },
         {
           "date": "2021-09-01 00:00:00-04:00",
-          "close": 2.0671167373657227,
+          "close": 2.0671164989471436,
           "volume": 535900.0
         },
         {
@@ -14688,7 +14718,7 @@
         },
         {
           "date": "2022-01-01 00:00:00-05:00",
-          "close": 1.9883692264556885,
+          "close": 1.9883694648742676,
           "volume": 615100.0
         },
         {
@@ -14698,22 +14728,22 @@
         },
         {
           "date": "2022-03-01 00:00:00-05:00",
-          "close": 2.0916366577148438,
+          "close": 2.0916364192962646,
           "volume": 1383800.0
         },
         {
           "date": "2022-04-01 00:00:00-04:00",
-          "close": 1.8417822122573853,
+          "close": 1.8417820930480957,
           "volume": 708700.0
         },
         {
           "date": "2022-05-01 00:00:00-04:00",
-          "close": 1.8703367710113525,
+          "close": 1.870336890220642,
           "volume": 756500.0
         },
         {
           "date": "2022-06-01 00:00:00-04:00",
-          "close": 1.6990084648132324,
+          "close": 1.699008584022522,
           "volume": 608000.0
         },
         {
@@ -14723,7 +14753,7 @@
         },
         {
           "date": "2022-08-01 00:00:00-04:00",
-          "close": 1.6990084648132324,
+          "close": 1.699008584022522,
           "volume": 825500.0
         },
         {
@@ -14753,7 +14783,7 @@
         },
         {
           "date": "2023-02-01 00:00:00-05:00",
-          "close": 1.684731125831604,
+          "close": 1.6847310066223145,
           "volume": 449700.0
         },
         {
@@ -14763,7 +14793,7 @@
         },
         {
           "date": "2023-04-01 00:00:00-04:00",
-          "close": 1.5701655149459839,
+          "close": 1.5701653957366943,
           "volume": 934100.0
         },
         {
@@ -14783,7 +14813,7 @@
         },
         {
           "date": "2023-08-01 00:00:00-04:00",
-          "close": 1.546254277229309,
+          "close": 1.5462543964385986,
           "volume": 930500.0
         },
         {
@@ -14803,7 +14833,7 @@
         },
         {
           "date": "2023-12-01 00:00:00-05:00",
-          "close": 1.5621951818466187,
+          "close": 1.562195062637329,
           "volume": 490500.0
         },
         {
@@ -14973,8 +15003,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 0.9164999723434448,
-          "volume": 442956.0
+          "close": 0.9099000096321106,
+          "volume": 456205.0
         }
       ],
       "income_statement": [
@@ -15844,16 +15874,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 18499704,
-        "enterprise_value": 6066765,
+        "market_cap": 18366482,
+        "enterprise_value": 5663845,
         "short_ratio": 0.25,
         "short_percent_of_float": 0.00059999997,
         "held_percent_institutions": 0.08087,
         "held_percent_insiders": 0.22278,
         "sector": "Technology",
         "industry": "Software - Application",
-        "trailing_pe": 5.728125,
-        "price_to_book": 0.76694554,
+        "trailing_pe": 5.6868753,
+        "price_to_book": 0.7614226,
         "gross_margins": 0.54398,
         "profit_margins": 0.16871999,
         "revenue_growth": -0.03
@@ -16438,27 +16468,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "MIND C.T.I. Ltd",
+      "article_count": 0,
+      "articles": []
     }
   },
   "LEAT": {
     "yfinance": {
       "ticker": "LEAT",
       "info": {
-        "marketCap": 67789704,
-        "industry": "Leisure",
-        "shortName": "Leatt Corp.",
-        "sector": "Consumer Cyclical",
-        "enterpriseValue": 48907624,
-        "longName": "Leatt Corporation",
         "freeCashflow": 2632872,
-        "fullTimeEmployees": 88,
-        "totalRevenue": 66262140,
-        "grossProfits": 29621408,
+        "longName": "Leatt Corporation",
         "website": "https://www.int.leatt.com/",
-        "country": "South Africa",
-        "ebitda": 6351130,
+        "fullTimeEmployees": 88,
+        "sector": "Consumer Cyclical",
+        "grossProfits": 29621408,
+        "totalRevenue": 66262140,
         "longBusinessSummary": "Leatt Corporation designs, develops, markets, and distributes personal protective equipment for participants of motor sports and leisure activities in South Africa and internationally. The company offers Leatt-Brace system, an injection molded neck protection system designed to prevent injuries to the cervical spine and neck. It also provides helmets for head and brain protection; and body armor products, including chest protectors, full upper body protectors, upper body protection vests, back protectors, knee braces, knee and elbow guards, off-road motorcycle boots, and mountain biking shoes. In addition, the company offers other products, parts, and accessories, such as goggles and hydrations bags, as well as apparel items that comprise suits, jackets, jerseys, pants, shorts, socks, gloves, sunglasses, and bicycle components; and aftermarket support products; toolbelt, duffel, gear, and helmet bags; backpacks, hats, and hydration kits; and casual clothing and caps. Further, it acts as the original equipment manufacturer for personal protective equipment sold by other brands. The company's products are used by riders of motorcycles, bicycles, snowmobiles, and ATVs. It sells its products to customers through a network of distributors and retailers; and directs end consumers through digital channels and online store at leatt.com. The company was formerly known as Treadzone, Inc. and changed its name to Leatt Corporation in May 2005. Leatt Corporation was founded in 2001 and is headquartered in Durbanville, South Africa.",
-        "symbol": "LEAT"
+        "enterpriseValue": 49530360,
+        "country": "South Africa",
+        "symbol": "LEAT",
+        "marketCap": 68411632,
+        "ebitda": 6351130,
+        "shortName": "Leatt Corp.",
+        "industry": "Leisure"
       },
       "history": [
         {
@@ -17628,8 +17663,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 10.899999618530273,
-          "volume": 24452.0
+          "close": 11.0,
+          "volume": 23525.0
         }
       ],
       "income_statement": [
@@ -18589,16 +18624,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 67789704,
-        "enterprise_value": 48907624,
+        "market_cap": 68411632,
+        "enterprise_value": 49530360,
         "short_ratio": null,
         "short_percent_of_float": null,
         "held_percent_institutions": 0.04879,
         "held_percent_insiders": 0.48321,
         "sector": "Consumer Cyclical",
         "industry": "Leisure",
-        "trailing_pe": 19.122807,
-        "price_to_book": 1.5024121,
+        "trailing_pe": 19.298246,
+        "price_to_book": 1.5161957,
         "gross_margins": 0.44702998,
         "profit_margins": 0.05559,
         "revenue_growth": 0.013
@@ -19140,27 +19175,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Leatt Corporation",
+      "article_count": 0,
+      "articles": []
     }
   },
   "CLPS": {
     "yfinance": {
       "ticker": "CLPS",
       "info": {
-        "marketCap": 27782742,
-        "industry": "Information Technology Services",
-        "shortName": "CLPS Incorporation",
-        "sector": "Technology",
-        "enterpriseValue": 36564624,
-        "longName": "CLPS Incorporation",
         "freeCashflow": 3373060,
-        "fullTimeEmployees": 3705,
-        "totalRevenue": 172211328,
-        "grossProfits": 30677612,
+        "longName": "CLPS Incorporation",
         "website": "https://www.clpsglobal.com",
-        "country": "Hong Kong",
-        "ebitda": -7810263,
+        "fullTimeEmployees": 3705,
+        "sector": "Technology",
+        "grossProfits": 30677612,
+        "totalRevenue": 172211328,
         "longBusinessSummary": "CLPS Incorporation, through its subsidiaries, designs, builds, and delivers IT services, solutions, product services and academic education services in Mainland China, Singapore, Hong Kong, the United States, Japan, India, and internationally. It operates in two segments, IT Services and Academic Education Services. The company offers IT consulting services for banking, including system implementation, testing, and enhancement for various functions; service package, such as planning, development, optimization, software quality assurance, and IT staffing; and fintech solutions comprising integrated development, mainframe and open platform integration, mobile apps, quality management, cloud, and big data solutions. It also provides credit card solutions, which include credit card applications, account setup, authorization and activation, settlement, collection, promotion, point systems, anti-fraud, statement, reporting, and risk management; architecture consulting services for core banking systems, and online and mobile banking; and construction consulting, system development, and testing management. In addition, the company provides e-commerce platform; and automotive solutions, which include big data governance, data analysis, intelligent cockpits, in-car experience interaction, and in-car marketplaces. Further, it engages in the provision of Academic education services; CLPS Virtual Banking Platform; Recruitment and Headhunting; fee-for-service training; and provision of software implementation and ongoing management. It serves banking, wealth management, payment services, e-commerce, automotive, and other sectors. The company was founded in 2005 and is headquartered in Kwun Tong, Hong Kong.",
-        "symbol": "CLPS"
+        "enterpriseValue": 37457464,
+        "country": "Hong Kong",
+        "symbol": "CLPS",
+        "marketCap": 28349736,
+        "ebitda": -7810263,
+        "shortName": "CLPS Incorporation",
+        "industry": "Information Technology Services"
       },
       "history": [
         {
@@ -19670,8 +19710,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 0.9309999942779541,
-          "volume": 91580.0
+          "close": 0.949999988079071,
+          "volume": 93669.0
         }
       ],
       "income_statement": [
@@ -20260,16 +20300,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 27782742,
-        "enterprise_value": 36564624,
+        "market_cap": 28349736,
+        "enterprise_value": 37457464,
         "short_ratio": 2.56,
         "short_percent_of_float": 0.0014,
         "held_percent_institutions": 0.00487,
-        "held_percent_insiders": 0.56223,
+        "held_percent_insiders": 0.56229997,
         "sector": "Technology",
         "industry": "Information Technology Services",
         "trailing_pe": null,
-        "price_to_book": 0.6206667,
+        "price_to_book": 0.6333333,
         "gross_margins": 0.17813998,
         "profit_margins": -0.07654,
         "revenue_growth": 0.066
@@ -20607,27 +20647,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "CLPS Incorporation",
+      "article_count": 0,
+      "articles": []
     }
   },
   "HTCO": {
     "yfinance": {
       "ticker": "HTCO",
       "info": {
-        "marketCap": 9425545,
-        "industry": "Marine Shipping",
-        "shortName": "High-Trend International Group",
-        "sector": "Industrials",
-        "enterpriseValue": -2260716,
-        "longName": "High-Trend International Group",
         "freeCashflow": 12656823,
-        "fullTimeEmployees": 18,
-        "totalRevenue": 252452432,
-        "grossProfits": 6599002,
+        "longName": "High-Trend International Group",
         "website": "https://www.htcointl.com",
-        "country": "Singapore",
-        "ebitda": -9770790,
+        "fullTimeEmployees": 18,
+        "sector": "Industrials",
+        "grossProfits": 6599002,
+        "totalRevenue": 252452432,
         "longBusinessSummary": "High-Trend International Group provides ocean transportation services in Singapore, Dubai, South Korea, Japan, India, and rest of Asia. The company offers shipping and logistics support services. It also provides seaborne transportation services under voyage contracts; vessel services on behalf of ship owners; and heating services. The company was formerly known as Caravelle International Group and changed its name to High-Trend International Group in January 2025. High-Trend International Group was founded in 2021 and is headquartered in Singapore.",
-        "symbol": "HTCO"
+        "enterpriseValue": -1720290,
+        "country": "Singapore",
+        "symbol": "HTCO",
+        "marketCap": 9969327,
+        "ebitda": -9770790,
+        "shortName": "High-Trend International Group",
+        "industry": "Marine Shipping"
       },
       "history": [
         {
@@ -20937,8 +20982,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 1.0399999618530273,
-          "volume": 1644933.0
+          "close": 1.100000023841858,
+          "volume": 1683189.0
         }
       ],
       "income_statement": [
@@ -21803,8 +21848,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 9425545,
-        "enterprise_value": -2260716,
+        "market_cap": 9969327,
+        "enterprise_value": -1720290,
         "short_ratio": 1.82,
         "short_percent_of_float": 0.0156,
         "held_percent_institutions": 0.015319999,
@@ -21812,7 +21857,7 @@
         "sector": "Industrials",
         "industry": "Marine Shipping",
         "trailing_pe": null,
-        "price_to_book": 1.1791382,
+        "price_to_book": 1.2471656,
         "gross_margins": 0.02614,
         "profit_margins": -0.05035,
         "revenue_growth": 0.383
@@ -21968,27 +22013,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "High-Trend International Group",
+      "article_count": 0,
+      "articles": []
     }
   },
   "NSYS": {
     "yfinance": {
       "ticker": "NSYS",
       "info": {
-        "marketCap": 28937188,
-        "industry": "Medical Devices",
-        "shortName": "Nortech Systems Incorporated",
-        "sector": "Healthcare",
-        "enterpriseValue": 46208864,
-        "longName": "Nortech Systems Incorporated",
         "freeCashflow": 3039250,
-        "fullTimeEmployees": 685,
-        "totalRevenue": 124651000,
-        "grossProfits": 20496000,
+        "longName": "Nortech Systems Incorporated",
         "website": "https://www.nortechsys.com",
-        "country": "United States",
-        "ebitda": 3744000,
+        "fullTimeEmployees": 685,
+        "sector": "Healthcare",
+        "grossProfits": 20496000,
+        "totalRevenue": 124651000,
         "longBusinessSummary": "Nortech Systems Incorporated provides engineering design and manufacturing solutions for electromedical devices, electromechanical systems, assemblies, and components in the United States, Mexico, and China. It offers a range of value-added engineering, technical, manufacturing, and support services, including project management, designing, testing, prototyping, manufacturing, supply chain management, and post-market services. The company also provides manufacturing and engineering services that include complex electromedical and electromechanical product, such as medical devices, wire and cable assemblies, printed circuit board assemblies, complex higher-level assemblies, and other box builds for a range of industries. In addition, it offers engineering and repair services. The company serves original equipment manufacturers in the medical devices and imaging, aerospace and defense, and industrial markets through business development teams and independent manufacturers' representatives. Nortech Systems Incorporated was founded in 1990 and is headquartered in Maple Grove, Minnesota.",
-        "symbol": "NSYS"
+        "enterpriseValue": 45387744,
+        "country": "United States",
+        "symbol": "NSYS",
+        "marketCap": 28629550,
+        "ebitda": 3744000,
+        "shortName": "Nortech Systems Incorporated",
+        "industry": "Medical Devices"
       },
       "history": [
         {
@@ -23993,8 +24043,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 10.140000343322754,
-          "volume": 65378.0
+          "close": 10.03219985961914,
+          "volume": 71049.0
         }
       ],
       "income_statement": [
@@ -24904,16 +24954,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 28937188,
-        "enterprise_value": 46208864,
+        "market_cap": 28629550,
+        "enterprise_value": 45387744,
         "short_ratio": 0.1,
         "short_percent_of_float": 0.0011999999,
         "held_percent_institutions": 0.080699995,
         "held_percent_insiders": 0.64031,
         "sector": "Healthcare",
         "industry": "Medical Devices",
-        "trailing_pe": 28.166666,
-        "price_to_book": 0.82151824,
+        "trailing_pe": 27.86722,
+        "price_to_book": 0.81278455,
         "gross_margins": 0.16443,
         "profit_margins": 0.00829,
         "revenue_growth": 0.093
@@ -25517,27 +25567,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Nortech Systems Incorporated",
+      "article_count": 0,
+      "articles": []
     }
   },
   "NTWK": {
     "yfinance": {
       "ticker": "NTWK",
       "info": {
-        "marketCap": 76496440,
-        "industry": "Software - Application",
-        "shortName": "NETSOL Technologies Inc.",
-        "sector": "Technology",
-        "enterpriseValue": 64351364,
-        "longName": "NetSol Technologies, Inc.",
         "freeCashflow": 8445962,
-        "fullTimeEmployees": 1370,
-        "totalRevenue": 74371376,
-        "grossProfits": 39147344,
+        "longName": "NetSol Technologies, Inc.",
         "website": "https://www.netsoltech.com",
-        "country": "United States",
-        "ebitda": 8185086,
+        "fullTimeEmployees": 1370,
+        "sector": "Technology",
+        "grossProfits": 39147344,
+        "totalRevenue": 74371376,
         "longBusinessSummary": "NetSol Technologies, Inc. engages in the design, development, marketing, and export of enterprise software solutions to the automobile financing and leasing, banking, and financial services industries in North America, Europe, and Asia Pacific. The company provides various platforms, including Transcend Platform for digital retail, asset finance, and loan servicing; Originations, an AI-powered loan origination platform; Servicing, a next-gen loan and lease servicing software; Wholesale finance; Mobility solutions; and AI labs. The company also offers advanced information security services; digital solutions; AI-powered automotive and equipment finance software; AI and ML services and gen AI solutions; digital policy and strategy; and cloud services, such as managed, cloud infrastructure, development and integrations, SAAS development, devops, and MLOPS and model management, and data engineering services. In addition, it offers Intelligent ecosystem redefining automotive finance and AI-enabled platform built for modern equipment finance. It serves automobiles, equipment, bank, captive and wholesale industries. The company was incorporated in 1997 and is headquartered in Encino, California.",
-        "symbol": "NTWK"
+        "enterpriseValue": 69730016,
+        "country": "United States",
+        "symbol": "NTWK",
+        "marketCap": 79604104,
+        "ebitda": 8185086,
+        "shortName": "NETSOL Technologies Inc.",
+        "industry": "Software - Application"
       },
       "history": [
         {
@@ -27227,8 +27282,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 6.400000095367432,
-          "volume": 1882879.0
+          "close": 6.659999847412109,
+          "volume": 2057249.0
         }
       ],
       "income_statement": [
@@ -27950,16 +28005,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 76496440,
-        "enterprise_value": 64351364,
+        "market_cap": 79604104,
+        "enterprise_value": 69730016,
         "short_ratio": 0.58,
-        "short_percent_of_float": 0.0047999998,
+        "short_percent_of_float": 0.0052,
         "held_percent_institutions": 0.18049999,
         "held_percent_insiders": 0.26189,
         "sector": "Technology",
         "industry": "Software - Application",
-        "trailing_pe": 25.6,
-        "price_to_book": 1.829094,
+        "trailing_pe": 26.64,
+        "price_to_book": 1.9034009,
         "gross_margins": 0.52638,
         "profit_margins": 0.03967,
         "revenue_growth": 0.125
@@ -28606,27 +28661,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "NetSol Technologies, Inc.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "CAMT": {
     "yfinance": {
       "ticker": "CAMT",
       "info": {
-        "marketCap": 6121698304,
-        "industry": "Semiconductor Equipment & Materials",
-        "shortName": "Camtek Ltd.",
-        "sector": "Technology",
-        "enterpriseValue": 6970559488,
-        "longName": "Camtek Ltd.",
         "freeCashflow": null,
-        "fullTimeEmployees": 709,
-        "totalRevenue": 499092992,
-        "grossProfits": 254384992,
+        "longName": "Camtek Ltd.",
         "website": "https://www.camtek.com",
-        "country": "Israel",
-        "ebitda": 138529248,
+        "fullTimeEmployees": 709,
+        "sector": "Technology",
+        "grossProfits": 254384992,
+        "totalRevenue": 499092992,
         "longBusinessSummary": "Camtek Ltd., together with its subsidiaries, develops, manufactures, and sells inspection and metrology equipment for semiconductor industry in the United States, China, Korea, Europe, and the Asia Pacific. The company offers Hawk, a platform engineered for advanced packaging; Eagle G5 for enhanced detection and metrology; Eagle-i/Plus, a system that delivers 2D inspection and metrology capabilities; Eagle-AP/Plus, which addresses the advanced packaging market using software and hardware technologies that deliver 2D and 3D inspection and metrology capabilities on the same platform; and Golden Eagle for the inspection and metrology of standard panel sizes. It also develops MicroProf AP, a wafer metrology tool for applications at 3D packaging process steps; MicroProf DI, an optical inspection tool that enables inspection of structured and unstructured wafers; MicroProf FE, a 2D/3D wafer metrology tool; MicroProf FS, a wafer metrology tool configurable; MicroProf PT for hybrid metrology applications to common panel sizes; MicroProf MHU metrology tool, a material handling unit for the semiconductor, MEMS, sapphire, and LED industries; MicroProf TL, an optical surface measurement tool for fully automatic 3D surface measurements; MicroProf 200, a measuring device for contactless and non-destructive characterization of surfaces and films; and MicroProf 300, a SurfaceSens technology for quality assurance, development, and manufacturing. The company serves semiconductor manufacturers, outsourced semiconductor assembly and test, integrated device manufacturers, and wafer level packaging subcontractors. Camtek Ltd. was incorporated in 1987 and is headquartered in Migdal HaEmek, Israel.",
-        "symbol": "CAMT"
+        "enterpriseValue": 6970559488,
+        "country": "Israel",
+        "symbol": "CAMT",
+        "marketCap": 6017394688,
+        "ebitda": 138529248,
+        "shortName": "Camtek Ltd.",
+        "industry": "Semiconductor Equipment & Materials"
       },
       "history": [
         {
@@ -30206,8 +30266,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 131.1750030517578,
-          "volume": 7952942.0
+          "close": 128.94000244140625,
+          "volume": 8214024.0
         }
       ],
       "income_statement": [
@@ -31217,7 +31277,7 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 6121698304,
+        "market_cap": 6017394688,
         "enterprise_value": 6970559488,
         "short_ratio": 4.74,
         "short_percent_of_float": 0.0866,
@@ -31225,8 +31285,8 @@
         "held_percent_insiders": 0.37469003,
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
-        "trailing_pe": 211.57259,
-        "price_to_book": 9.743371,
+        "trailing_pe": 207.96774,
+        "price_to_book": 9.57736,
         "gross_margins": 0.50969005,
         "profit_margins": 0.09629,
         "revenue_growth": 0.025
@@ -31823,27 +31883,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Camtek Ltd.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "MG": {
     "yfinance": {
       "ticker": "MG",
       "info": {
-        "marketCap": 691369664,
-        "industry": "Security & Protection Services",
-        "shortName": "Mistras Group Inc",
-        "sector": "Industrials",
-        "enterpriseValue": 906916672,
-        "longName": "Mistras Group, Inc.",
         "freeCashflow": 30275000,
-        "fullTimeEmployees": 4800,
-        "totalRevenue": 739169984,
-        "grossProfits": 233270000,
+        "longName": "Mistras Group, Inc.",
         "website": "https://www.mistrasgroup.com",
-        "country": "United States",
-        "ebitda": 86864000,
+        "fullTimeEmployees": 4800,
+        "sector": "Industrials",
+        "grossProfits": 233270000,
+        "totalRevenue": 739169984,
         "longBusinessSummary": "Mistras Group, Inc. provides technology-enabled industrial asset integrity and laboratory testing solutions in the United States, Europe, the Middle East, Africa, Asia, and South America. The company offers non-destructive testing (NDT) services; pipeline inspections; Plant Condition Management Software; maintenance planning; and specialized engineering solutions. It also provides maintenance and light mechanical services, such as corrosion removal, mitigation and prevention, insulation installation and removal, electrical services, heat tracing, industrial cleaning, pipefitting, and welding; engineering consulting services, including plant operations and management support, turnaround/shutdown planning, profit improvement, facilities planning studies, engineering design, process safety reviews, energy optimization evaluations, benchmarking/key performance indicator development, and technical training. In addition, the company offers scaffolding and rope access forb at-height and confined assets; certified divers for subsea inspection and maintenance; unmanned aerial, land-based, and subsea systems for inspection applications; portable, handheld, wireless and turnkey NDT equipment; acoustic emission products and sensors, instruments, and turnkey systems for monitoring and testing materials, pressure components, processes, and structures; and ultrasonic testing equipment. Further, it provides asset protection solutions to detect, mitigate, and prevent degradation mechanisms, such as corrosion, cracking, leaks, and manufacturing defects; inspection, maintenance, and monitoring and data services; and quality assurance and quality control solutions for new and existing metal and alloy components, materials, and composites. It serves renewable energy, alternative power generation, natural gas transportation, data centers, pipeline integrity, and additive manufacturing industries. The company was founded in 1978 and is headquartered in Princeton Junction, New Jersey.",
-        "symbol": "MG"
+        "enterpriseValue": 906279680,
+        "country": "United States",
+        "symbol": "MG",
+        "marketCap": 683085952,
+        "ebitda": 86864000,
+        "shortName": "Mistras Group Inc",
+        "industry": "Security & Protection Services"
       },
       "history": [
         {
@@ -32868,8 +32933,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 21.700000762939453,
-          "volume": 4166780.0
+          "close": 21.440000534057617,
+          "volume": 4320547.0
         }
       ],
       "income_statement": [
@@ -33819,16 +33884,16 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 691369664,
-        "enterprise_value": 906916672,
+        "market_cap": 683085952,
+        "enterprise_value": 906279680,
         "short_ratio": 1.98,
         "short_percent_of_float": 0.0752,
-        "held_percent_institutions": 0.65766996,
+        "held_percent_institutions": 0.65642,
         "held_percent_insiders": 0.34385,
         "sector": "Industrials",
         "industry": "Security & Protection Services",
-        "trailing_pe": 26.144579,
-        "price_to_book": 2.8806586,
+        "trailing_pe": 25.831326,
+        "price_to_book": 2.8461437,
         "gross_margins": 0.31558,
         "profit_margins": 0.03649,
         "revenue_growth": 0.042
@@ -34452,27 +34517,32 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Mistras Group, Inc.",
+      "article_count": 0,
+      "articles": []
     }
   },
   "XTNT": {
     "yfinance": {
       "ticker": "XTNT",
       "info": {
-        "marketCap": 41314804,
-        "industry": "Medical Devices",
-        "shortName": "Xtant Medical Holdings, Inc.",
-        "sector": "Healthcare",
-        "enterpriseValue": 56362560,
-        "longName": "Xtant Medical Holdings, Inc.",
         "freeCashflow": 10128750,
-        "fullTimeEmployees": 151,
-        "totalRevenue": 109527000,
-        "grossProfits": 65047000,
+        "longName": "Xtant Medical Holdings, Inc.",
         "website": "https://xtantmedical.com",
-        "country": "United States",
-        "ebitda": -1473000,
+        "fullTimeEmployees": 151,
+        "sector": "Healthcare",
+        "grossProfits": 65047000,
+        "totalRevenue": 109527000,
         "longBusinessSummary": "Xtant Medical Holdings, Inc. provides regenerative medicine products and medical devices for orthopedic and neurological surgeons in the United States and internationally. It offers OsteoSponge, a natural scaffold for cellular in-growth; OsteoSelect DBM Putty, a moldable demineralized bone matrix; OsteoSelect PLUS DBM Putty to deliver handling properties and ensure patient safety through validated and terminal sterilization; 3Demin, a family of allografts that maximizes osteoconductivity and the osteoinductive potential of human bone; OsteoFactor Pro, a processed allograft that contains retained growth factors found within the endosteum layer of allograft bone; OsteoVive Plus, an aseptically processed and viable bone allograft; and nanOss products that provide osteoconductive nano-structured hydroxyapatite and an engineered extracellular matrix bioscaffold collagen carrier. It also provides sports allografts for anterior and posterior cruciate ligament repairs, anterior cruciate ligament reconstruction, and meniscal repair; milled spinal allografts for cortical bone milled to desired shapes and dimensions; and traditional allografts for orthopedics, neurology, podiatry, oral/maxillofacial, genitourinary, and plastic/reconstructive applications. In addition, it offers cervical products comprising Spider cervical plating, Streamline OCT system, and CervAlign systems; thoracolumbar products, such as of Axle-X interspinous fusion, Streamline MIS spinal fixation, Streamline TL spinal fixation, and HPS 2.0 hybrid performance systems; Silex sacroiliac joint fusion systems; interbody products comprising Calix for cervical and thoracolumbar applications, Irix-C Cervical and Irix-A lumbar integrated dusion systems, and Fortilink implants; Contact ALP (Anterior Lumbar Plate) System; and interlaminar stabilization products, such as Coflex device for lumbar spinal stenosis; and CoFix implants for back and disc pain. The company is headquartered in Belgrade, Montana.",
-        "symbol": "XTNT"
+        "enterpriseValue": 56965796,
+        "country": "United States",
+        "symbol": "XTNT",
+        "marketCap": 40823800,
+        "ebitda": -1473000,
+        "shortName": "Xtant Medical Holdings, Inc.",
+        "industry": "Medical Devices"
       },
       "history": [
         {
@@ -35452,8 +35522,8 @@
         },
         {
           "date": "2026-10-01 00:00:00-04:00",
-          "close": 0.2944999933242798,
-          "volume": 1178539.0
+          "close": 0.29100000858306885,
+          "volume": 1293237.0
         }
       ],
       "income_statement": [
@@ -36312,8 +36382,8 @@
         }
       ],
       "key_metrics": {
-        "market_cap": 41314804,
-        "enterprise_value": 56362560,
+        "market_cap": 40823800,
+        "enterprise_value": 56965796,
         "short_ratio": 0.17,
         "short_percent_of_float": 0.0026,
         "held_percent_institutions": 0.56943,
@@ -36321,7 +36391,7 @@
         "sector": "Healthcare",
         "industry": "Medical Devices",
         "trailing_pe": null,
-        "price_to_book": 1.0333333,
+        "price_to_book": 1.0210527,
         "gross_margins": 0.59389,
         "profit_margins": -0.10168,
         "revenue_growth": -0.35
@@ -36982,6 +37052,11 @@
         "customer_concentration": false,
         "regulatory_risk_count": 0
       }
+    },
+    "news": {
+      "company_name": "Xtant Medical Holdings, Inc.",
+      "article_count": 0,
+      "articles": []
     }
   }
 }
